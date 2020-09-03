@@ -1,0 +1,23 @@
+{{ $ := .root }}
+{{ $page := .page }}
+<div class="row justify-content-center people-widget">
+  {{ with $page.Title }}
+  <div class="col-md-12 section-heading">
+    <h1>{{ . | markdownify | emojify }}</h1>
+    {{ if $page.Params.subtitle }}<p>{{ $page.Params.subtitle | markdownify | emojify }}</p>{{ end }}
+  </div>
+  {{ end }}
+  <div class="row">
+    <div class="col-lg-6 col-md-6 mb-4">
+       <p>{{ $page.Params.subtitle1 }}</p>
+       <img class="img-fluid w-100" src="/img/architecture-old.png" alt="Avatar">
+       <p>{{ $page.Params.info1 }}</p>
+    </div>
+    <div class="col-lg-6 col-md-6 mb-4">
+       <p>{{ $page.Params.subtitle2 }}</p>
+       <img class="img-fluid w-100" src="/img/architecture-new.png" alt="Avatar">
+       <p>{{ $page.Params.info2 }}</p>
+    </div>
+  </div>
+
+</div>

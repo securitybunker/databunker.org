@@ -1,0 +1,22 @@
+{{- define "main" -}}
+
+<div class="pub py-5" itemscope itemtype="http://schema.org/Event">
+
+  {{ partial "page_header.html" . }}
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        {{ .Content }}
+      </div>
+    </div>
+  </div>
+</div>
+
+{{ if site.Params.section_pager }}
+<div class="article-container article-widget">
+  {{ partial "section_pager.html" . }}
+</div>
+{{ end }}
+
+{{- end -}}
