@@ -3,11 +3,8 @@ title: Personal information tokenization and storage
 summary: Databunker provides built-in support for PII tokenization and storage.
 abstract: ""
 weight: 10
-
 authors: []
 tags: []
-
-# Is this a featured talk? (true/false)
 featured: false
 
 image:

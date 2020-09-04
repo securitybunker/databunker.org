@@ -1,7 +1,8 @@
 ---
-title: GDPR compliant logging
+title: Trace customer profile changes and access
 summary: An example talk using academia's Markdown slides feature.
 abstract: ""
+weight: 20
 authors: []
 tags: []
 featured: false
@@ -35,6 +36,21 @@ math: true
 Click on the **Slides** button above to view the built-in slides feature.
 {{% /alert %}}
 
-Web or mobile application session data is very similar. They contain customer IP address, browser information, web server headers, logged-in customer info, etc... Many systems, including popular webservers, like Nginx, Apache simply store this information in logs. This information, according to GDPR is considered personal identifiable information and must be secured and controlled.
+Databunker saves audit events on all API operation. For example, new personal record added or changed; personal information
+record retrieved, etc...
 
-So, you can not save customer ip or browser information in logs now. Insead, Data Bunker will generate you a special token to save in logs. Data Bunker provides you an API to retrieve this info out of Data Bunker without additional password for a limited time as in GDPR. For example one month.
+By providing Audit of events, in relation to personal data, provides response to GDRP Article 15 requirement:
+*Right of access by the data subject*.
+
+Special features:
+
+* Personal information in audit event is encrypted.
+* Customer can view only his own records.
+
+Each audit record consists of:
+
+* Date and time
+* Operation title
+* Operation status
+* Operation description
+* Change before and after if applicable

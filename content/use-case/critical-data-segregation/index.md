@@ -3,13 +3,9 @@ title: Critical data segregation
 summary: Improve your solution overall security level by adding critical data segregation.
 abstract: ""
 weight: 15
-
 authors: []
 tags: []
-
-# Is this a featured talk? (true/false)
 featured: false
-
 image:
   caption: 'Image'
   focal_point: Right
@@ -39,7 +35,6 @@ math: true
 {{% alert note %}}
 Click on the **Slides** button above to view the built-in slides feature.
 {{% /alert %}}
-
 
 One of the software design principles is critical data segregation. By storing customer personal data int the Databunker, you basically minimize the attack outcome from your existing database, thus minimizing the business risk factors. Suppose, the bad actor will find an SQL injection in your web app database, and he will be able to get access to some data. This data will not be personal as this information is stored outside of your existing database (in Databunker).
 
