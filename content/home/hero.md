@@ -44,4 +44,4 @@ hero_media = "user-2.jpg"
 +++
 ## Add GDPR compliant Personal Identifiable Information storage service to your Web and mobile apps in under 10 minutes.
 
-Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.
+Databunker gives a strong, serious, real personal-data protection for your clients and business, without expensive custom coding.

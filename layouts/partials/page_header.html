@@ -23,7 +23,7 @@
 <div class="container split-header">
   <div class="row justify-content-center">
     <div class="col-lg-8">
-        <img class="img-fluid w-100" src="{{ $image.RelPermalink }}" itemprop="image" alt="">
+        <img class="img-fluid w-100" src="{{ $featured.RelPermalink }}" itemprop="image" alt="">
         {{ with $.Params.image.caption }}<span
           class="article-header-caption">{{ . | markdownify | emojify }}</span>{{ end }}
     </div>
@@ -46,7 +46,9 @@
     {{ $ctnr = "universal-wrapper" }}
     {{end}}
     <div class="{{$ctnr}} py-3">
+      <center>
       <h1 itemprop="name">{{ $title }}</h1>
+      </center>
 
       {{ with $page.Params.subtitle }}
       <p class="page-subtitle">{{ . | markdownify | emojify }}</p>
