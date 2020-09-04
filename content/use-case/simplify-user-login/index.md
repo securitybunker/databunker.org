@@ -1,5 +1,5 @@
 ---
-title: Data minimization and GDPR Scope reduction
+title: Simplify user login operations
 summary: An example talk using academia's Markdown slides feature.
 abstract: ""
 weight: 50
@@ -36,4 +36,11 @@ math: true
 Click on the **Slides** button above to view the built-in slides feature.
 {{% /alert %}}
 
-When you clean up your databases from personal records (PII) and use the Datbunker token instead, you are minimizing the scope of personal information stored in other systems. In addition, wheni sharing your customers' data with 3rd parties, Data Bunker provides you with the purposefully built, time-bound "shareable identity" token.
+When implementing signup and sign-in in your customer-facing applications, we recommend you to
+store all signup records in the Data Bunker database. We support 3 types of indexes, index
+by login name, index by email address and index by phone number. So you can easily implement
+login logic into your solution with the helpof Databunker API.
+
+Index by email and index by phone allow us to give your customers passwordless access to the
+Databunker privacy portal. We send your customer a one-time login code by SMS or email to
+give them access to thier account at Data Bunker.

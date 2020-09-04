@@ -57,7 +57,7 @@ date_format = "Jan 2006"
   url = ""
 
 [[item]]
-  title = "Using standard database: MySQL / PostgreSQL / SQLight"
+  title = "Using standard database: MySQL / SQLight"
   url = ""
 
 +++

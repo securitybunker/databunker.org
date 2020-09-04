@@ -1,5 +1,5 @@
 ---
-title: Data minimization and GDPR Scope reduction
+title: GDPR user request workflow
 summary: An example talk using academia's Markdown slides feature.
 abstract: ""
 weight: 50
@@ -36,4 +36,9 @@ math: true
 Click on the **Slides** button above to view the built-in slides feature.
 {{% /alert %}}
 
-When you clean up your databases from personal records (PII) and use the Datbunker token instead, you are minimizing the scope of personal information stored in other systems. In addition, wheni sharing your customers' data with 3rd parties, Data Bunker provides you with the purposefully built, time-bound "shareable identity" token.
+
+**Customer** operations like change of personal records like name, email, or application information change,
+consent withdrawal or forget-me request can be automatically saved in the Databunker database or
+Admin/DPO request will be created instead. This can help large organizations with the DPO to approve user requests.
+You can configure what operations can be self-service or what operations require Admin / DPO approval.
+For more info, check Data Bunker configuration file.
