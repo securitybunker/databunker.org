@@ -1,6 +1,6 @@
 ---
 title: Simplify user login operations
-summary: An example talk using academia's Markdown slides feature.
+summary: Databunker can be a perfect solution for the login backend.
 abstract: ""
 weight: 50
 authors: []
