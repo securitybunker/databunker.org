@@ -1,6 +1,6 @@
 ---
 title: Temporary record identity for 3rd party services
-summary: Temporary records can refference user profile, user app record or user session record.
+summary: Temporary record can reference user profile, user app record, or user session record.
 abstract: ""
 authors: []
 tags: []
