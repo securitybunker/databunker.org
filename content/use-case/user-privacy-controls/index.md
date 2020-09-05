@@ -1,8 +1,8 @@
 ---
-title: User privacy controls
-summary: Databunker gives the end user controls for his PII.
+title: GDPR User privacy controls
+summary: Databunker gives the end user controls for his PII
 abstract: ""
-weight: 50
+weight: 10
 authors: []
 tags: []
 featured: false
@@ -37,19 +37,23 @@ math: true
 Click on the **Slides** button above to view the built-in slides feature.
 {{% /alert %}}
 
-According to GDPR, if you want to send your customer SMS using 3rd party gateway,
-you must show to your customer a detailed notification message that you will send
-his phone number to a specific SMS gateway company and the customer needs to confirm this operation.
 
-You need to store these confirmations and Data Bunker can do it for you.
+Databunker project was born to give a simple solution for any organization to become **privacy by design compliant** and to be **GDPR compliant** and that is where the product really shines.
 
-Consent must be freely given, specific, informed and unambiguous. From GDPR, Article 7, item 3:
+It’s architecture design ideas crystallize is a simple solution that provides organizations an easy to use API to store and retrieve personal customer records. The product itself takes to care for most of the GDPR requirements.
 
-* **The data subject shall have the right to withdraw his or her consent at any time.**
-* **It shall be as easy to withdraw as to give consent.**
+For example, upon user record creation request, Databunker knows to extract email, phone, login name, and build an encrypted search index. Using this information, the service can grant the user temporary access to view, and initiate personal information change or manage privacy consents.
 
-In Data Bunker:
+Databunker product gives your customers passwordless access to the Databunker privacy portal. We send your customer a one-time login code by SMS or email to give them access to their account at Databunker.
 
-* Your customers can log in to his Data Bunker account and view all consents he gave.
-* Customer can also discharge consents and we will send you a notification message.
-* Removing consent for a customer is as easy as granting it in the first place.
+![User login](user-login.png)
+
+
+### Databunker can help you with the following GDPR requirements:
+
+
+* **Access**: your customers can log in to his Databunker account and view personal data.
+* **Withdraw**: your customers can withdraw consents given previously.
+* **Update**: your customers can change their personal data saved in Databunker.
+* **Delete**: your customers can perform a "forget-me" request inside Databunker.
+* **Restrict**: your customers can specify what operations they allow with their personal profiles.
