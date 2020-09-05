@@ -13,6 +13,12 @@
   url = "#use-cases"
   weight = 20
 
+[[main]]
+  name= "&nbsp;GitHub"
+  pre= "<i class='fab fa-github'>"
+  post= "</i>"
+  url= "https://github.com/paranoidguy/databunker"
+
 #[[main]]
 #  name = "Publications"
 #  url = "#publications"
