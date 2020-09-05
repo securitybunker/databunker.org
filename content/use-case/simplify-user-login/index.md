@@ -36,11 +36,10 @@ math: true
 Click on the **Slides** button above to view the built-in slides feature.
 {{% /alert %}}
 
-When implementing signup and sign-in in your customer-facing applications, we recommend you to
-store all signup records in the Data Bunker database. We support 3 types of indexes, index
-by login name, index by email address and index by phone number. So you can easily implement
-login logic into your solution with the helpof Databunker API.
+When implementing **signup** and **sign-in** in your customer-facing applications, we recommend you to store all user records in the Databunker secure storage.
 
-Index by email and index by phone allow us to give your customers passwordless access to the
-Databunker privacy portal. We send your customer a one-time login code by SMS or email to
-give them access to thier account at Data Bunker.
+You can easily implement login logic with Databunker. You can implement the login by yourself or using a **cloud login provider** (for example Okta). For example, Okta, upon successful login will return your customer email address.
+
+In both cases, you will need to save customer details somewhere and Databunker will be a perfect solution for that.
+
+Databunker API supports 4 types of indexes, index by login name, index by email address, index by phone number, and index by user token. So you can easily implement login logic into your solution and use Databunker for the backend.
