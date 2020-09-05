@@ -36,4 +36,8 @@ math: true
 Click on the **Slides** button above to view the built-in slides feature.
 {{% /alert %}}
 
-When you clean up your databases from personal records (PII) and use the Datbunker token instead, you are minimizing the scope of personal information stored in other systems. In addition, wheni sharing your customers' data with 3rd parties, Data Bunker provides you with the purposefully built, time-bound "shareable identity" token.
+One of the security design principles is scope reduction and data minimization. By storing customer personal data in the Databunker, you basically minimize the attack outcome from your existing database, thus minimizing the business risk factors.
+
+Suppose, the bad actor finds an **SQL injection** in your web app database. He might get access to some data. This data will not be personal as this information is stored outside of your existing database (in Databunker).
+
+When you clean up your databases from personal records (PII) and use the Datbunker token instead, you are basically doing **data minimization** and **GDPR scope reduction**.
