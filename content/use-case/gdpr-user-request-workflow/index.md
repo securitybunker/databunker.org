@@ -36,9 +36,12 @@ math: true
 Click on the **Slides** button above to view the built-in slides feature.
 {{% /alert %}}
 
+Some organizations can not instantly cancel a customer account on his request as the customer might be under a service contract. As a result, a custom approval flow is required.
 
-**Customer** operations like change of personal records like name, email, or application information change,
-consent withdrawal or forget-me request can be automatically saved in the Databunker database or
-Admin/DPO request will be created instead. This can help large organizations with the DPO to approve user requests.
-You can configure what operations can be self-service or what operations require Admin / DPO approval.
-For more info, check Data Bunker configuration file.
+Databunker support this requirement.
+
+**Customer** operations like a change of personal records like name, email, or application information change, consent withdrawal or forget-me request can be automatically executed in the Databunker database or Admin/DPO request will be created instead to approve this request.
+
+This can help large organizations with the DPO to approve user requests.
+
+Databunker allows you to configure what operations can be self-service or what operations require Admin / DPO approval.
