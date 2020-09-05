@@ -36,18 +36,18 @@ math: true
 Click on the **Slides** button above to view the built-in slides feature.
 {{% /alert %}}
 
-Many times we need to find important events that occurred on database server, but we may not always have a process in place to capture this data.
+Many times we need to find important events that occurred on the database server, but we may not always have a process in place to capture this data.
 
-By default, Databunker has auditing capability built-in, it saves audit trail on all user data related API operations. For example, new personal record added or changed; personal information record retrieved; or record change, etc...
+By default, Databunker has auditing capability built-in, it saves audit trail on all user data related API operations. For example, new personal records added or changed; personal information retrieved, etc...
 
-By providing Audit of events, in relation to personal data, provides response to GDRP Article 15 requirement:
+By providing Audit of events, in relation to personal data, provides a partial response to GDRP Article 15 requirement:
 *Right of access by the data subject*.
 
 Special features:
 
-* Personal information in audit event is encrypted.
+* All personal information in the audit event is encrypted.
 * Customer can view only his own records.
-* Event drill down view for change operations to actually see what was changed in the record.
+* Event drill-down view to actually see what was changed in the record.
 
 Each audit record consists of:
 
@@ -55,4 +55,5 @@ Each audit record consists of:
 * Operation title
 * Operation status
 * Operation description
+* User identity performing operation
 * Change before and after if applicable
