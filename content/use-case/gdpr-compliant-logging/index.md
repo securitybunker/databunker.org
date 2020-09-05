@@ -1,6 +1,6 @@
 ---
 title: GDPR compliant logging
-summary: An example talk using academia's Markdown slides feature.
+summary: Databunker can generate a session token to be used in server logs.
 abstract: ""
 authors: []
 tags: []
@@ -35,6 +35,10 @@ math: true
 Click on the **Slides** button above to view the built-in slides feature.
 {{% /alert %}}
 
-Web or mobile application session data is very similar. They contain customer IP address, browser information, web server headers, logged-in customer info, etc... Many systems, including popular webservers, like Nginx, Apache simply store this information in logs. This information, according to GDPR is considered personal identifiable information and must be secured and controlled.
+When talking about Personal Identifiable Information (PII) we are talking about strong and weak user identifiers. A strong identity for example is a username or email address. Weak identity is an IP address, browser user agent, cookie, or session id. A combination of weak identifiers gives us a strong user identifier.
 
-So, you can not save customer ip or browser information in logs now. Insead, Data Bunker will generate you a special token to save in logs. Data Bunker provides you an API to retrieve this info out of Data Bunker without additional password for a limited time as in GDPR. For example one month.
+So, you can not simply save the customer IP address, browser user agent, or cookie id in the webserver log, unless you have a strong retention policy and you delete logs on a weekly or monthly bases.
+
+Another solution might be to encrypt all strong and week identities in the log files.
+
+An alternative solution is to use Databunker to generate a special session token to save in the server logs files. Databunker provides you an API to retrieve session info out of Databunker without an additional password for a limited time. For example one month.
