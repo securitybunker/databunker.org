@@ -44,4 +44,4 @@ hero_media = "user-2.jpg"
 +++
 ## Add GDPR compliant Personal Identifiable Information storage service to your Web and mobile apps in under 10 minutes.
 
-Databunker gives a strong, serious, real personal-data protection for your clients and business, without expensive custom coding.
+Databunker gives a strong, serious, real personal-data protection for your customer data, without expensive custom coding.
