@@ -1,6 +1,6 @@
 ---
 title: Trace customer profile changes and access
-summary: An example talk using academia's Markdown slides feature.
+summary: Databunker saved audit trail for all operations.
 abstract: ""
 weight: 20
 authors: []

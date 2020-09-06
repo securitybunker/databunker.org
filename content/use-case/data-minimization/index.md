@@ -1,13 +1,13 @@
 ---
 title: Data minimization and GDPR Scope reduction
-summary: An example talk using academia's Markdown slides feature.
+summary: Improve your solution overall security level by minimizing PII data.
 abstract: ""
 weight: 50
 authors: []
 tags: []
 featured: false
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/bzdhc5b3Bxs)'
+  caption: 'Image'
   focal_point: Right
 
 links:
@@ -36,7 +36,7 @@ math: true
 Click on the **Slides** button above to view the built-in slides feature.
 {{% /alert %}}
 
-One of the security design principles is scope reduction and data minimization. By storing customer personal data in the Databunker, you basically minimize the attack outcome from your existing database, thus minimizing the business risk factors.
+One of the security design principles is **scope reduction** and **data minimization**. By storing customer personal data in the Databunker, you basically minimize the attack outcome from your existing database, thus minimizing the business risk factors.
 
 Suppose, the bad actor finds an **SQL injection** in your web app database. He might get access to some data. This data will not be personal as this information is stored outside of your existing database (in Databunker).
 

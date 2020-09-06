@@ -1,6 +1,6 @@
 ---
 title: GDPR User privacy controls
-summary: Databunker gives the end user controls for his PII
+summary: Databunker gives the end-user controls for their personal identifiable information (PII).
 abstract: ""
 weight: 10
 authors: []
@@ -8,7 +8,7 @@ tags: []
 featured: false
 
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/bzdhc5b3Bxs)'
+  caption: 'Image'
   focal_point: Right
 
 links:
@@ -38,7 +38,7 @@ Click on the **Slides** button above to view the built-in slides feature.
 {{% /alert %}}
 
 
-Databunker project was born to give a simple solution for any organization to become **privacy by design compliant** and to be **GDPR compliant** and that is where the product really shines.
+Databunker project was born to give a simple solution for any organization to become **privacy by design compliant** and **GDPR compliant** and that is where the product really shines.
 
 It’s architecture design ideas crystallize is a simple solution that provides organizations an easy to use API to store and retrieve personal customer records. The product itself takes to care for most of the GDPR requirements.
 

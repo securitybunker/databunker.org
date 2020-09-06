@@ -1,13 +1,13 @@
 ---
 title: GDPR user request workflow
-summary: An example talk using academia's Markdown slides feature.
+summary: Databunker is flexible to allow admin to approve user requests.
 abstract: ""
 weight: 50
 authors: []
 tags: []
 featured: false
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/bzdhc5b3Bxs)'
+  caption: 'Image'
   focal_point: Right
 
 links:
