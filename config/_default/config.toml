@@ -16,7 +16,7 @@ baseURL = "https://databunker.org"
 copyright = ""
 
 # Enable analytics by entering your Google Analytics tracking ID
-googleAnalytics = ""
+googleAnalytics = "UA-177416086-1"
 
 # Enable comments by entering your Disqus shortname
 disqusShortname = ""
