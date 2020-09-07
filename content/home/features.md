@@ -18,8 +18,8 @@ date_format = "Jan 2006"
   url = ""
 
 [[item]]
-  title = "Military grade encryption"
-  description = "All records that have customer personal information are encrypted or securely hashed in the internal database."
+  title = "Using strong encryption"
+  description = "All records with customer personal information are encrypted using AES-256 or securely hashed in the internal database."
 #description = "All records that have customer personal information are encrypted or securely hashed in the internal database. All customer records are encrypted with a 32 byte key comprizing of System Master key (24 bytes, stored in memory, and never on disk) and customer record key (8 bytes, stored on disk)."
   url = ""
 
@@ -29,7 +29,7 @@ date_format = "Jan 2006"
 
 [[item]]
   title = "Instant request processing"
-  description = "All application code is written in go-lang than gives super-fast native code performance."
+  description = "The service code is written in go-lang than gives super-fast native code execution performance."
   url = ""
   
 [[item]]
@@ -48,7 +48,7 @@ date_format = "Jan 2006"
 
 [[item]]
   title = "Encrypted search index"
-  description = "From the user record, Databunker knows to extract email, phone, login name, and build an encrypted search index."
+  description = "From the user records, Databunker knows to extract email, phone, login name, and build an encrypted search index."
   url= ""
 
 [[item]]

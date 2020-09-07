@@ -38,8 +38,8 @@ Click on the **Slides** button above to view the built-in slides feature.
 
 When implementing **signup** and **sign-in** in your customer-facing applications, we recommend you to store all user records in the Databunker secure storage.
 
-You can easily implement login logic with Databunker. You can implement the login by yourself or using a **cloud login provider** (Okta, Auth0, OneLogin, etc...). For example, Okta, upon successful login will return your customer email address.
+You can easily implement login logic with Databunker. You can **develop a login** by yourself or using a **cloud login provider** (Okta, Auth0, OneLogin, etc...). Upon successful login, for example, Okta and some others will return your customer email address or another kind of user identity.
 
 In both cases, you will need to save customer email and other details somewhere and Databunker will be a perfect solution for that.
 
-Databunker APIs support record lookup using one of 4 indexes, index by login name, index by email address, index by phone number, and index by user token. So you can easily implement login logic into your solution and use Databunker for the backend.
+Databunker APIs support record lookup using one of 4 methods: lookup by login name, email address, phone number, and user token. Either way, you can easily implement login logics in your solution and use Databunker for the backend.
