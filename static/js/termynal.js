@@ -126,8 +126,8 @@ class Termynal {
         const progressChar = line.getAttribute(`${this.pfx}-progressChar`)
             || this.progressChar;
         const chars = progressChar.repeat(progressLength);
-		const progressPercent = line.getAttribute(`${this.pfx}-progressPercent`)
-			|| this.progressPercent;
+        const progressPercent = line.getAttribute(`${this.pfx}-progressPercent`)
+            || this.progressPercent;
         line.textContent = '';
         this.container.appendChild(line);
 
