@@ -6,6 +6,17 @@
  * @license MIT
  */
 
+#site-title {
+max-width: 88%;
+overflow: hidden;
+margin-right: 0;
+paddig-right: 0;
+}
+
+#site-menu {
+padding:0;
+}
+
 :root {
     --color-bg: #252a33;
     --color-text: #eee;
@@ -55,6 +66,16 @@
 [data-ty] {
     display: block;
     line-height: 1.7;
+}
+
+[data-ty="progress"] {
+}
+
+@media only screen and (max-width : 500px) {
+ [data-ty="progress"] {
+   font-size: 50%;
+   line-height: 0.8;
+ }
 }
 
 [data-ty]:before {

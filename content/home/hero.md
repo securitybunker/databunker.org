@@ -42,6 +42,6 @@ hero_media = "user-2.jpg"
   label = "Code on GitHub"
 
 +++
-## Add GDPR compliant Personal Identifiable Information storage service to your Web and mobile apps in under 10 minutes.
+## Add GDPR compliant user store service to your Web and mobile apps in under 10 minutes.
 
-Databunker gives strong, serious, real personal-data protection for your customer details, without expensive custom coding.
+Databunker gives strong, serious, real personal-data protection for your customer records, without expensive custom coding.
