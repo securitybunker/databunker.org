@@ -42,6 +42,4 @@ hero_media = "user-2.jpg"
   label = "Code on GitHub"
 
 +++
-## Add GDPR compliant user store service to your Web and mobile apps in under 10 minutes.
-
 Databunker gives strong, serious, real personal-data protection for your customer records, without expensive custom coding.
