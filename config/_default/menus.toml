@@ -14,6 +14,11 @@
   weight = 20
 
 [[main]]
+  name = "API"
+  url = "https://documenter.getpostman.com/view/11310294/Szmcbz32"
+  weight = 30
+
+[[main]]
   name= "&nbsp;GitHub"
   pre= "<i class='fab fa-github'>"
   post= "</i>"
