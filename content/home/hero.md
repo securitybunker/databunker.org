@@ -42,4 +42,4 @@ hero_media = "user-2.jpg"
   label = "Code on GitHub"
 
 +++
-Databunker gives strong, serious, real personal-data protection for your customer records, without expensive custom coding with a full customer visibility.
+Databunker gives strong, serious, real personal-data protection for your customer records, without expensive custom coding and with full customer visibility.
