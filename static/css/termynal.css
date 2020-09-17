@@ -6,6 +6,10 @@
  * @license MIT
  */
 
+.gallery a[data-fancybox] img {
+    height: 100px;
+}
+
 #site-title {
 max-width: 88%;
 overflow: hidden;
