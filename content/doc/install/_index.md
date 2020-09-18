@@ -16,7 +16,7 @@ weight: 1
 
 ## Quick installation guide
 
-You simply start Databunker as a basic Docker container with minimal parameters and minimal requirements. In this case, it will use an internal built-in SQLite database to store encrypted records. This installation method is good for development and not recommended for production.
+You simply start Databunker as a basic Docker container with minimal parameters and minimal requirements. In this case, it will use an internal built-in SQLite database to store encrypted records. This installation method is good for development and **not recommended for production**.
 
 **Advantages:**
 * An external database is not required.
