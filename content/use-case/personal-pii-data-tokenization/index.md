@@ -39,7 +39,7 @@ Click on the **Slides** button above to view the built-in slides feature.
 
 Databunker is basically special encrypted database for customer records, or PII in terms of GDPR.
 
-Upon a special API request to create a new user records is received, on request parameters provided as HTML POST key/value format or as JSON format, Databunker performs the following operations:
+Upon an API request to create a new user, request parameters provide customer details in HTML POST key/value format or as JSON format, Databunker performs the following operations:
 
 - Request sanity check and access token check.
 - Normalize email address, phone number, login name.
