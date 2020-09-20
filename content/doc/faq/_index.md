@@ -83,12 +83,12 @@ The **System Master key** is kept in RAM and is never stored to disk. Enterprise
 
 ## Does Databunker is end-user facing?
 
-Yes. The end-user, according to GDPR must have control over the PII data. The user can change the personal data, give 
-or withdraw consent, request forget-me. All user requests can be self-service (automatically enforced) or with DPO / Admin approval.
+Yes. The end-user, according to GDPR, the end-user must have control over the PII data. The user can change the personal data, give 
+or withdraw consent, request forget-me. All user operations can be self-service (automatically enforced) or with DPO / Admin approval.
 
 ## Does Databunker is a wrapper for an existing database?
 
 This product is not a wrapper for an existing database. It is a special service used to encrypt and store personal records
-in a privacy-compliant way. The service provides a REST API to store and update user records in JSON format; and customer
-facing web ui to given to your csutomers to provide visibility into the customer data.
+in a privacy-compliant way. The service provides a REST API to store and update user records in JSON format; 
+customer-facing web UI to your csutomers to provide visibility into the customer's personal data.
 
