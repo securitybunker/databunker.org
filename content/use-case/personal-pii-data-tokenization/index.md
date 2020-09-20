@@ -37,19 +37,19 @@ math: true
 Click on the **Slides** button above to view the built-in slides feature.
 {{% /alert %}}
 
-Databunker is basically special encrypted database for customer records, or PII in terms of GDPR.
+Databunker is basically a special encrypted database for customer records, or PII in terms of GDPR.
 
 Upon an API request to create a new user, request parameters provide customer details in HTML POST key/value format or as JSON format, Databunker performs the following operations:
 
 - Request sanity check and access token check.
 - Normalize email address, phone number, login name.
-- Strict user shema check if schema is defined in configuration and return error if some fileds are missing or error.
+- Strict user schema checks if the schema is defined in configuration and returns an error if some fields are missing or error.
 - Encrypt email address, phone number, login name.
-- Validate for duplicate records using encrypted keys (email, phone, login) and return duplicate user error message.
+- Validate for duplicate records using encrypted keys (email, phone, login) and return a duplicate user error message.
 - Generate a record UUID to be used as a user token.
 - Encrypt the whole user record and save it in backend database already encrypted (MySQL, PostgreSQL, SQLite)
 - Return user token (UUID generated previously) to your backend service.
 
-Now, when Databunker returns you customer token, you can use it with your existing database instead of stroing personal records (PII).
+Now, when Databunker returns your customer token, you can use it with your existing database instead of storing personal records (PII).
 
-Afterwords, you can query the Databunker service to receive personal information, saving audit trail.
+Afterword, you can query the Databunker service to receive personal information, saving the audit trail.
