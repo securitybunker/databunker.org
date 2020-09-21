@@ -1,5 +1,7 @@
 {{- define "main" -}}
 
+{{ $howto_page := site.GetPage "howto.md" }}
+
 <div class="pub py-5" itemscope itemtype="http://schema.org/Event">
 
   {{ partial "page_header.html" . }}
@@ -8,6 +10,8 @@
     <div class="row justify-content-center">
       <div class="col-lg-8">
         {{ .Content }}
+	<hr>
+	{{ $howto_page.Content }}
       </div>
     </div>
   </div>
