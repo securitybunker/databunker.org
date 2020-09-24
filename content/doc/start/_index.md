@@ -1,21 +1,19 @@
 ---
-title: Howto
-type: howto
-headless: false
+title: Getting Started with Databunker
+linktitle: Getting Started with Databunker
+toc: true
+type: docs
+date: "2019-05-05T00:00:00+01:00"
+draft: false
+menu:
+  start:
+    name: Getting Started
+    weight: 1
+
+# Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)
+weight: 1
 ---
-## Product Live demo
-
-The service live demo is available at https://demo.databunker.org/
-
-Demo user credentials:
-
-* User phone: 4444
-* User code: 4444
-* Admin token: DEMO
-
-## Getting Started
-
-The easiest way to get started with Databunker is to run it as a Docker container:
+The easiest way to get started with **Databunker** is to run it as a **Docker container**:
 
 ```
 docker run -p 3000:3000 -d --rm --name dbunker paranoidguy/databunker demo
@@ -54,3 +52,4 @@ curl -s -H "X-Bunker-Token: DEMO" -X GET http://localhost:3000/v1/user/login/joh
 ### Other commands:
 
 For a full list of commands, follow the [API document](https://documenter.getpostman.com/view/11310294/Szmcbz32).
+

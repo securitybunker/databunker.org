@@ -34,7 +34,7 @@ hero_media = "user-2.jpg"
 #   Display link(s) by specifying a URL and label below. Icon is optional for `[cta]`.
 #   Remove a link/note by deleting a cta/note block.
 [btn]
-  url = "https://demo.paranoidguy.com/"
+  url = "/doc/demo/"
   label = "Demo"
   
 [btn_alt]
