@@ -1,5 +1,5 @@
 ---
-title: Personal information tokenization and storage
+title: Customer profile storage and tokenization
 summary: Databunker provides built-in support for PII tokenization and storage.
 abstract: ""
 weight: 50
@@ -37,7 +37,7 @@ math: true
 Click on the **Slides** button above to view the built-in slides feature.
 {{% /alert %}}
 
-Databunker is basically a special encrypted database for customer records, or PII in terms of GDPR.
+Databunker is basically a special encrypted database for customer profile records, or PII in terms of GDPR.
 
 Upon an API request to create a new user, request parameters provide customer details in HTML POST key/value format or as JSON format, Databunker performs the following operations:
 
