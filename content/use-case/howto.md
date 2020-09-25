@@ -54,3 +54,7 @@ curl -s -H "X-Bunker-Token: DEMO" -X GET http://localhost:3000/v1/user/login/joh
 ### Other commands:
 
 For a full list of commands, follow the [API document](https://documenter.getpostman.com/view/11310294/Szmcbz32).
+
+### Support / Contact
+
+[Slack Channel](https://join.slack.com/t/paranoidguy/shared_invite/enQtODc2OTE1NjYyODM1LTI0MmM2ZmYwZDI0MzExMjJmOGQyMTY4Y2UzOTQ0ZDIwOTZjMmRkZDZkY2I3MzE1OWE3ZWVmNTY4MjIwMzNhZTQ)
