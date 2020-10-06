@@ -1,0 +1,27 @@
+{{ $ := .root }}
+{{ $page := .page }}
+
+<!-- Accomplishments widget -->
+<div class="row">
+  <div class="col-12 text-center section-heading">
+    <h1>{{ with $page.Title }}{{ . | markdownify }}{{ end }}</h1>
+    {{ with $page.Params.subtitle }}<p>{{ . | markdownify }}</p>{{ end }}
+    {{ with $page.Content }}<p>{{ . | markdownify }}</p>{{ end }}
+  </div>
+</div>
+  {{ if $page.Params.item }}
+  {{ range $idx, $key := sort $page.Params.item ".date_start" "desc" }}
+    <div class="row justify-content-center">
+      <div class="col-6">
+        <p class="text-muted my-1">{{.title | markdownify | emojify}}</p>
+      </div>
+      <div class="col-1">
+	      {{ if eq .icon "tick" }}
+	      <span class="" style="font-weight: 700;vertical-align:middle;height:25px;">✓</span>
+	      {{ else }}
+	      <span style="font-weight: 700">&ndash;</span>
+	      {{ end }}
+      </div>
+    </div>
+  {{end}}
+  {{end}}
