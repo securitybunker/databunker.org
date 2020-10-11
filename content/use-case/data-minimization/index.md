@@ -36,7 +36,13 @@ math: true
 Click on the **Slides** button above to view the built-in slides feature.
 {{% /alert %}}
 
-One of the security design principles is **scope reduction** and **data minimization**. By storing customer personal data in the Databunker, you basically minimize the attack outcome from your existing database, thus minimizing the business risk factors.
+One of the security design principles is **scope reduction** and **data minimization**.
+
+**Data minimization** stands that organizations should keep customer data at a minimum only sufficient to provide a service.
+
+From the official GDPR Art. 5. ***Personal data shall be adequate, relevant and limited to what is necessary in relation to the purposes for which they are processed.***
+
+By storing customer personal data in the Databunker, you basically minimize the attack outcome from your existing database, thus minimizing the business risk factors.
 
 Suppose, the bad actor finds an **SQL injection** in your web app database. He might get access to some data. This data will not be personal as this information is stored outside of your existing database (in Databunker).
 
