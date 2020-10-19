@@ -36,6 +36,11 @@ Click on the **Slides** button above to view the built-in slides feature.
 {{% /alert %}}
 
 
+One of the myths of the GDPR is that it prevents **data sharing**. This isn’t
+true. The GDPR aims to ensure that there is trust and confidence in how
+organisations use personal data and ensure that organisations share data
+securely and fairly. Databunker knows to address this is a smart way.
+
 When sharing data with 3rd party services like web analytics, logging, intelligence, etc... sometimes we need to
 share customer id, for example, customer original IP address or email address. All these pieces of information
 are considered as **personally identifiable information (PII)** and it is recommended to minimize when sending to 3rd party systems.
