@@ -6,7 +6,7 @@ active = true  # Activate this widget? true/false
 weight = 50  # Order that this section will appear.
 
 title = "Why Databunker?"
-subtitle = "It is hard to frighten us with personal data"
+subtitle = "A special service to store personal data."
 
 # Date format
 #   Refer to https://sourcethemes.com/academic/docs/customization/#date-format
@@ -29,7 +29,7 @@ date_format = "Jan 2006"
 
 [[item]]
   title = "Instant request processing"
-  description = "The service code is written in go-lang than gives super-fast native code execution performance."
+  description = "The service code is written in go-lang that gives super-fast native code execution performance."
   url = ""
   
 [[item]]
@@ -57,7 +57,7 @@ date_format = "Jan 2006"
   url = ""
 
 [[item]]
-  title = "Using standard database: MySQL / SQLight"
+  title = "Using standard database: MySQL / SQLite"
   description = "User records are encrypted and saved in a standard database."
   url = ""
 
