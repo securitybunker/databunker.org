@@ -12,7 +12,7 @@ day_night = false
 font = "classic"
 
 # Description for social sharing and search engines. If undefined, superuser role is used in place.
-description = "Databunker gives strong, serious, real personal-data protection for customer records, without expensive custom coding and with full customer visibility."
+description = "Databunker gives strong, serious, real personal-data protection for customer records without expensive custom coding and with full customer visibility."
 
 # Default image for social sharing and search engines. Place image in `static/img/` folder and specify image name here.
 sharing_image = ""
