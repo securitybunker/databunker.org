@@ -32,7 +32,7 @@
   name= "&nbsp;GitHub"
   pre= "<i class='fab fa-github'>"
   post= "</i>"
-  url= "https://github.com/paranoidguy/databunker"
+  url= "https://github.com/securitybunker/databunker"
   weight = 35
 
 [[main]]
