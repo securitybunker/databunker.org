@@ -18,7 +18,7 @@ Demo user credentials:
 The easiest way to get started with Databunker is to run it as a Docker container:
 
 ```
-docker run -p 3000:3000 -d --rm --name dbunker paranoidguy/databunker demo
+docker run -p 3000:3000 -d --rm --name dbunker securitybunker/databunker demo
 ```
 
 This command starts a local container with a `DEMO` root access key. You can use it for the development of testing. For a production installation, follow this [installation guide](https://databunker.org/doc/install/).

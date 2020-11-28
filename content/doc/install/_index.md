@@ -35,7 +35,7 @@ Run the service as follows:
 
 ```
 docker run -p 3000:3000 -d --rm --name dbunker \
-  paranoidguy/databunker demo
+  securitybunker/databunker demo
 ```
 
 Databunker service will listen for connections on port `3000`.
@@ -47,7 +47,7 @@ mkdir ~/data
 chmod 0777 ~/data
 docker run -v ~/data:/databunker/data -p 3000:3000 \
   -e DATABUNKER_MASTERKEY=1111111111111111111111111111111111111111
-  --rm --name dbunker paranoidguy/databunker demo
+  --rm --name dbunker securitybunker/databunker demo
 ```
 
 ## Production installation
@@ -82,7 +82,7 @@ docker run --rm -it --link mysqlsrv           \
   -e MYSQL_USER_NAME=bunkeruser              \
   -e MYSQL_USER_PASS=BunkerUserPassword4     \
   --entrypoint /bin/sh                       \
-  --name dbunker paranoidguy/databunker      \
+  --name dbunker securitybunker/databunker      \
   -c '/databunker/bin/databunker -init -db databunkerdb -conf /databunker/conf/databunker.yaml'
 ```
 
@@ -100,7 +100,7 @@ docker run --restart unless-stopped -d -p 3000:3000 \
   -e MYSQL_USER_NAME=bunkeruser                     \
   -e MYSQL_USER_PASS=BunkerUserPassword4            \
   --entrypoint /bin/sh                              \
-  --name dbunker paranoidguy/databunker             \
+  --name dbunker securitybunker/databunker             \
   -c '/databunker/bin/databunker -db databunkerdb -conf /databunker/conf/databunker.yaml'
   
 ```
@@ -120,7 +120,7 @@ Another option is to create a configuration file outside of the container in con
 
 ```
 mkdir ~/conf
-curl https://raw.githubusercontent.com/paranoidguy/databunker/master/databunker.yaml \ 
+curl https://raw.githubusercontent.com/securitybunker/databunker/master/databunker.yaml \ 
   -o ~/conf/databunker.yaml
 ```
 
@@ -138,7 +138,7 @@ docker run --restart unless-stopped -d -p 3000:3000 -v ~/conf:/databunker/conf \
   -e MYSQL_USER_NAME=bunkeruser                     \
   -e MYSQL_USER_PASS=BunkerUserPassword4            \
   --entrypoint /bin/sh                              \
-  --name dbunker paranoidguy/databunker             \
+  --name dbunker securitybunker/databunker             \
   -c '/databunker/bin/databunker -db databunkerdb -conf /databunker/conf/databunker.yaml'
 ```
 
@@ -159,7 +159,7 @@ docker run --restart unless-stopped -d -p 3000:3000 -v ~/conf:/databunker/conf -
   -e MYSQL_USER_NAME=bunkeruser                     \
   -e MYSQL_USER_PASS=BunkerUserPassword4            \
   --entrypoint /bin/sh                              \
-  --name dbunker paranoidguy/databunker             \
+  --name dbunker securitybunker/databunker             \
   -c '/databunker/bin/databunker -db databunkerdb -conf /databunker/conf/databunker.yaml'
 ```
 
