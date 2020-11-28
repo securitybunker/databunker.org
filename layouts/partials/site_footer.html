@@ -4,7 +4,7 @@
     <div class="row">
       <div class="col-md-6">
         <div style="text-align: center">
-	  <a href="https://github.com/paranoidguy/databunker" target="_blank" rel="noopener" class="btn btn-lg btn-outline-primary page-scroll"><i class="fab fa-github">&nbsp;</i>Star us on GitHub</a>
+	  <a href="https://github.com/securitybunker/databunker" target="_blank" rel="noopener" class="btn btn-lg btn-outline-primary page-scroll"><i class="fab fa-github">&nbsp;</i>Star us on GitHub</a>
         </div>
         {{ with site.GetPage "privacy.md" }}
         <p class="powered-by">
@@ -37,6 +37,40 @@
       </div>
     </div>
   </div>
+<!-- MailerLite Universal -->
+<script>
+(function(m,a,i,l,e,r){ m['MailerLiteObject']=e;function f(){
+var c={ a:arguments,q:[]};var r=this.push(c);return "number"!=typeof r?r:f.bind(c.q);}
+f.q=f.q||[];m[e]=m[e]||f.bind(f.q);m[e].q=m[e].q||f.q;r=a.createElement(i);
+var _=a.getElementsByTagName(i)[0];r.async=1;r.src=l+'?v'+(~~(new Date().getTime()/1000000));
+_.parentNode.insertBefore(r,_);})(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
+
+var ml_account = ml('accounts', '2096022', 'm8i9o4i3s0', 'load');
+</script>
+<!-- End MailerLite Universal -->
+<script>
+var mouseX = 0;
+var mouseY = 0;
+var popupCounter = 0;
+document.addEventListener("mousemove", function(e) {
+  mouseX = e.clientX;
+  mouseY = e.clientY;
+});
+$(document).mouseleave(function () {
+  if (mouseY < 100) {
+    if (popupCounter < 1) {
+      ml_account('webforms', '3097595', 'm9s9h1', 'show');
+    }
+    popupCounter ++;
+  }
+});
+setTimeout(function() {
+    if (popupCounter < 1) {
+	ml_account('webforms', '3097595', 'm9s9h1', 'show');
+	popupCounter ++;
+    }
+  }, 20000);
+</script>
   <!--
   <script id='bettergdpr_js' src="https://databunker.privacybunker.cloud/site/better-gdpr.js?tenant=databunker&aa=123" type="text/javascript"></script>
   -->
