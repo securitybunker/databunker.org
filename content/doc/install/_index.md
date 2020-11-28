@@ -190,7 +190,7 @@ Copy Letsencrypt generated file **fullchain.pem** file to ~/certs/server.cer
 You can download and run a small test script that will create a user record, user app record, user consent, etc...
 
 ```
-curl https://raw.githubusercontent.com/paranoidguy/databunker/master/create-test-user.sh -o test.sh
+curl https://raw.githubusercontent.com/securitybunker/databunker/master/create-test-user.sh -o test.sh
 chmod 755 ./test.sh
 ./test.sh **DATABUNKER_MASTERKEY**
 ```
@@ -199,7 +199,7 @@ You can now open browser at http://localhost:3000/
 
 Use the following account details:
 
-Email: test@paranoidguy.com
+Email: test@securitybunker.io
 
 Phone: 4444
 
