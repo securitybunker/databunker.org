@@ -1,6 +1,6 @@
 ---
-title: Databunker Installation Instruction
-linktitle: Databunker Installation Instruction
+title: Databunker installation guide
+linktitle: Databunker installation guide
 toc: true
 type: docs
 date: "2019-05-05T00:00:00+01:00"
