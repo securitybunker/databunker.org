@@ -49,27 +49,32 @@ var ml_account = ml('accounts', '2096022', 'm8i9o4i3s0', 'load');
 </script>
 <!-- End MailerLite Universal -->
 <script>
+const popup = window.sessionStorage.getItem('popup');
 var mouseX = 0;
 var mouseY = 0;
 var popupCounter = 0;
-document.addEventListener("mousemove", function(e) {
-  mouseX = e.clientX;
-  mouseY = e.clientY;
-});
-$(document).mouseleave(function () {
-  if (mouseY < 100) {
-    if (popupCounter < 1) {
+
+if (!popup) {
+  document.addEventListener("mousemove", function(e) {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+  });
+  $(document).mouseleave(function () {
+    if (mouseY < 100 && popupCounter < 1) {
+      popupCounter = 1;
+      //setCookie('popup', 1, 30);
+      window.sessionStorage.setItem('popup', 1);
       ml_account('webforms', '3097595', 'm9s9h1', 'show');
     }
-    popupCounter ++;
-  }
-});
-setTimeout(function() {
+  });
+  setTimeout(function() {
     if (popupCounter < 1) {
-	ml_account('webforms', '3097595', 'm9s9h1', 'show');
-	popupCounter ++;
+        popupCounter = 1;
+	window.sessionStorage.setItem('popup', 1);
+        ml_account('webforms', '3097595', 'm9s9h1', 'show');
     }
   }, 20000);
+}
 </script>
   <!--
   <script id='bettergdpr_js' src="https://databunker.privacybunker.cloud/site/better-gdpr.js?tenant=databunker&aa=123" type="text/javascript"></script>
