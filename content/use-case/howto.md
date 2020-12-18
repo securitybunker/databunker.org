@@ -21,7 +21,7 @@ The easiest way to get started with Databunker is to run it as a Docker containe
 docker run -p 3000:3000 -d --rm --name dbunker securitybunker/databunker demo
 ```
 
-This command starts a local container with a `DEMO` root access key. You can use it for the development of testing. For a production installation, follow this [installation guide](https://databunker.org/doc/install/).
+This command starts a local container with a `DEMO` root access key. You can use it for the development or testing purposes. For a production installation, follow this [installation guide](https://databunker.org/doc/install/).
 
 ### Connecting to Databunker
 
@@ -31,7 +31,7 @@ You can interact with Databunker using:
 - [REST API](https://documenter.getpostman.com/view/11310294/Szmcbz32) listening on port `3000`: [localhost:3000](http://localhost:3000)
 
 
-### Create user record
+### Create a user record
 
 ```
 curl -s http://localhost:3000/v1/user -X POST -H "X-Bunker-Token: DEMO" \
@@ -39,13 +39,13 @@ curl -s http://localhost:3000/v1/user -X POST -H "X-Bunker-Token: DEMO" \
   -d '{"first":"John","last":"Doe","login":"john","phone":"4444","email":"user@gmail.com"}'
 ```
 
-### Fetch user by email
+### Fetch user record by email
 
 ```
 curl -s -H "X-Bunker-Token: DEMO" -X GET http://localhost:3000/v1/user/email/user@gmail.com
 ```
 
-### Fetch user by login
+### Fetch user record by login
 
 ```
 curl -s -H "X-Bunker-Token: DEMO" -X GET http://localhost:3000/v1/user/login/john

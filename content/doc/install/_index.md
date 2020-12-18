@@ -16,7 +16,7 @@ weight: 1
 
 ## Quick installation guide
 
-You simply start Databunker as a basic Docker container with minimal parameters and minimal requirements. In this case, it will use an internal built-in SQLite database to store encrypted records. This installation method is good for development and **not recommended for production**.
+You simply start Databunker as a simple Docker container with minimal parameters and minimal requirements. In that case, it will use an internal built-in SQLite database to store encrypted records. This installation method is good for development and **not recommended for production** use.
 
 **Advantages:**
 * An external database is not required.
@@ -31,16 +31,19 @@ You simply start Databunker as a basic Docker container with minimal parameters 
 * When the container is stopped the **data will be lost**.
 * Not recommended for production.
 
-Run the service as follows:
+### So, how to get started?
+
+Run the service as following command:
 
 ```
-docker run -p 3000:3000 -d --rm --name dbunker \
-  securitybunker/databunker demo
+docker run -p 3000:3000 -d --rm --name dbunker securitybunker/databunker demo
 ```
 
 Databunker service will listen for connections on port `3000`.
 
-`Note:` if the Docker container is stopped or killed the **data will be lost**. To prevent the system from losing data you will need to create a directory to be used for data storage and mount it inside the container and provide **DATABUNKER_MASTERKEY** that you can extract from server logs. It is printed during service initialization. Run the following commands:
+`Note:` if the Docker container is stopped or killed the **data will be lost**. To prevent the system from losing your data you will need to mount the **data** directory from your host machine inside ths databunker container and provide **DATABUNKER_MASTERKEY** that you can extract from docker logs. It is printed during service initialization.
+
+Run the following commands:
 
 ```
 mkdir ~/data
