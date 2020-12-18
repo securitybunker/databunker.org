@@ -3,7 +3,7 @@
 widget = "comp"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
 active = true # Activate this widget? true/false
-weight = 60  # Order that this section will appear.
+weight = 40  # Order that this section will appear.
 
 title = "To stand privacy standards encrypt customer records"
 subtitle1 = "Old style solution"
