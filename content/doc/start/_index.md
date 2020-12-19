@@ -53,6 +53,12 @@ curl -s -H "X-Bunker-Token: DEMO" -X GET http://localhost:3000/v1/user/login/joh
 
 For a full list of commands, follow the [API document](https://documenter.getpostman.com/view/11310294/Szmcbz32).
 
+### Working example with Node.js
+
+Full working example implementing Databunker, Passport.js, and Magic.link is available here:
+
+https://github.com/securitybunker/hello-nodejs-passport-js-magic-link-databunker
+
 ### Support / Contact
 
 [Slack Channel](https://join.slack.com/t/paranoidguy/shared_invite/enQtODc2OTE1NjYyODM1LTI0MmM2ZmYwZDI0MzExMjJmOGQyMTY4Y2UzOTQ0ZDIwOTZjMmRkZDZkY2I3MzE1OWE3ZWVmNTY4MjIwMzNhZTQ)
