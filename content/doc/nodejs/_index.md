@@ -13,8 +13,14 @@ menu:
 # Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)
 weight: 1
 ---
-### Working example with Node.js
+## Working example with Node.js
 
 Full working example implementing Databunker, Passport.js, and Magic.link is available here:
 
 https://github.com/securitybunker/hello-nodejs-passport-js-magic-link-databunker
+
+## Node.JS modules
+
+https://github.com/securitybunker/databunker-store
+
+https://github.com/securitybunker/databunker-session-store
