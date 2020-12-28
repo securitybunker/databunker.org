@@ -37,6 +37,8 @@
 
 [[main]]
   name = "Free Privacy Training"
+  pre= "<strong>"
+  post= "</strong>"
   url= "https://basebunker.com/"
   weight = 40
 
