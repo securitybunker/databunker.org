@@ -57,7 +57,7 @@ For a full list of commands, follow the [API document](https://documenter.getpos
 
 Full working example implementing Databunker, Passport.js, and Magic.link is available here:
 
-https://github.com/securitybunker/hello-nodejs-passport-js-magic-link-databunker
+https://github.com/securitybunker/databunker-nodejs-example
 
 ### Support / Contact
 
