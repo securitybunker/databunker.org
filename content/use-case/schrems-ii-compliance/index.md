@@ -41,6 +41,8 @@ On July 16, the Court of Justice of the European Union issued its long-awaited d
 On November 10, the **European Data Protection Board** (**EDPB**) released its "Recommendations 01/2020 on measures that supplement transfer tools to ensure compliance with the EU level of protection of personal data"
 ([link](https://edpb.europa.eu/sites/edpb/files/consultation/edpb_recommendations_202001_supplementarymeasurestransferstools_en.pdf)).
 
+An alternative method is to get customer consent of personal data cross-border transfer. This is known as **standard contractual clauses (SCC)**.
+
 ## So, How Databunker can help?
 Before talking about exact solution, I need to brief you about few things.
 
