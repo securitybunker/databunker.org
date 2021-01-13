@@ -45,3 +45,10 @@ When saving log events, you can not simply save the customer IP address, browser
 **What is so special about the Databunker session token?**
 
 Databunker can generate a special session token to save in the server logs files. Databunker provides you an additional API to [make session info accessible without an additional password for a limited time](/use-case/temporary-record-identity/). For example one month.
+
+## Additional info
+
+For an in-depth review of different methods to make your logs GDPR compliant take a look at the following article:
+
+https://www.freecodecamp.org/news/how-to-stay-gdpr-compliant-with-access-logs/
+
