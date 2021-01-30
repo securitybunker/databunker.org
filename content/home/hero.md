@@ -8,7 +8,7 @@ weight = 10  # Order that this section will appear.
 title = "Databunker"
 
 # Hero image (optional). Enter filename of an image in the `static/img/` folder.
-hero_media = "user-2.jpg"
+hero_media = "databunker.mp4"
 
 [design.background]
   # Apply a background color, gradient, or image.
@@ -40,6 +40,6 @@ hero_media = "user-2.jpg"
 [btn_alt]
   url = "https://github.com/securitybunker/databunker"
   label = "Code on GitHub"
-
+# old title = <h2>Add GDPR compliant <span style="border-bottom: 1px solid #fc6f5c;">address book</span> to your Web and mobile apps in under 10 minutes.</h2>
 +++
 Databunker gives strong, serious, real personal-data protection for your customer records without expensive custom coding and with full customer visibility.
