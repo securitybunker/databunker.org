@@ -7,3 +7,6 @@
 .section-heading {
 margin-bottom: 30px;
 }
+.nav-pills .nav-link {
+border-radius:0;
+}
