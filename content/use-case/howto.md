@@ -3,14 +3,14 @@ title: Howto
 type: howto
 headless: false
 ---
-## Product Live demo
+## Databunker Live demo
 
-The service live demo is available at https://demo.databunker.org/
+Live demo URL: https://demo.databunker.org/
 
-Demo user credentials:
+You can use the following credentials:
 
 * User phone: 4444
-* User code: 4444
+* User access code: 4444
 * Admin token: DEMO
 
 ## Getting Started
@@ -21,7 +21,7 @@ The easiest way to get started with Databunker is to run it as a Docker containe
 docker run -p 3000:3000 -d --rm --name dbunker securitybunker/databunker demo
 ```
 
-This command starts a local container with a `DEMO` root access key. You can use it for the development or testing purposes. For a production installation, follow this [installation guide](https://databunker.org/doc/install/).
+This command starts Databunker in a local container with a `DEMO` root access key. You can use it for the development or testing purposes. For a production installation, follow this [installation guide](https://databunker.org/doc/install/).
 
 ### Connecting to Databunker
 
