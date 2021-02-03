@@ -37,11 +37,18 @@ On July 16, the Court of Justice of the European Union issued its long-awaited d
 ## Why Schrems-II so important?
 **Data exporters** are liable to personal data when performing a cross-border transfer. Data exporters need to implement supplemental technical measures to prevent governmental authorities from identifying individuals pertaining to the data in the target countries.
 
+One of the important consequences, is that you no longer can save customer data in cloud without proper handling.
+
+According to GDPR Article 32: ``the controller and the processor shall implement appropriate technical and organisational measures to ensure a level of security appropriate to the risk`` including ``the pseudonymisation and encryption of personal data``.
+
+![Customer data pii in the cloud](no-pii.png)
+
+
 ## So, what should I do now?
 On November 10, the **European Data Protection Board** (**EDPB**) released its "Recommendations 01/2020 on measures that supplement transfer tools to ensure compliance with the EU level of protection of personal data"
 ([link](https://edpb.europa.eu/sites/edpb/files/consultation/edpb_recommendations_202001_supplementarymeasurestransferstools_en.pdf)).
 
-An alternative method is to get customer consent of personal data cross-border transfer. This is known as **standard contractual clauses (SCC)**.
+One of alternative method is to get customer consent of personal data cross-border transfer. This is known as **standard contractual clauses (SCC)**.
 
 ## So, How Databunker can help?
 Before talking about exact solution, I need to brief you about few things.
@@ -68,6 +75,9 @@ then the EDPB considers that the **pseudonymisation performed provides an effect
 
 ## Ok, great how it helps me?
 When saving a user object in Databunker you are getting a **user token**. This user token is a user **pseudonymised identity**.
+
+![Pseudonymized identity](pseudonymized-identity.png)
+
 
 So, now when performing a cross-border transfer, change user personal data with a Databunker user token. This way you **make the user not identifiable by the target government**.
 
