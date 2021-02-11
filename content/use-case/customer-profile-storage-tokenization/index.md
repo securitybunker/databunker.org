@@ -50,6 +50,10 @@ Upon an API request to create a new user, request parameters provide customer de
 - Encrypt the whole user record and save it in backend database already encrypted (MySQL, PostgreSQL, SQLite)
 - Return user token (UUID generated previously) to your backend service.
 
-Now, when Databunker returns your customer token, you can use it with your existing database instead of storing personal records (PII).
+Now, when Databunker returns your a **customer token** or a **user token**, you can use it with your existing database instead of storing personal records (PII).
 
-Afterword, you can query the Databunker service to receive personal information, saving the audit trail.
+This **customer token** is basically a user **pseudonymised identity**.
+
+![Pseudonymized identity](pseudonymized-identity.png)
+
+Afterword, you can query the Databunker service using account token to receive personal information, saving the audit trail. You can also perform user lookup using email address, login name, or phone number. Databunker knows to automatically extract these values from user profile and built a secure index for quick lookup.
