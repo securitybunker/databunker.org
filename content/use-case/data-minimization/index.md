@@ -36,9 +36,7 @@ In cybersecurity, we have the principle of **least privilege**. It means your us
 
 In privacy, we have a similar principle. It is called **Data Minimization**. You need to keep customer data at a minimum only sufficient to provide a service.
 
-In this article, we’ll be taking an in-depth look at **Data Minimization**.
-
-First, I will teach basic privacy term of **Data Minimization** and why it is important.
+In this article, we’ll be taking an in-depth look at **Data Minimization** and why it is important.
 
 Then I will talk about an open-source product I am developing called **Databunker** and how it can help. **Databunker** is a Swiss army knife tool for storing personal records or PII.
 
@@ -63,7 +61,7 @@ Take a look at the next image:
 
 You can see an email received by a job candidate from GitHub. GitHub tells the candidate that his personal data will be removed in 30 days. Or, the candidate can leave his details by pressing "Keep my Data".
 
-As with this example, to comply with privacy requirements, you must not wait for your customer's **forget-me request**. ``You need to start the removal of personal data for these customers by yourself.``
+As with this example, to comply with privacy requirements, you must not wait for your customer's **forget-me request**. ``You need to start the removal of personal data for these expired customers by yourself.``
 
 ## Introduction to Databunker
 
