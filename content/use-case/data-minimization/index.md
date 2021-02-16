@@ -1,6 +1,6 @@
 ---
 title: Data minimization and GDPR Scope reduction
-summary: Improve your solution overall security level by minimizing PII data.
+summary: You need to keep customer data at a minimum only sufficient to provide a service to comply with Data Minimization.
 abstract: ""
 weight: 50
 authors: []
@@ -32,15 +32,15 @@ projects:
 math: true
 ---
 
-In security we have a principle of **least priviledge**, meaning your user must have minimal privileges to do it's job.
+In cybersecurity, we have the principle of **least privilege**. It means your user or application process must have minimal privileges to do its job.
 
-In privacy we have a similar principle. It is called **Data Minimization**. You need to keep customer data at a minimum only sufficient to provide a service.
+In privacy, we have a similar principle. It is called **Data Minimization**. You need to keep customer data at a minimum only sufficient to provide a service.
 
-In this article, we’ll be taking an in-depth look at the **Data Minimization**.
+In this article, we’ll be taking an in-depth look at **Data Minimization**.
 
-First, I will teach basic privacy term: Data Minimization and why it is important.
+First, I will teach basic privacy term of **Data Minimization** and why it is important.
 
-Then I will talk about an open-source product I am developing called Databunker and how it helps. **Databunker** is a Swiss army knife tool for storing personal records or PII.
+Then I will talk about an open-source product I am developing called **Databunker** and how it can help. **Databunker** is a Swiss army knife tool for storing personal records or PII.
 
 
 ## GDPR Data Minimization Definition
@@ -63,7 +63,7 @@ Take a look at the next image:
 
 You can see an email received by a job candidate from GitHub. GitHub tells the candidate that his personal data will be removed in 30 days. Or, the candidate can leave his details by pressing "Keep my Data".
 
-As with this example, to comply with privacy requirements, you must not wait for your customer **forget-me request**. You need to initiate removal of personal data by yourself.
+As with this example, to comply with privacy requirements, you must not wait for your customer's **forget-me request**. ``You need to start the removal of personal data for these customers by yourself.``
 
 ## Introduction to Databunker
 
@@ -82,10 +82,14 @@ But first, let me give you a bit more information about what Databunker is and h
 1. Secret sauce
 
 
-## Personal Data consolidation
+## How does Databunker can help with Data Minimization?
+
+### 1. Consolidate all customer personal data from different databases and store it only in Databunker.
 
 By storing customer personal data in the Databunker, you basically minimize the attack outcome from your existing database, thus minimizing the business risk factors.
 
-Suppose, the bad actor finds an **SQL injection** in your web app database. Bad actor might be able to dump your web application database and get access to customers' personal data. This data will not be personal as this information is stored outside of your existing database (in Databunker).
+Suppose, the bad actor finds an **SQL injection** in your web app database. The **bad actor** might be able to dump your web application database and get access to customers' personal data. This data will not be personal as this information is stored outside of your existing database (in Databunker).
 
-When you clean up your databases from personal records (PII) and use the Datbunker token instead, you are basically doing **data minimization** and **GDPR scope reduction**.
+### 2. Personal data removal
+
+You can remove your customer personal data only in Databunker without removing any additional data in your existing databases.
