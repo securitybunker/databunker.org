@@ -36,18 +36,19 @@
   weight = 35
 
 [[main]]
+  name= "&nbsp;Slack"
+  pre= "<i class='fab fa-slack'>"
+  post= "</i>"
+  url= "https://join.slack.com/t/databunker/shared_invite/zt-b6ukxzw3-JCxv8NJDESL40haM45RNIA"
+  weight = 36
+
+[[main]]
   name = "Free Privacy Training ✔️"
   pre= "<strong>"
   post= "</strong>"
   url= "https://basebunker.com/"
   weight = 40
 
-#[[main]]
-#  name= "&nbsp;Slack"
-#  pre= "<i class='fab fa-slack'>"
-#  post= "</i>"
-#  url= "https://join.slack.com/t/paranoidguy/shared_invite/enQtODc2OTE1NjYyODM1LTI0MmM2ZmYwZDI0MzExMjJmOGQyMTY4Y2UzOTQ0ZDIwOTZjMmRkZDZkY2I3MzE1OWE3ZWVmNTY4MjIwMzNhZTQ"
-#  weight = 40
 
 #[[main]]
 #  name = "Publications"

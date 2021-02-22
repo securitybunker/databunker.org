@@ -66,7 +66,7 @@ appointment_url = "https://calendly.com"
 contact_links = [
   # {icon = "twitter", icon_pack = "fab", name = "DM Me", link = "https://twitter.com/Twitter"},
   {icon = "github", icon_pack = "fab", name = "Project code", link = "https://github.com/securitybunker/databunker"},
-  {icon = "slack", icon_pack = "fab", name = "Discuss on Forum", link = "https://join.slack.com/t/paranoidguy/shared_invite/enQtODc2OTE1NjYyODM1LTI0MmM2ZmYwZDI0MzExMjJmOGQyMTY4Y2UzOTQ0ZDIwOTZjMmRkZDZkY2I3MzE1OWE3ZWVmNTY4MjIwMzNhZTQ"},
+  {icon = "slack", icon_pack = "fab", name = "Discuss on Forum", link = "https://join.slack.com/t/databunker/shared_invite/zt-b6ukxzw3-JCxv8NJDESL40haM45RNIA"},
   # {icon = "comments", icon_pack = "fas", name = "Discuss on Forum", link = "https://discourse.gohugo.io"},
   # {icon = "telegram", icon_pack = "fab", name = "Telegram Me", link = "https://telegram.me/@Telegram"},
   ]
