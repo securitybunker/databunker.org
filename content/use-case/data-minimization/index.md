@@ -1,5 +1,6 @@
 ---
-title: Data minimization and GDPR Scope reduction
+title: Data minimization
+#title: Data minimization and GDPR Scope reduction
 summary: You need to keep customer data at a minimum only sufficient to provide a service to comply with Data Minimization.
 abstract: ""
 weight: 50
