@@ -34,7 +34,7 @@ math: true
 
 On July 16, the Court of Justice of the European Union issued its long-awaited decision in the case Data Protection Commission v. Facebook Ireland, Schrems. That decision **invalidates** the European Commission's adequacy decision for the EU-U.S. **Privacy Shield Framework**, on which more than 5,000 U.S. companies rely to conduct trans-Atlantic trade in compliance with EU data protection rules.
 
-## Why Schrems-II so important?
+## Why Schrems-II compliance so important?
 **Data exporters** are liable to personal data when performing a cross-border transfer. Data exporters need to implement supplemental technical measures to prevent governmental authorities from identifying individuals pertaining to the data in the target countries.
 
 One of the important consequences, is that you no longer can save customer data in cloud without proper handling.
@@ -50,10 +50,10 @@ On November 10, the **European Data Protection Board** (**EDPB**) released its "
 
 One of alternative method is to get customer consent of personal data cross-border transfer. This is known as **standard contractual clauses (SCC)**.
 
-## So, How Databunker can help?
-Before talking about exact solution, I need to brief you about few things.
+## So, how Databunker can help with Schrems II Compliance?
+Before talking about exact solution, I need to brief you about few topics.
 
-### What is pseudonymisation?
+### Definition of pseudonymisation.
 
 ***‘pseudonymisation’ means the processing of personal data in such a manner that the personal data can no longer be attributed to a specific data subject without the use of additional information, provided that such additional information is kept separately and is subject to technical and organisational measures to ensure that the personal data are not attributed to an identified or identifiable natural person…***
 
@@ -79,5 +79,5 @@ When saving a user object in Databunker you are getting a **user token**. This u
 ![Pseudonymized identity](pseudonymized-identity.png)
 
 
-So, now when performing a cross-border transfer, change user personal data with a Databunker user token. This way you **make the user not identifiable by the target government**.
+So, now when performing a cross-border transfer, change user personal data with a Databunker user token. This way you **make the user not identifiable by the target government** and it is compatible with **Schrems II**.
 
