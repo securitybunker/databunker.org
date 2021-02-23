@@ -42,24 +42,23 @@ In this article, we’ll be taking an in-depth look at the **privacy by design**
 
 I will talk about an open-source product our team develops called **Databunker** and how it can help. Databunker is a **Swiss army knife tool** for **storing personal records or PII**.
 
-**Databunker** from the initial project design was built as a secure storage of personal records and to comply with GDPR regulations.
+**Databunker** from the initial project design was built as a secure storage of personal records and to comply with GDPR regulations. Databunker can serve as a cornerstone for your privacy by design solution.
 
+## Privacy By Design Actionable Plan.
 
-## Privacy By Design Actionable Plan
+The following is a partial list of actionable plan to make your business **privacy by design** compliant.
 
-The following is a partial list of action items to make your solution **privacy by design** compliant.
+### 1. Create a map personal data flows and processing operations.
 
-### 1. Create a map personal data flows and processing operations
-
-The company with GDPR, you should map every moment of the personal data lifecycle. The company must know what happens to personal data, why and if any external parties are involved. You need to identify all 3rd party services that have even access to the personal data including access to partial data.
+For GDPR compliance, your company should map every moment of the personal data lifecycle. The company must know what happens to personal data, why and if any external parties are involved. You need to identify all 3rd party services that have even access to the personal data including access to partial data.
 
 Ensure that any data processor your company is using also implements appropriate technical and organisational measures for personal data security.
 
 ### 2. Identify lawful basis for processing of personal data.
 
-You need to have a legal basis **before** processing personal data. For example in can be in a form of concent. Cookie popup is one example. Another alternative is to update privacy policy, terms of service or a company contract.
+You need to have a legal basis **before** processing personal data. For example in can be in a form of **concent**. **Cookie popup** is one example. Another alternative is to update privacy policy, terms of service or a company's contract.
 
-Consult with the lawers before.
+Consult with the lawers at this step.
 
 ### 3. Update privacy policy and terms of service documents.
 
@@ -68,15 +67,15 @@ With your privacy policy you need to address the following:
 1. You need to help you customers with execution of their user rights. You need to provice an active email address to send all user requests.
 1. If you need to do cross-border personal data transfer, you can detailed it here.
 
-Consult with the lawers before.
+Consult with the lawers at this step.
 
-### 4. Minimize personal data
+### 4. Minimize personal data.
 
-You need to minimize personal data your business collects. A general rule for you is to keep personal data at minimal only required to perform the business and remove all unused data. This is **data minimization** and **storage limitation** GDPR principles. 
+You need to minimize personal data your business collects. A general rule for you is to keep personal data at minimal only required to perform the business and remove all unused data. You need to do it to comply with **data minimization** and **storage limitation** GDPR principles. 
 
 One of the results of this rule is that you need to remove personal data for expired trial customers of customers that left the company service.
 
-**Databunker** can be used for secure personal data storage. Follow this article for aditional information: https://databunker.org/use-case/data-minimization/
+**Databunker** can be used for secure personal data storage. Check this article for aditional information: https://databunker.org/use-case/data-minimization/
 
 ## 5. Best practice of personal data encryption and encryption of app session data.
 
@@ -84,9 +83,18 @@ GDPR stands on **integrity and confidentiality** as a leading principles. These 
 
 Although there are **no explicit GDPR encryption requirements**, the regulation does require you to enforce security measures and safeguards. The GDPR repeatedly highlights **encryption** and **pseudonymization** as “**appropriate technical and organizational measures**” of personal data security.
 
-**Databunker** stores your customer personal data in encrypted manner and builts a secure index to search for personal records. In addition Databunker supports (session data encryption and storage)[https://databunker.org/use-case/secure-session-storage/].
+**Databunker** stores your customer personal data in encrypted manner and builts a secure index to search for personal records. In addition Databunker supports [session data encryption and storage](https://databunker.org/use-case/secure-session-storage/).
 
-1. Personal data pseudonymisation - data can not attributed to specific data subject.
+## 6. Personal data pseudonymisation.
+
+**Pseudonymisation** is a perfect solution for cross-border personal data transfer. When saving a user object in Databunker you are getting a **user token**. This user token is a user **pseudonymised identity**. When performing a cross-border transfer, change user personal data with a **user token** generated by **Databunker**.
+
+**Pseudonymisation** helps with storing logs: https://www.freecodecamp.org/news/how-to-stay-gdpr-compliant-with-access-logs/
+
+## 7. Data protection awareness training.
+
+You can use our training for your personal. Use the following link: https://basebunker.com/
+
 1. Data confidentiality, integrity and availability.
 1. You must have appropriate security to prevent the personal data you hold being accidentally or deliberately compromised.
 1. Remove old of expired accounts - data minimization.
@@ -96,6 +104,8 @@ Although there are **no explicit GDPR encryption requirements**, the regulation 
 1. Use encrypted session storage.
 1. Make sure you logging is GDPR compliant.
 1. Audit sensitive operations - accountability principles.
+1. Cross-border personal data transfer
+
 
 For EU companies - make sure user knows that his data might be processed by USA companies before processing (terms of service / contract / consent).
 Also physical and organisational security measures.
