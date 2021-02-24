@@ -35,7 +35,7 @@ hero_media = "databunker.mp4"
 #   Remove a link/note by deleting a cta/note block.
 [btn_alt]
   url = "/doc/demo/"
-  label = "Demo"
+  label = "Online demo"
   
 [btn]
   url = "/doc/start/"
