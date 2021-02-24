@@ -33,13 +33,13 @@ hero_media = "databunker.mp4"
 # Call to action links (optional).
 #   Display link(s) by specifying a URL and label below. Icon is optional for `[cta]`.
 #   Remove a link/note by deleting a cta/note block.
-[btn]
+[btn_alt]
   url = "/doc/demo/"
   label = "Demo"
   
-[btn_alt]
-  url = "https://github.com/securitybunker/databunker"
-  label = "Code on GitHub"
+[btn]
+  url = "/doc/start/"
+  label = "Get started"
 # old title = <h2>Add GDPR compliant <span style="border-bottom: 1px solid #fc6f5c;">address book</span> to your Web and mobile apps in under 10 minutes.</h2>
 +++
 Databunker gives strong, serious, real personal-data protection for your customer records without expensive custom coding and with full customer visibility.
