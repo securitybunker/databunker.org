@@ -35,12 +35,12 @@
   url= "https://github.com/securitybunker/databunker"
   weight = 35
 
-[[main]]
-  name= "&nbsp;Slack"
-  pre= "<i class='fab fa-slack'>"
-  post= "</i>"
-  url= "https://join.slack.com/t/databunker/shared_invite/zt-b6ukxzw3-JCxv8NJDESL40haM45RNIA"
-  weight = 36
+#[[main]]
+#  name= "&nbsp;Slack"
+#  pre= "<i class='fab fa-slack'>"
+#  post= "</i>"
+#  url= "https://join.slack.com/t/databunker/shared_invite/zt-b6ukxzw3-JCxv8NJDESL40haM45RNIA"
+#  weight = 36
 
 [[main]]
   name = "Free Privacy Training ✔️"
