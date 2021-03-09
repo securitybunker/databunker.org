@@ -1,0 +1,89 @@
+{{/* Pages Widget */}}
+
+{{/* Initialise */}}
+{{ $ := .root }}
+{{ $st := .page }}
+{{ $items_type := $st.Params.content.page_type | default "post" }}
+
+{{ $items_offset := $st.Params.content.offset | default 0 }}
+{{ $items_count := $st.Params.content.count }}
+{{ if eq $items_count 0 }}
+{{ $items_count = 65535 }}
+{{ else }}
+{{ $items_count = $items_count | default 5 }}
+{{ end }}
+{{ $items_sort := $st.Params.content.order | default "desc" }}
+
+{{ $headless_bundle1 := site.GetPage "/home" }}
+
+{{/* Query */}}
+{{ $query := where ( $headless_bundle1.Resources.ByType "page" ) ".Params.active" "!=" true }}
+
+{{ $count := len $query }}
+
+{{/* Sort */}}
+{{ $sort_by := "Date" }}
+{{ $query = sort $query $sort_by $items_sort }}
+
+{{/* Offset and Limit */}}
+{{ if gt $items_offset 0 }}
+{{ $query = first $items_count (after $items_offset $query) }}
+{{ else }}
+{{ $query = first $items_count $query }}
+{{ end }}
+
+{{/* Localisation */}}
+{{ $i18n := "" }}
+{{ if eq $items_type "post" }}
+{{ $i18n = "more_posts" }}
+{{ else if eq $items_type "talk" }}
+{{ $i18n = "more_talks" }}
+{{ else if eq $items_type "publication" }}
+{{ $i18n = "more_publications" }}
+{{ else }}
+{{ $i18n = "more_pages" }}
+{{ end }}
+
+<style>
+div.tab-pane img {clip-path: inset(1% 1% 1% 1%); margin:auto;}
+@media only screen and (min-width: 1000px) {
+  section#definitions {background-image: url("/img/knife.png"); background-repeat: no-repeat; background-position: 96% 70px; background-size: initial; }
+}
+</style>
+<div class="row">
+  <div class="col-12 section-heading text-center">
+    <h1>{{ with $st.Title }}{{ . | markdownify | emojify }}{{ end }}</h1>
+    {{ with $st.Params.subtitle }}<p>{{ . | markdownify | emojify }}</p>{{ end }}
+    {{ with $st.Content }}<p>{{ . }}</p>{{ end }}
+  </div>
+  <div class="col-12">
+    <div class="row">
+      <div class="col-4">
+        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+          {{ range $i, $post := $query }}
+	    {{ if eq $i 0 }}
+	    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#{{ .Title | urlize }}" role="tab" aria-controls="v-pills-home" aria-selected="true">{{ add $i 1 }} {{ .Title }}</a>
+	    {{ else }}
+	      <a class="nav-link" id="v-pills-home-tab" data-toggle="pill" href="#{{ .Title | urlize }}" role="tab" aria-controls="v-pills-home" aria-selected="true">{{ add $i 1 }} {{ .Title }}</a>
+	    {{ end }}
+          {{end}}
+	</div>
+      </div>
+      <div class="col-1">&nbsp;</div>
+      <div class="col-7">
+        <div class="tab-content">
+        {{ range $i, $post := $query }}
+	  {{ if eq $i 0 }}
+            <div class="tab-pane fade active show" role="tabpanel" id="{{ .Title | urlize }}">
+          {{ else }}
+            <div class="tab-pane fade" role="tabpanel" id="{{ .Title | urlize }}">
+          {{ end }}
+            {{ .Content }}
+          </div>
+        {{end}}
+	</div>
+      </div>
+
+    </div>
+  </div>
+</div>
