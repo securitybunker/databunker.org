@@ -54,6 +54,6 @@ Now, when Databunker returns your a **customer token** or a **user token**, you 
 
 This **customer token** is basically a user **pseudonymised identity**.
 
-![Pseudonymized identity](pseudonymized-identity.png)
+![Pseudonymized identity](/img/pseudonymized-identity.png)
 
-Afterword, you can query the Databunker service using account token to receive personal information, saving the audit trail. You can also perform user lookup using email address, login name, or phone number. Databunker knows to automatically extract these values from user profile and built a secure index for quick lookup.
+Afterword, you can query the Databunker service using **user token** to receive personal information, saving the audit trail. You can also perform user lookup using email address, login name, or phone number. Databunker knows to automatically extract these values from user profile and built a secure index for quick lookup.
