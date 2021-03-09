@@ -27,9 +27,6 @@ url_video: ""
 #   Otherwise, set `projects = []`.
 projects:
 # - internal-project
-
-# Enable math on this page?
-math: true
 ---
 One of the important trends of modern software development is **privacy by design** and **privacy by default** principles.
 

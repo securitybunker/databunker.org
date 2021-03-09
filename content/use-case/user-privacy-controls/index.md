@@ -28,9 +28,6 @@ url_video: ""
 #   Otherwise, set `projects = []`.
 projects:
 # - internal-project
-
-# Enable math on this page?
-math: true
 ---
 
 {{% alert note %}}

@@ -27,9 +27,6 @@ url_video: ""
 #   Otherwise, set `projects = []`.
 projects:
 # - internal-project
-
-# Enable math on this page?
-math: true
 ---
 
 When writing web applications sometimes you need to save data in a **session object**. This data can include user email address, user permissions, last operation code, error messages.

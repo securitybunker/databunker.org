@@ -28,9 +28,6 @@ url_video: ""
 #   Otherwise, set `projects = []`.
 projects:
 # - internal-project
-
-# Enable math on this page?
-math: true
 ---
 
 In cybersecurity, we have the principle of **least privilege**. It means your user or application process must have minimal privileges to do its job.

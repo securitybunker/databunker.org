@@ -27,9 +27,6 @@ url_video: ""
 #   Otherwise, set `projects = []`.
 projects:
 # - internal-project
-
-# Enable math on this page?
-math: true
 ---
 
 On July 16, the Court of Justice of the European Union issued its long-awaited decision in the case Data Protection Commission v. Facebook Ireland, Schrems. That decision **invalidates** the European Commission's adequacy decision for the EU-U.S. **Privacy Shield Framework**, on which more than 5,000 U.S. companies rely to conduct trans-Atlantic trade in compliance with EU data protection rules.
