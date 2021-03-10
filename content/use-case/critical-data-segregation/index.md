@@ -35,6 +35,6 @@ Click on the **Slides** button above to view the built-in slides feature.
 
 One of the software design principles is **critical data segregation**. By storing customer personal data in the Databunker, you basically minimize the attack outcome from your existing database, thus minimizing the business risk factors.
 
-Suppose, the bad actor finds an **SQL injection** in your web app database. He might get access to some data. This data will not be personal as this information is stored outside of your existing database (in Databunker).
+Suppose, the bad actor finds an **SQL injection** in your web app. The attacker might get access to the database. The attacker will not be able to get access to your customer's personal data as this information is stored outside of your existing database (in Databunker).
 
-In addition, Databunker can store user data separately from personal records. For example, you can store shipping information separately from a user profile. You have an API to retrieve this additional data without returning user personal records (name, email, phone, etc...).
+In addition to storing user profiles, you can use Databunker can store additional user information separately from the personal profile. For example, you can store shipping information separately from a user profile. You have an API to retrieve this extra data without returning user personal records (name, email, phone, etc...).
