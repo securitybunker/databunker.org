@@ -5,7 +5,8 @@ headless = true  # This file represents a page section.
 active = true # Activate this widget? true/false
 weight = 40  # Order that this section will appear.
 
-title = "To stand privacy standards encrypt customer records"
+title = "Databunker encrypts customer records"
+subtitle = "To comply with privacy regulations customer records must be encrypted."
 subtitle1 = "Old style solution"
 subtitle2 = "Databunker solution"
 
