@@ -1,5 +1,5 @@
 ---
-title: Trace customer profile changes and access
+title: Audit trail and trace customer profile changes
 summary: Databunker saved audit trail for all operations.
 abstract: ""
 weight: 20
@@ -28,11 +28,6 @@ url_video: ""
 projects:
 # - internal-project
 ---
-
-{{% alert note %}}
-Click on the **Slides** button above to view the built-in slides feature.
-{{% /alert %}}
-
 Many times we need to find important events that occurred on the database server, but we may not always have a process in place to capture this data.
 
 By default, Databunker has auditing capability built-in, it saves audit trail on all user data related API operations. For example, new personal records added or changed; personal information retrieved, etc...
