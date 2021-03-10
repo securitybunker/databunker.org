@@ -14,6 +14,6 @@ When saving a user object in Databunker you are getting a **user token**. This u
 
 ![Pseudonymized identity](/img/pseudonymized-identity.png)
 
-So, now when performing a **cross-border transfer** or **save application logs**, change user identity (email, name, etc...) with a Databunker **user token**.
+So, now when performing a **cross-border transfer** or **saving application logs**, change user identity (email, name, etc...) with a Databunker **user token**.
 
-This way you make the **user not identifiable directly** and it is compatible with **Schrems II**.
+This way you make the **user not identifiable directly**. This method is [**compatible with Schrems II**](https://databunker.org/use-case/schrems-ii-compliance/).
