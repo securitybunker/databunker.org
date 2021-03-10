@@ -1,6 +1,6 @@
 ---
 title: GDPR User privacy controls
-summary: Databunker gives the end-user visibility and controls for their Personal Identifiable Information (PII).
+summary: Databunker gives the end-user visibility and controls for their personal data or PII.
 abstract: ""
 weight: 10
 authors: []

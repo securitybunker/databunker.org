@@ -1,6 +1,6 @@
 ---
 title: Critical data segregation
-summary: Improve your solution overall security level by adding critical data segregation.
+summary: Minimize business risks using critical data segregation with Databunker.
 abstract: ""
 weight: 15
 authors: []
