@@ -37,4 +37,4 @@ One of the software design principles is **critical data segregation**. By stori
 
 Suppose, the bad actor finds an **SQL injection** in your web app database. He might get access to some data. This data will not be personal as this information is stored outside of your existing database (in Databunker).
 
-In addition, Databunker itself can store user data separately from personal records. In Databunker you can save personal profile and store additional app data in additional tables. Databunker provides you a way to store your app customer information in a specific type of record for that. So, you can retrieve only your app's customer personal information. For example, you can store customer shipping information in an additional application table.
+In addition, Databunker can store user data separately from personal records. For example, you can store shipping information separately from a user profile. You have an API to retrieve this additional data without returning user personal records (name, email, phone, etc...).
