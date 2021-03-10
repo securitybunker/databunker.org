@@ -29,15 +29,15 @@ url_video: ""
 projects:
 # - internal-project
 ---
-Databunker product gives your customers **passwordless access** to the **Databunker User Privacy Portal**. Upon login attempt, the product sends your customer a **one-time access code**. This code is sent by SMS or email.
+Databunker gives your customers **passwordless access** to the **Databunker User Privacy Portal**. Upon login attempt, **Databunker** sends your customer a **one-time access code**. This code is sent by SMS or email.
 
 ![User login](user-login.png)
 
 
 ### Databunker helps with the following GDPR requirements:
 
-* **Access**: your customers can log in to their Databunker account and view personal data.
-* **Withdraw**: your customers can withdraw consents given previously.
-* **Update**: your customers can change their personal data saved in Databunker. For example, change his email address.
+* **Access**: your customers can sign into their Databunker account and view personal data.
+* **Withdraw**: your customers can withdraw consents (agreements) given previously.
+* **Update**: your customers can change their personal data saved in Databunker. For example, change email address.
 * **Delete**: your customers can file a "forget-me" request using Databunker.
 * **Restrict**: your customers can manage their agreements using Databunker.
