@@ -46,30 +46,26 @@
 
 <style>
 div.tab-pane img {clip-path: inset(1% 1% 1% 1%); margin:auto;}
-@media only screen and (min-width: 1000px) {
-  section#definitions {background-image: url("/img/knife.png"); background-repeat: no-repeat; background-position: 96% 70px; background-size: initial; }
-}
+div#bgwhite {background-color: #fff;padding-top:10px; margin-top:10px; }
+div#bgwhite p { text-align: justify; }
+#definitions h1 {margin-top:0; margin-bottom:20px;}
 </style>
 <div class="row">
-  <div class="col-12 section-heading text-center">
-    <h1>{{ with $st.Title }}{{ . | markdownify | emojify }}{{ end }}</h1>
-    {{ with $st.Params.subtitle }}<p>{{ . | markdownify | emojify }}</p>{{ end }}
-    {{ with $st.Content }}<p>{{ . }}</p>{{ end }}
-  </div>
   <div class="col-12">
     <div class="row">
       <div class="col-12 col-sm-4">
+	<h1>{{ with $st.Title }}{{ . | markdownify | emojify }}{{ end }}</h1>
         <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
           {{ range $i, $post := $query }}
 	    {{ if eq $i 0 }}
-	    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#{{ .Title | urlize }}" role="tab" aria-controls="v-pills-home" aria-selected="true">{{ add $i 1 }} {{ .Title }}</a>
+	    <a class="nav-link btn-outline-primary1 active" id="v-pills-home-tab" data-toggle="pill" href="#{{ .Title | urlize }}" role="tab" aria-controls="v-pills-home" aria-selected="true">{{ add $i 1 }} {{ .Title }}</a>
 	    {{ else }}
-	      <a class="nav-link" id="v-pills-home-tab" data-toggle="pill" href="#{{ .Title | urlize }}" role="tab" aria-controls="v-pills-home" aria-selected="true">{{ add $i 1 }} {{ .Title }}</a>
+	      <a class="nav-link btn-outline-primary1" id="v-pills-home-tab" data-toggle="pill" href="#{{ .Title | urlize }}" role="tab" aria-controls="v-pills-home" aria-selected="true">{{ add $i 1 }} {{ .Title }}</a>
 	    {{ end }}
           {{end}}
 	</div>
       </div>
-      <div class="col-12 col-sm-8">
+      <div id="bgwhite" class="col-12 col-sm-8">
         <div class="tab-content">
         {{ range $i, $post := $query }}
 	  {{ if eq $i 0 }}
