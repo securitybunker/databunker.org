@@ -1,5 +1,5 @@
 ---
-title: Secure Session Storage
+title: Secure Session Storage for Web Apps
 summary: Strengthen your web application's overall security by using secure sessions stored in Databunker.
 abstract: ""
 weight: 50
@@ -73,10 +73,10 @@ Project website: https://databunker.org/
 
 ## Databunker support for Node.js
 
-Databunker comes with good nodejs support. You can use ``@databunker/session-store`` module to automatically use secure storage provided by Databunker.
+Databunker comes with excellent Node.js support. You can use ``@databunker/session-store`` module to automatically use secure storage provided by Databunker.
 
 
-A working example:
+Here is a working example:
 
 ```
 const { v4: uuidv4 } = require('uuid');
@@ -120,9 +120,9 @@ app.listen(port, host, () => {
 })
 ```
 
-Full working Node.js example with Passport.js is available here: https://github.com/securitybunker/databunker-nodejs-example
+Full working Node.js example with Passport.js is available at: https://github.com/securitybunker/databunker-nodejs-example
 
 ## Summary
-With the right architecture, you can make your logging privacy compliant. It is not complicated. You can use **Databunker** or roll your own solution.
+With the right architecture, you can make your **session code** to be **privacy by design compliant**. It is not complicated. You can use **Databunker** or roll your own solution.
 
-Whatever you choose is much better than completely ignoring this issue and string session data unencrypted.
+Whatever you choose is much better than completely ignore this issue and store session data unencrypted.
