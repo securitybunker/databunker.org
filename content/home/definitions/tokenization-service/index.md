@@ -6,7 +6,7 @@ weight: 10
 ---
 **Tokenization** is the process of turning sensitive data into nonsensitive data called "**tokens**" that can be used in a database or internal system.
 
-The most known tokenization service is the tokenization of credit card numbers.
+The most known use-case of tokenization is the tokenization of credit card numbers.
 
 In classical tokenization service, only one value is turned into a token. For example, if you have a user email address, social security number, and a credit card you will have 3 tokens. One token for email, one for SSN, and one for a credit card.
 
