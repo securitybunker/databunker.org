@@ -10,4 +10,6 @@ Some of the information stored in **session** is considered Personal Identifiabl
 
 GDPR stands on a number of principles. **Integrity and confidentiality** are some of them. These principles tell that **appropriate security measures** should be in place to protect the personal data.
 
-Databunker has an API for secure storage on **session object** inside Databunker' encrypted store. Node.js modules and examples provided: https://databunker.org/use-case/secure-session-storage/
+Databunker has an API for secure storage on **session object** inside Databunker' encrypted store. Node.js modules and examples provided:
+
+https://databunker.org/use-case/secure-session-storage/
