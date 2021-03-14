@@ -4,9 +4,11 @@ page_type: "definition"
 active: false
 weight: 15
 ---
-According to **GDPR Article 32**: the controller and the processor shall implement appropriate technical and organizational measures to ensure a level of security appropriate to the risk including the **pseudonymization** and encryption of personal data.
+According to **GDPR Article 32**:
+>The controller and the processor shall implement appropriate technical and organizational measures to ensure a level of security appropriate to the risk including the **pseudonymization** and **encryption** of personal data.
 
-‘pseudonymization’ means the processing of personal data in such a manner that the personal data can no longer be attributed to a specific data subject without the use of additional information, provided that such additional information is kept **separately** and is subject to technical and organizational measures to ensure that the personal data are not attributed to an identified or identifiable natural person.
+GDPR defines pseudonymization as:
+>‘pseudonymization’ means the processing of personal data in such a manner that the personal data can no longer be attributed to a specific data subject without the use of additional information, provided that such additional information is kept **separately** and is subject to technical and organizational measures to ensure that the personal data are not attributed to an identified or identifiable natural person.
 
 Databunker complies with the definition of pseudonymization. User personal data is encrypted and stored separately from the application database.
 
