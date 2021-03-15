@@ -29,7 +29,7 @@ projects:
 # - internal-project
 ---
 
-When writing web applications sometimes you need to save data in a **session object**. This data can include user email address, user permissions, last operation code, error messages.
+When creating web applications you need to save data in a **session object**. This data can include user email address, user permissions, last operation code, error messages.
 
 Some of this information is considered **Personal Identifiable Information**. In short, **PII**, as defined by GDPR.
 
@@ -37,7 +37,7 @@ Europeans (and the European Union in particular) care a great deal about online 
 
 In this article, we’ll be taking an in-depth look at the GDPR and how it could affect the storage of user-session information.
 
-Then I will talk about an open-source product I am developing called **Databunker** and how it can help. **Databunker** is a Swiss army knife tool for storing personal records or PII.
+Then I will talk about an open-source product I am developing called **Databunker** and how it can help. **Databunker** is a Swiss army knife tool for storing personal records or PII. Databunker will be used for the **Secure Session Storage**.
 
 ## What is a session?
 A session can be defined as a server-side storage of information that is desired to persist throughout the user's interaction with the web site or web application. 
@@ -50,7 +50,7 @@ Although there are no explicit **GDPR encryption requirements**, the regulation 
 
 The GDPR requires companies to put in place appropriate technical and organisational measures to implement the data protection principles effectively and safeguard individual rights. This is "**data protection by design and by default**".
 
-In this article I will cover smarter methods to make your session usage to be privacy-compliant.
+In this article I will cover smarter methods to make your session code to be privacy-compliant.
 
 ## Introduction to Databunker
 
@@ -70,10 +70,17 @@ But first, let me give you a bit more information about what Databunker is and h
 
 Project website: https://databunker.org/
 
+## Databunker API
+
+**Databunker** provides an easy to use API for secure session storage. In the backend Databunker encrypts session data and stores it in the regular SQL database (SQLite, MySQL, PostgreSQL). Follow Databunker API for additional information:
+
+https://documenter.getpostman.com/view/11310294/Szmcbz32
 
 ## Databunker support for Node.js
 
-Databunker comes with excellent Node.js support. You can use ``@databunker/session-store`` module to automatically use secure storage provided by Databunker.
+Databunker comes with excellent Node.js support. You basically add few dependencies to your project and you are set. Our library does all the magic.
+
+You can use ``@databunker/session-store`` module to automatically use secure storage provided by Databunker.
 
 
 Here is a working example:
