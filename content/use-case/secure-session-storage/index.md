@@ -127,7 +127,12 @@ app.listen(port, host, () => {
 })
 ```
 
-Full working Node.js example with Passport.js is available at: https://github.com/securitybunker/databunker-nodejs-example
+## Additional examples
+1. Node.js example implementing passwordless login using Databunker:
+https://github.com/securitybunker/databunker-nodejs-passwordless-login
+
+2. Node.js example with Passport.js, Magic.Link and Databunker:
+https://github.com/securitybunker/databunker-nodejs-example
 
 ## Summary
 With the right architecture, you can make your **session code** to be **privacy by design compliant**. It is not complicated. You can use **Databunker** or roll your own solution.

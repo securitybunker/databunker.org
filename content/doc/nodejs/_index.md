@@ -1,6 +1,6 @@
 ---
-title: Node.js example
-linktitle: Node.js example
+title: Node.js examples
+linktitle: Node.js examples
 toc: true
 type: docs
 date: "2019-05-05T00:00:00+01:00"
@@ -13,14 +13,19 @@ menu:
 # Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)
 weight: 1
 ---
-## Working example with Node.js
 
-Full working example implementing Databunker, Passport.js, and Magic.link is available here:
+## Examples
+1. Node.js example implementing passwordless login using Databunker:
+https://github.com/securitybunker/databunker-nodejs-passwordless-login
 
+2. Node.js example with Passport.js, Magic.Link and Databunker:
 https://github.com/securitybunker/databunker-nodejs-example
+
+3. Secure Session Storage for Node.js apps:
+https://databunker.org/use-case/secure-session-storage/#databunker-support-for-nodejs
 
 ## Node.JS modules
 
-https://github.com/securitybunker/databunker-store
+1. `@databunker/store` from https://github.com/securitybunker/databunker-store
 
-https://github.com/securitybunker/databunker-session-store
+2. `@databunker/session-store` from https://github.com/securitybunker/databunker-session-store
