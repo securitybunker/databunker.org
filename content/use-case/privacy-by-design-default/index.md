@@ -38,7 +38,7 @@ In this article, we’ll be taking an in-depth look at the **privacy by design**
 
 I will talk about an open-source product our team develops called **Databunker** and how it can help. Databunker is a **Swiss army knife tool** for **storing personal records or PII**.
 
-**Databunker** from the initial project design was built as secure storage of personal records and to comply with GDPR regulations. Databunker can serve as a cornerstone for your privacy by design solutions.
+**Databunker** from the initial project design was built as secure storage of personal records and to comply with GDPR regulations. Databunker can serve as a cornerstone for your privacy by design solution.
 
 ## Privacy By Design Actionable Plan.
 
