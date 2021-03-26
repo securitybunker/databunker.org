@@ -38,7 +38,7 @@ One of the important consequences is that you no longer can save customer data i
 
 According to GDPR Article 32: ``the controller and the processor shall implement appropriate technical and organizational measures to ensure a level of security appropriate to the risk`` including ``the pseudonymization and encryption of personal data``.
 
-![Customer data pii in the cloud](no-pii.png)
+![Customer data pii in the cloud](/img/no-pii.png)
 
 
 ## So, what should I do now?
