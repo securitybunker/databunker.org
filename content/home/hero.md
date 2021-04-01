@@ -41,6 +41,9 @@ hero_media = "databunker.mp4"
   url = "/doc/start/"
   label = "Get started"
 # old title = <h2>Add GDPR compliant <span style="border-bottom: 1px solid #fc6f5c;">address book</span> to your Web and mobile apps in under 10 minutes.</h2>
+# and with full customer visibility
 +++
-Databunker gives strong, serious, real personal-data protection for your customer records without expensive custom coding and with full customer visibility.
->**Privacy by design compliance out of the box.**
+Databunker provides strong, serious, real personal-data protection for your customer records without expensive custom coding.
+* **Privacy by design compliance.**
+* **Open-source security.**
+* **Self-hosted service.**
