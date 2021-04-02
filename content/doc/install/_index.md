@@ -48,7 +48,8 @@ Run the following commands:
 ```
 mkdir ~/data
 chmod 0777 ~/data
-docker run -v ~/data:/databunker/data -p 3000:3000 \
+docker run -v ~/data:/databunker/data \
+  -p 3000:3000 \
   -e DATABUNKER_MASTERKEY=1111111111111111111111111111111111111111
   --rm --name dbunker securitybunker/databunker demo
 ```
@@ -62,7 +63,8 @@ For production installation, we recommend you to use **MySQL** backend storage. 
 ```
 mkdir ~/data
 chmod 0777 ~/data
-docker run --restart unless-stopped -v ~/data:/var/lib/mysql \
+docker run --restart unless-stopped \
+  -v ~/data:/var/lib/mysql \
   -e MYSQL_ROOT_PASSWORD=SuperAdmin4        \
   -e MYSQL_DATABASE=databunkerdb            \
   -e MYSQL_USER=bunkeruser                  \
