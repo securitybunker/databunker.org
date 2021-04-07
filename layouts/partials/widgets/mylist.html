@@ -44,12 +44,14 @@
 {{ $i18n = "more_pages" }}
 {{ end }}
 
+<!-- <i class="fas fa-external-link-alt"></i> -->
+
 <div class="row justify-content-center">
       <div class="col-10 col-sm-6">
 	<h1>{{ with $st.Title }}{{ . | markdownify | emojify }}{{ end }}</h1>
 	<ol>
           {{ range $i, $post := $query }}
-	  <li>{{ .Title }} - <a href="{{.RelPermalink }}"><i class="fas fa-external-link-alt"></i></a></li>
+	  <li><a target="blank" href="{{.RelPermalink }}">{{ .Title }}</a></li>
           {{end}}
 	</ol>
     </div>
