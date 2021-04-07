@@ -16,7 +16,7 @@ weight: 1
 
 Databunker is a complex system that has many different pieces. This document will help you to understand the Databunker high-level concepts and architecture.
 
-![Databunker solution](databunker-solution.png)
+![Databunker solution](/img/databunker-solution.png)
 
 **You can think of **Databunker** as a **vault** for personal records with a twist.**
 

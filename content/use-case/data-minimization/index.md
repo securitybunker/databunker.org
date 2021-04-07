@@ -65,7 +65,7 @@ As with this example, to comply with privacy requirements, you must not wait for
 
 But first, let me give you a bit more information about what Databunker is and how it works since we'll be discussing it in some of these methods below.
 
-![Databunker solution](/doc/architecture/databunker-solution.png)
+![Databunker solution](/img/databunker-solution.png)
 
 **Databunker** is a GDPR compliant user store service for Web and mobile apps. It works as a backend application service. This product is a combination of several software concepts merged together. It provides secure PII storage and privacy by design out of the box:
 
