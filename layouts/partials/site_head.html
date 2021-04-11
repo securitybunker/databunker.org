@@ -123,9 +123,17 @@
   {{ end }}
   {{ end }}
 
+  {{ $title := site.Title }}
+  {{ if not .IsHome }}
+    {{ $title = printf "%s | %s" .Title site.Title }}
+    {{if gt (len $title) 64}}
+      {{ $title = printf "%s | %s" .Title site.Params.shortTitle | safeHTML }}
+    {{end}}
+  {{ end }}
+
   {{ with .OutputFormats.Get "RSS" }}
-  <link rel="alternate" href="{{ .RelPermalink }}" type="application/rss+xml" title="{{ site.Title }}">
-  <link rel="feed" href="{{ .RelPermalink }}" type="application/rss+xml" title="{{ site.Title }}">
+  <link rel="alternate" href="{{ .RelPermalink }}" type="application/rss+xml" title="{{ $title }}">
+  <link rel="feed" href="{{ .RelPermalink }}" type="application/rss+xml" title="{{ $title }}">
   {{ end }}
 
   <link rel="manifest" href="{{ "site.webmanifest" | relURL }}">
@@ -156,7 +164,7 @@
   {{ end }}
   <meta property="og:site_name" content="{{ site.Title }}">
   <meta property="og:url" content="{{ .Permalink }}">
-  <meta property="og:title" content="{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ site.Title }}">
+  <meta property="og:title" content="{{ $title }}">
   <meta property="og:description" content="{{ $desc }}">
   {{- with $og_image -}}
   <meta property="og:image" content="{{.}}">
@@ -175,7 +183,7 @@
 
   {{ partial "custom_head" . }}
 
-  <title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ site.Title }}</title>
+  <title>{{ $title }}</title>
 
   {{ if .IsHome }}
 <style>
