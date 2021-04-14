@@ -50,7 +50,7 @@ mkdir ~/data
 chmod 0777 ~/data
 docker run -v ~/data:/databunker/data \
   -p 3000:3000 \
-  -e DATABUNKER_MASTERKEY=1111111111111111111111111111111111111111
+  -e DATABUNKER_MASTERKEY=1111111111111111111111111111111111111111 \
   --rm --name dbunker securitybunker/databunker demo
 ```
 
