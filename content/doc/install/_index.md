@@ -41,7 +41,7 @@ docker run -p 3000:3000 -d --rm --name dbunker securitybunker/databunker demo
 
 Databunker service will listen for connections on port `3000`.
 
-`Note:` if the Docker container is stopped or killed the **data will be lost**. To prevent the system from losing your data you will need to mount the **data** directory from your host machine inside ths databunker container and provide **DATABUNKER_MASTERKEY** that you can extract from docker logs. It is printed during service initialization.
+`Note:` if the Docker container is stopped or killed the **data will be lost**. To prevent the system from losing your data you will need to mount the **data** directory from your host machine inside ths databunker container and provide **DATABUNKER_MASTERKEY** that you can extract from Docker ```dbunker``` logs (run ```docker logs dbunker```). It is printed during service initialization.
 
 Run the following commands:
 
@@ -50,7 +50,7 @@ mkdir ~/data
 chmod 0777 ~/data
 docker run -v ~/data:/databunker/data \
   -p 3000:3000 \
-  -e DATABUNKER_MASTERKEY=1111111111111111111111111111111111111111 \
+  -e DATABUNKER_MASTERKEY=< copy this value from docker log> \
   --rm --name dbunker securitybunker/databunker demo
 ```
 
@@ -197,8 +197,11 @@ You can download and run a small test script that will create a user record, use
 ```
 curl https://raw.githubusercontent.com/securitybunker/databunker/master/create-test-user.sh -o test.sh
 chmod 755 ./test.sh
-./test.sh **DATABUNKER_MASTERKEY**
+./test.sh DEMO
 ```
+
+```DEMO``` is a root token. In your production environment is must be diferent.
+
 
 You can now open browser at http://localhost:3000/
 
