@@ -16,7 +16,7 @@ weight: 1
 
 ## Quick installation guide
 
-You simply start Databunker as a simple Docker container with minimal parameters and minimal requirements. In that case, it will use an internal built-in SQLite database to store encrypted records. This installation method is good for development and **not recommended for production** use.
+You simply start Databunker as a simple Docker container with minimal parameters and minimal requirements. In that case, it will use an internal built-in **SQLite** database to store encrypted records. This installation method is good for development and **not recommended for production** use.
 
 **Advantages:**
 * An external database is not required.
@@ -26,14 +26,14 @@ You simply start Databunker as a simple Docker container with minimal parameters
 * Just one container.
 
 **Disadvantages:**
-* Local SQLite database will be used to store encrypted records. SQLite is not built for network access.
+* A local **SQLite** database will be used to store encrypted records. **SQLite** is not built for network access.
 * No security. `DEMO` is a root access token and all records can be easily extracted.
 * When the container is stopped the **data will be lost**.
 * Not recommended for production.
 
 ### So, how to get started?
 
-Run the service as following command:
+Run the service as the following command:
 
 ```
 docker run -p 3000:3000 -d --rm --name dbunker securitybunker/databunker demo
@@ -41,7 +41,7 @@ docker run -p 3000:3000 -d --rm --name dbunker securitybunker/databunker demo
 
 Databunker service will listen for connections on port `3000`.
 
-`Note:` if the Docker container is stopped or killed the **data will be lost**. To prevent the system from losing your data you will need to mount the **data** directory from your host machine inside ths databunker container and provide **DATABUNKER_MASTERKEY** that you can extract from Docker ```dbunker``` logs (run ```docker logs dbunker```). It is printed during service initialization.
+`Note:` if the Docker container is stopped or killed the **data will be lost**. To prevent the system from losing your data you will need to mount the **data** directory from your host machine inside this Databunker container and provide **DATABUNKER_MASTERKEY** that you can extract from a ```dbunker``` container logs (run ```docker logs dbunker```). It is printed during service initialization.
 
 Run the following commands:
 
@@ -58,7 +58,7 @@ docker run -v ~/data:/databunker/data \
 
 **Start with backend server**
 
-For production installation, we recommend you to use **MySQL** backend storage. MySQL server will be used for the storage of encrypted user records. For that, you will need to have a MySQL server running. For example, you can start it as a Docker container. Instead of MySQL started as a Docker container, you can use the cloud MySQL version provided by Google Cloud and AWS, etc... Just make sure to create a database for storing Databunker records and create a database user to allow Databunker access MySQL. Using the following command MySQL server will be started; it will create a `databunkerdb` database for Databunker and create `bunkeruser` for Databunker access to MySQL.
+For production installation, we recommend using **MySQL** backend storage. MySQL server will be used for the storage of encrypted user records. For that, you will need to have a MySQL server up and running. For example, you can spin MySQL as a Docker container or use a cloud MySQL version provided by Google Cloud and AWS, etc... Just make sure to create a database for storing Databunker records and create a database user to allow Databunker access to MySQL. Using the following command MySQL server will be started; it will create a `databunkerdb` database for Databunker and create `bunkeruser` for Databunker access to MySQL.
 
 ```
 mkdir ~/data
@@ -74,9 +74,9 @@ docker run --restart unless-stopped \
 
 `Note:` make sure to change the passwords above.
 
-**First Databunker initialization**
+**First Databunker initialization step**
 
-Before Databunker can work it needs to create all tables; generate a master encryption key if not provided; generate root access token if not provided and save in encrypted form in the database. This process is called **Databunker initialization**. You will need to do it just for the first time.
+Before Databunker can serve user requests it needs to create all tables; generate a master encryption key if not provided; generate root access token if not provided. This process is called **Databunker initialization**. You will need to do it just for the first time.
 
 Run the following command to initialize Databunker:
 
