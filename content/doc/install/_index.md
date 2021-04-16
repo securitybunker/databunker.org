@@ -83,7 +83,7 @@ Run the following command to initialize Databunker:
 ```
 docker run --rm -it --link mysqlsrv           \
   -e MYSQL_HOST=mysqlsrv                     \
-  -e MYSQL_POSR=3306                         \
+  -e MYSQL_PORT=3306                         \
   -e MYSQL_USER_NAME=bunkeruser              \
   -e MYSQL_USER_PASS=BunkerUserPassword4     \
   --entrypoint /bin/sh                       \
@@ -101,7 +101,7 @@ After extracting `DATABUNKER_MASTERKEY` you can start the Databunker service usi
 docker run --restart unless-stopped -d -p 3000:3000 \
   --link mysqlsrv -e MYSQL_HOST=mysqlsrv            \
   -e DATABUNKER_MASTERKEY=8c9e892a1732881e14960f2b0437a720ad01ae47cd23baa7 \
-  -e MYSQL_POSR=3306                                \
+  -e MYSQL_PORT=3306                                \
   -e MYSQL_USER_NAME=bunkeruser                     \
   -e MYSQL_USER_PASS=BunkerUserPassword4            \
   --entrypoint /bin/sh                              \
@@ -139,7 +139,7 @@ For example, you can start Databunker as following:
 docker run --restart unless-stopped -d -p 3000:3000 -v ~/conf:/databunker/conf \
   --link mysqlsrv -e MYSQL_HOST=mysqlsrv            \
   -e DATABUNKER_MASTERKEY=8c9e892a1732881e14960f2b0437a720ad01ae47cd23baa7 \
-  -e MYSQL_POSR=3306                                \
+  -e MYSQL_PORT=3306                                \
   -e MYSQL_USER_NAME=bunkeruser                     \
   -e MYSQL_USER_PASS=BunkerUserPassword4            \
   --entrypoint /bin/sh                              \
@@ -160,7 +160,7 @@ mkdir -p certs
 docker run --restart unless-stopped -d -p 3000:3000 -v ~/conf:/databunker/conf -v ~/certs:/databunker/certs \
   --link mysqlsrv -e MYSQL_HOST=mysqlsrv            \
   -e DATABUNKER_MASTERKEY=8c9e892a1732881e14960f2b0437a720ad01ae47cd23baa7 \
-  -e MYSQL_POSR=3306                                \
+  -e MYSQL_PORT=3306                                \
   -e MYSQL_USER_NAME=bunkeruser                     \
   -e MYSQL_USER_PASS=BunkerUserPassword4            \
   --entrypoint /bin/sh                              \
