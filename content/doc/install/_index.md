@@ -54,7 +54,23 @@ docker run -v ~/data:/databunker/data \
   --rm --name dbunker securitybunker/databunker demo
 ```
 
-## Production installation
+## Automatic production installation
+
+You will need to run just 2 commands:
+
+```
+./generate-env-files.sh
+docker-compose up
+```
+
+Now, open in your browser http://localhost:3000/
+
+```generate-env-files.sh``` command will initialize configuration all and generate random passwords and databunker master key and root token and will save everything under ```.env/``` folder.
+
+```docker-compose up``` command will start all containers. Initial setup might take 30 seconds, so you can ignore any errors printed during the first 30 seconds. The startup scripts have automatic retries.
+
+
+## Step-by-step production installation
 
 **Start with backend server**
 
