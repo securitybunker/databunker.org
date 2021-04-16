@@ -65,14 +65,14 @@ docker-compose up
 
 Now, open in your browser http://localhost:3000/
 
-### How this works?
+### How does this work?
 
 ```generate-env-files.sh``` command will generate all environment variables, generate random passwords,  master key, and root token. All variables will be saved under ```.env/``` folder.
 
-For example, ```DATABUNKER_ROOTTOKEN``` variable will be saved in ```.env/databunker-root.env``` file. You can use this variables as a root token when calling Databunker API requests.
+For example, ```DATABUNKER_ROOTTOKEN``` variable will be saved in ```.env/databunker-root.env``` file. You can use this variable as a root token when calling Databunker API requests.
 
 
-```docker-compose up``` command will start all containers. Initial setup might take 30 seconds. Ignore any errors printed during the first 30 seconds. The startup scripts have automatic retries.
+```docker-compose up``` command will start all containers. The initial setup might take 30 seconds. Ignore any errors printed during the first 30 seconds. The startup scripts have automatic retries.
 
 ## Step-by-step production installation
 
