@@ -29,11 +29,16 @@
   weight = 30
 
 [[main]]
-  name= "&nbsp;Slack"
-  pre= "<i class='fab fa-slack'>"
-  post= "</i>"
-  url= "https://join.slack.com/t/databunker/shared_invite/zt-b6ukxzw3-JCxv8NJDESL40haM45RNIA"
+  name = "Pro"
+  url = "https://privacybunker.io/pro/"
   weight = 34
+
+#[[main]]
+# name= "&nbsp;Slack"
+# pre= "<i class='fab fa-slack'>"
+# post= "</i>"
+# url= "https://join.slack.com/t/databunker/shared_invite/zt-b6ukxzw3-JCxv8NJDESL40haM45RNIA"
+# weight = 34
 
 [[main]]
   name= "&nbsp;GitHub"
