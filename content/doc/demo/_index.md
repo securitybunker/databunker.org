@@ -19,7 +19,7 @@ Demo user credentials:
 
 * User phone: 4444
 * User code: 4444
-* Admin token: DEMO
+* Root token: DEMO
 
 https://demo.databunker.org/
 

@@ -11,7 +11,7 @@ You can use the following credentials:
 
 * User phone: 4444
 * User access code: 4444
-* Admin token: DEMO
+* Root token: DEMO
 
 ## Getting Started
 
