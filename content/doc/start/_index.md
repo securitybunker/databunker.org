@@ -15,12 +15,12 @@ weight: 1
 ---
 ## Databunker intro
 
-Personal data leaks in 2021 happen every day. Databunker product was born to address exactly **data leak** problem via **SQL injection** and **fake database encryption** problem for personal and sensitive records. In addition, our solution if fully GDPR compliant.
+Personal data leaks in 2021 happen every day. Databunker product was born to address exactly the **data leak** problem via **SQL injection** and **fake database encryption** problem for personal and sensitive records. In addition, our solution is fully GDPR compliant.
 
-Lets take a look as the data leaks. Some require a sophisticated attack to gain shell access to the servers and then to the database. Some data leaks happen over the web using the SQL injections in the web apps.
-As a result of **SQL Injection attack**, your customer data can be dumped in cleartext and **personal data leaked**.
+Let's take a look at the **data leaks**. Some require a sophisticated attack to gain shell access to the servers and then to the database. Some data leaks happen over the web using SQL injection vulnerabilities in the web apps.
+As a result of an **SQL Injection attack**, your customer data can be dumped in cleartext and **personal data leaked**.
 
-Regarding database encryption, let's face it. Most of the solutions provide a **fake sense of security**. Data is encrypted on the storage or disk level.
+Regarding **database encryption**, let's face the truth. Most of the solutions provide a **fake sense of security**. Data is encrypted on the storage or disk level.
 In case, your website has an SQL injection, the bad actor will get your **data in cleartext**.
 
 ### Solution with Databunker
@@ -33,7 +33,7 @@ Saving your records in Databunker complies with **pseudonymization** as a valid 
 ![Pseudonymized identity](/img/pseudonymized-identity.png)
 
 
-## 1 Databunker setup
+## 1. Databunker setup
 The easiest way to get started with **Databunker** is to run it as a **Docker container**:
 
 ```
@@ -50,7 +50,7 @@ You can interact with Databunker using:
 - [REST API](https://documenter.getpostman.com/view/11310294/Szmcbz32) listening on port `3000`: [localhost:3000](http://localhost:3000)
 
 
-## 2 Move your user records to Databunker
+## 2. Move your user records to Databunker
 
 If you want to use **Databunker** in your existing project you need to move customer data to Databunker.
 
@@ -78,7 +78,7 @@ You will have to go all over tables that have ``userid`` and add ``usertoken`` c
 This solution will require more work both on your database level and on your application code.
 
 
-## 3 Some usefull Databunker commands
+## 3. Some usefull Databunker commands
 
 ### Create a user record
 
@@ -104,7 +104,7 @@ curl -s -H "X-Bunker-Token: DEMO" -X GET http://localhost:3000/v1/user/login/joh
 
 For a full list of commands, follow the [API document](https://documenter.getpostman.com/view/11310294/Szmcbz32).
 
-## 4 Node.js examples
+## 4. Node.js examples
 1. Node.js example implementing passwordless login using Databunker:
 https://github.com/securitybunker/databunker-nodejs-passwordless-login
 
@@ -120,6 +120,6 @@ https://databunker.org/use-case/secure-session-storage/#databunker-support-for-n
 
 2. `@databunker/session-store` from https://github.com/securitybunker/databunker-session-store
 
-## Support / Contact
+## 5. Support / Contact
 
 [Slack Channel](https://join.slack.com/t/databunker/shared_invite/zt-b6ukxzw3-JCxv8NJDESL40haM45RNIA)
