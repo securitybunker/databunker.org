@@ -15,12 +15,9 @@ weight: 1
 ---
 ## Databunker intro
 
-Even today, in 2021 we hear about **personal data leaks happening every day**.
+Personal data leaks in 2021 happen every day. Databunker product was born to address exactly **data leak** problem via **SQL injection** and **fake database encryption** problem for personal and sensitive records. In addition, our solution if fully GDPR compliant.
 
-Databunker product was born to address **data leak** problem via **SQL injection** and **fake database encryption** for personal and sensitive records.
-
-On the technical side, some data leaks require a sophisticated attack to gain shell access to the servers.
-Some data leaks happen over the web using the SQL injections in the web apps.
+Lets take a look as the data leaks. Some require a sophisticated attack to gain shell access to the servers and then to the database. Some data leaks happen over the web using the SQL injections in the web apps.
 As a result of **SQL Injection attack**, your customer data can be dumped in cleartext and **personal data leaked**.
 
 Regarding database encryption, let's face it. Most of the solutions provide a **fake sense of security**. Data is encrypted on the storage or disk level.
