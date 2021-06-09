@@ -1,6 +1,6 @@
 ---
-title: GDPR User privacy controls
-summary: Databunker gives the end-user visibility and controls for their personal data or PII.
+title: User rights and privacy controls with Databunker
+summary: Databunker gives the end-user visibility and controls for their personal records and PII.
 abstract: ""
 weight: 10
 authors: []
@@ -29,6 +29,10 @@ url_video: ""
 projects:
 # - internal-project
 ---
+If you are a software developer or a software architect, **Databunker** is a perfect tool for you. Databunker is used as a **secure and encrypted vault** for customer data. The product comes with a simple web user interface to manage the data stored.
+
+One of the product's key features is that **users can control the data stored in Databunker**. This control is managed by your company policy. You can specify what operations need approval. For example, address change can be confirmed by an Admin or DPO.
+
 Databunker gives your customers **passwordless access** to the **Databunker User Privacy Portal**. Upon login attempt, **Databunker** sends your customer a **one-time access code**. This code is sent by SMS or email.
 
 ![User login](user-login.png)
