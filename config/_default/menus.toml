@@ -48,9 +48,10 @@
   weight = 35
 
 [[main]]
-  name = "Free Privacy Training ✔️"
-  pre= "<strong>"
-  post= "</strong>"
+  #name = "✔️ Free Privacy Training ✔️"
+  pre= "<i class='fas fa-check'>"
+  post = "</i>"
+  name = "&nbsp;Free Privacy Training"
   url= "https://basebunker.com/"
   weight = 40
 
