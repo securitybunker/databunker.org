@@ -2,7 +2,7 @@
 title: Critical data segregation
 summary: Minimize business risks using critical data segregation with Databunker.
 abstract: ""
-weight: 15
+weight: 100
 authors: []
 tags: []
 featured: false

@@ -1,8 +1,8 @@
 ---
-title: Schrems II compliance
+title: Schrems II compliance with Databunker
 summary: How to perform customer data cross-border transfers with Databunker.
 abstract: ""
-weight: 15
+weight: 5
 authors: []
 tags: []
 featured: false
