@@ -76,36 +76,36 @@
 
 [[doc]]
   name = "Getting started"
-  url = "/doc/start"
+  url = "/doc/start/"
   weight = 1
 
 [[doc]]
   name = "Product demo"
-  url = "/doc/demo"
+  url = "/doc/demo/"
   weight = 5
 
 [[doc]]
   name = "Node.js examples"
-  url = "/doc/nodejs"
+  url = "/doc/nodejs/"
   weight = 10
 
 [[doc]]
   name = "Benchmark results"
-  url = "/doc/benchmark"
+  url = "/doc/benchmark/"
   weight = 15
 
 [[doc]]
   name = "Architecture"
-  url = "/doc/architecture"
+  url = "/doc/architecture/"
   weight = 20
 
 [[doc]]
   name = "Installation guide"
-  url = "/doc/install"
+  url = "/doc/install/"
   weight = 25
 
 [[doc]]
   name = "Project FAQ"
-  url = "/doc/faq"
+  url = "/doc/faq/"
   weight = 25
 

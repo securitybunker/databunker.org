@@ -26,3 +26,9 @@ box-shadow: rgba(0,0,0,.5)0 20px 30px 0;
 footer.blockquote-footer {
 	padding: 0;
 }
+.docs-toc-item.active {
+margin:0;
+}
+.docs-toc-item.active:not(:first-child) {
+margin: 0;
+}
