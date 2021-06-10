@@ -1,7 +1,7 @@
 {{ $current_page := . }}
 
 {{/* Dynamically load menu for this docs page. */}}
-{{ $menu_name := .Page.Slug }}
+{{ $menu_name := .Page.Params.Mymenu }}
 {{ if not ($menu_name) }}
   {{ $menu_name = path.Base (path.Split .CurrentSection.File).Dir }}
 {{ end }}

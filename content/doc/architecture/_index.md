@@ -5,10 +5,9 @@ toc: true
 type: docs
 date: "2019-05-05T00:00:00+01:00"
 draft: false
-slug: doc
-
+mymenu: doc
 # Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)
-weight: 1
+weight: 25
 ---
 
 Databunker is a complex system that has many different pieces. This document will help you to understand the Databunker high-level concepts and architecture.
