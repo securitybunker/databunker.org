@@ -109,3 +109,62 @@
   url = "/doc/faq/"
   weight = 25
 
+[[usecase]]
+  name = "Schrems II compliance"
+  url = "/use-case/schrems-ii-compliance/"
+  weight = 5
+
+[[usecase]]
+  name = "User privacy controls"
+  url = "/use-case/user-privacy-controls/"
+  weight = 10
+
+[[usecase]]
+  name = "Profile tokenization"
+  url = "/use-case/customer-profile-storage-tokenization/"
+  weight = 15
+
+[[usecase]]
+  name = "Data minimization"
+  url = "/use-case/data-minimization/"
+  weight = 20
+
+[[usecase]]
+  name = "Privacy by design"
+  url = "/use-case/privacy-by-design-default/"
+  weight = 25
+
+[[usecase]]
+  name = "Secure sessions"
+  url = "/use-case/secure-session-storage/"
+  weight = 30
+
+[[usecase]]
+  name = "Data segregation"
+  url = "/use-case/critical-data-segregation/"
+  weight = 90
+
+[[usecase]]
+  name = "GDPR friendly logging"
+  url = "/use-case/gdpr-compliant-logging/"
+  weight = 95
+
+[[usecase]]
+  name = "Audit trail"
+  url = "/use-case/trace-profile-access-change/"
+  weight = 100
+
+[[usecase]]
+  name = "Request workflow"
+  url = "/use-case/gdpr-user-request-workflow/"
+  weight = 110
+
+[[usecase]]
+  name = "Simple login"
+  url = "/use-case/simplify-user-login-backend/"
+  weight = 115
+
+[[usecase]]
+  name = "Temporary identity"
+  url = "/use-case/temporary-record-identity/"
+  weight = 120
