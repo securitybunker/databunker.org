@@ -4,6 +4,8 @@ summary: A temporary record can reference a user profile, user app record, or us
 abstract: ""
 authors: []
 tags: []
+type: docs
+mymenu: usecase
 featured: false
 image:
   caption: 'Image'

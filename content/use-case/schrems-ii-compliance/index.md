@@ -5,6 +5,8 @@ abstract: ""
 weight: 5
 authors: []
 tags: []
+type: docs
+mymenu: usecase
 featured: false
 image:
   caption: 'Image'

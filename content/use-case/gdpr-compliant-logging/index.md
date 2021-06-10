@@ -4,6 +4,8 @@ summary: Databunker can generate a session token to be used in server logs.
 abstract: ""
 authors: []
 tags: []
+type: docs
+mymenu: usecase
 featured: false
 image:
   caption: 'Image'
