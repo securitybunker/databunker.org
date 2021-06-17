@@ -1,5 +1,5 @@
 ---
-title: Get Started with Databunker
+title: Getting Started with Databunker
 linktitle: Getting started
 toc: true
 type: docs
