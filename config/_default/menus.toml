@@ -109,6 +109,11 @@
   url = "/doc/faq/"
   weight = 25
 
+[[doc]]
+  name = "API"
+  url = "https://documenter.getpostman.com/view/11310294/Szmcbz32"
+  weight = 30
+
 [[usecase]]
   name = "Schrems II compliance"
   url = "/use-case/schrems-ii-compliance/"
