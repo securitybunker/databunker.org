@@ -38,9 +38,9 @@ The GDPR requires you to integrate **data protection** concerns into every aspec
 
 In this article, we’ll be taking an in-depth look at the **privacy by design** principle and how to achieve it with simple steps.
 
-I will talk about an open-source product our team develops called **Databunker** and how it can help. Databunker is a **Swiss army knife tool** for **storing personal records or PII**.
+I will talk about an open-source product our team develops called **Databunker** and how it can help.
 
-**Databunker** from the initial project design was built as secure storage of personal records and to comply with GDPR regulations. Databunker can serve as a cornerstone for your privacy by design solution.
+Databunker is an open-source secure vault for customer records built with the **privacy by design** principle. This product brings **compliance out of the box** for any company implementing Databunker. Databunker can serve as a cornerstone for your privacy by design solution.
 
 ## Privacy By Design Actionable Plan.
 
