@@ -10,7 +10,7 @@ mymenu: doc
 weight: 40
 ---
 
-## Does Databunker is basically CRUD / easy to DIY?
+## Does Databunker work as CRUD for user records / easy to DIY?
 
 Secure user record **CRUD** is just a part of the Databunker.
 
