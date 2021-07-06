@@ -10,6 +10,14 @@ mymenu: doc
 weight: 40
 ---
 
+## Does Databunker is basically CRUD / easy to DIY?
+
+Secure user record **CRUD** is just a part of the Databunker.
+
+When saving records in Databunker, Databunker knows to extract user email, phone, login identity, and custom identity and built a secure hashed-based index for quick user record lookup.
+
+In addition in Databunker, you have a secure session storage API, temp shareable identities API, automatic record expiration and removal, compliance with pseudonymization, DPO management tool, user-accessible UI, and many more features.
+
 ## How do I search for all orders from a guy named John?
 
 Databunker supports customer record lookup by **login name** or **email address** or **phone number** or **token value**.
