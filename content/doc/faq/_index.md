@@ -25,7 +25,7 @@ So, if you have one of these values, you can fetch customer orders from the **or
 
 ## How to backup the Databunker database?
 
-If case you are using MySQL as a Databunker backend database you can use the standard `mysqldump` command.
+If you are using MySQL as a Databunker backend database you can use the standard `mysqldump` command.
 
 For SQLite,  Databunker has a special API call to dump the internal database. You can run the following command to dump the database in SQL format:
 
@@ -35,7 +35,7 @@ curl -s http://localhost:3000/v1/sys/backup -H "X-Bunker-Token: $TOKEN" -o backu
 
 ## Does your product support multi-master replication?
 
-For that will need to use MySQL as a backend database and configure database replication on the MySQL level. You will need to do it by yourself or use the cloud version provided by AWS, Google Cloud, Microsoft Azure, etc...
+For that you will need to use MySQL as a backend database and configure database replication on the MySQL level. You will need to do it by yourself or use the cloud version provided by AWS, Google Cloud, Microsoft Azure, etc...
 
 When `SQLite` is used it does not support database replication.
 
