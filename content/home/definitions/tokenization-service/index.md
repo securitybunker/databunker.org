@@ -12,4 +12,4 @@ In classical tokenization service, only one value is turned into a token. For ex
 
 ![Databunker digram](/img/diagram.png)
 
-Unlike classical tokenization service, **Databunker** gets the whole user profile and generates a **unique user token**. Databunker stores user JSON profiles in an encrypted format. Databunker builts a secure and quick search index to lookup user records for example by email address. This search index is also hashed on the disk. As a result, no personal data is saved in clear text in the Databunker backend database.
+Unlike classical tokenization service, **Databunker** gets the whole user profile and generates a **unique user token**. Databunker stores user JSON profiles in an encrypted format. Databunker builds a secure and quick search index to lookup user records for example by email address. This search index is also hashed on the disk. As a result, no personal data is saved in clear text in the Databunker backend database.
