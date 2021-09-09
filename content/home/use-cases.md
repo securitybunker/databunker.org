@@ -12,10 +12,10 @@ subtitle = "Solutions for popular use cases"
 
 [content]
   # Page type to display. E.g. post, talk, or publication.
-  page_type = "use-case"
+  page_type = "docs"
   
   # Choose how much pages you would like to display (0 = all pages)
-  count = 12
+  count = 15
   
   # Choose how many pages you would like to offset by
   offset = 0
