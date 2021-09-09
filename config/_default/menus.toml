@@ -9,13 +9,13 @@
   weight = 10
 
 [[main]]
-  name = "Showcase"
-  url = "#gallery"
+  name = "Use cases"
+  url = "#use-cases"
   weight = 15
 
 [[main]]
-  name = "Use cases"
-  url = "#use-cases"
+  name = "Showcase"
+  url = "#gallery"
   weight = 20
 
 [[main]]
