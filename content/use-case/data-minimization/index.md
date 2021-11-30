@@ -102,7 +102,7 @@ This call will trigger user expiration flow. This command returns the user's exp
 
 2. Now you can send out to your user an email with the following links:
 
-Retain data link: ``https://databunker-server/v1/exp/retail/{exptoken}``
+Retain data link: ``https://databunker-server/v1/exp/retain/{exptoken}``
 
 Remove data link: ``https://databunker-server/v1/exp/delete/{exptoken}``
 
