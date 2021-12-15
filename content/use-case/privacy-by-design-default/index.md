@@ -1,5 +1,5 @@
 ---
-title: Privacy by design compliance out of the box.
+title: Privacy by design compliance out of the box
 summary: Privacy by design is about considering data protection and privacy issues upfront in everything you do.
 abstract: ""
 weight: 50
