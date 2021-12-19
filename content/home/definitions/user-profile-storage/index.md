@@ -5,7 +5,7 @@ active: false
 weight: 30
 ---
 
-**Databunker** is a special encrypted database for sensitive personal records or **Personally Identifiable Information** (**PII**) in terms of **GDPR**.
+**Databunker** is a special encrypted database for sensitive personal records and **Personally Identifiable Information** (**PII**).
 
 Upon an **API request** to create a new user record, Databunker performs the following operations:
 

@@ -67,7 +67,7 @@ date_format = "Jan 2006"
   url = ""
 
 [[item]]
-  title = "GDPR compliant PII data storage"
+  title = "GDPR compliant personal data database"
   description = "Databunker has a built-in user portal that gives your customers full visibility and control."
   url = ""
 

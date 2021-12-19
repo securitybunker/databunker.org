@@ -33,7 +33,7 @@ projects:
 
 When creating web applications you need to save data in a **session object**. This data can include user email address, user permissions, last operation code, error messages.
 
-Some of this information is considered **Personal Identifiable Information**. In short, **PII**, as defined by GDPR.
+Some of this information is considered personal data or **Personal Identifiable Information** (**PII**).
 
 Europeans (and the European Union in particular) care a great deal about online privacy and data protection. International companies marketing to European customers must be GDPR compliant, **regardless of where in the world that business is located**.
 

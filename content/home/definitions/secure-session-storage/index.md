@@ -6,7 +6,7 @@ weight: 100
 ---
 When creating web applications sometimes you need to save data in a session object. This data can include user email address, user permissions, last operation code, error messages. A **session** can be defined as server-side storage of information that is desired to persist throughout the user’s interaction with the website or web application.
 
-Some of the information stored in the **session** is considered **Personally Identifiable Information**. In short, **PII**, as defined by **GDPR**.
+Some of the information stored in the **session** is considered personal data or **Personally Identifiable Information**.
 
 GDPR stands on a number of principles. **Integrity and confidentiality** are some of them. These principles tell that **appropriate security measures** should be in place to protect personal data.
 
