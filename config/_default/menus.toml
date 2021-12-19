@@ -28,10 +28,10 @@
   url = "https://documenter.getpostman.com/view/11310294/Szmcbz32"
   weight = 30
 
-[[main]]
-  name = "Pro"
-  url = "https://privacybunker.io/databunker-pro/"
-  weight = 34
+#[[main]]
+#  name = "Pro"
+#  url = "https://privacybunker.io/databunker-pro/"
+#  weight = 34
 
 #[[main]]
 # name= "&nbsp;Slack"
@@ -47,12 +47,19 @@
   url= "https://github.com/securitybunker/databunker"
   weight = 35
 
+#[[main]]
+#  #name = "✔️ Free Privacy Training ✔️"
+#  pre= "<i class='fas fa-check'>"
+#  post = "</i>"
+#  name = "&nbsp;Free Privacy Training"
+#  url= "https://basebunker.com/"
+#  weight = 40
+
 [[main]]
-  #name = "✔️ Free Privacy Training ✔️"
-  pre= "<i class='fas fa-check'>"
-  post = "</i>"
-  name = "&nbsp;Free Privacy Training"
-  url= "https://basebunker.com/"
+  pre= "<b>"
+  post = "</b>"
+  name = "Databunker PRO"
+  url= "https://privacybunker.io/databunker-pro/"
   weight = 40
 
 
@@ -102,6 +109,11 @@
 [[doc]]
   name = "Installation guide"
   url = "/doc/install/"
+  weight = 25
+
+[[doc]]
+  name = "Security review"
+  url = "/doc/security/"
   weight = 25
 
 [[doc]]
