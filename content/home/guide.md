@@ -2,8 +2,8 @@
 widget = "guide"
 headless = true
 active = true
-weight = 21
-title = "Practical GDPR Compliance Guide for Startup Founders"
+weight = 91
+title = "Practical GDPR Compliance Guide for Startup Heroes"
 subtitle = ""
 [btn]
   url = "https://privacybunker.io/blog/gdpr-guide-for-startup-founders/"
