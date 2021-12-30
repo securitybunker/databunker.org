@@ -1,0 +1,15 @@
+{{ $ := .root }}
+{{ $page := .page }}
+<div class="row justify-content-center">
+  <div class="col-lg-8 text-center">
+    <h1 class="text-center">{{ $page.Title | markdownify | emojify }}</h1>
+  </div>
+      {{ with $page.Params.btn }}
+        <div class="col-lg-10">
+        <br/>
+        <center>
+                <a href="{{ .url | safeURL }}" {{ if .onclick}} {{printf "onclick=\"%s\"" .onclick | safeHTMLAttr}} {{end}} class="btn btn-primary btn-lg  page-scroll">{{ .label | markdownify | emojify | safeHTML }}</a>
+        </center>
+        </div>
+      {{ end }}
+</div>
