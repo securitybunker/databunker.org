@@ -126,6 +126,11 @@
   url = "https://documenter.getpostman.com/view/11310294/Szmcbz32"
   weight = 30
 
+[[successstory]]
+  name = "KYC backend"
+  url = "/success-story/kyc-backend-for-crypto-startup"
+  weight = 5
+
 [[usecase]]
   name = "Schrems II compliance"
   url = "/use-case/schrems-ii-compliance/"
