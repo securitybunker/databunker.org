@@ -10,7 +10,7 @@ mymenu: doc
 weight: 20
 ---
 
-## Reaching 1 million data subject records with AWS EKS & RDS (01.01.2022)
+## Reaching 1 million data subject records with AWS EKS & RDS (22.01.2022)
 
 For the test we deployed Databunk open-source in AWS cloud using the Terraform and Help Charts.
 
@@ -89,7 +89,7 @@ logger.warning("done")
 ```
 
 
-## Running client & web app on the same box with Databunker using one DigitalOcean VPC (04.11.2021)
+## Running client & web app on the same box with Databunker using one DigitalOcean VPC (11.04.2021)
 
 
 For the test, we are using a regular VPC (droplet) hosted at https://www.digitalocean.com/ to run all processes.
