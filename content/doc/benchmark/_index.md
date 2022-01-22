@@ -10,7 +10,87 @@ mymenu: doc
 weight: 20
 ---
 
-## Description of the test
+## Reaching 1 million data subject records with AWS EKS & RDS (01.01.2022)
+
+For the test we deployed Databunk open-source in AWS cloud using the Terraform and Help Charts.
+
+During the test only 1 EKS node was created to run a Databunker container and one server for MySQL RDS.
+
+### Using t3.xlarge virtual servers
+
+We used **db.t3.xlarge** for the database server and **t3.xlarge** for the Kubernetes node.
+
+On average the system was able to sustain 347 requests per second. It took 48 minutes to create 1 million data subject records.
+
+
+### Using t3.medium virtual servers
+
+We used **db.t3.medium** for the database server and **t3.medium** for the Kubernetes node.
+
+On average the system was able to sustain 280 requests per second. It took 60 minutes to create 1 million data subject records.
+
+
+### Terraform scripts with instructions
+
+You can find the details here:
+
+https://github.com/securitybunker/databunker/tree/master/terraform/aws
+
+### EKS Node t3.xlarge Utilization
+
+
+![EKS Node Utilization](eks-node-xlarge-utilization.png)
+
+### MySQL RDS db.t3.xlarge utilization
+
+![RDS MySQL Utilization](mysql-rds-xlarge-utilization.png)
+
+
+### Script to create 1 million data subject records
+
+This script starts 100 threads. Each thread creates 10,000 data subject records. Each thread is using **requests.Session()** python object to utilize already opned connection as databunker supports **keep-alive**connections.
+
+```
+import sys
+import time
+import gevent
+from gevent import monkey;
+monkey.patch_all(httplib=True)
+import urllib3
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+import random
+import logging
+import requests
+
+token = "dc50686c-02aa-3280-1265-8fb55edbeb9b"
+url = 'https://a09e31b9f05ad434aad32a55d000decd-1066274597.eu-north-1.elb.amazonaws.com:8443'
+
+logger = logging.getLogger("stresstest")
+logger.setLevel(logging.DEBUG)
+formatter = logging.Formatter("%(asctime)s: %(levelname)s: %(message)s")
+ch = logging.StreamHandler()
+ch.setLevel(logging.DEBUG)
+ch.setFormatter(formatter)
+logger.addHandler(ch)
+
+def generate(start):
+  s = requests.Session()
+  for n in range(start*10000, (start+1)*10000):
+    if n % 1000 == 0:
+     logger.warning("create: "+str(n))
+    userobj = {'somekey': 'somevalue', 'email':str(n)+'@gmail.com'}
+    x = s.post(url+'/v1/user', data = userobj, headers={'X-Bunker-Token':token}, verify=False)
+  logger.warning("finish " + str(start*10000) + " " + str((start+1)*10000))
+  return start
+
+threads = [gevent.spawn(generate, i) for i in range(1, 100)]
+gevent.joinall(threads)
+logger.warning("done")
+```
+
+
+## Running client & web app on the same box with Databunker using one DigitalOcean VPC (04.11.2021)
+
 
 For the test, we are using a regular VPC (droplet) hosted at https://www.digitalocean.com/ to run all processes.
 
