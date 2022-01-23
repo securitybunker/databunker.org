@@ -10,45 +10,50 @@ mymenu: doc
 weight: 20
 ---
 
-## Reaching 1 million data subject records with AWS EKS & RDS (22.01.2022)
+
+## Test 1. Reaching 1 million data subject records with AWS EKS & RDS (22.01.2022)
 
 For the test we deployed Databunk open-source in AWS cloud using the Terraform and Help Charts.
 
-During the test only 1 EKS node was created to run a Databunker container and one server for MySQL RDS.
+During the test only one EKS node was created to run a Databunker container and one virtual server to run MySQL RDS.
 
-### Using t3.xlarge virtual servers
+### Performance results when using t3.xlarge virtual servers
 
 We used **db.t3.xlarge** for the database server and **t3.xlarge** for the Kubernetes node.
 
-On average the system was able to sustain 347 requests per second. It took 48 minutes to create 1 million data subject records.
+On average the system was able to sustain **347 requests per second**. It took 48 minutes to create 1 million data subject records.
 
 
-### Using t3.medium virtual servers
+### Performance results when using t3.medium virtual servers
 
 We used **db.t3.medium** for the database server and **t3.medium** for the Kubernetes node.
 
-On average the system was able to sustain 280 requests per second. It took 60 minutes to create 1 million data subject records.
+On average the system was able to sustain **280 requests per second**. It took 60 minutes to create 1 million data subject records.
 
 
-### Terraform scripts with instructions
-
-You can find the details here:
-
-https://github.com/securitybunker/databunker/tree/master/terraform/aws
-
-### EKS Node t3.xlarge Utilization
-
+### EKS Node t3.xlarge utilization during the test
 
 ![EKS Node Utilization](eks-node-xlarge-utilization.png)
 
-### MySQL RDS db.t3.xlarge utilization
+### MySQL RDS db.t3.xlarge utilization during the test
 
 ![RDS MySQL Utilization](mysql-rds-xlarge-utilization.png)
 
 
-### Script to create 1 million data subject records
+### How to reproduce
 
-This script starts 100 threads. Each thread creates 10,000 data subject records. Each thread is using **requests.Session()** python object to utilize already opned connection as databunker supports **keep-alive**connections.
+#### 1. Deploy AWS cloud to run the test
+
+Use the following Terraform configuration files:
+
+https://github.com/securitybunker/databunker/tree/master/terraform/aws
+
+
+#### 2. Start a new EC2 machine that will run the stress test script
+
+For the test, we created a special python script. This script starts 100 threads. Each thread creates 10,000 data subject records. Each thread is using **requests.Session()** python object to utilize already opened connections as Databunker supports **keep-alive** connections.
+
+This script will create 1 million data subject records in Databunker.
 
 ```
 import sys
@@ -89,7 +94,7 @@ logger.warning("done")
 ```
 
 
-## Running client & web app on the same box with Databunker using one DigitalOcean VPC (11.04.2021)
+## Test 2. Running client & web app on the same box with Databunker using one DigitalOcean VPC (11.04.2021)
 
 
 For the test, we are using a regular VPC (droplet) hosted at https://www.digitalocean.com/ to run all processes.
