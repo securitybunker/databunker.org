@@ -10,9 +10,9 @@ mymenu: doc
 weight: 30
 ---
 
-## Quick installation guide
+## Quick installation method
 
-You simply start Databunker as a simple Docker container with minimal parameters and minimal requirements. In that case, it will use an internal built-in **SQLite** database to store encrypted records. This installation method is good for development and **not recommended for production** use.
+The easiest method to get started with Databunker is to start it as a standard Docker container with minimal parameters. In that case, it will use an internal built-in **SQLite** database to store encrypted records. This method is good for development and **not recommended for production** use.
 
 **Advantages:**
 * An external database is not required.
@@ -23,19 +23,21 @@ You simply start Databunker as a simple Docker container with minimal parameters
 
 **Disadvantages:**
 * A local **SQLite** database will be used to store encrypted records. **SQLite** is not built for network access.
-* No security. `DEMO` is a root access token and all records can be easily extracted.
-* When the container is stopped the **data will be lost**.
+* When the container is stopped all the **data will be lost**.
+* No security. `DEMO` is a root access token.
 * Not recommended for production.
 
-### So, how to get started?
+### So, how to get up and running?
 
-Run the service as the following command:
+Run the service with the following command:
 
 ```
 docker run -p 3000:3000 -d --rm --name dbunker securitybunker/databunker demo
 ```
 
 Databunker service will listen for connections on port `3000`.
+
+Now, you can open in your browser http://localhost:3000/ and get to the product user interface.
 
 `Note:` if the Docker container is stopped or killed the **data will be lost**. To prevent the system from losing your data you will need to mount the **data** directory from your host machine inside this Databunker container and provide **DATABUNKER_MASTERKEY** that you can extract from a ```dbunker``` container logs (run ```docker logs dbunker```). It is printed during service initialization.
 
@@ -50,25 +52,34 @@ docker run -v ~/data:/databunker/data \
   --rm --name dbunker securitybunker/databunker demo
 ```
 
-## Automatic production installation
+## Running Databunker with docker-compose
 
-You will need to run just 2 commands:
+This method will also start the MySQL database as an additional container and will configure Databunker to use MySQL as a storage for encrypted records. You can use the following commands:
 
 ```
 ./generate-env-files.sh
-docker-compose up
+docker-compose up -d
 ```
 
-Now, open in your browser http://localhost:3000/
+Now, you can open in your browser http://localhost:3000/
 
 ### How does this work?
 
 ```generate-env-files.sh``` command will generate all environment variables, generate random passwords,  master key, and root token. All variables will be saved under ```.env/``` folder.
 
-For example, ```DATABUNKER_ROOTTOKEN``` variable will be saved in ```.env/databunker-root.env``` file. You can use this variable as a root token when calling Databunker API requests.
+For example, ```DATABUNKER_ROOTTOKEN``` variable will be saved in the ```.env/databunker-root.env``` file. You can use this variable as a root token when calling Databunker API requests.
 
 
-```docker-compose up``` command will start all containers. The initial setup might take 30 seconds. Ignore any errors printed during the first 30 seconds. The startup scripts have automatic retries.
+```docker-compose up -d``` command will start all containers. The initial setup might take up to 30 seconds.
+
+
+## Automatic deployment in AWS cloud
+
+We have built Terraform configuration files and Helm charts to deploy Databunker with all required components in AWS. Detailed instructions can be found here:
+
+* https://github.com/securitybunker/databunker/tree/master/terraform/aws
+* https://github.com/securitybunker/databunker/tree/master/charts/databunker
+
 
 ## Step-by-step production installation
 
