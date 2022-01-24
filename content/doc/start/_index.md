@@ -11,12 +11,13 @@ weight: 5
 ---
 ## Databunker intro
 
-Personal data leaks in 2021 happen every day. The Databunker product was born to address **sensitive record exposure** via **SQL injection** and **unfiltered GraphQL queries**. Databunker provides an alternative solution to **false database encryption** for personal and sensitive records. In addition, our product is fully GDPR compliant.
+Personal data leaks in 2021 happen every day. The Databunker product was born to address exactly this problem. The Databunker was built to prevent **sensitive record exposure** via **SQL injection** and **unfiltered GraphQL queries**. The product provides an alternative solution to **false database encryption** for personal and sensitive records. In addition, our product is fully GDPR compliant.
 
 Let's take a look at the **data leaks**. Some require a sophisticated attack to gain shell access to the servers and then to the database. Some data leaks happen over the web using SQL injection vulnerabilities in the web apps.
-As a result of an **SQL Injection attack**, your customer data can be dumped in cleartext and **personal data leaked**.
+As a result of an **SQL Injection attack**, the attacker will extract personal data of all your users in cleartext from the database.
 
 Regarding **database encryption**, let's face the truth. Most of the solutions provide a **fake sense of security**. Data is encrypted on the storage or disk level.
+
 In case, your website has an SQL injection, the bad actor will get your **data in cleartext**.
 
 ### Solution with Databunker
@@ -25,7 +26,7 @@ Instead of talking with Databunker using SQL, your backend will have to call an 
 
 Databunker does not have an API to enumerate all users. Databunker encrypts customer records and builds a secure search index for quick user lookup (i.e. using email, token, etc...).
 
-Saving your records in Databunker complies with **pseudonymization** as a valid solution to store customer data as defined by GDPR.
+Saving your sensitive records in Databunker complies with **pseudonymization** as a valid solution to store customer data as defined by GDPR.
 
 ![Pseudonymized identity](/img/pseudonymized-identity.png)
 
