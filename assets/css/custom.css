@@ -33,7 +33,8 @@ margin:0;
 margin: 0;
 }
 div#bgwhite {background-color: #fff;margin-top:10px; border:1px solid #ddd; padding-left:0;padding-right:0;}
-div#bgwhite p { text-align: justify; padding-left:15px;padding-right:15px;}
+div#bgwhite p { text-align: justify; padding-left:25px;padding-right:25px;}
+div#bgwhite .tab-pane p:first-child {padding-top:20px;}
 #definitions h1 {margin-top:0; margin-bottom:20px;}
 .desktop-menu {
   display:none;
@@ -51,10 +52,7 @@ div#bgwhite p { text-align: justify; padding-left:15px;padding-right:15px;}
   .mobile-menu {
     display:block;
   }
-  div#bgwhite .tab-pane {padding-top:0;}
   div#bgwhite .tab-content>.tab-pane {display:block;opacity:1;}
-  div#bgwhite .collapse {padding-top:20px;}
-  /*
-  .tab-content>.tab-pane .collapse {display:none;}
-  */
 }
+blockquote {margin-left:25px;padding-right:0px;padding-left:0px;}
+div#bgwhite .tab-pane blockquote  p:first-child {padding-top:0;}
