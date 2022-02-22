@@ -1,11 +1,17 @@
 ---
-title: "User profiles storage"
+title: "Encrypted PII storage"
 page_type: "definition"
 active: false
 weight: 30
 ---
 
 **Databunker** is a special encrypted database for sensitive personal records and **Personally Identifiable Information** (**PII**).
+
+Since the GDPR has not made **data encryption** a mandatory method for imposing data security, not implementing data encryption is not a violation of GDPR compliance.
+
+However, **data breaches** are a common occurrence, specifically with such a thriving cybercriminal landscape.
+
+Amidst this, **any organization falling victim to a data breach might be able to avoid GDPR fines if it implements data protection through encryption**.
 
 Upon an **API request** to create a new user record, Databunker performs the following operations:
 
