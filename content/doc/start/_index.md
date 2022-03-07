@@ -24,7 +24,7 @@ In case, your website has an SQL injection, the bad actor will get your **data i
 
 Instead of talking with Databunker using SQL, your backend will have to call an API function to retrieve specific user details. It is similar to the API of any NoSQL database. You can only lookup user records if you know his email address, phone number or a unique token id.
 
-Databunker does not have an API to enumerate all users. Databunker encrypts customer records and builds a secure search index for quick user lookup (i.e. using email, token, etc...).
+By default, Databunker does not allow to enumerate user records. This API call is disabled by default. Databunker encrypts customer records and builds a secure search index for quick user lookup (i.e. using email, token, etc...).
 
 Saving your sensitive records in Databunker complies with **pseudonymization** as a valid solution to store customer data as defined by GDPR.
 

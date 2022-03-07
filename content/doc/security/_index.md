@@ -38,7 +38,7 @@ By default **Databunker PRO** connects with PostgreSQL using a secure **SSL chan
 Some of the information stored by the application session is considered **Personally Identifiable Information** or, so called, **PII**. For example a user email address, IP address, browser details, etc… **Databunker** has an API for secure storage of session objects inside Databunker’s encrypted store.
 
 ### Dumping all records at once
-No ``SELECT *`` operation or equivalent API call exists in **Databunker** or **Databunker PRO**. This is done on purpose to prevent the attackers from getting all the records.
+By default, Databunker does not allow to enumerate user records. This API call is disabled by default. This is done on purpose to prevent the attackers from getting all the records at once.
 
 ### Shamir key sharing algorithm 
 **Databunker** service gets the **master key** used to encrypt all records from a **Docker secrets store**. **Databunker PRO** provides an even more secure solution. The master key can be optionally split into 3 pieces when 2 pieces are required for the process to start. We have implemented **Shamir’s key sharing algorithm** for better security.
