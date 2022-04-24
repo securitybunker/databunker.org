@@ -50,7 +50,7 @@ You can interact with Databunker using:
 
 ## 2. Move your user records to Databunker
 
-If you want to use **Databunker** in your existing project you need to move customer data to Databunker and addapt your database schema to use ``usertoken``.
+If you want to use **Databunker** in your existing project you need to move customer data to Databunker and adapt your database schema to use ``usertoken``.
 
 #### Original database schema
 
