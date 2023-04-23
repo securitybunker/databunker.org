@@ -50,9 +50,9 @@ div.tab-pane img {clip-path: inset(1% 1% 1% 1%); margin:auto;}
 <div class="row">
   <div class="col-12">
     <div class="row">
-      <div class="col-12 col-md-4 desktop-menu">
+      <div class="col-12 col-md-4">
 	<h1>{{ with $st.Title }}{{ . | markdownify | emojify }}{{ end }}</h1>
-        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        <div class="nav flex-column nav-pills desktop-menu" id="v-pills-tab" role="tablist" aria-orientation="vertical">
           {{ range $i, $post := $query }}
 	    {{ if eq $i 0 }}
 	    <a class="nav-link active" data-toggle="tab" href="#{{ .Title | urlize }}" role="tab" aria-selected="true">0{{ add $i 1 }}&nbsp;&nbsp;&nbsp;{{ .Title }}</a>

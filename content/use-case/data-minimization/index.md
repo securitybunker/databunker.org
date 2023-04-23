@@ -49,7 +49,7 @@ Data minimization is not mandated by the CCPA. But **California Privacy Rights A
 
 Similar to HIPAA’s minimum necessary rule and the GDPR’s data minimization principle, the CPRA codifies **data minimization principles**: The collection, use, retention, and sharing of personal information must be ***"reasonably necessary and proportionate to achieve the purposes for which the personal information was collected or processed"***.  The new law also requires notice of retention periods, and those retention periods must be ***"no longer than reasonably necessary"*** for each disclosed purpose.
 
-## So, why data minimization is so important?
+## So, why is data minimization so important?
 
 One of the results of the Data Minimization definition is that companies must remove personal records for expired trial users or users who left the company’s service.
 
@@ -78,7 +78,7 @@ But first, let me give you a brief about what Databunker is and how it works sin
 1. Secret sauce
 
 
-## How does Databunker can help with Data Minimization?
+## How does Databunker help with Data Minimization?
 
 ### 1. Consolidate all customer personal data from different databases and store it only in Databunker.
 

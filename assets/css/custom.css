@@ -56,3 +56,20 @@ div#bgwhite .tab-pane p:first-child {padding-top:20px;}
 }
 blockquote {margin-left:25px;padding-right:0px;padding-left:0px;}
 div#bgwhite .tab-pane blockquote  p:first-child {padding-top:0;}
+#sharebtns {top:100px;position:fixed;right:-200px;z-index:10000;  -webkit-animation: linear; animation-delay: 3s; -webkit-animation-name: buttons; -webkit-animation-duration: 3s;animation-fill-mode: forwards;}
+@-webkit-keyframes buttons {
+  0% {
+    right: -150px;
+  }
+  100% {
+    right:25px;
+  }
+}
+#chat {bottom:25px;right:25px;position:fixed;z-index:10000;display:none;}
+#chatlinks {display:none;}
+#chatlinks a {padding:10px 40px!important;line-height: 25px;}
+@media only screen and (max-width:600px)
+{
+#sharebtns {display:none;}
+#chat {display:none;}
+}
