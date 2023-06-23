@@ -7,27 +7,16 @@ weight: 30
 
 **Databunker** is a special encrypted database for sensitive personal records and **Personally Identifiable Information** (**PII**).
 
-Since the GDPR has not made **data encryption** a mandatory method for imposing data security, not implementing data encryption is not a violation of GDPR compliance.
+Since GDPR does not explicitly require **data encryption** to ensure data security, the lack of data encryption is not a violation of GDPR compliance.
 
-However, **data breaches** are a common occurrence, specifically with such a thriving cybercriminal landscape.
+However, **data breaches** are a widespread problem, especially in such a thriving cybercriminal landscape.
 
-Amidst this, **any organization falling victim to a data breach might be able to avoid GDPR fines if it implements data protection through encryption**.
+In light of this, organizations that fall victim to a data breach may potentially mitigate GDPR fines by implementing data protection measures such as **encryption**.
 
-Upon an **API request** to create a new user record, Databunker performs the following operations:
+Databunker was built to prevent sensitive records exposure via **SQL injection** and **unfiltered GraphQL queries**. Every user record stored in Databunker is encrypted.
 
-- Request sanity check and access validation check.
-- Normalize email address, phone number, login name.
-- Strict **user schema** validation if the schema is defined in the configuration. Generate an error if some fields are missing or error.
-- Securely encode email address, phone number, login name.
-- Check for duplicate email, phone, and login records. Generate an error in case of duplicates found.
-- Random generation of a **user UUID token** to be used as the main user index.
-- Encrypt the whole user JSON and save it in the backend database (MySQL, PostgreSQL, SQLite).
-- Return user token (UUID generated before) to the API caller.
+Instead of talking to Databunker using SQL, your backend will have to call an API function to retrieve specific user details. It is similar to any NoSQL database API. You can only lookup user records if you know his **email address**, **phone number** or **unique token id**.
 
-Now, when Databunker returns a **user token**, you can store it in your existing database instead of storing personal records in clear text (PII).
-
-This **customer token** is basically a user **pseudonymised identity**.
+By default, Databunker does not allow user records enumeration. This API call is disabled by default. Databunker encrypts customer records and builds a secure search index for quick user lookup (i.e. using email, token, etc…).
 
 ![Pseudonymized identity](/img/pseudonymized-identity.png)
-
-Afterward, you can query the Databunker service using the **user token** to receive user personal data, saving the audit trail. You can also perform user record lookup using the **email address**, **login name**, or **phone number**.
