@@ -44,6 +44,6 @@ hero_media = "databunker.mp4"
 # and with full customer visibility
 +++
 Databunker provides strong, serious, real personal-data protection for your customer records without expensive custom coding.
-* **Privacy by design compliance.**
-* **Open-source security.**
-* **Self-hosted service.**
+* **Privacy by design compliance**
+* **Open-source security**
+* **Self-hosted service**
