@@ -6,7 +6,8 @@ active = true # Activate this widget? true/false
 weight = 40  # Order that this section will appear.
 
 title = "Databunker encrypts customer records"
-subtitle = "To comply with privacy regulations customer records must be encrypted."
+#subtitle = "To comply with privacy regulations customer records must be encrypted"
+subtitle = "Encrypt customer records to speed up your compliance with privacy regulations"
 subtitle1 = "Old style solution"
 subtitle2 = "Databunker solution"
 
