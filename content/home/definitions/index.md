@@ -1,5 +1,6 @@
 +++
-title = "Databunker is 8 tools in one"
+title = "10x Data Security"
+subtitle = "Databunker vs regular db/disk encyption"
 widget = "definitions"
 headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false

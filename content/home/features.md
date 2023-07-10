@@ -57,7 +57,7 @@ date_format = "Jan 2006"
   url = ""
 
 [[item]]
-  title = "Using standard database: MySQL / SQLite"
+  title = "Using standard database: PostgreSQL / MySQL / SQLite"
   description = "User records are encrypted and saved in a standard database."
   url = ""
 

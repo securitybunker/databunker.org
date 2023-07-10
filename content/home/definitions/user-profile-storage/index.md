@@ -1,19 +1,17 @@
 ---
-title: "Encrypted PII storage"
+title: "Encrypted PII/PHI/PCI/KYC storage"
 page_type: "definition"
 active: false
-weight: 30
+weight: 5
 ---
 
-**Databunker** is a special encrypted database for sensitive personal records and **Personally Identifiable Information** (**PII**).
+**Databunker** is a special encrypted database for sensitive personal records, **Personally Identifiable Information** (**PII**), **Personal Health Information** (**PHI**), **Know Your Customer** (**KYC**) records, and **PCI** records. 
 
-Since GDPR does not explicitly require **data encryption** to ensure data security, the lack of data encryption is not a violation of GDPR compliance.
+**Data breaches** are a widespread problem today, especially in a thriving cybercriminal landscape.
 
-However, **data breaches** are a widespread problem, especially in such a thriving cybercriminal landscape.
+Organizations that fall victim to a data breach may mitigate GDPR fines by implementing data protection measures such as **encryption**.
 
-In light of this, organizations that fall victim to a data breach may potentially mitigate GDPR fines by implementing data protection measures such as **encryption**.
-
-Databunker was built to prevent sensitive records exposure via **SQL injection** and **unfiltered GraphQL queries**. Every user record stored in Databunker is encrypted.
+Databunker was built to prevent sensitive records exposure via **SQL injection** and **unfiltered GraphQL requests**. Databunker stores encrypted user records.
 
 Instead of talking to Databunker using SQL, your backend will have to call an API function to retrieve specific user details. It is similar to any NoSQL database API. You can only lookup user records if you know his **email address**, **phone number** or **unique token id**.
 
