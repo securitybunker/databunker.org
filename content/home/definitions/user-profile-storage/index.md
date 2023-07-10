@@ -5,7 +5,11 @@ active: false
 weight: 5
 ---
 
-**Databunker** is a special encrypted database for sensitive personal records, **Personally Identifiable Information** (**PII**), **Personal Health Information** (**PHI**), **Know Your Customer** (**KYC**) records, and **PCI** records. 
+**Databunker** is a special encrypted vault for sensitive records:
+* **Personally Identifiable Information** (**PII**)
+* **Personal Health Information** (**PHI**)
+* **Know Your Customer** (**KYC**) records
+* **Payment Card Industry** (**PCI**) data
 
 **Data breaches** are a widespread problem today, especially in a thriving cybercriminal landscape.
 
