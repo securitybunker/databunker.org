@@ -76,5 +76,5 @@ div#bgwhite .tab-pane blockquote  p:first-child {padding-top:0;}
 #sharebtns {display:none;}
 #chat {display:none;}
 }
-div.docs p {text-align: justify;margin-bottom:10px;}
+div.docs p, section.wg-textblock p {text-align: justify;margin-bottom:10px;}
 .share-box {float:unset;}

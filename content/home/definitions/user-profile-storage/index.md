@@ -15,10 +15,10 @@ weight: 5
 
 Organizations that fall victim to a data breach may mitigate GDPR fines by implementing data protection measures such as **encryption**.
 
-Databunker was built to prevent sensitive records exposure via **SQL injection** and **unfiltered GraphQL requests**. Databunker stores encrypted user records.
+Databunker was built to prevent sensitive records exposure via **SQL injection** and **unfiltered GraphQL requests**.
 
-Instead of talking to Databunker using SQL, your backend will have to call an API function to retrieve specific user details. It is similar to any NoSQL database API. You can only lookup user records if you know his **email address**, **phone number** or **unique token id**.
+Instead of talking to Databunker using SQL, your backend code will have to call an API function to retrieve specific user records. It is similar to any NoSQL database API. You can only lookup user records if you know his **email address**, **phone number**, **login name** or **unique token id**.
 
-By default, Databunker does not allow user records enumeration. This API call is disabled by default. Databunker encrypts customer records and builds a secure search index for quick user lookup (i.e. using email, token, etc…).
+By default, Databunker does not allow dumping all user records at once. This API call is disabled. Databunker encrypts customer records and builds a secure search index for quick user lookup (i.e. using email, token, etc...).
 
 ![Pseudonymized identity](/img/pseudonymized-identity.png)
