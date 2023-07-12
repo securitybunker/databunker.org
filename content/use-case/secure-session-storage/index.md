@@ -31,15 +31,15 @@ projects:
 # - internal-project
 ---
 
-When creating web applications you need to save data in a **session object**. This data can include user email address, user permissions, last operation code, error messages.
+When creating web applications you need to save data in a **session object**. This data can include user email address, user permissions, error messages.
 
-Some of this information is considered personal data or **Personal Identifiable Information** (**PII**).
+Some of the information stored in the **session** is considered personal data or Personal Identifiable Information (**PII**) / Personal Health Information (**PHI**).
 
-Europeans (and the European Union in particular) care a great deal about online privacy and data protection. International companies marketing to European customers must be GDPR compliant, **regardless of where in the world that business is located**.
+Europeans (and the European Union in particular) care a lot about online privacy and data protection. International companies marketing to European customers must be GDPR compliant, **regardless of where in the world that business is located**.
 
-In this article, we’ll be taking an in-depth look at the GDPR and how it could affect the storage of user-session information.
+In this article, we’ll take an in-depth look at GDPR and how it could affect user-session information storage.
 
-Then I will talk about an open-source product I am developing called **Databunker** and how it can help. **Databunker** is a Swiss army knife tool for storing personal records or PII. Databunker will be used for the **Secure Session Storage**.
+Then I will discuss an open-source product I am developing called **Databunker** and how it can help. **Databunker** is a Swiss army knife tool for storing personal records or PII. Secure Session Storage will be done with Databunker.
 
 ## What is a session?
 A session can be defined as a server-side storage of information that is desired to persist throughout the user's interaction with the web site or web application. 
