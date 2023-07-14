@@ -5,9 +5,6 @@ summary: Minimize business risks using critical data segregation with Databunker
 abstract: ""
 weight: 5
 widget: textblock
-image:
-  caption: 'Image'
-  focal_point: Right
 ---
 In this article we will discuss what is critical data segregation and how to use open-source tools to protect your corporate secrets.
 

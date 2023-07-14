@@ -2,7 +2,7 @@
 title: "Privacy Enhancing Technology"
 page_type: "definition"
 active: false
-weight: 20
+weight: 200
 ---
 According to "[The GDPR made simple(r) for SMEs](/files/gdpr-for-sme.pdf)" book, published in 2021:
 

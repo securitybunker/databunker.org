@@ -6,25 +6,25 @@ active: false
 weight: 5
 ---
 
-**Databunker** is a special encrypted vault for sensitive records:
+**Databunker** is a powerful encrypted vault specifically designed for developers to protect sensitive records.
 * **Personally Identifiable Information** (**PII**)
 * **Personal Health Information** (**PHI**)
 * **Know Your Customer** (**KYC**) records
 * **Payment Card Industry** (**PCI**) data
 
-**Data breaches** are a widespread problem today, especially in a thriving cybercriminal landscape.
+In today's cybercriminal landscape, data breaches pose a significant threat.
 
-Organizations that fall victim to a data breach may mitigate GDPR fines by implementing data protection measures such as **encryption**.
+Developers can rely on Databunker's robust security measures, built with a strong emphasis on security by design and privacy by design principles. It effectively safeguards against **SQL injections** and **unfiltered GraphQL requests**, significantly reducing the risk of exposing sensitive records.
 
-Databunker was built to prevent sensitive records exposure via **SQL injections** and **unfiltered GraphQL requests**.
+With Databunker's user-friendly API, developers can easily store and retrieve encrypted user records, similar to working with a NoSQL database. Notably, Databunker creates a secure hash-based search index for quick lookup of users based on email, token, phone number, or login name.
 
-Instead of talking to Databunker using SQL, your backend code will have to call an API function to retrieve specific user records. It is similar to any NoSQL database API. You can only lookup user records if you know his **email address**, **phone number**, **login name** or **unique token id**.
-
-By default, Databunker does not allow dumping all user records at once. This API call is disabled. Databunker encrypts customer records and builds a secure hash based search index for quick user lookup (i.e. using email, token, etc...).
+By default, Databunker takes a proactive approach to security by disabling the API call that allows dumping all user records at once. This crucial measure mitigates the potential for attackers to extract all sensitive data in a single attempt. It providing an additional layer of security to the system.
 
 ![Pseudonymized identity](/img/pseudonymized-identity.png)
 
 Additional resources:
 1. [Critical Data Segregation](/use-case/critical-data-segregation/)
 1. [Secure Session Storage](/use-case/secure-session-storage/)
+1. [Data minimization](/use-case/data-minimization/)
+
 

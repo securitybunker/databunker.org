@@ -2,7 +2,7 @@
 title: "Pseudonymization service"
 page_type: "definition"
 active: false
-weight: 15
+weight: 50
 ---
 According to **GDPR Article 32**:
 >The controller and the processor shall implement appropriate technical and organizational measures to ensure a level of security appropriate to the risk including the **pseudonymization** and **encryption** of personal data.
