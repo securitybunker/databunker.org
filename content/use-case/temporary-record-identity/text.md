@@ -1,50 +1,17 @@
 ---
 title: Temporary record identity for 3rd party services
 summary: A temporary record can reference a user profile, user app record, or user session record.
-abstract: ""
-authors: []
-tags: []
-type: docs
-mymenu: usecase
-featured: false
-image:
-  caption: 'Image'
-  focal_point: Right
-
-links:
-#- icon: twitter
-#  icon_pack: fab
-#  name: Follow
-#  url: https://twitter.com/georgecushen
-url_code: ""
-url_pdf: ""
-url_slides: ""
-url_video: ""
-
-# Projects (optional).
-#   Associate this post with one or more of your projects.
-#   Simply enter your project's folder or file name without extension.
-#   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
-#   Otherwise, set `projects = []`.
-projects:
-# - internal-project
+widget: textblock
 ---
-
-{{% alert note %}}
-Click on the **Slides** button above to view the built-in slides feature.
-{{% /alert %}}
-
-
-One of the myths of the GDPR is that it prevents **data sharing**. This isn’t
-true. The GDPR aims to ensure that there is trust and confidence in how
-organisations use personal data and ensure that organisations share data
-securely and fairly. Databunker knows to address this is a smart way.
+One of the myths of the GDPR is that it prevents **data sharing**. This isn’t true. The GDPR aims to ensure that there is trust and confidence in how organisations use personal data and ensure that organisations share data securely and fairly. Databunker knows to address this is a smart way.
 
 When sharing data with 3rd party services like web analytics, logging, intelligence, etc... sometimes we need to
 share customer id, for example, customer original IP address or email address. All these pieces of information
 are considered as **personally identifiable information (PII)** and it is recommended to minimize when sending to 3rd party systems.
 
-***Do not share your customer user name, IP, emails, etc... because they look nice in reports!***
+{{% alert note %}}
+**Do not share your customer user name, IP, emails, etc... because they look nice in reports!**
+{{% /alert %}}
 
 According to GDPR: *Personal data should be adequate, relevant, and **limited to what is necessary** for the
 purposes for which they are processed.*
@@ -57,3 +24,5 @@ Databunker can optionally incorporate additional information for example partner
 
 Your partner can retrieve your customer information (only specific fields during a limited time).
 Afterward, access will be blocked.
+
+<center class="mt-5"><img src="featured.png" /></center>

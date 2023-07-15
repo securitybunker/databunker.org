@@ -2,7 +2,6 @@
 #title: Data security with critical data segregation
 title: "Cybercrime Survival Guide: Implementing Critical Data Segregation to Outsmart Attackers"
 summary: Minimize business risks using critical data segregation with Databunker.
-abstract: ""
 weight: 5
 widget: textblock
 ---

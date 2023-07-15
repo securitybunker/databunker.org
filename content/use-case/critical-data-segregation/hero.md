@@ -18,7 +18,7 @@ hero_media = "databunker.mp4"
 
   # Background color.
   #color = "#f7f7f7"
-  color = "#fff"
+  #color = "#fff"
   
   # Background gradient.
   # gradient_start = "#4bb4e3"
