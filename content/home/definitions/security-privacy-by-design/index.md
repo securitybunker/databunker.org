@@ -6,7 +6,7 @@ weight: 20
 ---
 **Security by design** and **privacy by design** are important for software developers because they help mitigate risks, ensure legal compliance, build user trust, gain a competitive advantage, save costs, fulfill ethical responsibilities, and create adaptable and future-proof software solutions.
 
-**Databunker** is a special encrypted vault for personal records. This tool can be a cornerstone for your organization **security by design** and **privacy by design** initiative.
+**Databunker** is a special encrypted vault for personal records. This tool can be a foundation for your organization **security by design** and **privacy by design** implementation.
 
 By leveraging Databunker, developers can bolster data security, protect privacy, and demonstrate a commitment to safeguarding sensitive information, thus enhancing their overall security and privacy posture.
 

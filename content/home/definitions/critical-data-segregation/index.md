@@ -7,20 +7,20 @@ weight: 20
 
 **Critical data segregation** is the practice of separating sensitive or critical data from other less sensitive data within a system or organization. The goal is to enhance security and minimize the risk of unauthorized access or compromise of the critical information.
 
-**Databunker** provides a one-stop-shop solution to implement critical data segregation for your organization. Databunker will be used to store your customer personal records in secure and compliant way.
+**Databunker** provides a one-stop-shop solution to implement critical data segregation for your organization. Databunker is used to store customer personal records in secure and compliant way.
 
 * **Personally Identifiable Information** (**PII**)
 * **Personal Health Information** (**PHI**)
 * **Know Your Customer** (**KYC**) records
 * **Payment Card Industry** (**PCI**) data
 
-**Data breaches** are a widespread problem today, especially in a thriving cybercriminal landscape.
+In today’s cybercriminal landscape, **data breaches** pose a significant threat.
 
-Organizations that fall victim to a data breach may mitigate GDPR fines by implementing data protection measures such as **encryption**.
+Developers can rely on Databunker's robust security measures, built with a strong emphasis on security by design and privacy by design principles. It effectively safeguards against **SQL injections** and **unfiltered GraphQL requests**, significantly reducing the risk of exposing sensitive records.
 
-Databunker was built to prevent sensitive records exposure via **SQL injections** and **unfiltered GraphQL requests**.
+With Databunker's user-friendly API, developers can easily store and retrieve encrypted user records, similar to working with a NoSQL database. In addition, Databunker creates a secure hash-based search index for quick user record lookup using email address, token id, phone number, or login name.
 
-Instead of talking to Databunker using SQL, your backend code will have to call an API function to retrieve specific user records. It is similar to any NoSQL database API. You can only lookup user records if you know his **email address**, **phone number**, **login name** or **unique token id**.
+By default, Databunker takes a proactive approach to security by disabling the API call that allows dumping all user records at once. This crucial measure mitigates the potential for attackers to extract all sensitive data in a single attempt. It provides an additional layer of security to the system.
 
 ![Pseudonymized identity](/img/pseudonymized-identity.png)
 
