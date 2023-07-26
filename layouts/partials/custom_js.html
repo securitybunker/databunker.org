@@ -1,0 +1,50 @@
+<script>
+function book_demo_call() {
+  var n = document.getElementById('call_name');
+  var e = document.getElementById('call_email');
+  var p = document.getElementById('call_phone');
+  var c = document.getElementById('call_country');
+  var s = document.getElementById('call_site');
+  var t = document.getElementById('call_topic');
+
+  var msg = new URLSearchParams();
+  var email = "";
+  var name = "";
+  var topics = [];
+  if (e && e.value) {
+    email = e.value.trim();
+    if (email.length == 0) {
+      return;
+    }
+    msg.append('email', email);
+    if (n && n.value) {
+      name = n.value.trim();
+      //window.localStorage.setItem('name', name);
+      msg.append('name', name);
+    }
+  }
+  if (email.length == 0) {
+      return;
+  }
+  var divs = document.querySelectorAll('input[type=checkbox]');
+  for (i = 0; i < divs.length; ++i) {
+    if (divs[i].checked) {
+      topics.push(divs[i].id);
+      //console.log(divs[i].id);
+    }
+  }
+  if (topics.length > 0) {
+    topics = topics.join(",");
+    console.log(topics);
+    msg.append('topics', topics);
+  }
+    var xhr0 = new XMLHttpRequest();
+    msg.append('email', email);
+    xhr0.open('POST', "/api/meeting.php");
+    xhr0.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xhr0.onload = function () {
+      document.location = 'https://calendly.com/stremovsky/30min?email='+email;
+    };
+    xhr0.send(msg.toString());
+}
+</script>
