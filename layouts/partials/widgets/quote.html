@@ -3,9 +3,9 @@
 <div class="row">
   {{ with $page.Title }}
   <div class="col-md-12">
-    <blockquote class="blockquote text-center">
-	    <p>{{ . | markdownify | emojify }}</p>
-	    <footer class="blockquote-footer">{{ $page.Params.author }} <a target="_blank" href="{{ $page.Params.link}}"><i class="fab fa-linkedin" aria-hidden="true"></i></a></footer>
+    <blockquote class="blockquote">
+	    <p class="ml-3">{{ . | markdownify | emojify }}</p>
+	    <footer class="blockquote-footer text-center">{{ $page.Params.author }} <a target="_blank" href="{{ $page.Params.link}}"><i class="fab fa-linkedin" aria-hidden="true"></i></a></footer>
     </blockquote>
   </div>
   {{ end }}
