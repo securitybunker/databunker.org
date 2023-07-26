@@ -13,6 +13,9 @@ By leveraging Databunker, developers can bolster data security, protect privacy,
 ![Pseudonymized identity](/img/pseudonymized-identity.png)
 
 Additional resources:
-1. [Critical Data Segregation](/use-case/critical-data-segregation/)
-1. [Secure Session Storage](/use-case/secure-session-storage/)
+1. [Temporary record identity](/use-case/temporary-record-identity/)
+1. [Critical data segregation](/use-case/critical-data-segregation/)
+1. [Secure session storage](/use-case/secure-session-storage/)
 1. [Data minimization](/use-case/data-minimization/)
+1. [Privacy portal for customers](/use-case/privacy-portal-for-customers/)
+1. [Privacy by design and by default](/use-case/privacy-by-design-default/)

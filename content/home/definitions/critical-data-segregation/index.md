@@ -7,7 +7,7 @@ weight: 20
 
 **Critical data segregation** is the practice of separating sensitive or critical data from other less sensitive data within a system or organization. The goal is to enhance security and minimize the risk of unauthorized access or compromise of the critical information.
 
-**Databunker** provides a one-stop-shop solution to implement critical data segregation for your organization. Databunker is used to store customer personal records in secure and compliant way.
+**Databunker** provides a one-stop-shop solution to implement critical data segregation for your organization. Databunker can be used to store customer personal records in secure and compliant way.
 
 * **Personally Identifiable Information** (**PII**)
 * **Personal Health Information** (**PHI**)
@@ -25,6 +25,9 @@ By default, Databunker takes a proactive approach to security by disabling the A
 ![Pseudonymized identity](/img/pseudonymized-identity.png)
 
 Additional resources:
-1. [Critical Data Segregation](/use-case/critical-data-segregation/)
-1. [Secure Session Storage](/use-case/secure-session-storage/)
+1. [Temporary record identity](/use-case/temporary-record-identity/)
+1. [Critical data segregation](/use-case/critical-data-segregation/)
+1. [Secure session storage](/use-case/secure-session-storage/)
 1. [Data minimization](/use-case/data-minimization/)
+1. [Privacy portal for customers](/use-case/privacy-portal-for-customers/)
+1. [Privacy by design and by default](/use-case/privacy-by-design-default/)
