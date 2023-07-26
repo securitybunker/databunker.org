@@ -4,7 +4,7 @@ summary: Privacy Portal for Customers
 weight: 5
 widget: textblock
 ---
-Databunker is a powerful encrypted vault specially designed for developers to protect sensitive records, including Personally Identifiable Information (PII), Personal Health Information (PHI), Know Your Customer (KYC) records, and Payment Card Industry (PCI) data.
+[Databunker](https://databunker.org/) is a powerful encrypted vault specially designed for developers to protect sensitive records, including Personally Identifiable Information (PII), Personal Health Information (PHI), Know Your Customer (KYC) records, and Payment Card Industry (PCI) data.
 
 When a user record is created, Databunker extracts the user's email, phone number, and login name, and builds a secure hash-based search index.
 
@@ -14,7 +14,17 @@ Databunker provides customers with a convenient passwordless access feature thro
 
 ![Databunker login](/use-case/user-privacy-controls/user-login.png)
 
-Upon entering the access code, customers gain temporary access to view their data, initiate requests for personal information changes (data rectification requests), initiate the forget-me operation, manage privacy agreements, and review audit events.
+### With the built-in user privacy portal, your customers can enjoy the following capabilities:
+
+* **Access**: Your customers can securely sign into their Databunker account to access and review their personal data and view their account history through the account audit feature.
+* **Withdraw**: Your customers have the ability to withdraw previously given consents or agreements, providing them with control over their data usage.
+* **Update**: Your customers can easily modify their personal data stored in Databunker. For instance, they can update their email address or make other necessary changes.
+* **Delete**: Through Databunker, your customers can initiate a "forget-me" request, prompting the removal of their account and associated personal data from your systems.
+* **Restrict**: Your customers can effectively manage their privacy agreements by utilizing Databunker's features to control and restrict data processing activities as per their preferences.
+
+By offering these functionalities through the user privacy portal, Databunker empowers your customers to exercise their rights, maintain control over their personal data, and enhance their privacy experience with your organization.
+
+&nbsp;
 
 ![Databunker User Profile](/home/gallery/gallery/2-profile.png)
 

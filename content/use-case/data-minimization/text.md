@@ -1,7 +1,6 @@
 ---
-title: Data minimization with Databunker
+title:  "Implement Data Minimization with Databunker: Secure Vault for GDPR Compliance"
 #title: Data minimization and GDPR Scope reduction
-summary: "Keep your customer data safe with automatic data minimization provided by Databunker."
 abstract: ""
 weight: 5
 widget: textblock
@@ -9,7 +8,7 @@ widget: textblock
 
 In cybersecurity, we have the principle of **least privilege**. It means your user or application process must have minimal privileges to do its job.
 
-In privacy, we have a similar principle. It is called **data minimization**. You need to keep customer data at a minimum only sufficient to provide a service.
+In GDPR compliance, we have a similar principle. It is called **data minimization**. You need to keep customer data at a minimum only sufficient to provide a service.
 
 In this article, we’ll be taking an in-depth look at Databunker. Databunker is an open-source secure vault for customer records built with the **data minimization** principle. The product comes with an **automatic data minimization** API to support any stringent privacy laws.
 

@@ -1,6 +1,5 @@
 ---
-title: Secure Session Storage for Web Apps
-summary: Strengthen your web application's overall security by using secure sessions stored in Databunker.
+title: Implementing Encrypted Secure Session Storage for Web Apps to Outsmart Attackers
 abstract: ""
 weight: 5
 widget: textblock
@@ -10,16 +9,13 @@ image:
   caption: 'Image'
   focal_point: Right
 ---
+As web developers, ensuring the security of data in session storage is crucial. A session object contains critical information, such as user email addresses, permissions, and error messages. Protecting this data is especially crucial when dealing with personal information like Personal Identifiable Information (PII) / Personal Health Information (PHI).
 
-When creating web applications you need to save data in a **session object**. This data can include user email address, user permissions, error messages.
+In today's digital landscape, the European Union's emphasis on online privacy and data protection through the General Data Protection Regulation (GDPR) affects businesses worldwide. If your company serves European customers, **GDPR compliance is non-negotiable, irrespective of your location**.
 
-Some of the information stored in the **session** is considered personal data or Personal Identifiable Information (**PII**) / Personal Health Information (**PHI**).
+This article delves deep into the world of GDPR and its implications for the storage of user-session information. We'll explore the key considerations that developers must bear in mind to ensure secure session storage while meeting GDPR requirements.
 
-Europeans (and the European Union in particular) care a lot about online privacy and data protection. International companies marketing to European customers must be GDPR compliant, **regardless of where in the world that business is located**.
-
-In this article, we’ll take an in-depth look at GDPR and how it could affect user-session information storage.
-
-Then I will discuss an open-source product I am developing called **Databunker** and how it can help. **Databunker** is a Swiss army knife tool for storing personal records or PII. Secure Session Storage will be done with Databunker.
+To achieve this goal, we introduce **Databunker**—an open-source Swiss army knife tool designed to securely store personal records and PII. We will explore how Databunker can seamlessly align with GDPR guidelines, ensuring your web application's session storage remains both efficient and compliant.
 
 ## What is a session?
 A session can be defined as a server-side storage of information that is desired to persist throughout the user's interaction with the web site or web application. 
@@ -40,7 +36,7 @@ But first, let me give you a bit more information about what Databunker is and h
 
 ![Databunker solution](/img/databunker-solution.png)
 
-**Databunker** is a GDPR compliant user store service for Web and mobile apps. It works as a backend application service. This product is a combination of several software concepts merged together. It provides secure PII storage and privacy by design out of the box:
+**Databunker** is a GDPR compliant user store service for Web and mobile apps. It is a special application server. This product is a combination of several software concepts merged together. It provides secure PII storage and privacy by design out of the box:
 
 1. A Personal Identifiable Information (PII) storage and vault
 1. Secure session storage for web applications

@@ -39,11 +39,12 @@ Databunker gives your customers **passwordless access** to the **Databunker User
 
 ![User login](user-login.png)
 
+### With the built-in user privacy portal, your customers can:
 
-### Databunker helps with the following GDPR requirements:
+* **Access**: Your customers can securely sign into their Databunker account to access and review their personal data and view their account history through the account audit feature.
+* **Withdraw**: Your customers have the ability to withdraw previously given consents or agreements, providing them with control over their data usage.
+* **Update**: Your customers can easily modify their personal data stored in Databunker. For instance, they can update their email address or make other necessary changes.
+* **Delete**: Through Databunker, your customers can initiate a "**forget-me**" request, prompting the removal of their account and associated personal data from your systems.
+* **Restrict**: Your customers can effectively manage their privacy agreements by utilizing Databunker's features to control and restrict data processing activities as per their preferences.
 
-* **Access**: your customers can sign into their Databunker account and view personal data.
-* **Withdraw**: your customers can withdraw consents (agreements) given previously.
-* **Update**: your customers can change their personal data saved in Databunker. For example, change email address.
-* **Delete**: your customers can file a "forget-me" request using Databunker.
-* **Restrict**: your customers can manage their agreements using Databunker.
+By offering these functionalities through the user privacy portal, Databunker empowers your customers to exercise their rights, maintain control over their personal data, and enhance their privacy experience with your organization.

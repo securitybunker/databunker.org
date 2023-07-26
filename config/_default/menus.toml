@@ -59,7 +59,7 @@
   pre= "<b>"
   post = "</b>"
   name = "Databunker PRO"
-  url= "https://privacybunker.io/databunker-pro/"
+  url= "/databunker-pro/"
   weight = 40
 
 
@@ -147,24 +147,9 @@
   weight = 15
 
 [[usecase]]
-  name = "Data minimization"
-  url = "/use-case/data-minimization/"
-  weight = 20
-
-[[usecase]]
   name = "Privacy by design"
   url = "/use-case/privacy-by-design-default/"
   weight = 25
-
-[[usecase]]
-  name = "Secure sessions"
-  url = "/use-case/secure-session-storage/"
-  weight = 30
-
-[[usecase]]
-  name = "Data segregation"
-  url = "/use-case/critical-data-segregation/"
-  weight = 90
 
 [[usecase]]
   name = "GDPR friendly logging"
@@ -185,8 +170,3 @@
   name = "Simple login"
   url = "/use-case/simplify-user-login-backend/"
   weight = 115
-
-[[usecase]]
-  name = "Temporary identity"
-  url = "/use-case/temporary-record-identity/"
-  weight = 120
