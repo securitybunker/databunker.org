@@ -4,13 +4,15 @@ page_type: "definition"
 active: false
 weight: 15
 ---
-When creating web applications sometimes you need to save data in a session object. This data can include user email addresses, user permissions, and error messages. A **session** can be defined as server-side storage of information that is desired to persist throughout the user’s interaction with the website or web application.
+In the ever-evolving landscape of web applications, securing user data is paramount. One critical aspect is the storage of **session data**, which includes vital information like user email addresses, permissions, and error messages.
 
-Some of the information stored in the **session** is considered personal data or **Personally Identifiable Information**.
+A session acts as a server-side storage solution that persists throughout a user's interaction with the website or web application. However, with some of this data being classified as **Personally Identifiable Information (PII)** or **Personal Health Information (PHI)**, ensuring its protection becomes a top priority.
 
-GDPR stands on several principles. **Integrity and confidentiality** are two of them. These principles say **appropriate security measures** should be in place to protect personal data.
+If your company serves European customers, GDPR compliance is non-negotiable, irrespective of your location. GDPR emphasizes key principles, such as **integrity** and **confidentiality**, which require the implementation of appropriate security measures to safeguard personal data.
 
-Databunker has an API for secure storage of **session objects** inside Databunker's encrypted store. Node.js modules and examples provided:
+We wanted to simplify the way developers can use session data in a secure way. This is one of the reasons we built Databunker. Databunker provides a special API that enables developers to store session objects securely within an encrypted data store.
+
+Our team has built Node.js modules and examples to simplify integration with Databunker built-in session storage API.
 
 ![Pseudonymized identity](/img/pseudonymized-identity.png)
 
