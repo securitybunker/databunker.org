@@ -1,27 +1,8 @@
 ---
 title: A perfect backend for a KYC system for a crypto startup
 summary: Databunker as a perfect backend for a KYC system for a crypto startup.
-abstract: ""
-weight: 10
-authors: []
-tags: []
-type: docs2
-mymenu: successstory
-featured: false
-
-image:
-  caption: 'Image'
-  focal_point: Right
-
-links:
-#- icon: twitter
-#  icon_pack: fab
-#  name: Follow
-#  url: https://twitter.com/georgecushen
-url_code: ""
-url_pdf: ""
-url_slides: ""
-url_video: ""
+weight: 5
+widget: textblock
 ---
 ## Databunker product review
 
