@@ -1,5 +1,5 @@
 ---
-title: Implementing Encrypted Secure Session Storage for Web Apps to Outsmart Attackers
+title: Implement Secure Session Storage for Web Apps to Outsmart Attackers
 abstract: ""
 weight: 5
 widget: textblock
@@ -9,13 +9,13 @@ image:
   caption: 'Image'
   focal_point: Right
 ---
-As web developers, ensuring the security of data in session storage is crucial. A session object contains critical information, such as user email addresses, permissions, and error messages. Protecting this data is especially crucial when dealing with personal information like Personal Identifiable Information (PII) / Personal Health Information (PHI).
+As web developers, ensuring the security of data in session storage is crucial. A **session object** contains critical information, such as user email addresses, permissions, and error messages. Protecting this data is especially crucial when dealing with personal information like Personal Identifiable Information (PII) / Personal Health Information (PHI).
 
 In today's digital landscape, the European Union's emphasis on online privacy and data protection through the General Data Protection Regulation (GDPR) affects businesses worldwide. If your company serves European customers, **GDPR compliance is non-negotiable, irrespective of your location**.
 
 This article delves deep into the world of GDPR and its implications for the storage of user-session information. We'll explore the key considerations that developers must bear in mind to ensure secure session storage while meeting GDPR requirements.
 
-To achieve this goal, we introduce **Databunker**—an open-source Swiss army knife tool designed to securely store personal records and PII. We will explore how Databunker can seamlessly align with GDPR guidelines, ensuring your web application's session storage remains both efficient and compliant.
+To achieve this goal, we introduce **Databunker**—an open-source Swiss army knife tool designed to securely store personal records, PII, and PHI. We will explore how Databunker can seamlessly align with GDPR guidelines, ensuring your web application's session storage remains both efficient and compliant.
 
 ## What is a session?
 A session can be defined as a server-side storage of information that is desired to persist throughout the user's interaction with the web site or web application. 
@@ -113,6 +113,4 @@ https://github.com/securitybunker/databunker-nodejs-passwordless-login
 https://github.com/securitybunker/databunker-nodejs-example
 
 ## Summary
-With the right architecture, you can make your **session code** to be **privacy by design compliant**. It is not complicated. You can use **Databunker** or roll your own solution.
-
-Whatever you choose is much better than completely ignore this issue and store session data unencrypted.
+With a few lines of code, you can make your **session code** to be **privacy and security by design compliant**. It is not complicated.

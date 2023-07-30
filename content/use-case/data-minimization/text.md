@@ -1,7 +1,6 @@
 ---
 title:  "Implement Data Minimization with Databunker: Secure Vault for GDPR Compliance"
 #title: Data minimization and GDPR Scope reduction
-abstract: ""
 weight: 5
 widget: textblock
 ---

@@ -1,7 +1,6 @@
 ---
 title: "Implement Privacy by Design Compliance with Open-Source Databunker"
-abstract: ""
-weight: 50
+weight: 5
 widget: textblock
 ---
 One of the important trends of modern software development is **privacy by design** and **privacy by default** principles.
@@ -14,7 +13,7 @@ In this article, we’ll be taking an in-depth look at the **privacy by design**
 
 I will talk about an open-source product our team develops called **Databunker** and how it can help.
 
-Databunker is an open-source secure vault for customer records built with the **privacy by design** principle. This product brings **compliance out of the box** for any company implementing Databunker. Databunker can serve as a foundation for your privacy by design solution.
+[Databunker](https://databunker.org/) is an open-source secure vault for customer records built with the **privacy by design** principle. This product brings **compliance out of the box** for any company implementing Databunker. Databunker can serve as a foundation for your privacy by design solution.
 
 ## Privacy By Design Actionable Plan
 
