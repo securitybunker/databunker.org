@@ -1,5 +1,5 @@
 ---
-title: "Implement Privacy by Design Compliance with Open-Source Databunker"
+title: "Implementing Privacy by Design Compliance with Open-Source Databunker"
 weight: 5
 widget: textblock
 ---
@@ -17,7 +17,7 @@ I will talk about an open-source product our team develops called **Databunker**
 
 ## Privacy By Design Actionable Plan
 
-The following is a partial list of actionable plans to make your business **privacy by design** compliant.
+The following is a partial list of actions to make your business **privacy by design** compliant.
 
 ### 1. Create a map of personal data flows and processing operations
 

@@ -1,13 +1,7 @@
 ---
 title: Implement Secure Session Storage for Web Apps to Outsmart Attackers
-abstract: ""
 weight: 5
 widget: textblock
-authors: []
-tags: []
-image:
-  caption: 'Image'
-  focal_point: Right
 ---
 As web developers, ensuring the security of data in session storage is crucial. A **session object** contains critical information, such as user email addresses, permissions, and error messages. Protecting this data is especially crucial when dealing with personal information like Personal Identifiable Information (PII) / Personal Health Information (PHI).
 

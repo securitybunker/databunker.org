@@ -1,5 +1,5 @@
 ---
-title: "How to implement pseudonymization without compromising security?"
+title: "How to implement pseudonymization without compromising security"
 weight: 5
 widget: textblock
 ---

@@ -1,6 +1,6 @@
 ---
 #title: "Consent management platform"
-title: "How to implement Consent Management Platform usign open-source Databunker?"
+title: "How to implement Consent Management Platform usign open-source Databunker"
 weight: 5
 widget: textblock
 ---
