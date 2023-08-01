@@ -22,6 +22,8 @@ With Databunker's user-friendly API, developers can easily store and retrieve en
 
 By default, Databunker takes a proactive approach to security by disabling the API call that allows dumping all user records at once. This crucial measure mitigates the potential for attackers to extract all sensitive data in a single attempt. It provides an additional layer of security to the system.
 
+In case you built a web app on top of Databunker and you have an SQL injection - customer personal data remains safe within Databunker, isolated from the main database. This isolation prevents unauthorized access to sensitive information, safeguarding user privacy.
+
 ![Pseudonymized identity](/img/pseudonymized-identity.png)
 
 Additional resources:

@@ -10,6 +10,9 @@ weight: 20
 
 By leveraging Databunker, developers can bolster data security, protect privacy, and demonstrate a commitment to safeguarding sensitive information, thus enhancing their overall security and privacy posture.
 
+In case you built a web app on top of Databunker and you have an SQL injection - customer personal data remains safe within Databunker, isolated from the main database. This isolation prevents unauthorized access to sensitive information, safeguarding user privacy.
+
+
 ![Pseudonymized identity](/img/pseudonymized-identity.png)
 
 Additional resources:
