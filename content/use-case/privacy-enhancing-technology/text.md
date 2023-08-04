@@ -1,5 +1,5 @@
 ---
-title: Building PET - Privacy-Enhancing Technology with Open-Source Databunker
+title: How to build PET - Privacy-Enhancing Technology with Open-Source Databunker
 weight: 5
 widget: textblock
 ---

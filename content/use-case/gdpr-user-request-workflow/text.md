@@ -1,5 +1,5 @@
 ---
-title: Streamlining GDPR User Request Workflow with Open-Source Databunker
+title: How to streamline GDPR user request workflow with open-source Databunker
 weight: 5
 widget: textblock
 ---

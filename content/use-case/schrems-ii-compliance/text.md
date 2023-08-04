@@ -1,5 +1,5 @@
 ---
-title: "Schrems II Compliance with Open-Source Databunker"
+title: "Schrems II compliance with open-source Databunker"
 weight: 5
 widget: textblock
 ---

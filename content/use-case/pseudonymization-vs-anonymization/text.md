@@ -1,5 +1,6 @@
 ---
-title: "How to implement pseudonymization without compromising security"
+#title: "How to implement pseudonymization without compromising security"
+title: "How to implement pseudonymization to meet GDPR requirements"
 weight: 5
 widget: textblock
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Implementing Privacy by Design Compliance with Open-Source Databunker"
+title: "How to implement privacy by design compliance with open-source Databunker"
 weight: 5
 widget: textblock
 ---

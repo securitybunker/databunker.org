@@ -1,5 +1,5 @@
 ---
-title: How to implement logging without breaking GDPR Compliance
+title: How to implement log retention policy without breaking GDPR compliance
 weight: 5
 widget: textblock
 ---

@@ -1,5 +1,5 @@
 ---
-title: Elevating GDPR Compliance with an Open-Source DPO Management Portal
+title: Hwo to elevate GDPR compliance with an open-source DPO Management Portal
 weight: 5
 widget: textblock
 ---

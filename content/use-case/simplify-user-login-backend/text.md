@@ -1,5 +1,5 @@
 ---
-title: How to Simplify User Login Backend with Open-Source Databunker
+title: How to simplify user login backend with open-source Databunker
 weight: 5
 widget: textblock
 ---
