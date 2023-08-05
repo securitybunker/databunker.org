@@ -17,7 +17,8 @@
 {{ $headless_bundle1 := site.GetPage "/home" }}
 
 {{/* Query */}}
-{{ $query := where ( $headless_bundle1.Resources.ByType "page" ) ".Params.active" "!=" true }}
+{{ $query2 := where ( $headless_bundle1.Resources.ByType "page" ) ".Params.active" "!=" true }}
+{{ $query := where ( $headless_bundle1.Resources.Match "definitions/*/*" ) ".Params.active" "!=" true }}
 
 {{ $count := len $query }}
 
@@ -59,6 +60,8 @@ div.tab-pane img {clip-path: inset(1% 1% 1% 1%); margin:auto;}
           {{ range $i, $post := $query }}
 	    {{ if eq $i 0 }}
 	    <a class="nav-link active" data-toggle="tab" href="#{{ .Title | urlize }}" role="tab" aria-selected="true">0{{ add $i 1 }}&nbsp;&nbsp;&nbsp;{{ .Title }}</a>
+	    {{ else if eq $i 9 }}
+	      <a class="nav-link" data-toggle="tab" href="#{{ .Title | urlize }}" role="tab" aria-selected="true">{{ add $i 1 }}&nbsp;&nbsp;&nbsp;{{ .Title }}</a>
 	    {{ else }}
 	      <a class="nav-link" data-toggle="tab" href="#{{ .Title | urlize }}" role="tab" aria-selected="true">0{{ add $i 1 }}&nbsp;&nbsp;&nbsp;{{ .Title }}</a>
 	    {{ end }}

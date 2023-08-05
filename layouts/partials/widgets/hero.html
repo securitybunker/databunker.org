@@ -4,13 +4,13 @@
 
 {{ if $page.Params.hero_media }}
 <div class="row">
-  <div class="col-md-6 order-md-1 text-center text-md-left align-self-center">
+  <div class="col-md-6 order-md-1 text-md-left align-self-center">
 {{ end }}
 <!--
 <h2>Make your Mobile and Web apps GDPR compliant in under 10 minutes.</h2>
 <h2>Special GDPR compliant secure vault for customer records in under 2 hours.</h2>
 -->
-<h2>Secure vault and SDK to store customer records built to comply with GDPR</h2>
+<h2>{{ $page.Title }}</h2>
     {{ with $page.Content }}
     <div>{{ . }}</div>
     {{ end }}

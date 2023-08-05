@@ -1,0 +1,210 @@
+<style>
+.show_delay {
+  animation: anime 1s 1;
+}
+@keyframes anime {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#chat .card {
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background: #fff;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
+    transition: all .2s ease-out;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+}
+#chat .card-body {
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+#chat .btn-secondary, .btn-secondary:hover {
+    color: #f0f0f0!important;
+    text-decoration: none;
+    /*
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    */
+}
+#chat .btn-secondary:hover {
+    color: #fff;
+    background-color: #5a6268;
+    border-color: #545b62;
+}
+#chat .btn-secondary {
+    font-size: 1.1rem;
+    box-shadow: rgba(0,0,0,.5)0 20px 30px!important;
+    color: #fff!important;
+    line-height: 25px;
+    padding: 10px 40px!important;
+}
+#chat .btn-block {
+    display: block;
+    width: 100%;
+}
+#chat .btn-secondary {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+#chat .btn-block + .btn-block {
+    margin-top: 0.5rem;
+}
+</style>
+<!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "1642521305963038");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+<div id="chat" style="bottom:25px;right:25px;position:fixed;z-index:10000;display:none;">
+<div id="chaticon" style="width:40px;height:40px;">
+<svg version="1.1" onclick="show_chat_menu();" id="svgchat" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+         viewBox="0 0 58 58" xml:space="preserve">
+<g>
+        <path style="fill:#0391FD;" d="M48,19.929v21.141C48,43.793,45.793,46,43.071,46H22L12,57V46H4.929C2.207,46,0,43.793,0,41.071
+                l0-21.141C0,17.207,2.207,15,4.929,15h38.141C45.793,15,48,17.207,48,19.929z"/>
+        <path style="fill:#0F71D3;" d="M53.071,1H14.929C12.207,1,10,3.207,10,5.93V15h33.071C45.793,15,48,17.207,48,19.93V32h5.071
+                C55.793,32,58,29.793,58,27.07V5.93C58,3.207,55.793,1,53.071,1z"/>
+        <path style="fill:#FFFFFF;" d="M25,26.015H11c-0.553,0-1-0.448-1-1s0.447-1,1-1h14c0.553,0,1,0.448,1,1S25.553,26.015,25,26.015z"
+                />
+        <path style="fill:#FFFFFF;" d="M38,32.015H11c-0.553,0-1-0.448-1-1s0.447-1,1-1h27c0.553,0,1,0.448,1,1S38.553,32.015,38,32.015z"
+                />
+        <path style="fill:#FFFFFF;" d="M38,38.015H11c-0.553,0-1-0.448-1-1s0.447-1,1-1h27c0.553,0,1,0.448,1,1S38.553,38.015,38,38.015z"
+                />
+</g>
+</svg>
+</div>
+<div id="chatwidget" class="card" style="width: 18rem;display:none;">
+  <div class="card-body">
+    <h5 class="card-title" style="margin-top:-10px;">Databunker</h5>
+    <div style="position:absolute; top:5px; right:18px; background: transparent;cursor: pointer;color:#000;font-family: 'Helvetica', 'Arial', sans-serif;font-size: 1.4em;font-weight: 400;text-align: center;width: 30px;height: 35px;border-radius: 5px;margin: 0 auto;" onclick="close_chat();">X</div>
+    <div id="chatmenu">
+    <a href="javascript:demo_chat();" class="btn-block btn-secondary">Show me a demo</a>
+    <a href="javascript:human_chat();" class="btn-block btn-secondary">Chat with a team</a>
+    </div>
+    <div id="demolinks" style="display:none;">
+      <a target="_blank" href="https://databunker.org/doc/demo/" class="btn-block btn-secondary">Online demo</a>
+      <a target="_blank" href="https://calendly.com/stremovsky/30min" class="btn-block btn-secondary">Databunker PRO</a>
+      <a href="javascript:top_chat();" class="btn-block btn-secondary">Back</a>
+    </div>
+    <div id="chatlinks" style="display:none;">
+    <a target="_blank" href="https://wa.me/972524486622?text=Chat+request" class="btn-block btn-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>&nbsp;Open WhatsApp</a>
+    <a href="javascript:fb_chat_init();" class="btn-block btn-secondary"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 0c-6.627 0-12 4.975-12 11.111 0 3.497 1.745 6.616 4.472 8.652v4.237l4.086-2.242c1.09.301 2.246.464 3.442.464 6.627 0 12-4.974 12-11.111 0-6.136-5.373-11.111-12-11.111zm1.193 14.963l-3.056-3.259-5.963 3.259 6.559-6.963 3.13 3.259 5.889-3.259-6.559 6.963z"/></svg>&nbsp;Open Messenger</a>
+    <a target="_blank" href="https://calendly.com/stremovsky/30min" class="btn-block btn-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.5 17.311l-1.76-3.397-1.032.505c-1.12.543-3.4-3.91-2.305-4.497l1.042-.513-1.747-3.409-1.053.52c-3.601 1.877 2.117 12.991 5.8 11.308l1.055-.517z"/></svg>&nbsp;Schedule a call</a>
+    <a href="javascript:top_chat();" class="btn-block btn-secondary">Back</a>
+
+    </div>
+  </div>
+</div>
+</div>
+<script>
+function fb_chat_init() {
+  var chat = document.getElementById('chat');
+  if (chat) {
+    chat.style.display = "none";
+  }
+  close_chat();
+  window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v13.0'
+        });
+  };
+
+  (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+}
+function human_chat() {
+  var chatmenu=document.getElementById('chatmenu');
+  var chatlinks=document.getElementById('chatlinks');
+  if (chatmenu && chatlinks) {
+    chatmenu.style.display = "none";
+    chatlinks.style.display = "unset";
+  }
+}
+function demo_chat() {
+  var chatmenu=document.getElementById('chatmenu');
+  var demolinks=document.getElementById('demolinks');
+  if (chatmenu && demolinks) {
+    chatmenu.style.display = "none";
+    demolinks.style.display = "block";
+  }
+}
+function top_chat() {
+  var chatlinks=document.getElementById('chatlinks');
+  var demolinks=document.getElementById('demolinks');
+  var chatmenu=document.getElementById('chatmenu');
+  if (chatwidget && chatlinks && demolinks && chatmenu) {
+    chatlinks.style.display = "none";
+    demolinks.style.display = "none";
+    chatmenu.style.display = "block";
+  }
+}
+function close_chat() {
+  var chatwidget=document.getElementById('chatwidget');
+  var chatlinks=document.getElementById('chatlinks');
+  var demolinks=document.getElementById('demolinks');
+  var chatmenu=document.getElementById('chatmenu');
+  if (chatwidget && chatlinks && demolinks && chatmenu) {
+    chatwidget.style.display = "none";
+    chatlinks.style.display = "none";
+    demolinks.style.display = "none";
+    chatmenu.style.display = "block";
+  }
+  var chaticon = document.getElementById('chaticon');
+  if (chaticon) {
+    chaticon.style.display = "block";
+  }
+  return false;
+}
+function show_chat_menu() {
+  var chaticon = document.getElementById('chaticon');
+  if (chaticon) {
+    chaticon.style.display = "none";
+  }
+  setTimeout(function() {
+    var chatwidget = document.getElementById('chatwidget');
+    chatwidget.style.display = "block";
+  }, 500);
+}
+if (screen.width > 500) {
+  /*
+  var current = window.location.pathname;
+  if (current.indexOf("/blog")  > -1) {
+    $('#chat').delay(200000).fadeIn(1000);
+  }
+  $('#chat').delay(1000).fadeIn(1000);
+  */
+  setTimeout(function() {
+    var chat = document.getElementById('chat');
+    chat.style.display = "block";
+  }, 1000);
+}
+</script>
+

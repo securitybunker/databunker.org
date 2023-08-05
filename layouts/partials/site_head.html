@@ -218,8 +218,8 @@
   {{ $title := site.Title }}
   {{ if not .IsHome }}
     {{ $title = printf "%s | %s" .Title site.Title }}
-    {{if gt (len $title) 64}}
-      {{ $title = printf "%s | %s" .Title site.Params.shortTitle | safeHTML }}
+    {{if gt (len $title) 63}}
+      {{ $title = printf "%s ✔️" .Title | safeHTML }}
     {{end}}
   {{ end }}
 
