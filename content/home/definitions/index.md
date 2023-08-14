@@ -1,6 +1,10 @@
 +++
-title = "10x Data Security"
-subtitle = "Databunker vs regular db/disk encyption"
+#title = "10x Data Security"
+#title = "Databunker Top Ten"
+title = "Data Security Top Ten"
+#subtitle = "Databunker vs regular db/disk encyption"
+#subtitle = "The most important security features"
+subtitle = "Databunker vs other solutions"
 widget = "definitions"
 headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
