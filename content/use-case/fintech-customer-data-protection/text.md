@@ -1,5 +1,5 @@
 ---
-title: "8 Steps to Protect Customer Secrets: A Guide for Fintech Startups"
+title: "8 Steps to Protect Customer PII: A Guide for Fintech Startups"
 weight: 5
 widget: textblock
 ---

@@ -1,5 +1,5 @@
 ---
-title: How to implement customer profile storage and tokenization with Databunker
+title: How to implement customer PII storage and tokenization with Databunker
 weight: 5
 widget: textblock
 ---
