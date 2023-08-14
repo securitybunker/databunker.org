@@ -12,7 +12,8 @@ subtitle = "Solutions for popular use cases"
 
 [content]
   # Page type to display. E.g. post, talk, or publication.
-  page_type = "docs"
+  #page_type = "docs"
+  page_type = "textpage"
   
   # Choose how much pages you would like to display (0 = all pages)
   count = 15
