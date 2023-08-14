@@ -1,4 +1,18 @@
 <script>
+function log_event(evname) {
+  if (!evname) {
+    return;
+  }
+  var xhr10 = new XMLHttpRequest();
+  var rnd = Math.floor(Math.random() * 1000000).toString();
+  xhr10.open('GET', "/api/pixel.php?tabname="+evname+"&rnd="+rnd);
+  xhr10.onload = function () {
+    if (xhr10.status !== 200) {
+      return;
+    }
+  };
+  xhr10.send();
+}
 function book_demo_call() {
   var n = document.getElementById('call_name');
   var e = document.getElementById('call_email');
@@ -49,5 +63,13 @@ function book_demo_call() {
 }
 function free_check_link() {
   window.open('https://privacybunker.io/gdpr-tools-for-ecommerce/', '_blank');
+}
+function click_yuli() {
+  log_event('click-yuli');
+  document.location = 'https://calendly.com/stremovsky/30min';
+}
+function click_help() {
+  log_event('click-help');
+  document.location = 'https://calendly.com/stremovsky/30min';
 }
 </script>
