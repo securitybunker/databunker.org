@@ -5,7 +5,11 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 10  # Order that this section will appear.
 
-title = "Databunker"
+#title = "Secure vault and SDK to store customer records built to comply with GDPR"
+#title = "Databunker is a secure vault and SDK to store customer records built to accelerate privacy compliance"
+#title = "Prevent sensitive data exposure via SQL injections and unfiltered GraphQL queries"
+#title = "Prevent Sensitive Data Exposure via GraphQL and SQL Injections"
+title = "Protect Your Customer Data with Databunker"
 
 # Hero image (optional). Enter filename of an image in the `static/img/` folder.
 hero_media = "databunker.mp4"
@@ -43,8 +47,9 @@ hero_media = "databunker.mp4"
   label = "Get started"
 # old title = <h2>Add GDPR compliant <span style="border-bottom: 1px solid #fc6f5c;">address book</span> to your Web and mobile apps in under 10 minutes.</h2>
 # and with full customer visibility
+#Databunker is a secure vault and SDK to store customer records built to accelerate GDPR, HIPAA, and SOC2 compliance. It provides strong, serious, real personal-data protection for your customer records without expensive custom coding.
 +++
-Databunker was built to prevent sensitive data exposure via SQL injections and unfiltered GraphQL queries. The product provides strong, serious, real personal-data protection for your customer records without expensive custom coding.
+Databunker is a powerful vault and solution that ensures GDPR, HIPAA, ISO 27001, and SOC2 compliance. Protect sensitive information from GraphQL and SQL injections without costly custom development.
 * **Privacy by design compliance**
 * **Open-source security**
 * **Self-hosted service**
