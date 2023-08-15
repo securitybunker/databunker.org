@@ -1,7 +1,7 @@
 +++
 widget = "guide"
 headless = true
-active = true
+active = false
 weight = 91
 title = "Practical GDPR Compliance Guide for Startup Heroes"
 subtitle = ""
