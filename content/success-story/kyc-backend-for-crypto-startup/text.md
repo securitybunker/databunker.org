@@ -1,10 +1,10 @@
 ---
-title: A perfect backend for a KYC system for a crypto startup
+title: A perfect KYC backend for my crypto startup
 summary: Databunker as a perfect backend for a KYC system for a crypto startup.
 weight: 5
 widget: textblock
 ---
-## Databunker product review
+## Databunker product feedback
 
 First of all, this product is an excellent idea and thank you for your efforts in developing it!
 
@@ -17,3 +17,7 @@ I don't think I need any help at this time, but I wanted to let you know what dr
 **Elliot Sawyer,**
 
 **Director, Cashware New Zealand, cashware.nz**
+
+<style>
+div#free-takeaway {display:none;}
+</style>
