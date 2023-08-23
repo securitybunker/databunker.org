@@ -3,6 +3,6 @@ type = "textpage"
 headless = false
 hidenavbar = true
 #title = "Elevate GDPR compliance with open-source DPO management portal"
-title = "DPO Management Portal using open-source: Practical Guide"
+title = "DPO Management Portal using Open-Source: Practical Guide"
 summary = "Discover how DPO Management Portal alows you to manage user privacy requests, consent settings, generate data reports, fostering transparency and trust with customers"
 +++
