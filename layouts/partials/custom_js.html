@@ -13,6 +13,13 @@ function log_event(evname) {
   };
   xhr10.send();
 }
+function toggleContent() {
+    var contentDiv = document.querySelector('.truncate-long-text');
+    contentDiv.style.overflow = 'visible';
+    contentDiv.style.maxHeight = '100%';
+    contentDiv.style.maskImage = 'unset';
+    document.querySelector('#unhide-btn').style.display = 'none';
+}
 function book_demo_call() {
   var n = document.getElementById('call_name');
   var e = document.getElementById('call_email');

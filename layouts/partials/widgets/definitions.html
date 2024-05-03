@@ -78,14 +78,16 @@ div.tab-pane img {clip-path: inset(1% 1% 1% 1%); margin:auto;}
                 <a class="nav-link" data-toggle="collapse" href="#collapse-{{ .Title | urlize }}" data-parent="#my-tab-content" aria-expanded="true">0{{ add $i 1 }}&nbsp;&nbsp;&nbsp;{{ .Title }}</a> 
               </div>
               <div class="collapse show" role="tabpanel" id="collapse-{{ .Title | urlize }}">
+              <div class="truncate-long-text">{{ .Content }}</div>
+              <div id='unhide-btn' class="mb-3 mt-3 text-center"><a href='javascript:void(0);' onclick="toggleContent()">Show full content</a></div>
           {{ else }}
 	    <div class="tab-pane fade" role="tabpanel" id="{{ .Title | urlize }}">
               <div class="card-header mobile-menu" role="tab" id="mobile-menu-{{ $i }}">
                 <a class="nav-link" data-toggle="collapse" href="#collapse-{{ .Title | urlize }}" data-parent="#my-tab-content" aria-expanded="false">0{{ add $i 1 }}&nbsp;&nbsp;&nbsp;{{ .Title }}</a>
               </div>
 	      <div class="collapse" role="tabpanel" id="collapse-{{ .Title | urlize }}">
+              {{ .Content }}
           {{ end }}
-            {{ .Content }}
 	      </div></div>
         {{end}}
 	</div>
