@@ -11,20 +11,23 @@ weight: 5
 ---
 ## Databunker intro
 
-Daily occurrences of personal data leaks stresses the need for robust security measures. That's why we created Databunker – a secure storage system designed specifically for safeguarding Personally Identifiable Information (PII), Protected Health Information (PHI), and customer records. It was built to prevent **sensitive data exposure** via **SQL injection** and **unfiltered GraphQL queries**. The product provides a better solution to **a regular database encryption** provided by Database or Cloud vendors. In addition, our product is fully GDPR compliant.
+With the rise in personal data leaks, we've developed Databunker—a solution aimed at safeguarding customer privacy. It's a secure storage system designed specifically to protect **Personally Identifiable Information (PII)**, **Protected Health Information (PHI)**, and **KYC** records. Databunker was engineered to prevent sensitive data exposure through **SQL injection** and **unfiltered GraphQL queries**, offering superior protection compared to standard database encryption provided by Database or Cloud vendors. Additionally, our product is fully compliant with GDPR regulations.
 
-Let's be honest about **database encryption**; most solutions provide only a **false sense of security**. Data is typically encrypted solely at the storage or disk level. If your website falls victim to SQL injection or has incorrectly filtered GraphQL queries, malicious actors can easily access your data in plain text.
+### Database Encryption Reality
+Let's face it, conventional database encryption often provides only a **false sense of security**. Data is usually encrypted solely at the storage or disk level. In the event of **SQL injection** or **incorrectly filtered GraphQL queries**, malicious actors can effortlessly access your data in plain text.
 
 ### Solution with Databunker
-
-Instead of talking to Databunker using SQL, your backend will have to call an API function to retrieve specific user details. It is similar to any NoSQL database API. You can only lookup user records if you know his email address, phone number or unique user ID (UUID token).
-
-By default, Databunker does not allow dumping all user records at once. This API call is disabled. Databunker encrypts customer records and builds a secure search index for quick user lookup (i.e. using email, token, etc...).
+Databunker offers a paradigm shift in customer data protection:
+1. By default, bulk retrieval of user records is disabled, providing an additional layer of defense against potential breaches.
+2. Your backend communicates with Databunker through API calls, akin to NoSQL database practices, rather than relying on traditional SQL queries.
+3. To access user records, partial user information such as an email address coupled with an access token is required. Additionally, users can be looked up by their phone number, login name, or unique user ID (UUID token).
+4. Secure hash-based indexing is utilized for all search indexes by default, further fortifying data protection measures.
+5. Databunker ensures that no information is stored in clear text, enhancing overall security.
 
 ![Pseudonymized identity](/img/pseudonymized-identity.png)
 
 
-## 1. Databunker setup
+## 1. Running Databunker container
 The easiest way to get started with **Databunker** is to run it as a **Docker container**:
 
 ```

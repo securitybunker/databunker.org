@@ -1,3 +1,4 @@
+body {font-size: 0.9rem;}
 .section-heading h1 {font-size: 25px;}
 .section-heading p {font-size: 1rem;}
 .section-heading {margin-bottom: 30px;}
@@ -53,6 +54,7 @@ section#hero h1 {font-size: 1.74rem;color:#fff;text-align-last:justify;}
 section.home-section:first-of-type {padding-top:10px;}
 }
 div.docs p, section.wg-textblock p {text-align: justify;margin-bottom:10px;}
+div.docs li p {text-align:unset;}
 .share-box {float:unset;}
 @media only screen and (min-width: 769px) {
   body #bettergdpr_cookie_banner {left:15% !important;}
@@ -67,8 +69,9 @@ div#qbanner div {display:inline-block;vertical-align:middle;background-color:#F7
 div.docs-toc li a {margin-left:0; padding-left:0;}
 #TableOfContents li a, .toc-top li a {margin-left:0; padding-left:0;}
 div.docs-toc ul {margin-bottom:0.6rem;}
-#TableOfContents {padding-left:5px;}
-#TableOfContents a {color:#197ba9;}
+#TableOfContents {padding-left:5px;line-height:1.5;}
+#TableOfContents a {color: #99979c;}
+#TableOfContents ul {margin-bottom: .3rem;}
 section#use-cases a {color:#197ba9;font-size:0.8rem;}
 .widget a:not(.btn) {color:#197ba9;}
 .truncate-long-text {mask-image:linear-gradient(to bottom, black 50%, transparent 100%);max-height:600px;overflow:hidden;}
