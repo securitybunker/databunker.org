@@ -1,5 +1,6 @@
 ---
-title: Getting Started with Databunker
+#title: Getting Started with Databunker
+title: "Databunker: what is it and how it works"
 linktitle: Getting started
 toc: true
 type: docs
@@ -14,7 +15,7 @@ weight: 5
 With the rise in personal data leaks, we've developed Databunker—a solution aimed at safeguarding customer privacy. It's a secure storage system designed specifically to protect **Personally Identifiable Information (PII)**, **Protected Health Information (PHI)**, and **KYC** records. Databunker was engineered to prevent sensitive data exposure through **SQL injection** and **unfiltered GraphQL queries**, offering superior protection compared to standard database encryption provided by Database or Cloud vendors. Additionally, our product is fully compliant with GDPR regulations.
 
 ### Database Encryption Reality
-Let's face it, conventional database encryption often provides only a **false sense of security**. Data is usually encrypted solely at the storage or disk level. In the event of **SQL injection** or **incorrectly filtered GraphQL queries**, malicious actors can effortlessly access your data in plain text.
+Let's acknowledge it, conventional database encryption often provides only a **false sense of security**. Data is usually encrypted solely at the storage or disk level. In the event of **SQL injection** or **incorrectly filtered GraphQL queries**, malicious actors can effortlessly access your data in plain text.
 
 ### Solution with Databunker
 Databunker offers a paradigm shift in customer data protection:
@@ -52,7 +53,7 @@ If you want to use **Databunker** in your existing project you need to move cust
 
 In this example, we'll convert the following database schema to use user records stored in Databunker.
 
-![Ogiginal schema](/img/db-original.png)
+![Original schema](/img/db-original.png)
 
 
 #### Method 1: simple database reorganization
@@ -77,7 +78,7 @@ You will have to go all over tables that have ``userid`` and add ``usertoken`` c
 This method will require more changes on your database level and in your application code.
 
 
-## 3. Some usefull Databunker commands
+## 3. Some useful Databunker commands
 
 ### Create a user record
 
