@@ -11,11 +11,9 @@ weight: 5
 ---
 ## Databunker intro
 
-Personal data leaks happen daily. To address this problem, Databunker was created to create a secure storage system for PII/PHI and customer records. It was built to prevent **sensitive data exposure** via **SQL injection** and **unfiltered GraphQL queries**. The product provides a better solution to **a regular database encryption** provided by Database or Cloud vendors. In addition, our product is fully GDPR compliant.
+Daily occurrences of personal data leaks stresses the need for robust security measures. That's why we created Databunker – a secure storage system designed specifically for safeguarding Personally Identifiable Information (PII), Protected Health Information (PHI), and customer records. It was built to prevent **sensitive data exposure** via **SQL injection** and **unfiltered GraphQL queries**. The product provides a better solution to **a regular database encryption** provided by Database or Cloud vendors. In addition, our product is fully GDPR compliant.
 
-Regarding **database encryption**, let's face the truth. Most solutions provide **fake security**. Data is encrypted at the storage or disk level.
-
-If your website has SQL injection or your GraphQL query filter is incorrect, the bad actor will get your **data in cleartext**.
+Let's be honest about **database encryption**; most solutions provide only a **false sense of security**. Data is typically encrypted solely at the storage or disk level. If your website falls victim to SQL injection or has incorrectly filtered GraphQL queries, malicious actors can easily access your data in plain text.
 
 ### Solution with Databunker
 
