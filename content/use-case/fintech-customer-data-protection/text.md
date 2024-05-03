@@ -1,5 +1,5 @@
 ---
-title: "8 Steps to Protect Customer PII: A Guide for Fintech Startups"
+title: "Fintech Startup Guide: 8 Steps to Protect Customer PII Data"
 weight: 5
 widget: textblock
 ---

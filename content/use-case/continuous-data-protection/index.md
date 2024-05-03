@@ -3,6 +3,6 @@ type = "textpage"
 headless = false
 hidenavbar = true
 #title = "Audit trail and tracing customer profile changes with Databunker"
-title = "Continuous Data Protection for PII/PHI records with Databunker"
-summary = "Secure Your PII and PHI: Leveraging Databunker's Continuous Data Protection Approach"
+title = "Continuous Data Protection for PII/PHI records"
+summary = "Secure Your PII and PHI using open-source Databunker. Implement Continuous Data Protection (CDP) methodology without expensive custom coding."
 +++

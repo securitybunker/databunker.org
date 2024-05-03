@@ -1,9 +1,8 @@
 +++
-# Accomplishments widget.
 widget = "tick"  # See https://sourcethemes.com/academic/docs/page-builder/
-headless = true  # This file represents a page section.
-active = true  # Activate this widget? true/false
-weight = 60  # Order that this section will appear.
+headless = true
+active = false
+weight = 60
 
 title = "GDPR user rights"
 subtitle = "Databunker will help you comply with GDPR user rights"

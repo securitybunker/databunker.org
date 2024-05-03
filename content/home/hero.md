@@ -9,10 +9,20 @@ weight = 10  # Order that this section will appear.
 #title = "Databunker is a secure vault and SDK to store customer records built to accelerate privacy compliance"
 #title = "Prevent sensitive data exposure via SQL injections and unfiltered GraphQL queries"
 #title = "Prevent Sensitive Data Exposure via GraphQL and SQL Injections"
-title = "Protect Your Customer Data with Databunker"
+#title = "Protect Your Customer Data with Databunker"
+#title = "Protect Your Customer Data"
+#title = "Encrypted KYC Database"
+#title = "Purpose-built KYC Vault"
+#title = "PII Data Protection Vault"
+#title = "Better Security with Secure PII Vault"
+#title = "Secure PII Vault"
+#title = "Secure PII Vault. Simplified Compliance."
+#title = "Open-source KYC "
+title = "Fort Knox for User PII Data"
 
 # Hero image (optional). Enter filename of an image in the `static/img/` folder.
-hero_media = "databunker.mp4"
+#hero_media = "databunker.mp4"
+hero_media = "databunker-diagram.png"
 
 [design.background]
   # Apply a background color, gradient, or image.
@@ -44,12 +54,28 @@ hero_media = "databunker.mp4"
   
 [btn]
   url = "/doc/start/"
-  label = "Get started"
+  #label = "Get started"
+  label = "How it works"
+
+#"Click to Reveal the Hidden Gem"
+#"Want to Learn the Secret Sauce? Click Now"
+#"The Answer Awaits: Click to Discover"
+#"Curiosity Calling? Click Here"
+#"Discover the Unexpected: Click to Start"
+#"Uncover the Mysteries - Click Here to Begin"
+#"Ready to Dive into the Unknown? Click Below"
+#"Discover the Unseen: Learn More Now"
+#"Take the Leap and Dive Deeper"
+
 # old title = <h2>Add GDPR compliant <span style="border-bottom: 1px solid #fc6f5c;">address book</span> to your Web and mobile apps in under 10 minutes.</h2>
 # and with full customer visibility
 #Databunker is a secure vault and SDK to store customer records built to accelerate GDPR, HIPAA, and SOC2 compliance. It provides strong, serious, real personal-data protection for your customer records without expensive custom coding.
+#Databunker is a powerful vault and API that ensures GDPR, HIPAA, ISO 27001, and SOC2 compliance. Protect sensitive records from GraphQL and SQL injections without costly custom development.
+#* **Privacy by design compliance**
+#* **Open-source security**
+#* **Self-hosted service**
+#Databunker is an open-source vault and API that ensures GDPR, HIPAA, ISO 27001, and SOC2 compliance. Protect sensitive user records against GraphQL and SQL injections without the need for expensive custom coding.
 +++
-Databunker is a powerful vault and solution that ensures GDPR, HIPAA, ISO 27001, and SOC2 compliance. Protect sensitive information from GraphQL and SQL injections without costly custom development.
-* **Privacy by design compliance**
-* **Open-source security**
-* **Self-hosted service**
+Databunker: open-source PII Vault for secure storage & compliance. Protect user records from SQL and GraphQL injections without custom coding. Simplify GDPR, HIPAA, ISO 27001, and SOC2 compliance.
+
+⭐⭐⭐⭐⭐ <a href="https://databunker.org/success-story/kyc-backend-for-crypto-startup/" style="text-decoration:underline;text-underline-offset:4px;">a perfect kyc backend</a>
