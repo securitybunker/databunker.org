@@ -17,7 +17,7 @@
 {{ $headless_bundle1 := site.GetPage "/home" }}
 
 {{/* Query */}}
-{{ $query := where site.RegularPages "Type" $items_type }}
+{{ $query := where site.RegularPages "Type" "textpage" }}
 
 {{ $count := len $query }}
 
@@ -32,7 +32,9 @@
 	<h1 class="text-center mb-5">{{ with $st.Title }}{{ . | markdownify | emojify }}{{ end }}</h1>
 	<ul>
           {{ range $i, $post := $query }}
-	  <li><a target="blank" href="{{.RelPermalink }}">{{ .Title }}</a></li>
+	    {{ if strings.Contains .RelPermalink "use-case/" }}
+	      <li><a target="blank" href="{{.RelPermalink }}">{{ .Title }}</a></li>
+	    {{ end }}
           {{end}}
 	</ul>
     </div>
