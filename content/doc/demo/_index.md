@@ -13,7 +13,7 @@ weight: 10
 
 <a href="https://demo.databunker.org/" target="_blank">https://demo.databunker.org/</a>
 
-#### User and admin user credentials:
+#### User and root user credentials:
 
 * User phone: 4444
 * User code: 4444
