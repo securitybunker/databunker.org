@@ -62,7 +62,7 @@ function book_demo_call() {
     xhr0.send(msg.toString());
 }
 function free_check_link() {
-  window.open('https://privacybunker.io/gdpr-tools-for-ecommerce/', '_blank');
+  window.open('https://privacybunker.io/', '_blank');
 }
 function click_yuli() {
   log_event('click-yuli');
@@ -70,6 +70,11 @@ function click_yuli() {
 }
 function click_help() {
   log_event('click-help');
-  document.location = 'https://calendly.com/stremovsky/30min';
+  const element = document.getElementById("contact");
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+  } else {
+    document.location = 'https://calendly.com/stremovsky/30min';
+  }
 }
 </script>

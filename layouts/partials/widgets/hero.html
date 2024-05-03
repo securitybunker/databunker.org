@@ -3,14 +3,14 @@
 {{ $bg := $page.Params.design.background }}
 
 {{ if $page.Params.hero_media }}
-<div class="row">
+<div class="row mt-4">
   <div class="col-md-6 order-md-1 text-md-left align-self-center">
 {{ end }}
 <!--
 <h2>Make your Mobile and Web apps GDPR compliant in under 10 minutes.</h2>
 <h2>Special GDPR compliant secure vault for customer records in under 2 hours.</h2>
 -->
-<h2>{{ $page.Title }}</h2>
+<h1 class="mt-0">{{ $page.Title }}</h1>
     {{ with $page.Content }}
     <div>{{ . }}</div>
     {{ end }}
@@ -30,7 +30,7 @@
       {{ else if in (slice "http" "https") $scheme }}
         {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
       {{ end }}
-    <p class="mt-4">
+    <p class="mt-5 mb-1">
       <a href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }} class="btn {{if $bg.text_color_light}}btn-light{{else}}btn-primary{{end}} btn-lg  page-scroll mb-2">{{ if $page.Params.btn.icon }}<i class="{{ $pack }} {{ $pack_prefix }}-{{ $page.Params.btn.icon }} mr-2" aria-hidden="true"></i>{{end}}{{ $page.Params.btn.label | markdownify | emojify | safeHTML }}</a>
 
       {{/* Alternative Call-to-action link */}}
@@ -46,21 +46,24 @@
       <a href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }} class="btn btn-lg {{if $bg.text_color_light}}btn-outline-light{{else}}btn-outline-primary{{end}} page-scroll mb-2">{{ if $page.Params.btn_alt.icon }}<i class="{{ $pack }} {{ $pack_prefix }}-{{ $page.Params.btn_alt.icon }} mr-2" aria-hidden="true"></i>{{end}}{{ $page.Params.btn_alt.label | markdownify | emojify | safeHTML }}</a>
       {{ end }}
     </p>
+    <!--
+    <p style="font-size:80%;">💰 <i>Get your <a href="#contact" style="text-decoration:underline;">$1,000 coupon</a> to run Databunker in the cloud.</i></p>
+    -->
     {{ end }}
 
   {{/* Hero image */}}
   {{ if $page.Params.hero_media }}
   </div>
     <div class="col-lg-6 mx-auto col-md-6 order-md-2 hero-media">
+	    <img src="{{ printf "img/%s" $page.Params.hero_media | relURL }}" style="background-color: #fff;border:1px solid black;box-shadow: 0 2px 4px;transition: all .2s ease-out;padding:20px;" />
       <!--
       <video autoplay=true controls=true loop=true muted=true style="border-color:#222;">
               <source src="{{ printf "img/%s" $page.Params.hero_media | relURL }}" type="video/mp4">
       </video>
-      -->
-
       <div id="youtube" class="embed-responsive embed-responsive-16by9">
           <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/tAdTNojxS1s?autoplay=0&rel=0" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border:1px solid black;background-color:#000;"></iframe>
         </div>
+      -->
 
     </div>
   {{ end }}

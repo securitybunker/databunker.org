@@ -4,9 +4,9 @@
 
 <!-- Contact widget -->
 <div class="row contact-widget">
-  <div class="col-12 text-center section-heading">
-    <h1>{{ with $page.Title }}{{ . | markdownify }}{{ end }}</h1>
-    {{ with $page.Params.subtitle }}<p>{{ . | markdownify }}</p>{{ end }}
+  <div class="col-12 text-center sect1ion-heading mb-4">
+    <h2 style="font-size:1.6rem">{{ with $page.Title }}{{ . | markdownify }}{{ end }}</h2>
+    {{ with $page.Params.subtitle }}<h3 style="font-size:1.5rem;font-weight:400;">{{ . | markdownify }}</h3>{{ end }}
   </div>
   <div class="col-12">
     {{ with $page.Content }}<p>{{ . | markdownify }}</p>{{ end }}
@@ -41,10 +41,14 @@
         <div class="form-group">
           <label class="sr-only" for="inputMessage">{{ i18n "contact_message" }}</label>
           <textarea name="message" class="form-control rounded-0" id="inputMessage" rows="5"
-            placeholder="{{ i18n "contact_message" | default "Message" }}" required></textarea>
+            placeholder="Message (optional)"></textarea>
         </div>
+        <div class="form-group">
+          <label class="" for="inputCaptcha">Calculate captcha value: 10 + 8 =</label>
+	  <input type="captcha" name="captcha" class="form-control" id="captcha" placeholder="Enter captcha value" required>
+	</div>
         <button type="submit"
-          class="btn btn-outline-primary px-3 py-2">Request Free Consultation</button>
+		class="btn btn-outline-primary px-3 py-2">Submit</button>
       </form>
     </div>
     {{end}}

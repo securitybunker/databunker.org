@@ -1,5 +1,15 @@
 {{ $page := .page }}
 
+<div class="row justify-content-center mb-4">
+<div class="col-lg-12 text-center" id="qbanner" style="display:none;">
+<img src="/img/yuli-right-small.png" style="width:100px;" alt="Yuli Stremovsky, Privacybunker founder" />
+<div>
+<p class="mt-1" style="font-size:130%;font-size:800;">I hope you enjoy reading this article.</p>
+Me and my team will love to help you with PII/PHI data security and compliance. <a href="/contact/">Contact us now.</a>
+</div>
+</div>
+</div>
+
     <div class="row justify-content-center">
       <div class="col-lg-8 mb-4">
         {{ if or ( $page.Title ) ( $page.Params.subtitle ) }}
@@ -9,22 +19,24 @@
 	  <div class="article-metadata">
           {{ partial "share.html" $page }}
           </div>
-	  <div class="article-ad">
-            <b>Ad</b> • <div class="ad-url" onclick="free_check_link();">privacybunker.io/<b>free-gdpr-check</b></div><br>
-	    <a target="_blank" href="https://privacybunker.io/gdpr-tools-for-ecommerce/">Free Website GDPR Check - Scan Your Website NOW!</a>
+	  <div class="article-ad" style='display:none;'>
+            <b>Ad</b> • <div class="ad-url" onclick="free_check_link();">privacybunker.io/<b>website-gdpr-audit</b></div><br>
+	    <a target="_blank" href="https://privacybunker.io/gdpr-tools-for-ecommerce/"><b>GDPR</b> and Cookie Popup Audit - Scan Your Website NOW!</a>
+	    <p style="font-size:65%;">Companies already paid €2,720,000,000 in GDPR fines. It takes minute to get a detailed GDPR report and prevent GDPR fines.</p>
           </div>
         </div>
         {{ end }}
         {{ $page.Content }}
 
-	  <div class="mt-5">
-	    <h3>Free takeaway</h3>
-	    <p>The Databunker team has created another project. It is a cloud SAAS that helps companies to check their website for GDPR violations.</p>
-	    <p>The first website report of <b>free</b>. <a href="https://privacybunker.io/gdpr-tools-for-ecommerce/">You can check your website now!</a></p>
+	  <div id="free-takeaway" class="mt-5" style="display:none;">
+	    <h3>Introducing a Free Takeaway!</h3>
+	    <p>The Databunker team has launched a new project. It is a cloud-based SAAS solution that tracks GDPR violations in corporate websites.</p>
+	    <p>For a limited time, the initial website report is free of charge.</p>
+	    <p><a href="https://privacybunker.io/gdpr-tools-for-ecommerce/">Request a free website report now!</a></p>
           </div>
       </div>
       <div class="col-lg-4">
-        {{ partial "meeting.html" $page }}
+        {{ partial "expert.html" $page }}
       </div>
    </div>
 {{ if $page.Params.btn.url }}
