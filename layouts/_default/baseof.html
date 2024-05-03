@@ -4,16 +4,16 @@
 {{ partial "site_head.html" . }}
 
 <body id="top" data-spy="scroll" data-target="{{ if or .IsHome (eq .Type "widget_page") }}#navbar-main{{else}}#TableOfContents{{end}}" data-offset="71" {{ if not (.Scratch.Get "light") }}class="dark"{{end}}>
-
-  {{ partial "search" . }}
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5DTR72MP"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
   {{ partial "navbar.html" . }}
 
   {{ block "main" . }}{{ end }}
 
   {{ partial "site_js.html" . }}
-
-  {{ partial "chat.html" . }}
 
   {{ if eq .Type "use-case" }}
     <div class="container">
