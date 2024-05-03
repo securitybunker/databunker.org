@@ -76,6 +76,6 @@ hero_media = "databunker-diagram.png"
 #* **Self-hosted service**
 #Databunker is an open-source vault and API that ensures GDPR, HIPAA, ISO 27001, and SOC2 compliance. Protect sensitive user records against GraphQL and SQL injections without the need for expensive custom coding.
 +++
-Databunker: open-source PII Vault for secure storage & compliance. Protect user records from SQL and GraphQL injections without custom coding. Simplify GDPR, HIPAA, ISO 27001, and SOC2 compliance.
+Databunker: open-source vault for secure storage and compliance of PII, PHI, and KYC records. Protect user records from SQL and GraphQL injections without custom coding. Simplify GDPR, HIPAA, ISO 27001, and SOC2 compliance.
 
 ⭐⭐⭐⭐⭐ <a href="https://databunker.org/success-story/kyc-backend-for-crypto-startup/" style="text-decoration:underline;text-underline-offset:4px;">a perfect kyc backend</a>
