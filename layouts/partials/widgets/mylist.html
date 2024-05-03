@@ -21,6 +21,7 @@
 {{ $query = where $query "Params.active" "!=" true }}
 {{ $query = where $query "Params.frontpage" "eq" true }}
 {{ $count := len $query }}
+{{ $half := math.Ceil ( div $count 2 ) }}
 
 {{/* Sort */}}
 {{ $sort_by := "Date" }}
@@ -29,12 +30,23 @@
 <!-- <i class="fas fa-external-link-alt"></i> -->
 
 <div class="row justify-content-center">
-      <div class="col-10 col-sm-8">
-	<h1 class="text-center mb-5">{{ with $st.Title }}{{ . | markdownify | emojify }}{{ end }}</h1>
+   <div class="col-10">
+     <h1 class="text-center mb-4">{{ with $st.Title }}{{ . | markdownify | emojify }}{{ end }}</h1>
+   </div>
+</div>
+<div class="row justify-content-center">
+      <div class="col-10 col-sm-6">
 	<ul>
-          {{ range $i, $post := $query }}
+          {{ range $i, $post := $query | first ( add $half 1) }}
 	      <li><a target="blank" href="{{.RelPermalink }}">{{ .Title }}</a></li>
           {{end}}
 	</ul>
+    </div>
+      <div class="col-10 col-sm-6">
+        <ul>
+          {{ range $i, $post := $query | last $half }}
+              <li><a target="blank" href="{{.RelPermalink }}">{{ .Title }}</a></li>
+          {{end}}
+        </ul>
     </div>
 </div>

@@ -69,6 +69,6 @@ div.docs-toc li a {margin-left:0; padding-left:0;}
 div.docs-toc ul {margin-bottom:0.6rem;}
 #TableOfContents {padding-left:5px;}
 #TableOfContents a {color:#197ba9;}
-section#use-cases a {color:#197ba9;}
+section#use-cases a {color:#197ba9;font-size:0.8rem;}
 .widget a:not(.btn) {color:#197ba9;}
 .truncate-long-text {mask-image:linear-gradient(to bottom, black 50%, transparent 100%);max-height:600px;overflow:hidden;}
