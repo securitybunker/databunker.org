@@ -3,16 +3,23 @@
 .section-heading {margin-bottom: 30px;}
 .nav-pills .nav-link {border-radius:0;text-transform: uppercase;font-size: 15px;}
 section#definitions .nav-link {padding: 0.5rem 0.6rem;}
+ol, ul {padding-left: 20px;}
 ol {margin-top:0;}
 li {margin-left:7px;}
+.contact-widget li {padding:0;}
 img.fancybox-image {clip-path: inset(0% 1% 1% 1%);}
 div#youtube {border: 10px solid #fff;box-shadow: 0 2px 4px 0;transition: all .2s ease-out;}
 div#youtube:hover {box-shadow: rgba(0,0,0,.5)0 20px 30px 0;}
 footer.blockquote-footer {padding: 0;}
 .docs-toc-item.active {margin:0;}
 .docs-toc-item.active:not(:first-child) {margin: 0;}
+section#hero {background: #0179ab;}
+section#hero p {text-align:justify;color:#fff;}
+section#hero h1 {font-size: 2.4rem;color:#fff;}
+section#hero a {color:#fff;}
 div#bgwhite {background-color: #fff;margin-top:10px; border:1px solid #ddd; padding-left:0;padding-right:0;}
-div#bgwhite p { text-align: justify; padding-left:25px;padding-right:25px;}
+div#bgwhite p {text-align:justify; padding-left:25px;padding-right:25px;}
+div#bgwhite ul li {text-align:justify;padding-right:25px;font-size:80%;}
 div#bgwhite .tab-pane p:first-child {padding-top:20px;}
 div#bgwhite .tab-pane p {margin-bottom:0.5rem;}
 #definitions h1 {margin-top:0; margin-bottom:20px;}
@@ -42,6 +49,8 @@ div#bgwhite .tab-pane blockquote  p:first-child {padding-top:0;}
 {
 #sharebtns {display:none;}
 #chat {display:none;}
+section#hero h1 {font-size: 1.74rem;color:#fff;text-align-last:justify;}
+section.home-section:first-of-type {padding-top:10px;}
 }
 div.docs p, section.wg-textblock p {text-align: justify;margin-bottom:10px;}
 .share-box {float:unset;}
@@ -49,5 +58,17 @@ div.docs p, section.wg-textblock p {text-align: justify;margin-bottom:10px;}
   body #bettergdpr_cookie_banner {left:15% !important;}
 }
 div.share-box ul.share li:first-child {margin-left: 0;}
-div.widget {font-size: 16px;line-height: 1.4em;box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);padding: 25px;background-color: #f7f8fc;border: 5px solid #51859b;}
+div.widget {font-size: 16px;line-height: 1.4em;/*box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);*/padding: 25px;background-color: #f7f8fc;border:1px solid rgba(0, 0, 0, .125);}
 .form-check-label, input[type=checkbox] {cursor:pointer;}
+.article-ad {border: 1px solid rgba(0,0,0,.125); width:100%;padding-left:5px;}
+.ad-url {cursor:pointer;display:inline;}
+div#qbanner img {width:100px;display:inline-block;}
+div#qbanner div {display:inline-block;vertical-align:middle;background-color:#F7F8FA;/*#f4f6f8;*/padding:10px 25px 10px 25px;text-align:left !important;}
+div.docs-toc li a {margin-left:0; padding-left:0;}
+#TableOfContents li a, .toc-top li a {margin-left:0; padding-left:0;}
+div.docs-toc ul {margin-bottom:0.6rem;}
+#TableOfContents {padding-left:5px;}
+#TableOfContents a {color:#197ba9;}
+section#use-cases a {color:#197ba9;}
+.widget a:not(.btn) {color:#197ba9;}
+
