@@ -18,7 +18,8 @@
 
 {{/* Query */}}
 {{ $query := where site.RegularPages "Type" "textpage" }}
-
+{{ $query = where $query "Params.active" "!=" true }}
+{{ $query = where $query "Params.frontpage" "eq" true }}
 {{ $count := len $query }}
 
 {{/* Sort */}}
@@ -32,9 +33,7 @@
 	<h1 class="text-center mb-5">{{ with $st.Title }}{{ . | markdownify | emojify }}{{ end }}</h1>
 	<ul>
           {{ range $i, $post := $query }}
-	    {{ if strings.Contains .RelPermalink "use-case/" }}
 	      <li><a target="blank" href="{{.RelPermalink }}">{{ .Title }}</a></li>
-	    {{ end }}
           {{end}}
 	</ul>
     </div>

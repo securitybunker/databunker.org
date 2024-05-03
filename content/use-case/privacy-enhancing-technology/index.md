@@ -2,6 +2,7 @@
 type = "textpage"
 headless = false
 hidenavbar = true
+frontpage = true
 #title = "Build Privacy-Enhancing Technology (PET) using open-source"
 title = "Build Privacy-Enhancing Technology (PET): Practical Guide"
 #summary = "Build robust Privacy-Enhancing Technologies (PETs) with Databunker, an open-source privacy vault"
