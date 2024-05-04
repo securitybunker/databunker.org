@@ -12,7 +12,7 @@ weight: 5
 ---
 ## Databunker intro
 
-With the rise in personal data leaks, we've developed Databunker—a solution aimed at safeguarding customer privacy. It's a secure storage system designed specifically to protect **Personally Identifiable Information (PII)**, **Protected Health Information (PHI)**, and **KYC** records. Databunker was engineered to prevent sensitive data exposure through **SQL injection** and **unfiltered GraphQL queries**, offering superior protection compared to standard database encryption provided by Database or Cloud vendors. Additionally, our product is fully compliant with GDPR regulations.
+In response to the growing frequency of personal data leaks, we've developed Databunker—a solution dedicated to protecting customer privacy. It's a secure storage system designed specifically to protect **Personally Identifiable Information (PII)**, **Protected Health Information (PHI)**, and **KYC** records. Databunker was engineered to prevent sensitive data exposure through **SQL injection** and **unfiltered GraphQL queries**, offering superior protection compared to standard database encryption provided by Database or Cloud vendors. Additionally, our product is fully compliant with GDPR regulations.
 
 ### Database Encryption Reality
 Let's acknowledge it, conventional database encryption often provides only a **false sense of security**. Data is usually encrypted solely at the storage or disk level. In the event of **SQL injection** or **incorrectly filtered GraphQL queries**, malicious actors can effortlessly access your data in plain text.
@@ -45,7 +45,51 @@ You can interact with Databunker using:
 - [REST API](https://documenter.getpostman.com/view/11310294/Szmcbz32) listening on port `3000`: [localhost:3000](http://localhost:3000)
 
 
-## 2. Move your user records to Databunker
+## 2. Useful Databunker commands
+
+### Create a user record
+
+```
+curl -s http://localhost:3000/v1/user -X POST -H "X-Bunker-Token: DEMO" \
+  -H "Content-Type: application/json" \
+  -d '{"first":"John","last":"Doe","login":"john","phone":"4444","email":"user@gmail.com"}'
+```
+
+### Fetch user records by email
+
+```
+curl -s -H "X-Bunker-Token: DEMO" -X GET http://localhost:3000/v1/user/email/user@gmail.com
+```
+
+### Fetch user records by login
+
+```
+curl -s -H "X-Bunker-Token: DEMO" -X GET http://localhost:3000/v1/user/login/john
+```
+
+### Other commands:
+
+For a full list of commands, see the [API document](https://documenter.getpostman.com/view/11310294/Szmcbz32).
+
+
+## 3. Node.js examples
+1. Node.js example implementing passwordless login using Databunker:
+https://github.com/securitybunker/databunker-nodejs-passwordless-login
+
+2. Node.js example with Passport.js, Magic.Link and Databunker:
+https://github.com/securitybunker/databunker-nodejs-example
+
+3. Secure Session Storage for Node.js apps:
+https://databunker.org/use-case/secure-session-storage/#databunker-support-for-nodejs
+
+### Node.js modules
+
+1. `@databunker/store` from https://github.com/securitybunker/databunker-store
+
+2. `@databunker/session-store` from https://github.com/securitybunker/databunker-session-store
+
+
+## 4. Move your user records to Databunker
 
 If you want to use **Databunker** in your existing project you need to move customer data to Databunker and adapt your database schema to use ``usertoken`` (using UUID format).
 
@@ -77,48 +121,6 @@ You will have to go all over tables that have ``userid`` and add ``usertoken`` c
 
 This method will require more changes on your database level and in your application code.
 
-
-## 3. Some useful Databunker commands
-
-### Create a user record
-
-```
-curl -s http://localhost:3000/v1/user -X POST -H "X-Bunker-Token: DEMO" \
-  -H "Content-Type: application/json" \
-  -d '{"first":"John","last":"Doe","login":"john","phone":"4444","email":"user@gmail.com"}'
-```
-
-### Fetch user records by email
-
-```
-curl -s -H "X-Bunker-Token: DEMO" -X GET http://localhost:3000/v1/user/email/user@gmail.com
-```
-
-### Fetch user records by login
-
-```
-curl -s -H "X-Bunker-Token: DEMO" -X GET http://localhost:3000/v1/user/login/john
-```
-
-### Other commands:
-
-For a full list of commands, see the [API document](https://documenter.getpostman.com/view/11310294/Szmcbz32).
-
-## 4. Node.js examples
-1. Node.js example implementing passwordless login using Databunker:
-https://github.com/securitybunker/databunker-nodejs-passwordless-login
-
-2. Node.js example with Passport.js, Magic.Link and Databunker:
-https://github.com/securitybunker/databunker-nodejs-example
-
-3. Secure Session Storage for Node.js apps:
-https://databunker.org/use-case/secure-session-storage/#databunker-support-for-nodejs
-
-### Node.js modules
-
-1. `@databunker/store` from https://github.com/securitybunker/databunker-store
-
-2. `@databunker/session-store` from https://github.com/securitybunker/databunker-session-store
 
 ## 5. Support / Contact
 
