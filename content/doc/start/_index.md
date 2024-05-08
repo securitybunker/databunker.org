@@ -1,6 +1,6 @@
 ---
 #title: Getting Started with Databunker
-title: "Databunker: what is it and how it works"
+title: "Databunker: Get Started Now"
 linktitle: Getting started
 toc: true
 type: docs
@@ -10,12 +10,12 @@ mymenu: doc
 # Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)
 weight: 5
 ---
-## Databunker intro
+## Product brief
 
-In response to the growing frequency of personal data leaks, we've developed Databunker—a solution dedicated to protecting customer privacy. It's a secure storage system designed specifically to protect **Personally Identifiable Information (PII)**, **Protected Health Information (PHI)**, and **KYC** records. Databunker was engineered to prevent sensitive data exposure through **SQL injection** and **unfiltered GraphQL queries**, offering superior protection compared to standard database encryption provided by Database or Cloud vendors. Additionally, our product is fully compliant with GDPR regulations.
+Databunker is a special secure storage system designed to store and protect **Personally Identifiable Information (PII)**, **Protected Health Information (PHI)**, and **KYC** records. It was built to prevent sensitive data exposure through **SQL injection** and **unfiltered GraphQL queries**, offering superior protection compared to standard database encryption provided by Database or Cloud vendors. Additionally, the product is fully compliant with GDPR regulations.
 
 ### Database Encryption Reality
-Let's acknowledge it, conventional database encryption often provides only a **false sense of security**. Data is usually encrypted solely at the storage or disk level. In the event of **SQL injection** or **incorrectly filtered GraphQL queries**, malicious actors can effortlessly access your data in plain text.
+From security perspective conventional database encryption often provides only a **false sense of security**. Data is usually encrypted solely at the storage or disk level. In the event of **SQL injection** or **incorrectly filtered GraphQL queries**, malicious actors can effortlessly access your data in plain text.
 
 ### Solution with Databunker
 Databunker offers a paradigm shift in customer data protection:
@@ -28,11 +28,11 @@ Databunker offers a paradigm shift in customer data protection:
 ![Pseudonymized identity](/img/pseudonymized-identity.png)
 
 
-## 1. Running Databunker container
+## 1. Running Databunker as container
 The easiest way to get started with **Databunker** is to run it as a **Docker container**:
 
 ```
-docker run -p 3000:3000 -d --rm --name dbunker securitybunker/databunker demo
+docker run -p 3000:3000 -d --rm --name databunker securitybunker/databunker demo
 ```
 
 This command starts a local container with a `DEMO` root access key. It can be used for **testing** and **development**. For a production installation, follow this [installation guide](https://databunker.org/doc/install/).
