@@ -1,5 +1,6 @@
 ---
-title: "Curious to see Databunker in action?"
+#title: "Curious to see Databunker in action?"
+title: "Databunker Online Demo"
 linktitle: Databunker online demo
 toc: true
 type: docs
@@ -9,9 +10,7 @@ mymenu: doc
 # Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)
 weight: 10
 ---
-## Demo site:
-
-<a href="https://demo.databunker.org/" target="_blank">https://demo.databunker.org/</a>
+Curious to see Databunker in action?
 
 #### User and root user credentials:
 
@@ -19,10 +18,15 @@ weight: 10
 * User code: 4444
 * Root token: DEMO
 
-### Guided tour:
-Interested in a guided tour with the project founder to see **Databunker** or **Databunker PRO** in action?
+## Demo site:
 
-[Book a call with him today](https://calendly.com/stremovsky/30min)!
+<a href="https://demo.databunker.org/" target="_blank">https://demo.databunker.org/</a>
+
+
+### Guided tour:
+Interested to see **Databunker** or **Databunker PRO** in action?
+
+[Book a call today 🚀](https://calendly.com/stremovsky/30min)
 
 ### Recorded demo:
 
