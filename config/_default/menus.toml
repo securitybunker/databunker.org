@@ -56,12 +56,16 @@
 #  weight = 40
 
 [[main]]
-  pre= "<b>"
-  post = "</b>"
+  pre= "<span class='b1adge badge-pill-large badge-d1anger' style='background-color:#197ba9 !important;color:#fff;'>"
+  post = "</span>"
+  #pre= "<b>"
+  #post = "</b>"
   #name = "Databunker PRO"
   #url= "/databunker-pro/"
-  name = "Cloud Version"
-  url = "/#contact"
+  #name = "Cloud Version"
+  #url = "/#contact"
+  name = "Get Started"
+  url = "/doc/start/"
   weight = 40
 
 
@@ -84,7 +88,7 @@
 #
 
 [[doc]]
-  name = "Getting started"
+  name = "Get started now"
   url = "/doc/start/"
   weight = 1
 
