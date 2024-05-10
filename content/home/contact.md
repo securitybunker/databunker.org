@@ -16,7 +16,7 @@ weight = 130  # Order that this section will appear.
 #subtitle ="Get $1,000 Coupon to Protect Your KYC Records in the Cloud"
 #subtitle = "Connect with me"
 #subtitle = "Claim Your $1,000 Coupon Today for Ultimate Data Protection"
-title = "Unlock Premium Support for Databunker 🚀"
+title = "Premium Support for Databunker"
 
 # Automatically link email and phone?
 autolink = true
@@ -31,7 +31,7 @@ post_action = "action='/api/send.php'"
 Struggling with implementation or need expert guidance? Our team of developers is here to provide you with premium support for Databunker. From troubleshooting to customization, we've got you covered.
 
 ## What You Get:
-* Priority access to our support team
+* Priority access to our developers
 * Tailored solutions for your specific needs
 * Rapid response times to resolve issues efficiently
 * Exclusive insights and updates on project developments
