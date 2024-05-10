@@ -1,5 +1,5 @@
 ---
-title: Databunker and Databunker PRO Security Review
+title: Databunker Security Review
 linktitle: Databunker security review
 toc: false
 type: docs
