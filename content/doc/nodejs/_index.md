@@ -1,7 +1,7 @@
 ---
 title: Node.js examples
 linktitle: Node.js examples
-toc: true
+toc: false
 type: docs
 date: "2019-05-05T00:00:00+01:00"
 draft: false

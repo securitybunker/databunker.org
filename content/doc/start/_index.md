@@ -2,7 +2,7 @@
 #title: Getting Started with Databunker
 title: "Databunker: Get Started Now"
 linktitle: Getting started
-toc: true
+toc: false
 type: docs
 date: "2019-05-05T00:00:00+01:00"
 draft: false

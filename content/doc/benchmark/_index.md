@@ -1,7 +1,7 @@
 ---
 title: Databunker benchmark results
 linktitle: Databunker benchmark results
-toc: true
+toc: false
 type: docs
 date: "2019-05-05T00:00:00+01:00"
 draft: false
@@ -10,8 +10,7 @@ mymenu: doc
 weight: 20
 ---
 
-
-## Test 1. Reaching 1 million data subject records with AWS EKS & RDS (22.01.2022)
+### Test 1. Storing one million PII records using AWS EKS & RDS (22.01.2022)
 
 For the test we deployed Databunk open-source in AWS cloud using the Terraform and Help Charts.
 
@@ -93,13 +92,14 @@ gevent.joinall(threads)
 logger.warning("done")
 ```
 
+&nbsp;
 
-## Test 2. Running client & web app on the same box with Databunker using one DigitalOcean VPC (11.04.2021)
+### Test 2. All-in-one test using DigitalOcean droplet (11.04.2021)
 
 
-For the test, we are using a regular VPC (droplet) hosted at https://www.digitalocean.com/ to run all processes.
+For the test, we are using one DagitalOcean droplet to run a test scrript, backend database, databunker itself and a front-end application.
 
-This VPC comes with the following configuration: **1 GB RAM** / **1 Intel CPU** / **25 GB NVMe SSD**.
+This droplet comes with the following configuration: **1 GB RAM** / **1 Intel CPU** / **25 GB NVMe SSD**.
 
 We run the system test for Databunker - meaning we test the whole stack - both Node.js, Databunker, and backend database (MySQL).  For the test, we created a simple Node.js app server. This app server supports a single operation that prints user email returned from Databunker.
 
