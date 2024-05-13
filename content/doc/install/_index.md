@@ -10,38 +10,41 @@ mymenu: doc
 weight: 30
 ---
 
-## Quick installation method
+## Method 1: Quick installation method
 
-The easiest method to get started with Databunker is to start it as a standard Docker container with minimal parameters. In that case, it will use an internal built-in **SQLite** database to store encrypted records. This method is good for development and **not recommended for production** use.
+The easiest way to begin with Databunker is to deploy it as a standard Docker container with minimal parameters. In this setup, it will utilize an internal built-in **SQLite database** to store encrypted records. This method is suitable for development purposes and is not recommended for production environments.
 
 **Advantages:**
-* An external database is not required.
-* You can use `DEMO` as a root token.
-* Suitable for local development.
-* You just run it and it works.
-* Just one container.
+* No need for an external database
+* Simple setup process; just run it and it works
+* You can use `DEMO` as a root token
+* Suitable for local development
+* Requires only one container
 
 **Disadvantages:**
-* A local **SQLite** database will be used to store encrypted records. **SQLite** is not built for network access.
-* When the container is stopped all the **data will be lost**.
-* No security. `DEMO` is a root access token.
-* Not recommended for production.
+* Utilizes a local SQLite database for storing encrypted records
+* Lack of security; using ``DEMO`` as a root access token
+* All data will be lost when the container is stopped
+* Not recommended for production use
 
-### So, how to get up and running?
+### Getting started:
 
-Run the service with the following command:
+To launch the service, run the following command:
 
 ```
-docker run -p 3000:3000 -d --rm --name dbunker securitybunker/databunker demo
+docker run -p 3000:3000 -d --rm --name databunker securitybunker/databunker demo
 ```
 
-Databunker service will listen for connections on port `3000`.
+The Databunker service will be accessible on port ``3000``.
 
-Now, you can open in your browser http://localhost:3000/ and get to the product user interface.
+You can then open your browser and navigate to <a href="http://localhost:3000/" target="_blank">http://localhost:3000/</a> to access the product's user interface.
 
-`Note:` if the Docker container is stopped or killed the **data will be lost**. To prevent the system from losing your data you will need to mount the **data** directory from your host machine inside this Databunker container and provide **DATABUNKER_MASTERKEY** that you can extract from a ```dbunker``` container logs (run ```docker logs dbunker```). It is printed during service initialization.
+`Note:` If the Docker container is stopped or terminated abruptly, all data will be lost.
 
-Run the following commands:
+### How to prevent data loss
+You need to mount the data directory from your host machine inside the Databunker container and provide the **DATABUNKER_MASTERKEY**, which can be extracted from the Databunker container logs (use docker logs dbunker). This key is printed during the service initialization.
+
+Execute the following commands:
 
 ```
 mkdir ~/data
@@ -49,31 +52,41 @@ chmod 0777 ~/data
 docker run -v ~/data:/databunker/data \
   -p 3000:3000 \
   -e DATABUNKER_MASTERKEY=< copy this value from docker log> \
-  --rm --name dbunker securitybunker/databunker demo
+  --rm --name databunker securitybunker/databunker demo
 ```
 
-## Running Databunker with docker-compose
+&nbsp;
 
-This method will also start the MySQL database as an additional container and will configure Databunker to use MySQL as a storage for encrypted records. You can use the following commands:
+## Method 2: Start Databunker container with docker compose
 
+Before starting the Databunker container using Docker Compose, you'll need to generate secrets required by the application. These could include passwords for MySQL or PostgreSQL databases, a self-signed SSL certificate, the Databunker root token, etc.
+
+For instance, the **DATABUNKER_ROOTTOKEN** variable will be stored in the ``.env/databunker-root.env`` file. You can utilize this variable as a root token when making Databunker API requests.
+
+The necessary secret files will be stored in the ./env directory. 
+
+The required secret files will be saved into the ./env directory. You can use one of the following files found on the databunket GitHib project:
+
+* ./generate-mysql-env-files.sh
+* ./generate-mysql-demo-env-files.sh
+* ./generate-pgsql-env-files.sh
+* ./generate-pgsql-demo-env-files.sh
+
+Then, you can use the following command to start Databunker with MySQL:
 ```
-./generate-env-files.sh
-docker-compose up -d
+docker-compose -f docker-compose-mysql.yml up -d
 ```
 
-Now, you can open in your browser http://localhost:3000/
+Or, you can use the following command to start Databunker with PostgreSQL:
+```
+docker-compose -f docker-compose-pgsql.yml up -d
+```
 
-### How does this work?
+Once started, you can access Databunker by opening your browser and navigating to <a href="http://localhost:3000/" target="_blank">http://localhost:3000/</a>.
 
-```generate-env-files.sh``` command will generate all environment variables, generate random passwords,  master key, and root token. All variables will be saved under ```.env/``` folder.
+&nbsp;
 
-For example, ```DATABUNKER_ROOTTOKEN``` variable will be saved in the ```.env/databunker-root.env``` file. You can use this variable as a root token when calling Databunker API requests.
-
-
-```docker-compose up -d``` command will start all containers. The initial setup might take up to 30 seconds.
-
-
-## Automatic deployment in AWS cloud
+## Method 3: Automatic deployment in AWS cloud
 
 We have built Terraform configuration files and Helm charts to deploy Databunker with all required components in AWS. Detailed instructions can be found here:
 
@@ -102,6 +115,8 @@ docker run --restart unless-stopped \
 `Note:` make sure to change the passwords above.
 
 **First Databunker initialization step**
+
+Before starting the Databunker container using Docker Compose, you'll need to generate secrets required by the application. These could include passwords for MySQL or PostgreSQL databases, a self-signed SSL certificate, the Databunker root token, etc.
 
 Before Databunker can serve user requests it needs to create all tables; generate a master encryption key if not provided; generate root access token if not provided. This process is called **Databunker initialization**. You will need to do it just for the first time.
 
