@@ -4,7 +4,7 @@ title: "Databunker: Get Started Now"
 linktitle: Getting started
 toc: false
 type: docs
-date: "2019-05-05T00:00:00+01:00"
+date: "2024-05-05T00:00:00+01:00"
 draft: false
 mymenu: doc
 # Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)
@@ -29,7 +29,7 @@ Databunker offers a paradigm shift in customer data protection:
 ![Pseudonymized identity](/img/pseudonymized-identity.png)
 
 
-## 1. Running Databunker as container
+## 1. Databunker: Quick installation method
 The easiest way to get started with **Databunker** is to run it as a **Docker container**:
 
 ```
@@ -45,6 +45,7 @@ You can interact with Databunker using:
 - [Web Console](https://demo.databunker.org/) listening on port `3000`: [localhost:3000](http://localhost:3000)
 - [REST API](https://documenter.getpostman.com/view/11310294/Szmcbz32) listening on port `3000`: [localhost:3000](http://localhost:3000)
 
+&nbsp;
 
 ## 2. Useful Databunker commands
 
@@ -72,6 +73,7 @@ curl -s -H "X-Bunker-Token: DEMO" -X GET http://localhost:3000/v1/user/login/joh
 
 For a full list of commands, see the [API document](https://documenter.getpostman.com/view/11310294/Szmcbz32).
 
+&nbsp;
 
 ## 3. Node.js examples
 1. Node.js example implementing passwordless login using Databunker:
@@ -123,9 +125,10 @@ You will have to go all over tables that have ``userid`` and add ``usertoken`` c
 
 This method will require more changes on your database level and in your application code.
 
+&nbsp;
 
 ## 5. Support / Contact
 
-You are welcome to email us hello@privacybunker.io or join our slack channel:
+You are welcome to email us at hello@privacybunker.io or join our slack channel:
 
 * [Slack Channel](https://join.slack.com/t/databunker/shared_invite/zt-b6ukxzw3-JCxv8NJDESL40haM45RNIA)

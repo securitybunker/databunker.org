@@ -3,7 +3,7 @@ title: Project frequently-asked questions
 linktitle: Frequently-asked questions
 toc: false
 type: docs
-date: "2019-05-05T00:00:00+01:00"
+date: "2021-05-05T00:00:00+01:00"
 draft: false
 mymenu: doc
 # Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)
@@ -32,12 +32,6 @@ For SQLite,  Databunker has a special API call to dump the internal database. Yo
 ```
 curl -s http://localhost:3000/v1/sys/backup -H "X-Bunker-Token: $TOKEN" -o backup.sql
 ```
-
-## Does your product support multi-master replication?
-
-For that you will need to use MySQL as a backend database and configure database replication on the MySQL level. You will need to do it by yourself or use the cloud version provided by AWS, Google Cloud, Microsoft Azure, etc...
-
-When `SQLite` is used it does not support database replication.
 
 ## Can my DBA tune database performance characteristics?
 
@@ -74,7 +68,7 @@ The following is a partial list.
 # Technology stack?
 
 We use **go-lang** to build the whole project, with 80% automatic test coverage. The open-source version comes with an internal
-database (**SQLite**) or an external database (**MySQL**) and Web UI as one executable file to make the project easy to deploy.
+database (**SQLite**) or an external database (**MySQL**/**PostgreSQL**) and Web UI as one executable file to make the project easy to deploy.
 
 ## Does the product support encryption in motion and encryption in storage?
 
