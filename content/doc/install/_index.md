@@ -63,9 +63,7 @@ Before starting the Databunker container using Docker Compose, you'll need to ge
 
 For instance, the **DATABUNKER_ROOTTOKEN** variable will be stored in the ``.env/databunker-root.env`` file. You can utilize this variable as a root token when making Databunker API requests.
 
-The necessary secret files will be stored in the ./env directory. 
-
-The required secret files will be saved into the ./env directory. You can use one of the following files found on the databunket GitHib project:
+The required secret files will be saved into the ``./env`` directory. Use one of the following scripts found in the project's Git repository to generate configuration secrets:
 
 * ./generate-mysql-env-files.sh
 * ./generate-mysql-demo-env-files.sh
@@ -94,11 +92,15 @@ We have built Terraform configuration files and Helm charts to deploy Databunker
 * https://github.com/securitybunker/databunker/tree/master/charts/databunker
 
 
-## Step-by-step production installation
+&nbsp;
+
+## Method 4: Step-by-step production installation
 
 **Start with backend server**
 
-For production installation, we recommend using **MySQL** backend storage. MySQL server will be used for the storage of encrypted user records. For that, you will need to have a MySQL server up and running. For example, you can spin MySQL as a Docker container or use a cloud MySQL version provided by Google Cloud and AWS, etc... Just make sure to create a database for storing Databunker records and create a database user to allow Databunker access to MySQL. Using the following command MySQL server will be started; it will create a `databunkerdb` database for Databunker and create `bunkeruser` for Databunker access to MySQL.
+For production installation, you can use **MySQL** or **PostgreSQL** backend database. It will be used to store encrypted user records. For example, you can spin MySQL or PostgreSQL as a Docker container or use a cloud RDS version provided by Google Cloud and AWS, etc... Just make sure to create a database for storing Databunker records and create a database user to allow Databunker access to backend database.
+
+For example, use the following command to start MySQL server. It will create a `databunkerdb` database for Databunker and create `bunkeruser` for Databunker access to MySQL.
 
 ```
 mkdir ~/data
@@ -115,8 +117,6 @@ docker run --restart unless-stopped \
 `Note:` make sure to change the passwords above.
 
 **First Databunker initialization step**
-
-Before starting the Databunker container using Docker Compose, you'll need to generate secrets required by the application. These could include passwords for MySQL or PostgreSQL databases, a self-signed SSL certificate, the Databunker root token, etc.
 
 Before Databunker can serve user requests it needs to create all tables; generate a master encryption key if not provided; generate root access token if not provided. This process is called **Databunker initialization**. You will need to do it just for the first time.
 
