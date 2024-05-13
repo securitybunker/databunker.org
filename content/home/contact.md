@@ -28,7 +28,7 @@ autolink = true
 email_form = 2
 post_action = "action='/api/send.php'"
 +++
-Struggling with implementation or need expert guidance? Our team of developers is here to provide you with premium support for Databunker. From troubleshooting to customization, we've got you covered.
+Struggling with implementation or need expert guidance? Our team is here to provide you with premium support for Databunker. From troubleshooting to customization, we've got you covered.
 
 ## What You Get:
 * Priority access to our developers
