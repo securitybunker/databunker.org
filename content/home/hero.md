@@ -49,13 +49,13 @@ hero_media = "databunker-diagram.png"
 # Call to action links (optional).
 #   Display link(s) by specifying a URL and label below. Icon is optional for `[cta]`.
 #   Remove a link/note by deleting a cta/note block.
-[btn_alt]
-  url = "/doc/demo/"
-  label = "Online Demo"
+#[btn_alt]
+#  url = "/doc/demo/"
+#  label = "Online Demo"
   
 [btn]
   url = "/doc/start/"
-  label = "Get Started Now"
+  label = "Get Started Now →"
   #label = "How it works"
 
 #"Click to Reveal the Hidden Gem"
