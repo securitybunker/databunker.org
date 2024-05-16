@@ -83,7 +83,7 @@ Today, you have a number of solutions to do the cross-border transfer.
 
 There are several methods to make your logs privacy compliant. For example, using **pseudonymization**. Check the following article for additional information: https://www.freecodecamp.org/news/how-to-stay-gdpr-compliant-with-access-logs/
 
-# Additional steps:
+## Additional steps:
 1. Implement appropriate security measures to prevent personal data disclosure
 1. Maintain data confidentiality, integrity, and availability
 1. Keep track of any operations with PII
