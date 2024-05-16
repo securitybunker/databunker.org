@@ -23,6 +23,7 @@ section#hero {background: #0179ab;}
 section#hero p {text-align:justify;color:#fff;}
 section#hero h1 {font-size: 2.18rem;color:#fff;}
 section#hero a {color:#fff;}
+section#hero a.btn-lg {/*text-underline-offset: 4px;text-decoration: underline;*/padding: 20px 30px 25px 30px !important;font-size: 1.2rem !important;}
 div#bgwhite {background-color: #fff;margin-top:10px; border:1px solid #ddd; padding-left:0;padding-right:0;}
 div#bgwhite p {text-align:justify; padding-left:25px;padding-right:25px;}
 div#bgwhite ul li {text-align:justify;padding-right:25px;font-size:80%;}
