@@ -11,11 +11,12 @@ weight = 130  # Order that this section will appear.
 #title = "Secure Your KYC Records in the Cloud with a Managed Databunker!"
 #title = "Protect KYC Records in the Cloud with Managed Databunker"
 #title = "Protect KYC Records with Managed Databunker!"
-title = "Contact Us Page"
+#title = "Contact Us Page"
+title = "Premium Support for Databunker"
 #title = "Get $1,000 Coupon to<br/>Protect Your KYC Records in the Cloud"
 #subtitle ="Get $1,000 Coupon to Protect Your KYC Records in the Cloud"
 #subtitle = "Connect with me"
-subtitle = "Our team will love to help you with PII/PHI data protection"
+#subtitle = "Our team will love to help you with PII/PHI data protection"
 
 # Automatically link email and phone?
 autolink = true
@@ -27,4 +28,20 @@ autolink = true
 email_form = 2
 post_action = "action='/api/send.php'"
 +++
+Struggling with implementation or need expert guidance? Our team is here to provide you with premium support for Databunker. From troubleshooting to customization, we've got you covered.
 
+## What You Get:
+* Priority access to our developers
+* Tailored solutions for your specific needs
+* Rapid response times to resolve issues efficiently
+* Exclusive insights and updates on project developments
+* Peace of mind knowing your project is in expert hands
+
+
+## How It Works:
+
+* **Reach out:** Contact us via hello@privacybunker.io to discuss your requirements
+* **Custom Solution:** We'll tailor a support plan to suit your project's needs and your budget
+* **Enjoy Peace of Mind:** Focus on building your project while we handle the technical challenges
+
+&nbsp;
