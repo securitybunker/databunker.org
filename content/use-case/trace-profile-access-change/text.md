@@ -6,7 +6,7 @@ widget: textblock
 In the world of data management, capturing crucial events and changes on the database server is vital. However, without a well-defined process in place, essential data may slip through the cracks. Enter Databunker - an open-source solution that comes with built-in auditing capabilities, ensuring a comprehensive audit trail of all user data-related API operations, including new record additions, changes, and information retrieval.
 
 ### Auditing Capabilities: A GDPR Compliant Solution:
-Databunker's default auditing capability addresses the requirements of GDPR Article 15: Right of access by the data subject. By providing a detailed audit of events related to personal data, Databunker enables users to access their information while adhering to data privacy regulations.
+Databunker's default auditing capability addresses the requirements of GDPR Article 15: Right of access by the data subject. By providing a detailed audit of events related to personal data, [Databunker](https://databunker.org/doc/start/) enables users to access their information while adhering to data privacy regulations.
 
 ### Special Features of Databunker's Audit Trail:
 1. **Encrypted Personal Information:** All personal information recorded in the audit events is encrypted, ensuring an additional layer of data protection.

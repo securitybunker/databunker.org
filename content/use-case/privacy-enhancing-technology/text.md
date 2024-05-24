@@ -22,4 +22,4 @@ According to "[The GDPR made simple(r) for SMEs](/files/gdpr-for-sme.pdf)" book,
 5. **Flexible API for Customization:** Databunker's versatile API enables developers to tailor their PETs to specific use cases. Whether you're building a privacy-preserving data-sharing platform or an identity management system, Databunker's API can adapt to meet your needs.
 
 ### Developers, Unite for Privacy:
-By leveraging Databunker as a foundation for building Privacy-Enhancing Technologies, developers can collaborate to create a safer and more privacy-conscious digital landscape. Databunker's open-source nature encourages collective innovation and knowledge-sharing, leading to better PETs that protect user data while driving digital advancements.
+By leveraging [Databunker](https://databunker.org/doc/start/) as a foundation for building Privacy-Enhancing Technologies, developers can collaborate to create a safer and more privacy-conscious digital landscape. Databunker's open-source nature encourages collective innovation and knowledge-sharing, leading to better PETs that protect user data while driving digital advancements.

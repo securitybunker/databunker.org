@@ -7,7 +7,7 @@ widget: textblock
 ---
 In today's digital landscape, ensuring online privacy and data protection has become a top priority for businesses worldwide, driven by the European Union's General Data Protection Regulation (GDPR). If your company serves European customers, **GDPR compliance is non-negotiable, irrespective of your location**. 
 
-This article explores **critical data segregation** and demonstrates how open-source Databunker can protect corporate secrets and maintain GDPR compliance.
+This article explores **critical data segregation** and demonstrates how open-source [Databunker](https://databunker.org/doc/start/) can protect corporate secrets and maintain GDPR compliance.
 
 ## What is critical data segregation?
 **Critical data segregation** is the practice of separating sensitive or critical data from other less sensitive data within a system or organization. The goal is to enhance security and minimize the risk of unauthorized access or compromise of the critical information.

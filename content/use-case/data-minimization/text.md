@@ -9,7 +9,7 @@ In cybersecurity, we have the principle of **least privilege**. It means your us
 
 In GDPR compliance, we have a similar principle. It is called **data minimization**. You need to keep customer data at a minimum only sufficient to provide a service.
 
-In this article, we’ll be taking an in-depth look at Databunker. Databunker is an open-source secure vault for customer records built with the **data minimization** principle. The product comes with an **automatic data minimization** API to support any stringent privacy laws.
+In this article, we’ll be taking an in-depth look at Databunker. [Databunker](https://databunker.org/doc/start/) is an open-source secure vault for customer records built with the **data minimization** principle. The product comes with an **automatic data minimization** API to support any stringent privacy laws.
 
 
 ## GDPR Data Minimization Definition

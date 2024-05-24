@@ -5,7 +5,7 @@ widget: textblock
 ---
 In today's data-driven world, ensuring compliance with data protection regulations is of utmost importance for businesses worldwide. The European Union's General Data Protection Regulation (GDPR) sets stringent standards for the handling of personal data, mandating organizations to adopt robust data protection measures. Open-source Databunker offers a suite of powerful features that can accelerate GDPR compliance, helping businesses build trust with their customers and ensure data security.
 
-Let's explore how Databunker can be a game-changer in achieving GDPR compliance:
+Let's explore how [Databunker](https://databunker.org/doc/start/) can be a game-changer in achieving GDPR compliance:
 
 ### 1. Secure Data Storage:
 Databunker acts as a fortified encrypted vault tailored to protect sensitive records, including Personally Identifiable Information (PII). By securely storing and encrypting personal data, Databunker empowers companies to meet GDPR's stringent data security requirements, safeguarding data from unauthorized access or breaches.

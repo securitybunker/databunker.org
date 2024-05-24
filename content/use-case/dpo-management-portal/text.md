@@ -6,7 +6,7 @@ widget: textblock
 In today's data-driven world, data privacy and compliance are paramount. Databunker, an open-source encrypted database, offers a powerful DPO Management Portal to streamline essential tasks. Discover how this tool empowers DPOs to efficiently manage user privacy requests, consent settings, generate data reports, and track audit events, fostering transparency and trust with customers. Let's strengthen data privacy efforts with Databunker's innovative solution.
 
 ### Efficient Data Privacy Management with DPO Management Portal:
-The Databunker Management Portal empowers DPOs to efficiently manage various aspects of data privacy, providing them with the necessary tools to ensure compliance and protect user rights. Key functionalities include:
+The [Databunker](https://databunker.org/doc/start/) Management Portal empowers DPOs to efficiently manage various aspects of data privacy, providing them with the necessary tools to ensure compliance and protect user rights. Key functionalities include:
 
 1. Privacy Requests Management:
 The DPO can seamlessly view and manage user privacy requests through the portal. From "forget-me" requests to data rectifications, DPOs have full control over customer data, allowing them to honor user rights and preferences.
