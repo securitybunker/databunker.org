@@ -1,0 +1,15 @@
+{{ $ := .root }}
+{{ $page := .page }}
+{{ $autolink := default true $page.Params.autolink }}
+
+<!-- Contact widget -->
+<div class="row justify-content-center">
+  <div class="col-md-6">
+    <h1>{{ with $page.Title }}{{ . | markdownify }}{{ end }}</h1>
+    {{ with $page.Params.subtitle }}<p>{{ . | markdownify }}</p>{{ end }}
+    {{ with $page.Content }}<p>{{ . | markdownify }}</p>{{ end }}
+  </div>
+  <div class="col-md-4 text-right">
+	    <a target="_blank" href="{{ $page.Params.btn.url | safeURL }}" {{ if $page.Params.btn.onclick}} {{printf "onclick=\"%s\"" $page.Params.btn.onclick | safeHTMLAttr}} {{end}} class="btn-primary btn-lg btn page-scroll mt-4" style="padding: 20px 30px 25px !important;font-size: 1.2rem !important;">{{ $page.Params.btn.label | markdownify | emojify | safeHTML }}</a>
+  </div>
+</div>
