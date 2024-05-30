@@ -20,7 +20,7 @@
 
 [[main]]
   name = "Docs"
-  url = "/doc"
+  url = "/doc/introduction/"
   weight = 25
 
 [[main]]
@@ -88,9 +88,14 @@
 #
 
 [[doc]]
-  name = "Get started now"
-  url = "/doc/start/"
+  name = "Introduction"
+  url = "/doc/introduction/"
   weight = 1
+
+[[doc]]
+  name = "Get started"
+  url = "/doc/start/"
+  weight = 2
 
 [[doc]]
   name = "Online demo"
