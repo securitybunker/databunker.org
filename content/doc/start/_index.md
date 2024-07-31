@@ -1,5 +1,5 @@
 ---
-title: Getting Started with Databunker
+title: Getting started with Databunker
 #title: "Databunker: Get Started Now"
 linktitle: Getting started
 toc: false

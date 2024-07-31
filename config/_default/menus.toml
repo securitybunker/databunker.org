@@ -56,7 +56,8 @@
 #  weight = 40
 
 [[main]]
-  pre= "<span class='b1adge badge-pill-large badge-d1anger' style='background-color:#197ba9 !important;color:#fff;'>"
+  #pre= "<span class='b1adge badge-pill-large badge-d1anger' style='background-color:#197ba9 !important;color:#fff;'>"
+  pre= "<span class='b1adge badge-pill-large badge-d1anger' style='background-color:#ee3224 !important;color:#fff;border-radius:0;padding: 0.4em 0.8em;'>"
   post = "</span>"
   #pre= "<b>"
   #post = "</b>"
@@ -64,8 +65,10 @@
   #url= "/databunker-pro/"
   #name = "Cloud Version"
   #url = "/#contact"
-  name = "Get Started"
-  url = "/doc/start/"
+  #name = "Get Started"
+  #url = "/doc/start/"
+  name = "Live demo"
+  url = "/doc/demo/"
   weight = 40
 
 
@@ -98,23 +101,23 @@
   weight = 2
 
 [[doc]]
-  name = "Online demo"
+  name = "Live demo"
   url = "/doc/demo/"
   weight = 5
 
 [[doc]]
+  name = "Architecture"
+  url = "/doc/architecture/"
+  weight = 10
+
+[[doc]]
   name = "Node.js examples"
   url = "/doc/nodejs/"
-  weight = 10
+  weight = 15
 
 [[doc]]
   name = "Benchmark results"
   url = "/doc/benchmark/"
-  weight = 15
-
-[[doc]]
-  name = "Architecture"
-  url = "/doc/architecture/"
   weight = 20
 
 [[doc]]
@@ -125,17 +128,17 @@
 [[doc]]
   name = "Security review"
   url = "/doc/security/"
-  weight = 25
+  weight = 30
 
 [[doc]]
   name = "Project FAQ"
   url = "/doc/faq/"
-  weight = 25
+  weight = 35
 
 [[doc]]
   name = "API"
   url = "https://documenter.getpostman.com/view/11310294/Szmcbz32"
-  weight = 30
+  weight = 40
 
 [[successstory]]
   name = "KYC backend"
