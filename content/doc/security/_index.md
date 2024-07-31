@@ -69,14 +69,9 @@ Each API request received by **Databunker** must have a user token and a tenant 
 ### Stateless application server
 **Databunker** is a stateless application server. You can have tens of **Databunker** servers running in your cloud. The service bottleneck is a backend database. To address this challenge, in AWS, **Databunker PRO** works with the AWS Aurora PostgreSQL Auto-Scaling database.
 
-## Any questions?
+&nbsp;
 
-**In case you have any questions about Databunker and Databunker PRO implementation, please feel free to contact us at hello@privacybunker.io.**
+## 👋 Guided tour
+Curious to see **Databunker** or **Databunker PRO** in action?
 
-**We appreciate any feedback on our products.**
-
-**We encourage you to try our open source product out free of charge.**
-
-**To install the Databunker PRO version, please schedule a meeting through Calendly.**
-
-* https://calendly.com/stremovsky/30min
+[Book a call today 🚀](https://calendly.com/stremovsky/30min)

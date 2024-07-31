@@ -108,8 +108,7 @@ This method will require more changes on your database level and in your applica
 
 &nbsp;
 
-## 5. Support / Contact
+## 👋 Guided tour
+Curious to see **Databunker** or **Databunker PRO** in action?
 
-You are welcome to email us at hello@privacybunker.io or join our slack channel:
-
-* [Slack Channel](https://join.slack.com/t/databunker/shared_invite/zt-b6ukxzw3-JCxv8NJDESL40haM45RNIA)
+[Book a call today 🚀](https://calendly.com/stremovsky/30min)
