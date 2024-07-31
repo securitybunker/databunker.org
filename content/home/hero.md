@@ -2,7 +2,7 @@
 # Hero widget.
 widget = "hero"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
-active = true  # Activate this widget? true/false
+active = false   # Activate this widget? true/false
 weight = 10  # Order that this section will appear.
 
 #title = "Secure vault and SDK to store customer records built to comply with GDPR"
@@ -19,7 +19,8 @@ weight = 10  # Order that this section will appear.
 #title = "Secure PII Vault. Simplified Compliance."
 #title = "Open-source KYC "
 #title = "Fort Knox for User PII Data"
-title = "Secure Vault for User PII Data"
+#title = "Secure Vault for User PII Data"
+title = "Secure Vault for Customer Sensitive Records (PII/PHI/KYC/PCI) in inder 10 minutes"
 
 # Hero image (optional). Enter filename of an image in the `static/img/` folder.
 #hero_media = "databunker.mp4"
@@ -55,8 +56,20 @@ hero_media = "databunker-diagram.png"
   
 [btn]
   url = "/doc/start/"
-  label = "Get Started Now →"
+  #url = "/doc/install/"
+  #label = "Get Started Now →"
+  #label = "Get Started Guide →"
   #label = "How it works"
+  #label = "Install Databunker"
+  label = "Start For Free →"
+  #url = "/doc/demo/"
+  #label = "Online Demo"
+
+#[btn_alt]
+#  url = "/doc/demo/"
+#  label = "Online Demo"
+#  url = "/doc/start/"
+#  label = "Learn more"
 
 #"Click to Reveal the Hidden Gem"
 #"Want to Learn the Secret Sauce? Click Now"
@@ -76,7 +89,7 @@ hero_media = "databunker-diagram.png"
 #* **Open-source security**
 #* **Self-hosted service**
 #Databunker is an open-source vault and API that ensures GDPR, HIPAA, ISO 27001, and SOC2 compliance. Protect sensitive user records against GraphQL and SQL injections without the need for expensive custom coding.
+#<p style='font-size:0.8rem;'>⭐⭐⭐⭐⭐ <a href="/success-story/kyc-backend-for-crypto-startup/" style="text-decoration:underline;text-underline-offset:4px;">a perfect kyc backend</a></p>
+#Check out the <a href="/doc/start/" style="text-decoration:underline;text-underline-offset:4px;">Getting Started Guide</a> and start protecting PII records in no time!
 +++
-Databunker is an open-source vault for secure storage of PII, PHI, and KYC records. Protect user records from SQL and GraphQL injections with simple API. Streamline GDPR, HIPAA, ISO 27001, and SOC2 compliance.
-
-⭐⭐⭐⭐⭐ <a href="https://databunker.org/success-story/kyc-backend-for-crypto-startup/" style="text-decoration:underline;text-underline-offset:4px;">a perfect kyc backend</a>
+**Databunker** is an open-source vault for secure storage of PII, PHI, KYC, and PCI records. Protect user records from SQL and GraphQL injections with a simple API. Streamline GDPR, HIPAA, ISO 27001, and SOC2 compliance.

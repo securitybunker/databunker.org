@@ -19,9 +19,10 @@ div#youtube:hover {box-shadow: rgba(0,0,0,.5)0 20px 30px 0;}
 footer.blockquote-footer {padding: 0;}
 .docs-toc-item.active {margin:0;}
 .docs-toc-item.active:not(:first-child) {margin: 0;}
-section#hero {background: #0179ab;}
-section#hero p {text-align:justify;color:#fff;}
-section#hero h1 {font-size: 2.18rem;color:#fff;}
+section#hero, section#top {background: #0179ab;}
+section#top {background: #0179ab;padding-bottom:50px;padding-top:40px;}
+section#hero p, section#top p {text-align:justify;color:#fff;}
+section#hero h1, section#top h1 {font-size: 2.18rem;color:#fff;}
 section#hero a {color:#fff;}
 section#hero a.btn-lg {/*text-underline-offset: 4px;text-decoration: underline;*/padding: 20px 30px 25px 30px !important;font-size: 1.2rem !important;}
 div#bgwhite {background-color: #fff;margin-top:10px; border:1px solid #ddd; padding-left:0;padding-right:0;}
@@ -81,3 +82,4 @@ div.docs-toc ul {margin-bottom:0.6rem;}
 section#use-cases a {color:#197ba9;font-size:0.8rem;}
 .widget a:not(.btn) {color:#197ba9;}
 .truncate-long-text {mask-image:linear-gradient(to bottom, black 50%, transparent 100%);max-height:600px;overflow:hidden;}
+pre {font-size:0.58rem;background-color:unset;border:unset;margin:unset;}

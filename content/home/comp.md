@@ -3,12 +3,14 @@
 widget = "comp"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
 active = true # Activate this widget? true/false
-weight = 40  # Order that this section will appear.
+weight = 20  # Order that this section will appear.
 
-title = "Databunker encrypts customer records"
+#title = "Databunker encrypts customer records"
+title = "Encrypted storage for PII/PHI/KYC/PCI records"
+
 #subtitle = "To comply with privacy regulations customer records must be encrypted"
 #subtitle = "Encrypt customer records to speed up your compliance with privacy regulations"
-subtitle = "Encrypt customer records to follow best practices in compliance and security"
+#subtitle = "Encrypt customer records to follow best practices in compliance and security"
 
 subtitle1 = "Old style solution"
 subtitle2 = "Databunker solution"

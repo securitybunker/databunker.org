@@ -84,4 +84,19 @@ function click_help() {
     document.location = 'https://calendly.com/stremovsky/30min';
   }
 }
+function copy_pre_text(obj) {
+  log_event('copy');
+  const el = document.createElement('textarea');
+  el.value = $('pre').text();
+  document.body.appendChild(el);
+  el.select();
+  document.execCommand('copy');
+  document.body.removeChild(el);
+  $(obj).removeClass('fa-copy');
+  $(obj).addClass('fa-check');
+  setTimeout(function() {
+    $(obj).removeClass('fa-check');
+    $(obj).addClass('fa-copy');
+  }, 2000);
+}
 </script>
