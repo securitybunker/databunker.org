@@ -7,9 +7,9 @@
       <h2>Make your Mobile and Web apps GDPR compliant in under 10 minutes.</h2>
       <h2>Special GDPR compliant secure vault for customer records in under 2 hours.</h2>
       -->
-   <h1 class="mt-0" style="font-size:1.82rem;">{{ $page.Title }}</h1>
+   <h1 class="mt-0 mb-3" style="font-size:1.46rem;line-height:2.2rem;">{{ $page.Title }}</h1>
    {{ with $page.Content }}
-   <div class="mt-2">{{ . }}</div>
+   <div class="">{{ . }}</div>
    {{ end }}
 
     {{/* Call-to-action link */}}
@@ -27,7 +27,7 @@
       {{ else if in (slice "http" "https") $scheme }}
         {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
       {{ end }}
-    <p class="mb-0" style="margin-top:1.6rem;">
+    <div class="" style="margin-top:2.5rem;">
       <a href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }} class="btn {{if $bg.text_color_light}}btn-light{{else}}btn-primary{{end}} btn-lg page-scroll mb-2">{{ if $page.Params.btn.icon }}<i class="{{ $pack }} {{ $pack_prefix }}-{{ $page.Params.btn.icon }} mr-2" aria-hidden="true"></i>{{end}}{{ $page.Params.btn.label | markdownify | emojify | safeHTML }}</a>
 
       {{/* Alternative Call-to-action link */}}
@@ -42,7 +42,7 @@
         {{ end }}
       &nbsp;<a href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }} class="btn btn-lg {{if $bg.text_color_light}}btn-outline-light{{else}}btn-outline-primary{{end}} page-scroll mb-2">{{ if $page.Params.btn_alt.icon }}<i class="{{ $pack }} {{ $pack_prefix }}-{{ $page.Params.btn_alt.icon }} mr-2" aria-hidden="true"></i>{{end}}{{ $page.Params.btn_alt.label | markdownify | emojify | safeHTML }}</a>
       {{ end }}
-    </p>
+    </div>
     {{ end }}
 </div>
 <div class="col-lg-6 mx-auto col-md-6 order-md-2">
