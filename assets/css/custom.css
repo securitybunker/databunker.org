@@ -84,12 +84,12 @@ section#use-cases a {color:#197ba9;font-size:0.8rem;}
 .widget a:not(.btn) {color:#197ba9;}
 .truncate-long-text {mask-image:linear-gradient(to bottom, black 50%, transparent 100%);max-height:600px;overflow:hidden;}
 pre {font-size:0.58rem;background-color:unset;border:unset;margin:unset;margin-bottom:1rem;}
-.dot {height:15px;width:15px;margin:0 2px;background-color:#bbb;border-radius:50%;display:inline-block;transition:background-color 0.6s ease;}
+.dot {height:15px;width:15px;margin:0 2px;background-color:#bbb;border-radius:50%;display:inline-block;transition:background-color 0.6s ease;cursor:pointer;}
 .slideshow-container {max-height:320px; position:relative;margin:auto;}
 .slide-prev, .slide-next {cursor:pointer;position:absolute;top:50%;width:auto;margin-top:-22px;padding:8px;color:white;font-weight:bold;font-size:18px;transition:0.6s ease;border-radius:0 3px 3px 0;user-select:none;background-color:rgba(0,0,0,0.2);}
 .slide-next {right:0;border-radius:3px 0 0 3px;}
 .slide-prev:hover, .slide-next:hover {background-color:rgba(0,0,0,0.8);}
-.slideshow-container .active, .slideshow-container .dot:hover {background-color:#717171;}
+.active.dot, .dot:hover {background-color:#717171;}
 .slide-fade {animation-name:slide-fade;animation-duration:1.5s;}
 @keyframes slide-fade {
   from {opacity:.4}
