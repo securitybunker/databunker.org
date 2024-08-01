@@ -1,3 +1,4 @@
+{{ $ := .root }}
 {{ $page := .page }}
 
 <div class="row justify-content-center mb-4">
@@ -17,7 +18,7 @@ Me and my team will love to help you with PII/PHI data security and compliance. 
           {{ with $page.Title }}<h1 class="mt-0">{{ . | markdownify | emojify }}</h1>{{ end }}
           {{ with $page.Params.subtitle }}<p>{{ . | markdownify | emojify }}</p>{{ end }}
 	  <div class="article-metadata">
-          {{ partial "share.html" $page }}
+          {{ partial "share.html" $.Page }}
           </div>
 	  <div class="article-ad" style='display:none;'>
             <b>Ad</b> • <div class="ad-url" onclick="free_check_link();">privacybunker.io/<b>website-gdpr-audit</b></div><br>

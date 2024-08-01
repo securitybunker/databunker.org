@@ -15,13 +15,13 @@ li {margin-left:17px;}
 img.fancybox-image {clip-path:inset(0% 1% 1% 1%);}
 div#youtube {border:10px solid #fff;box-shadow:0 2px 4px 0;transition:all .2s ease-out;}
 div#youtube:hover {box-shadow:rgba(0,0,0,.5)0 20px 30px 0;}
-footer.blockquote-footer {padding:0;}
 .docs-toc-item.active {margin:0;}
 .docs-toc-item.active:not(:first-child) {margin:0;}
 section#definitions .nav-link {padding:0.5rem 0.6rem;}
 section#hero, section#top {background:#0179ab;}
-section#top {background:#0179ab;padding-bottom:30px;padding-top:40px;}
+section#top {background:#0179ab;padding-bottom:25px;padding-top:30px;}
 section#text {padding-top:50px;}
+section#quote {padding-top:25px;padding-bottom:20px;}
 section#hero p, section#top p {text-align:justify;color:#fff;}
 section#hero h1, section#top h1 {font-size:2.18rem;color:#fff;}
 section#hero a {color:#fff;}
@@ -42,10 +42,10 @@ div#bgwhite .tab-pane p {margin-bottom:0.5rem;}
   .mobile-menu {display:block;}
   div#bgwhite .tab-content>.tab-pane {display:block;opacity:1;}
 }
-blockquote {/*margin-left:25px;*/padding-right:0px;padding-left:0px;}
-blockquote p {margin-left:20px;}
+blockquote {font-size:0.9rem!important;background: url(/img/blockquote.png) no-repeat 0 12px;padding: 10px 20px 10px 50px;border:0;}
+blockquote p {font-style:italic;font-size:0.86rem;}
+blockquote footer {margin: 1rem 0 0;padding:0!important;}
 div#bgwhite .tab-pane blockquote  p:first-child {padding-top:0;}
-
 #sharebtns {top:100px;position:fixed;right:-200px;z-index:10000;  -webkit-animation:linear; animation-delay:3s; -webkit-animation-name:buttons; -webkit-animation-duration:3s;animation-fill-mode:forwards;}
 @-webkit-keyframes buttons {
   0% {right:-150px;}
