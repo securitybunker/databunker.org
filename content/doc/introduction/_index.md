@@ -12,7 +12,7 @@ weight: 1
 ---
 ## Product brief
 
-Databunker is a special secure storage system designed to store and protect **Personally Identifiable Information (PII)**, **Protected Health Information (PHI)**, **PII**, and **KYC** records. It was built to prevent sensitive data exposure through **SQL injection** and **unfiltered GraphQL queries**, offering superior protection compared to standard database encryption provided by major database or cloud vendors. Additionally, the product is fully compliant with GDPR regulations.
+Databunker is a special secure storage system designed to store and protect **Personally Identifiable Information (PII)**, **Protected Health Information (PHI)**, **Payment Card Industry (PII)**, and **Know Your Customer (KYC)** records. It was built to prevent sensitive data exposure through **SQL injection** and **unfiltered GraphQL queries**, offering superior protection compared to standard database encryption provided by major database or cloud vendors. Additionally, the product is fully compliant with GDPR regulations.
 
 Databunker is a fully open-source project available under the commercially friendly **MIT license**.
 

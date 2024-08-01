@@ -10,7 +10,7 @@ mymenu: doc
 # Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)
 weight: 5
 ---
-## 1. Databunker: Quick installation method
+## Step 1. Starting Databunker in demo mode
 The easiest way to get started with **Databunker** is to run it as a **Docker container**:
 
 ```
@@ -28,7 +28,7 @@ You can interact with Databunker using:
 
 &nbsp;
 
-## 2. Useful Databunker commands
+## Step 2. Useful Databunker commands
 
 ### Create a user record
 
@@ -56,7 +56,7 @@ For a full list of commands, see the [API document](https://documenter.getpostma
 
 &nbsp;
 
-## 3. Node.js examples
+## Step 3. View Node.js code examples
 1. Node.js example implementing passwordless login using Databunker:
 https://github.com/securitybunker/databunker-nodejs-passwordless-login
 
@@ -74,7 +74,7 @@ https://databunker.org/use-case/secure-session-storage/#databunker-support-for-n
 
 &nbsp;
 
-## 4. Convert existing project to use Databunker
+## Step 4. Convert existing project to use Databunker
 
 If you intend to integrate Databunker into your existing project, you'll need to transfer customer personal records to Databunker and utilize user tokens in UUID format in your primary database when referencing user records.
 
