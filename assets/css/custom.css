@@ -8,7 +8,6 @@ h3 {font-weight: 400;}
 .docs-article-container {max-width:95%;}
 .docs-toc-link {padding:.25rem .5rem;}
 .btn-primary, .nav-pills .nav-link.active {background-color: #ee3224;border-color: #ee3224;}
-section#definitions .nav-link {padding: 0.5rem 0.6rem;}
 ol, ul {padding-left:25px;}
 ol {margin-top:0;}
 li {margin-left:17px;}
@@ -19,8 +18,10 @@ div#youtube:hover {box-shadow: rgba(0,0,0,.5)0 20px 30px 0;}
 footer.blockquote-footer {padding: 0;}
 .docs-toc-item.active {margin:0;}
 .docs-toc-item.active:not(:first-child) {margin: 0;}
+section#definitions .nav-link {padding: 0.5rem 0.6rem;}
 section#hero, section#top {background: #0179ab;}
-section#top {background: #0179ab;padding-bottom:50px;padding-top:40px;}
+section#top {background: #0179ab;padding-bottom:30px;padding-top:40px;}
+section#text {padding-top:50px;}
 section#hero p, section#top p {text-align:justify;color:#fff;}
 section#hero h1, section#top h1 {font-size: 2.18rem;color:#fff;}
 section#hero a {color:#fff;}
@@ -83,3 +84,14 @@ section#use-cases a {color:#197ba9;font-size:0.8rem;}
 .widget a:not(.btn) {color:#197ba9;}
 .truncate-long-text {mask-image:linear-gradient(to bottom, black 50%, transparent 100%);max-height:600px;overflow:hidden;}
 pre {font-size:0.58rem;background-color:unset;border:unset;margin:unset;}
+.dot {height: 15px;width: 15px;margin: 0 2px;background-color: #bbb;border-radius: 50%;display: inline-block;transition: background-color 0.6s ease;}
+.slideshow-container {max-height: 320px; position: relative;margin: auto;}
+.slide-prev, .slide-next {cursor: pointer;position: absolute;top: 50%;width: auto;margin-top: -22px;padding: 8px;color: white;font-weight: bold;font-size: 18px;transition: 0.6s ease;border-radius: 0 3px 3px 0;user-select: none;background-color: rgba(0,0,0,0.2);}
+.slide-next {right: 0;border-radius: 3px 0 0 3px;}
+.slide-prev:hover, .slide-next:hover {background-color: rgba(0,0,0,0.8);}
+.slideshow-container .active, .slideshow-container .dot:hover {background-color: #717171;}
+.slide-fade {animation-name: slide-fade;animation-duration: 1.5s;}
+@keyframes slide-fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}

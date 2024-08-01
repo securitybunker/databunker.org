@@ -1,0 +1,81 @@
+{{ $ := .root }}
+{{ $page := .page }}
+{{ $bg := $page.Params.design.background }}
+<div class="row mt-3">
+<div class="col-md-6 order-md-1 text-md-left align-self-center">
+   <!--
+      <h2>Make your Mobile and Web apps GDPR compliant in under 10 minutes.</h2>
+      <h2>Special GDPR compliant secure vault for customer records in under 2 hours.</h2>
+      -->
+   <h1 class="mt-0" style="font-size:1.82rem;">{{ $page.Title }}</h1>
+   {{ with $page.Content }}
+   <div class="mt-2">{{ . }}</div>
+   {{ end }}
+
+    {{/* Call-to-action link */}}
+    {{ if $page.Params.btn.url }}
+      {{ $pack := or $page.Params.btn.icon_pack "fas" }}
+      {{ $pack_prefix := $pack }}
+      {{ if in (slice "fab" "fas" "far" "fal") $pack }}
+        {{ $pack_prefix = "fa" }}
+      {{ end }}
+      {{ $link := $page.Params.btn.url }}
+      {{ $scheme := (urls.Parse $link).Scheme }}
+      {{ $target := "" }}
+      {{ if not $scheme }}
+        {{ $link = $link | relLangURL }}
+      {{ else if in (slice "http" "https") $scheme }}
+        {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
+      {{ end }}
+    <p class="mb-0" style="margin-top:1.6rem;">
+      <a href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }} class="btn {{if $bg.text_color_light}}btn-light{{else}}btn-primary{{end}} btn-lg page-scroll mb-2">{{ if $page.Params.btn.icon }}<i class="{{ $pack }} {{ $pack_prefix }}-{{ $page.Params.btn.icon }} mr-2" aria-hidden="true"></i>{{end}}{{ $page.Params.btn.label | markdownify | emojify | safeHTML }}</a>
+
+      {{/* Alternative Call-to-action link */}}
+      {{ if $page.Params.btn_alt.url }}
+        {{ $link := $page.Params.btn_alt.url }}
+        {{ $scheme := (urls.Parse $link).Scheme }}
+        {{ $target := "" }}
+        {{ if not $scheme }}
+          {{ $link = $link | relLangURL }}
+        {{ else if in (slice "http" "https") $scheme }}
+          {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
+        {{ end }}
+      &nbsp;<a href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }} class="btn btn-lg {{if $bg.text_color_light}}btn-outline-light{{else}}btn-outline-primary{{end}} page-scroll mb-2">{{ if $page.Params.btn_alt.icon }}<i class="{{ $pack }} {{ $pack_prefix }}-{{ $page.Params.btn_alt.icon }} mr-2" aria-hidden="true"></i>{{end}}{{ $page.Params.btn_alt.label | markdownify | emojify | safeHTML }}</a>
+      {{ end }}
+    </p>
+    {{ end }}
+</div>
+<div class="col-lg-6 mx-auto col-md-6 order-md-2">
+<div class="slideshow-container">
+  {{ if $page.Params.hero_media }}
+  <div class="mySlides slide-fade">
+    <img src="{{ printf "img/%s" $page.Params.hero_media | relURL }}" style="background-color: #fff;border:1px solid black;box-shadow: 0 2px 4px;transition: all .2s ease-out;padding:15px;" />
+  </div>
+  {{ end }}
+  <div class="mySlides slide-fade" style="display:none;">
+   <div id="docker-run" style="min-height:314px;background-color: #fff;border:1px solid black;box-shadow: 0 2px 4px;transition: all .2s ease-out;padding:20px;vertical-align:bottom;">
+   <i class="fa fa-copy" onclick="copy_pre_text(this);" style="float:right;cursor:pointer;"></i>
+<pre>
+
+# start docker container
+docker run -p 3000:3000 -d securitybunker/databunker demo
+
+# save user records
+curl -s http://localhost:3000/v1/user -X POST -H "X-Bunker-Token: DEMO" -H "Content-Type: application/json" \
+-d '{"first":"John","last":"Doe","login":"john","email":"user@gmail.com"}'
+
+# user lookup by login, email, phone, or token
+curl -s -H "X-Bunker-Token: DEMO" -X GET http://localhost:3000/v1/user/login/john
+
+# Web UI: http://localhost:3000
+</pre>
+   </div>
+  </div>
+  <a class="slide-prev" onclick="plus_slides(-1)">&#10094;</a>
+  <a class="slide-next" onclick="plus_slides(1)">&#10095;</a>
+  </div>
+<div style="text-align:center">
+  <span class="dot" onclick="current_slide(1)"></span>
+  <span class="dot" onclick="current_slide(2)"></span>
+</div>
+</div>
