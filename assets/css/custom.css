@@ -26,6 +26,7 @@ section#hero p, section#top p {text-align:justify;color:#fff;}
 section#hero h1, section#top h1 {font-size:2.18rem;color:#fff;}
 section#hero a {color:#fff;}
 section#hero a.btn-lg {/*text-underline-offset:4px;text-decoration:underline;*/padding:20px 30px 25px 30px !important;font-size:1.2rem !important;}
+section#definitions {padding-top:70px;padding-bottom:60px;}
 div#bgwhite {background-color:#fff;margin-top:10px; border:1px solid #ddd; padding-left:0;padding-right:0;}
 div#bgwhite p {text-align:justify; padding-left:25px;padding-right:25px;}
 div#bgwhite ul li {text-align:justify;padding-right:25px;font-size:80%;}
@@ -54,6 +55,7 @@ div#bgwhite .tab-pane blockquote  p:first-child {padding-top:0;}
 #chat {bottom:25px;right:25px;position:fixed;z-index:10000;display:none;}
 #chatlinks {display:none;}
 #chatlinks a {padding:10px 40px!important;line-height:25px;}
+.navbar-nav .nav-item:last-of-type a.nav-link {padding-right: 0;}
 @media only screen and (max-width:600px)
 {
 #sharebtns {display:none;}
