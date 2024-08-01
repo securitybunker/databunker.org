@@ -94,4 +94,4 @@ hero_media = "databunker-diagram.png"
 #<p style='font-size:0.8rem;'>⭐⭐⭐⭐⭐ <a href="/success-story/kyc-backend-for-crypto-startup/" style="text-decoration:underline;text-underline-offset:4px;">a perfect kyc backend</a></p>
 #Check out the <a href="/doc/start/" style="text-decoration:underline;text-underline-offset:4px;">Getting Started Guide</a> and start protecting PII records in no time!
 +++
-**Databunker** is an open-source vault for secure storage of PII, PHI, KYC, and PCI records. Protect user records from SQL and GraphQL injections with a simple API. Streamline GDPR, HIPAA, ISO 27001, and SOC2 compliance.
+**Databunker** is a super-fast, open-source vault built with Go for secure storage of PII, PHI, KYC, and PCI records. Protect user records from SQL and GraphQL injections with a simple API. Streamline GDPR, HIPAA, ISO 27001, and SOC2 compliance.
