@@ -65,10 +65,11 @@
   #url= "/databunker-pro/"
   #name = "Cloud Version"
   #url = "/#contact"
-  #name = "Get Started"
+  url = "/#plans"
+  name = "Get Started Now"
   #url = "/doc/start/"
-  name = "Live demo"
-  url = "/doc/demo/"
+  #name = "Live demo"
+  #url = "/doc/demo/"
   weight = 40
 
 

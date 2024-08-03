@@ -20,13 +20,14 @@ div#youtube:hover {box-shadow:rgba(0,0,0,.5)0 20px 30px 0;}
 section#definitions .nav-link {padding:0.5rem 0.6rem;}
 section#hero, section#top {background:#0179ab;}
 section#top {background:#0179ab;padding-bottom:25px;padding-top:30px;}
-section#text {padding-top:50px;}
+section#text {padding-top:50px;padding-bottom:40px;}
 section#quote {padding-top:25px;padding-bottom:20px;}
 section#hero p, section#top p {text-align:justify;color:#fff;}
 section#hero h1, section#top h1 {font-size:2.18rem;color:#fff;}
 section#hero a {color:#fff;}
 section#hero a.btn-lg {/*text-underline-offset:4px;text-decoration:underline;*/padding:20px 30px 25px 30px !important;font-size:1.2rem !important;}
 section#definitions {padding-top:70px;padding-bottom:60px;}
+section#plans {padding-top:30px;padding-bottom:40px;}
 div#bgwhite {background-color:#fff;margin-top:10px; border:1px solid #ddd; padding-left:0;padding-right:0;}
 div#bgwhite p {text-align:justify; padding-left:25px;padding-right:25px;}
 div#bgwhite ul li {text-align:justify;padding-right:25px;font-size:80%;}
@@ -97,3 +98,15 @@ pre {font-size:0.58rem;background-color:unset;border:unset;margin:unset;margin-b
   from {opacity:.4}
   to {opacity:1}
 }
+.pricecolumn {display:flex;flex-wrap:wrap;flex-direction:column;border:1px solid rgba(0,0,0,.125);height:100%;padding-bottom:10px;}
+.pricecolumn:hover {box-shadow:0 8px 12px 0 rgba(0,0,0,0.2);}
+.pricecolumn .header {background-color:#111;color:white;font-size:25px;}
+.pricecolumn .grey {/* background-color:#eee;*/font-size:20px;}
+.pricecolumn .blue {background-color:#d4eef9;border:0;font-size:20px;}
+.pricecolumn .pline {padding:20px 20px 0 20px;line-height:130%;font-size:70%;}
+.pricecolumn .div2 {padding:20px 20px 0 20px;text-align:center;line-height:130%;font-size:70%;}
+.pricecolumn p, .pricecolumn h3 {margin:0;}
+.pricecolumn h3 {font-size:1.06rem;}
+.pricecolumn section {margin:0 auto;}
+.pricecolumn section .pline {text-align:left;}
+.pricecolumn-left div {text-align:left!important;}
