@@ -2,12 +2,12 @@
 {{ $page := .page }}
 {{ $bg := $page.Params.design.background }}
 <div class="row mt-3">
-<div class="col-md-6 order-md-1 text-md-left align-self-center">
+<div class="col-md-6 text-md-left">
    <!--
       <h2>Make your Mobile and Web apps GDPR compliant in under 10 minutes.</h2>
       <h2>Special GDPR compliant secure vault for customer records in under 2 hours.</h2>
       -->
-   <h1 class="mt-0 mb-3" style="font-size:1.46rem;line-height:2.2rem;">{{ $page.Title }}</h1>
+   <h1 class="mt-0 mb-2" style="font-size:1.46rem;line-height:2.2rem;">{{ $page.Title }}</h1>
    {{ with $page.Content }}
    <div class="">{{ . }}</div>
    {{ end }}
@@ -27,8 +27,8 @@
       {{ else if in (slice "http" "https") $scheme }}
         {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
       {{ end }}
-    <div class="" style="margin-top:2.5rem;">
-      <a href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }} class="btn {{if $bg.text_color_light}}btn-light{{else}}btn-primary{{end}} btn-lg page-scroll mb-2">{{ if $page.Params.btn.icon }}<i class="{{ $pack }} {{ $pack_prefix }}-{{ $page.Params.btn.icon }} mr-2" aria-hidden="true"></i>{{end}}{{ $page.Params.btn.label | markdownify | emojify | safeHTML }}</a>
+    <div class="" style="margin-top:2.0rem;">
+      <a href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }} class="{{if $bg.text_color_light}}btn-light{{else}}btn-primary{{end}} btn-lg btn page-scroll">{{ if $page.Params.btn.icon }}<i class="{{ $pack }} {{ $pack_prefix }}-{{ $page.Params.btn.icon }} mr-2" aria-hidden="true"></i>{{end}}{{ $page.Params.btn.label | markdownify | emojify | safeHTML }}</a>
 
       {{/* Alternative Call-to-action link */}}
       {{ if $page.Params.btn_alt.url }}
@@ -45,7 +45,7 @@
     </div>
     {{ end }}
 </div>
-<div class="col-lg-6 mx-auto col-md-6 order-md-2">
+<div class="mx-auto col-md-6">
 <div class="slideshow-container">
   {{ if $page.Params.hero_media }}
   <div class="mySlides slide-fade">

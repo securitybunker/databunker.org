@@ -25,10 +25,10 @@ section#quote {padding-top:25px;padding-bottom:20px;}
 section#hero p, section#top p {text-align:justify;color:#fff;}
 section#hero h1, section#top h1 {font-size:2.18rem;color:#fff;}
 section#hero a {color:#fff;}
-section#hero a.btn-lg {/*text-underline-offset:4px;text-decoration:underline;*/padding:20px 30px 25px 30px !important;font-size:1.2rem !important;}
+.btn-lg {/*text-underline-offset:4px;text-decoration:underline;*/padding:20px 30px 25px 30px !important;font-size:1.2rem !important;}
 section#definitions {padding-top:70px;padding-bottom:60px;}
 section#plans {padding-top:30px;padding-bottom:40px;}
-div#bgwhite {background-color:#fff;margin-top:10px;padding-left:0;padding-right:0;}
+div#bgwhite {background-color:#fff;margin-top:21px;padding-left:0;padding-right:0;}
 div#bgwhite p {text-align:justify;padding-left:25px;padding-right:25px;}
 div#bgwhite ul li {text-align:justify;padding-right:25px;font-size:80%;}
 div#bgwhite .tab-pane p:first-child {padding-top:20px;}
