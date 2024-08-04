@@ -1,12 +1,13 @@
 body {font-size:0.9rem;}
 h3 {font-weight:400;}
+p {text-align:justify;}
 .section-heading h1 {font-size:25px;}
 .section-heading p {font-size:1rem;}
 .section-heading {margin-bottom:30px;}
 .nav-pills .nav-link {border-radius:0;text-transform:uppercase;font-size:15px;}
 .badge-pill-large {padding:0.4em;border-radius:0.2rem;background-color:#ee3224 !important;font-weight:400;}
-.docs-article-container {max-width:95%;}
 .docs-toc-link {padding:.25rem .5rem;}
+.docs-article-container {max-width:100%;}
 .btn-primary, .nav-pills .nav-link.active {background-color:#ee3224;border-color:#ee3224;}
 ol, ul {padding-left:25px;}
 ol {margin-top:0;}
@@ -22,14 +23,14 @@ section#hero, section#top {background:#0179ab;}
 section#top {background:#0179ab;padding-bottom:25px;padding-top:30px;}
 section#text {padding-top:50px;padding-bottom:40px;}
 section#quote {padding-top:25px;padding-bottom:20px;}
-section#hero p, section#top p {text-align:justify;color:#fff;}
+section#hero p, section#top p {color:#fff;}
 section#hero h1, section#top h1 {font-size:2.18rem;color:#fff;}
 section#hero a {color:#fff;}
 .btn-lg {/*text-underline-offset:4px;text-decoration:underline;*/padding:20px 30px 25px 30px !important;font-size:1.2rem !important;}
 section#definitions {padding-top:70px;padding-bottom:60px;}
 section#plans {padding-top:30px;padding-bottom:40px;}
 div#bgwhite {background-color:#fff;margin-top:21px;padding-left:0;padding-right:0;}
-div#bgwhite p {text-align:justify;padding-left:25px;padding-right:25px;}
+div#bgwhite p {padding-left:25px;padding-right:25px;}
 div#bgwhite ul li {text-align:justify;padding-right:25px;font-size:80%;}
 div#bgwhite .tab-pane p:first-child {padding-top:20px;}
 div#bgwhite .tab-pane p {margin-bottom:0.5rem;}
@@ -64,7 +65,7 @@ div#bgwhite .tab-pane blockquote  p:first-child {padding-top:0;}
 section#hero h1 {font-size:1.74rem;color:#fff;text-align-last:justify;}
 section.home-section:first-of-type {padding-top:10px;}
 }
-div.docs p, section.wg-textblock p {text-align:justify;margin-bottom:10px;}
+div.docs p, section.wg-textblock p {margin-bottom:10px;}
 div.docs li p {text-align:unset;}
 .share-box {float:unset;}
 @media only screen and (min-width:769px) {
