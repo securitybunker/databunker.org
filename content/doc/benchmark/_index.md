@@ -203,10 +203,3 @@ Percentage of the requests served within a certain time (ms)
   99%    128
  100%    163 (longest request)
 ```
-
-&nbsp;
-
-## 👋 Guided tour
-Curious to see **Databunker** or **Databunker PRO** in action?
-
-[Book a call today 🚀](https://calendly.com/stremovsky/30min)

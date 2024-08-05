@@ -25,10 +25,3 @@ https://databunker.org/use-case/secure-session-storage/#databunker-support-for-n
 1. `@databunker/store` from https://github.com/securitybunker/databunker-store
 
 2. `@databunker/session-store` from https://github.com/securitybunker/databunker-session-store
-
-&nbsp;
-
-## 👋 Guided tour
-Curious to see **Databunker** or **Databunker PRO** in action?
-
-[Book a call today 🚀](https://calendly.com/stremovsky/30min)

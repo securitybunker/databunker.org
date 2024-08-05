@@ -40,10 +40,3 @@ Databunker provides you an API to lookup user records using the **email address*
 Databunker was built with privacy in mind and this is where the product really shines. It provides GDPR compliance, i.e. an audit of changes, handling for user requests like forget-me requests, user request change management, optional DPO approval, etc...
 
 From a technical perspective, the product has many additional features, like the expiration of records, shareable record identities; additional user records, etc...
-
-&nbsp;
-
-## 👋 Guided tour
-Curious to see **Databunker** or **Databunker PRO** in action?
-
-[Book a call today 🚀](https://calendly.com/stremovsky/30min)
