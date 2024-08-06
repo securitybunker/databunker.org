@@ -11,13 +11,13 @@ mymenu: doc
 weight: 5
 ---
 ## Step 1. Starting Databunker in demo mode
-The easiest way to get started with **Databunker** is to run it as a **Docker container**:
+The easiest way to get started with Databunker is to run it as a Docker container:
 
 ```
 docker run -p 3000:3000 -d --rm --name databunker securitybunker/databunker demo
 ```
 
-This command starts a local container with a `DEMO` root access key. It can be used for **testing** and **development**.
+This command starts a local container with a `DEMO` root access key. It can be used for local testing and development.
 
 #### Connecting to Databunker
 
@@ -27,7 +27,7 @@ You can interact with Databunker using:
 - [REST API](https://documenter.getpostman.com/view/11310294/Szmcbz32) listening on port `3000`: [localhost:3000](http://localhost:3000)
 
 #### Additional installation options
-- [View full installation guide](/doc/install/)
+- [View detailed installation guide](/doc/install/)
 
 &nbsp;
 
@@ -108,5 +108,5 @@ This method will require more changes on your database level and in your applica
 ![Full reorganization](/img/db-complex.png)
 
 ## What's next?
-- [Full installation guide](/doc/install/)
-- [Databunker online demo](/doc/demo/)
+- [View service online demo](/doc/demo/)
+- [Detailed installation guide](/doc/install/)
