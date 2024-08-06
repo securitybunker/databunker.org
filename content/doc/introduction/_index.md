@@ -32,4 +32,5 @@ Databunker offers a paradigm shift in customer data protection:
 
 ## What's next?
 - [Getting started guide](/doc/start/)
-- [Detailed installation guide](/doc/install/)
+- [Full installation guide](/doc/install/)
+- [Databunker online demo](/doc/demo/)

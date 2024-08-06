@@ -1,7 +1,7 @@
 ---
 #title: "Curious to see Databunker in action?"
-title: "Live demo"
-linktitle: Databunker Live Demo
+title: "Online demo"
+linktitle: Databunker Online Demo
 toc: false
 type: docs
 date: "2024-05-05T00:00:00+01:00"
