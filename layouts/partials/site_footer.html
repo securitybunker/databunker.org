@@ -17,45 +17,19 @@
 <!-- /Yandex.Metrika counter -->
 
 <footer class="site-footer">
-
   <div class="container">
-    <div class="row">
-      <div class="col-md-9">
+  <div class="row justify-content-center">
+  <div class="col-md-12 text-center">
+    <h2 class="mb-3">Have a question?</h2>
+    <p class="mb-4" style="font-size:0.8rem;">✉&nbsp;hello@databunker.org&nbsp;&nbsp;<a href="https://calendly.com/stremovsky/30min">Request a demo</a></p>
+    </div>
+  </div>
+  </div>
+
         <div style="text-align: center;display:none;">
 	  <a href="https://github.com/securitybunker/databunker" target="_blank" rel="noopener" class="btn btn-outline-primary page-scroll"><i class="fab fa-github">&nbsp;</i>Star us on GitHub</a>&nbsp;
 	  <a href="https://join.slack.com/t/databunker/shared_invite/zt-b6ukxzw3-JCxv8NJDESL40haM45RNIA" target="_blank" rel="noopener" class="btn btn-outline-primary page-scroll"><i class="fab fa-slack">&nbsp;</i>Join Slack Channel</a>
         </div>
-        {{ with site.GetPage "privacy.md" }}
-        <p class="powered-by">
-          {{ printf "<a href=\"%s\">%s</a>" .RelPermalink .Title | safeHTML }}
-        </p>
-        {{ end }}
-      </div>
-      <div class="col-md-3">
-        <ul class="list-inline network-icon text-right">
-          {{/* Contact links. */}}
-          {{ range site.Params.contact_links }}
-          {{ $pack := or .icon_pack "fas" }}
-          {{ $pack_prefix := $pack }}
-          {{ if in (slice "fab" "fas" "far" "fal") $pack }}
-          {{ $pack_prefix = "fa" }}
-          {{ end }}
-          {{ $link := .link }}
-          {{ $scheme := (urls.Parse $link).Scheme }}
-          {{ $target := "" }}
-          {{ if not $scheme }}
-          {{ $link = .link | relLangURL }}
-          {{ else if in (slice "http" "https") $scheme }}
-          {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
-          {{ end }}
-          <li class="list-inline-item">
-            <a href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }} title="{{.name}}"><i class="{{ $pack }} {{ $pack_prefix }}-{{ .icon }}" aria-hidden="true"></i></a>
-          </li>
-          {{ end }}
-        </ul>
-      </div>
-    </div>
-  </div>
 <script>
 /*
 const popup = window.sessionStorage.getItem('popup');
@@ -90,7 +64,5 @@ if (popup === 3) {
 }
 */
 </script>
-<noscript><div><img src="https://mc.yandex.ru/watch/70878271" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
 <!-- <script id="bettergdpr_js" src="https://databunker.privacybunker.cloud/site/better-gdpr.js?bettergdprtenant=databunker" type="text/javascript"></script> -->
 </footer>
