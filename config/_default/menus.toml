@@ -102,14 +102,9 @@
   weight = 2
 
 [[doc]]
-  name = "Live demo"
+  name = "Online demo"
   url = "/doc/demo/"
   weight = 5
-
-[[doc]]
-  name = "Architecture"
-  url = "/doc/architecture/"
-  weight = 10
 
 [[doc]]
   name = "Node.js examples"
@@ -135,6 +130,11 @@
   name = "Project FAQ"
   url = "/doc/faq/"
   weight = 35
+
+[[doc]]
+  name = "Architecture"
+  url = "/doc/architecture/"
+  weight = 36
 
 [[doc]]
   name = "API"
