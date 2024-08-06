@@ -1,5 +1,5 @@
 ---
-title: Databunker installation guide
+title: Detailed installation guide
 linktitle: Databunker installation guide
 toc: false
 type: docs
@@ -10,9 +10,9 @@ mymenu: doc
 weight: 30
 ---
 
-## Method 1: Quick installation method
+## Method 1: Quick installation
 
-The easiest way to begin with Databunker is to deploy it as a standard Docker container with minimal parameters. In this setup, it will utilize an internal built-in **SQLite database** to store encrypted records. This method is suitable for development purposes and is not recommended for production environments.
+The easiest way to start with Databunker is to deploy it as a standard Docker container with minimal parameters. In this setup, it will utilize an internal built-in **SQLite database** to store encrypted records. This method is suitable for developers and is not recommended for production environments.
 
 **Advantages:**
 * No need for an external database
@@ -27,9 +27,9 @@ The easiest way to begin with Databunker is to deploy it as a standard Docker co
 * All data will be lost when the container is stopped
 * Not recommended for production use
 
-### Getting started:
+### Start databunker in demo mode
 
-To launch the service, run the following command:
+Run the following command:
 
 ```
 docker run -p 3000:3000 -d --rm --name databunker securitybunker/databunker demo
@@ -37,12 +37,12 @@ docker run -p 3000:3000 -d --rm --name databunker securitybunker/databunker demo
 
 The Databunker service will be accessible on port ``3000``.
 
-You can then open your browser and navigate to <a href="http://localhost:3000/" target="_blank">http://localhost:3000/</a> to access the product's user interface.
+Open your browser and navigate to <a href="http://localhost:3000/" target="_blank">http://localhost:3000/</a> to access the product's user interface.
 
-`Note:` If the Docker container is stopped or terminated abruptly, all data will be lost.
+`Note:` If the Docker container is stopped or terminated, all data will be lost.
 
 ### How to prevent data loss
-You need to mount the data directory from your host machine inside the Databunker container and provide the **DATABUNKER_MASTERKEY**, which can be extracted from the Databunker container logs (use docker logs dbunker). This key is printed during the service initialization.
+You need to mount the data directory from your host machine inside the Databunker container and provide the **DATABUNKER_MASTERKEY**, which can be extracted from the Databunker container logs (use ``docker logs dbunker``). This key is printed during the service initialization.
 
 Execute the following commands:
 
@@ -51,19 +51,22 @@ mkdir ~/data
 chmod 0777 ~/data
 docker run -v ~/data:/databunker/data \
   -p 3000:3000 \
-  -e DATABUNKER_MASTERKEY=< copy this value from docker log> \
+  -e DATABUNKER_MASTERKEY=< ***copy this value from docker log*** > \
   --rm --name databunker securitybunker/databunker demo
 ```
 
 &nbsp;
 
-## Method 2: Start Databunker container with docker compose
+## Method 2: Start Databunker and backend db with docker compose
 
-Before starting the Databunker container using Docker Compose, you'll need to generate secrets required by the application. These could include passwords for MySQL or PostgreSQL databases, a self-signed SSL certificate, the Databunker root token, etc.
+Before starting containers, you need to generate a number of secret variables used by the application. These variables include:
+* Passwords for MySQL or PostgreSQL databases
+* A self-signed SSL certificate
+* Databunker root token, etc...
 
-For instance, the **DATABUNKER_ROOTTOKEN** variable will be stored in the ``.env/databunker-root.env`` file. You can utilize this variable as a root token when making Databunker API requests.
+For instance, the **DATABUNKER_ROOTTOKEN** variable will be stored in the ``.env/databunker-root.env`` file. You can use this variable as a root token when making Databunker API requests.
 
-The required secret files will be saved into the ``./env`` directory. Use one of the following scripts found in the project's Git repository to generate configuration secrets:
+The required secret files will be saved in the ``./env`` directory. Use one of the following scripts found in the project's Git repository to generate configuration secrets:
 
 * ./generate-mysql-env-files.sh
 * ./generate-mysql-demo-env-files.sh
@@ -96,9 +99,9 @@ We have built Terraform configuration files and Helm charts to deploy Databunker
 
 ## Method 4: Step-by-step production installation
 
-**Start with backend server**
+**Start with backend database**
 
-For production installation, you can use **MySQL** or **PostgreSQL** backend database. It will be used to store encrypted user records. For example, you can spin MySQL or PostgreSQL as a Docker container or use a cloud RDS version provided by Google Cloud and AWS, etc... Just make sure to create a database for storing Databunker records and create a database user to allow Databunker access to backend database.
+For production installation, you can use **MySQL** or **PostgreSQL** backend databases. It will be used to store encrypted user records. For example, you can spin MySQL or PostgreSQL as a Docker container or use a cloud RDS version provided by Google Cloud and AWS, etc...
 
 For example, use the following command to start MySQL server. It will create a `databunkerdb` database for Databunker and create `bunkeruser` for Databunker access to MySQL.
 
@@ -155,15 +158,17 @@ docker run --restart unless-stopped -d -p 3000:3000 \
 
 ## Advanced configuration
 
-Databunker has a configuration file that you can alter to enable custom email gateway, SMS gateway configuration,
-service logo, etc...
+Databunker loads the ``databunker.yaml`` configuration file, which includes various settings such as the email gateway, SMS gateway, service logo, and more.
 
-There is a number of ways you can change the configuration file in the container, for example by creating your own Docker file.
-Another option is to create a configuration file outside of the container in conf/ directory and mount this directory in the container.
+There are several ways to modify Databunker's configuration file:
+* Build a new Docker container based on Databunker's Dockerfile and include your custom configuration file inside it.
+* Create a new configuration file and mount this file to the Databunker container.
 
-**You can do it as following:**
+You can do it as following:
 
-1. Download the default configuration file and place it in ~/conf/ directory.
+**Step 1. Download the default configuration file**
+
+Create a directory and download the default configuration file:
 
 ```
 mkdir ~/conf
@@ -171,11 +176,13 @@ curl https://raw.githubusercontent.com/securitybunker/databunker/master/databunk
   -o ~/conf/databunker.yaml
 ```
 
-2. After that, you can alter the configuration file with your editor: **~/conf/databunker.yaml**
+**Step 2: Modify the Configuration File**
 
-3. Run container with the following additional command argument `-v ~/conf:/databunker/conf`.
+Edit the configuration file with your changes: **~/conf/databunker.yaml**
 
-For example, you can start Databunker as following:
+**Step 3: Start the Databunker Container**
+
+Use the following command to start the Databunker container with the custom configuration:
 
 ```
 docker run --restart unless-stopped -d -p 3000:3000 -v ~/conf:/databunker/conf \
@@ -189,16 +196,27 @@ docker run --restart unless-stopped -d -p 3000:3000 -v ~/conf:/databunker/conf \
   -c '/databunker/bin/databunker -db databunkerdb -conf /databunker/conf/databunker.yaml'
 ```
 
+This command starts Databunker with the custom configuration file located in the ~/conf directory.
+
 ## SSL certificates
 
 You can generate SSL certificates and place them in the `/databunker/certs` directory in the running container.
 
-For example, you can do this by mounting `/databunker/certs` to a local **~/certs/** directory as:
+Use the following command to generate self-signed certificate:
 
 ```
 cd ~
 mkdir -p certs
-# generate certificates, check bellow
+cd certs
+openssl req -new -newkey rsa:4096 -days 365 -nodes -x509 \
+    -subj "/e=UK/ST=/L=London/O=Your-company Ltd./CN=databunker.your-company.com" \
+    -keyout server.key -out server.cer
+```
+
+Next, map `/databunker/certs` directory inside container to the **~/certs/** directory as:
+
+```
+cd ~
 docker run --restart unless-stopped -d -p 3000:3000 -v ~/conf:/databunker/conf -v ~/certs:/databunker/certs \
   --link mysqlsrv -e MYSQL_HOST=mysqlsrv            \
   -e DATABUNKER_MASTERKEY=8c9e892a1732881e14960f2b0437a720ad01ae47cd23baa7 \
@@ -208,21 +226,6 @@ docker run --restart unless-stopped -d -p 3000:3000 -v ~/conf:/databunker/conf -
   --entrypoint /bin/sh                              \
   --name dbunker securitybunker/databunker             \
   -c '/databunker/bin/databunker -db databunkerdb -conf /databunker/conf/databunker.yaml'
-```
-
-So, you need to prepare server.cer and server.key files.
-
-**Generate self-signed certificates**
-
-You can do the following command to generate one:
-
-```
-cd ~
-mkdir -p certs
-cd certs
-openssl req -new -newkey rsa:4096 -days 365 -nodes -x509 \
-    -subj "/C=UK/ST=/L=London/O=Your-company Ltd./CN=databunker.your-company.com" \
-    -keyout server.key -out server.cer
 ```
 
 **Use certificates generated by Letsencrypt**
@@ -239,11 +242,10 @@ You can download and run a small test script that will create a user record, use
 ```
 curl https://raw.githubusercontent.com/securitybunker/databunker/master/create-test-user.sh -o test.sh
 chmod 755 ./test.sh
-./test.sh DEMO
+./test.sh <DATABUNKER_ROOTTOKEN>
 ```
 
-```DEMO``` is a root token. In your production environment is must be diferent.
-
+### Built-in web UI
 
 You can now open browser at http://localhost:3000/
 
