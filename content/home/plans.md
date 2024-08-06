@@ -18,12 +18,12 @@ weight = 70
 <div class="pline">✔️ Supports MySQL and PostgreSQL databases</div>
 <div class="pline">✔️ Commercial-friendly MIT license</div>
 <div class="pline">✔️ Fast Go language encryption</div>
-<div class="pline">✔️ View <a href="https://databunker.org/doc/start/">getting started guide</a></div>
+<div class="pline">✔️ View <a href="https://databunker.org/doc/introduction/">documentation</a></div>
 <div class="pline">✔️ View <a href="https://github.com/securitybunker/databunker">source code</a></div>
 <div class="pline">&nbsp;</div>
 </section>
 <div class="grey yprice" style="padding-bottom:15px;text-align:center;">
-<a href="https://databunker.org/doc/install/" class="btn-outline-primary btn-lg btn page-scroll mb-2 mt-2">Installation guide</a>
+<a href="https://databunker.org/doc/start/" class="btn-outline-primary btn-lg btn page-scroll" style='border-radius:5px!important;padding: 18px 30px 20px !important;box-shadow:0 4px 6px 0 rgba(0,0,0,0.2);'>Getting started guide</a>
 </div></div></div>
 <div class="col-12 col-md-6 mt-3">
 <div class="pricecolumn" style="background:#FCA311;">
@@ -39,7 +39,7 @@ weight = 70
 <div class="pline">✔️ <b>Start free trial now!</b></div>
 </section>
 <div class="grey yprice" style="padding-bottom:15px;text-align:center;">
-<center><a href="/api/aws-redirect.php" class="mb-2 mt-2"><img src="/img/aws-marketplace-btn.svg"/></a></center>
+<center><a href="/api/aws-redirect.php" class="mb-2 mt-2"><img src="/img/aws-marketplace-btn.svg" style='box-shadow:0 8px 12px 0 rgba(0,0,0,0.2);'/></a></center>
 </div></div></div>
 </div>
 
