@@ -1,6 +1,7 @@
 body {font-size:0.9rem;}
 h3 {font-weight:400;}
 p {text-align:justify;}
+li p {text-align:unset;}
 .section-heading h1 {font-size:25px;}
 .section-heading p {font-size:1rem;}
 .section-heading {margin-bottom:30px;}
@@ -20,14 +21,14 @@ div#youtube:hover {box-shadow:rgba(0,0,0,.5)0 20px 30px 0;}
 .docs-toc-item.active:not(:first-child) {margin:0;}
 section#definitions .nav-link {padding:0.5rem 0.6rem;}
 section#hero, section#top {background:#0179ab;}
-section#top {background:#0179ab;padding-bottom:25px;padding-top:30px;}
-section#text {padding-top:50px;padding-bottom:40px;}
-section#quote {padding-top:25px;padding-bottom:20px;}
+section#top {background:#0179ab;padding-bottom:40px;padding-top:35px;}
+section#text {padding-top:50px;padding-bottom:35px;}
+section#quote {padding-top:20px;padding-bottom:10px;}
 section#hero p, section#top p {color:#fff;}
 section#hero h1, section#top h1 {font-size:2.18rem;color:#fff;}
 section#hero a {color:#fff;}
 .btn-lg {/*text-underline-offset:4px;text-decoration:underline;*/padding:20px 30px 25px 30px !important;font-size:1.2rem !important;}
-section#definitions {padding-top:70px;padding-bottom:60px;}
+section#definitions {padding-top:50px;padding-bottom:60px;}
 section#plans {padding-top:30px;padding-bottom:40px;}
 div#bgwhite {background-color:#fff;margin-top:21px;padding-left:0;padding-right:0;}
 div#bgwhite p {padding-left:25px;padding-right:25px;}
@@ -48,6 +49,8 @@ div#bgwhite .tab-pane p {margin-bottom:0.5rem;}
 blockquote {font-size:0.9rem!important;background: url(/img/blockquote.png) no-repeat 0 12px;padding: 10px 20px 10px 50px;border:0;}
 blockquote p {font-style:italic;font-size:0.86rem;}
 blockquote footer {margin: 1rem 0 0;padding:0!important;}
+footer h2 {    font-size: 2.5rem;}
+footer p{text-align: center;}
 div#bgwhite .tab-pane blockquote  p:first-child {padding-top:0;}
 #sharebtns {top:100px;position:fixed;right:-200px;z-index:10000; -webkit-animation:linear;animation-delay:3s;-webkit-animation-name:buttons;-webkit-animation-duration:3s;animation-fill-mode:forwards;}
 @-webkit-keyframes buttons {
@@ -87,13 +90,13 @@ div.docs-toc ul {margin-bottom:0.6rem;}
 section#use-cases a {color:#197ba9;font-size:0.8rem;}
 .widget a:not(.btn) {color:#197ba9;}
 .truncate-long-text {mask-image:linear-gradient(to bottom, black 50%, transparent 100%);max-height:600px;overflow:hidden;}
-pre {font-size:0.58rem;background-color:unset;border:unset;margin:unset;margin-bottom:1rem;}
-.dot {height:15px;width:15px;margin:0 2px;background-color:#bbb;border-radius:50%;display:inline-block;transition:background-color 0.6s ease;cursor:pointer;}
+pre {font-size:0.52rem;background-color:unset;border:unset;margin:unset;}
+.dot {height:15px;width:15px;margin:0 2px;background-color:#717171;border-radius:50%;display:inline-block;transition:background-color 0.6s ease;cursor:pointer;}
 .slideshow-container {max-height:320px;position:relative;margin:auto;}
-.slide-prev, .slide-next {cursor:pointer;position:absolute;top:50%;width:auto;margin-top:-22px;padding:8px;color:white;font-weight:bold;font-size:18px;transition:0.6s ease;border-radius:0 3px 3px 0;user-select:none;background-color:rgba(0,0,0,0.2);}
+.slide-prev, .slide-next {cursor:pointer;position:absolute;top:50%;width:auto;margin-top:-22px;padding:8px;color:#fff!important;font-weight:bold;font-size:18px;transition:0.6s ease;border-radius:0 3px 3px 0;user-select:none;}
 .slide-next {right:0;border-radius:3px 0 0 3px;}
-.slide-prev:hover, .slide-next:hover {background-color:rgba(0,0,0,0.8);}
-.active.dot, .dot:hover {background-color:#717171;}
+.slide-prev:hover, .slide-next:hover {background-color:rgba(0,0,0,0.3);}
+.active.dot, .dot:hover {background-color:#bbb;}
 .slide-fade {animation-name:slide-fade;animation-duration:1.5s;}
 @keyframes slide-fade {
   from {opacity:.4}
@@ -111,3 +114,4 @@ pre {font-size:0.58rem;background-color:unset;border:unset;margin:unset;margin-b
 .pricecolumn section {margin:0 auto;}
 .pricecolumn section .pline {text-align:left;}
 .pricecolumn-left div {text-align:left!important;}
+.mySlides {border:1px solid rgba(0, 0, 0, 0.1);}
