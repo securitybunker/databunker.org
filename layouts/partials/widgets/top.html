@@ -2,14 +2,17 @@
 {{ $page := .page }}
 {{ $bg := $page.Params.design.background }}
 <div class="row mt-3">
-<div class="col-md-6 text-md-left">
+<div class="col-md-12">
    <!--
       <h2>Make your Mobile and Web apps GDPR compliant in under 10 minutes.</h2>
       <h2>Special GDPR compliant secure vault for customer records in under 2 hours.</h2>
       -->
-   <h1 class="mt-0 mb-2" style="font-size:1.46rem;line-height:2.2rem;">{{ $page.Title }}</h1>
+   <h1 class="mt-0 mb-1" style="font-size:1.8rem;line-height:2.2rem;">{{ $page.Title }}</h1>
+</div></div>
+<div class="row mt-3">
+<div class="col-md-6 text-md-left">
    {{ with $page.Content }}
-   <div class="">{{ . }}</div>
+   <div class="mt-3">{{ . }}</div>
    {{ end }}
 
     {{/* Call-to-action link */}}
@@ -28,7 +31,7 @@
         {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
       {{ end }}
     <div class="" style="margin-top:2.0rem;">
-      <a href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }} class="{{if $bg.text_color_light}}btn-light{{else}}btn-primary{{end}} btn-lg btn page-scroll">{{ if $page.Params.btn.icon }}<i class="{{ $pack }} {{ $pack_prefix }}-{{ $page.Params.btn.icon }} mr-2" aria-hidden="true"></i>{{end}}{{ $page.Params.btn.label | markdownify | emojify | safeHTML }}</a>
+      <a href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }} class="btn-lg {{if $bg.text_color_light}}btn-light{{else}}btn-primary{{end}} btn page-scroll">{{ if $page.Params.btn.icon }}<i class="{{ $pack }} {{ $pack_prefix }}-{{ $page.Params.btn.icon }} mr-2" aria-hidden="true"></i>{{end}}{{ $page.Params.btn.label | markdownify | emojify | safeHTML }}</a>
 
       {{/* Alternative Call-to-action link */}}
       {{ if $page.Params.btn_alt.url }}
@@ -48,25 +51,21 @@
 <div class="mx-auto col-md-6">
 <div class="slideshow-container">
   {{ if $page.Params.hero_media }}
-  <div class="mySlides slide-fade">
-    <img src="{{ printf "img/%s" $page.Params.hero_media | relURL }}" style="background-color: #fff;border:1px solid black;box-shadow: 0 2px 4px;transition: all .2s ease-out;padding:15px;" />
+  <div class="mySlides slide-fade" style="padding-top:8px;padding-bottom:8px;">
+    <img src="{{ printf "img/%s" $page.Params.hero_media | relURL }}" style="transition: all .2s ease-out;padding:15px;" />
   </div>
   {{ end }}
   <div class="mySlides slide-fade" style="display:none;">
-   <div id="docker-run" style="min-height:314px;background-color: #fff;border:1px solid black;box-shadow: 0 2px 4px;transition: all .2s ease-out;padding:22px;vertical-align:bottom;">
-   <i class="fa fa-copy" onclick="copy_pre_text(this);" style="float:right;cursor:pointer;"></i>
-<pre>
-
+   <div id="docker-run" style="min-height:144px;transition: all .2s ease-out;padding:25px;vertical-align:bottom;">
+   <i class="fa fa-copy" onclick="copy_pre_text(this);" style="float:right;cursor:pointer;color:#fff;"></i>
+<pre style="color:#fff;">
 # start docker container
 docker run -p 3000:3000 -d securitybunker/databunker demo
-
 # save user records
 curl -s http://localhost:3000/v1/user -X POST -H "X-Bunker-Token: DEMO" -H "Content-Type: application/json" \
 -d '{"first":"John","last":"Doe","login":"john","email":"user@gmail.com"}'
-
 # user lookup by login, email, phone, or token
 curl -s -H "X-Bunker-Token: DEMO" -X GET http://localhost:3000/v1/user/login/john
-
 # Web UI: http://localhost:3000
 </pre>
    </div>
@@ -80,5 +79,5 @@ curl -s -H "X-Bunker-Token: DEMO" -X GET http://localhost:3000/v1/user/login/joh
 </div>
 </div>
 <script>
-var sliderInterval = setInterval(function() {plus_slides(-1);}, 10000);
+var sliderInterval = setInterval(function() {plus_slides(-1);}, 30000);
 </script>

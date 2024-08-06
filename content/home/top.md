@@ -24,7 +24,8 @@ title = "Secure Vault for Customer PII/PHI/PCI/KYC Records in Under 10 Minutes"
 
 # Hero image (optional). Enter filename of an image in the `static/img/` folder.
 #hero_media = "databunker.mp4"
-hero_media = "databunker-diagram.png"
+#hero_media = "databunker-diagram.png"
+hero_media = "databunker-short-diagram.png"
 
 [design.background]
   # Apply a background color, gradient, or image.

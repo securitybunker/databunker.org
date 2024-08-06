@@ -24,7 +24,9 @@ title = "Secure Vault for Customer Sensitive Records (PII/PHI/KYC/PCI) in inder 
 
 # Hero image (optional). Enter filename of an image in the `static/img/` folder.
 #hero_media = "databunker.mp4"
-hero_media = "databunker-diagram.png"
+#hero_media = "databunker-diagram.png"
+hero_media = "pseudonymized-identity.png"
+
 
 [design.background]
   # Apply a background color, gradient, or image.

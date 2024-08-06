@@ -18,12 +18,12 @@ weight = 70
 <div class="pline">✔️ Supports MySQL and PostgreSQL databases</div>
 <div class="pline">✔️ Commercial-friendly MIT license</div>
 <div class="pline">✔️ Fast Go language encryption</div>
-<div class="pline">✔️ View <a href="https://databunker.org/doc/introduction/">project documentation</a></div>
+<div class="pline">✔️ View <a href="https://databunker.org/doc/start/">getting started guide</a></div>
 <div class="pline">✔️ View <a href="https://github.com/securitybunker/databunker">source code</a></div>
 <div class="pline">&nbsp;</div>
 </section>
 <div class="grey yprice" style="padding-bottom:15px;text-align:center;">
-<a href="https://databunker.org/doc/start/" class="btn-outline-primary btn-lg btn page-scroll mb-2 mt-2">Installation guide</a>
+<a href="https://databunker.org/doc/install/" class="btn-outline-primary btn-lg btn page-scroll mb-2 mt-2">Installation guide</a>
 </div></div></div>
 <div class="col-12 col-md-6 mt-3">
 <div class="pricecolumn" style="background:#FCA311;">
@@ -33,7 +33,7 @@ weight = 70
 <section class="mb-3">
 <div class="pline">✔️ Get optimized service to meet your specific needs</div>
 <div class="pline">✔️ Multi-tenancy & Aurora PgSQL auto scalling</div>
-<div class="pline">✔️ Fast deployment and concierge service</div>
+<div class="pline">✔️ Fast deployment & concierge service</div>
 <div class="pline">✔️ Direct access to developers</div>
 <div class="pline">✔️ Support available on call</div>
 <div class="pline">✔️ <b>Start free trial now!</b></div>
