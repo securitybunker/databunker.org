@@ -101,7 +101,7 @@ We have built Terraform configuration files and Helm charts to deploy Databunker
 
 **Start with backend database**
 
-For production installation, you can use **MySQL** or **PostgreSQL** backend databases. It will be used to store encrypted user records. For example, you can spin MySQL or PostgreSQL as a Docker container or use a cloud RDS version provided by Google Cloud and AWS, etc...
+For production installation, you can use **MySQL** or **PostgreSQL** backend databases. This databse will be used to store encrypted user records. For example, you can spin MySQL or PostgreSQL as a container or use a cloud RDS version provided by Google Cloud and AWS, etc...
 
 For example, use the following command to start MySQL server. It will create a `databunkerdb` database for Databunker and create `bunkeruser` for Databunker access to MySQL.
 
@@ -158,17 +158,17 @@ docker run --restart unless-stopped -d -p 3000:3000 \
 
 ## Advanced configuration
 
-Databunker loads the ``databunker.yaml`` configuration file, which includes various settings such as the email gateway, SMS gateway, service logo, and more.
+Databunker uses the ``databunker.yaml`` configuration file. You can modify this file to set custom email gateway, SMS gateway, service logo, and more.
 
-There are several ways to modify Databunker's configuration file:
-* Build a new Docker container based on Databunker's Dockerfile and include your custom configuration file inside it.
-* Create a new configuration file and mount this file to the Databunker container.
+There are several ways to load a new configuration file in Databunker:
+* Build a new Docker container based on Databunker's Dockerfile and include your custom configuration file inside it
+* Create a new configuration file and mount it to the Databunker container
 
-You can do it as following:
+Follow these steps to mount an external configuration file:
 
 **Step 1. Download the default configuration file**
 
-Create a directory and download the default configuration file:
+Create a ``./conf`` directory and download the default configuration file in it:
 
 ```
 mkdir ~/conf
