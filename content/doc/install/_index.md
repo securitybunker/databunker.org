@@ -35,14 +35,12 @@ Run the following command:
 docker run -p 3000:3000 -d --rm --name databunker securitybunker/databunker demo
 ```
 
-The Databunker service will be accessible on port ``3000``.
-
 Open your browser and navigate to <a href="http://localhost:3000/" target="_blank">http://localhost:3000/</a> to access the product's user interface.
 
 `Note:` If the Docker container is stopped or terminated, all data will be lost.
 
 ### How to prevent data loss
-You need to mount the data directory from your host machine inside the Databunker container and provide the **DATABUNKER_MASTERKEY**, which can be extracted from the Databunker container logs (use ``docker logs dbunker``). This key is printed during the service initialization.
+You need to mount the data directory from your host machine inside the Databunker container and provide the **DATABUNKER_MASTERKEY**, which can be extracted from the Databunker container logs (use ``docker logs dbunker``). This master key value is printed during the service initialization.
 
 Execute the following commands:
 
@@ -59,26 +57,28 @@ docker run -v ~/data:/databunker/data \
 
 ## Method 2: Start Databunker and backend db with docker compose
 
-Before starting containers, you need to generate a number of secret variables used by the application. These variables include:
+We prepared a number of scripts and configuration files you can use with Docker Compose. All these files are available in the project's <a href="https://github.com/securitybunker/databunker#readme" target="_blank">github repository</a>.
+
+Before starting Docker Compose, you need to generate several secret variables used by the containers. These variables include:
 * Passwords for MySQL or PostgreSQL databases
 * A self-signed SSL certificate
-* Databunker root token, etc...
+* Databunker root token, and more
 
-For instance, the **DATABUNKER_ROOTTOKEN** variable will be stored in the ``.env/databunker-root.env`` file. You can use this variable as a root token when making Databunker API requests.
+For instance, the **DATABUNKER_ROOTTOKEN** variable will be stored in the ``.env/databunker-root.env`` file. This value is used as the root token when making Databunker API requests.
 
-The required secret files will be saved in the ``./env`` directory. Use one of the following scripts found in the project's Git repository to generate configuration secrets:
+The required secret files will be saved in the ``./env`` directory. Use one of the following scripts from the project's GitHub repository to generate configuration secrets:
 
 * ./generate-mysql-env-files.sh
 * ./generate-mysql-demo-env-files.sh
 * ./generate-pgsql-env-files.sh
 * ./generate-pgsql-demo-env-files.sh
 
-Then, you can use the following command to start Databunker with MySQL:
+After generating the secrets, you can start Databunker with MySQL using:
 ```
 docker-compose -f docker-compose-mysql.yml up -d
 ```
 
-Or, you can use the following command to start Databunker with PostgreSQL:
+Or, start Databunker with PostgreSQL using:
 ```
 docker-compose -f docker-compose-pgsql.yml up -d
 ```
