@@ -12,7 +12,7 @@ weight: 10
 #Curious to see Databunker in action?
 #youtube wSkL_opprLY
 ---
-Databunker comes with a built-in UI interface.
+Databunker comes with an optional built-in UI interface.
 
 **Demo site:** <a href="https://demo.databunker.org/" target="_blank">https://demo.databunker.org/</a>
 
