@@ -91,6 +91,8 @@ section#use-cases a {color:#197ba9;font-size:0.8rem;}
 .widget a:not(.btn) {color:#197ba9;}
 .truncate-long-text {mask-image:linear-gradient(to bottom, black 50%, transparent 100%);max-height:600px;overflow:hidden;}
 pre {font-size:0.52rem;background-color:unset;border:unset;margin:unset;margin-bottom:20px;}
+code {background-color:unset;}
+pre code {background-color: #f9f9f9;border:1px solid #eaeded;display:block;width:100%;padding:10px;}
 .dot {height:15px;width:15px;margin:0 2px;background-color:#717171;border-radius:50%;display:inline-block;transition:background-color 0.6s ease;cursor:pointer;}
 .slideshow-container {max-height:320px;position:relative;margin:auto;}
 .slide-prev, .slide-next {cursor:pointer;position:absolute;top:50%;width:auto;margin-top:-22px;padding:8px;color:#fff!important;font-weight:bold;font-size:18px;transition:0.6s ease;border-radius:0 3px 3px 0;user-select:none;}
