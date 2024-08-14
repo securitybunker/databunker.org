@@ -25,6 +25,6 @@ Databunker comes with an optional built-in UI interface.
 &nbsp;
 
 ## 👋 Guided tour
-Curious to see **Databunker** or **Databunker PRO** in action?
+Curious to see **Databunker** or **Databunker Pro** in action?
 
 [Book a call today 🚀](https://calendly.com/stremovsky/30min)

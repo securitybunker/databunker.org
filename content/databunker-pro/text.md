@@ -1,5 +1,5 @@
 ---
-title: "Get early access to Databunker PRO"
+title: "Get early access to Databunker Pro"
 weight: 5
 widget: textblock
 ---
@@ -7,11 +7,11 @@ widget: textblock
 div#free-takeaway {display:none;}
 </style>
 
-Databunker PRO is a self-hosted, GDPR compliant secure vault and SDK for customer records. The product addresses several challenges, including privacy by design, data minimization, user audit, Schrems II compliance, privacy-compliant logging, data subject request automation, and more.
+Databunker Pro is a self-hosted, GDPR compliant secure vault and SDK for customer records. The product addresses several challenges, including privacy by design, data minimization, user audit, Schrems II compliance, privacy-compliant logging, data subject request automation, and more.
 
-Databunker PRO is the professional version of Databunker, an open-source security vault created by our development team &#40;[https://databunker.org/](https://databunker.org/)&#41;.
+Databunker Pro is the professional version of Databunker, an open-source security vault created by our development team &#40;[https://databunker.org/](https://databunker.org/)&#41;.
 
-We are currently seeking 10 pilot customers to try the latest Databunker PRO release.
+We are currently seeking 10 pilot customers to try the latest Databunker Pro release.
 
 As a pilot customer, you will have direct access to the developers.
 
