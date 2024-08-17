@@ -33,6 +33,12 @@
 #  url = "https://privacybunker.io/databunker-pro/"
 #  weight = 34
 
+[[main]]
+  name = "Contact us"
+  url = "/contact/"
+  weight = 34
+
+
 #[[main]]
 # name= "&nbsp;Slack"
 # pre= "<i class='fab fa-slack'>"
