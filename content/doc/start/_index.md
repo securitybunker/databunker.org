@@ -10,7 +10,7 @@ mymenu: doc
 # Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)
 weight: 5
 ---
-## Step 1. Starting Databunker in demo mode
+## Step 1. Starting Databunker for local testing
 The easiest way to get started with Databunker is to run it as a Docker container:
 
 ```
