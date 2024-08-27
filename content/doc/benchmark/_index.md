@@ -12,7 +12,7 @@ weight: 20
 
 ### Test 1. Storing one million PII records using AWS EKS & RDS (22.01.2022)
 
-For the test we deployed Databunk open-source in AWS cloud using the Terraform and Help Charts.
+For the test we deployed Databunk open-source in AWS cloud using the Terraform and Helm Charts.
 
 During the test only one EKS node was created to run a Databunker container and one virtual server to run MySQL RDS.
 

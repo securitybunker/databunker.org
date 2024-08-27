@@ -55,7 +55,7 @@ curl -s -H "X-Bunker-Token: DEMO" -X GET http://localhost:3000/v1/user/login/joh
 
 ### Other commands:
 
-For a full list of commands, see the [API document](https://documenter.getpostman.com/view/11310294/Szmcbz32).
+For a full list of commands, check out the [API document](https://documenter.getpostman.com/view/11310294/Szmcbz32).
 
 &nbsp;
 
@@ -83,7 +83,7 @@ If you intend to integrate Databunker with your existing project, you'll need to
 
 #### Converting a sample project
 
-Take a look at the following database schema. We will convert it to use user records stored in Databunker.
+Take a look at the following database schema. Instead of storing user records in the ``users`` table, they will be securely stored in Databunker.
 
 ![Original schema](/img/db-original.png)
 
