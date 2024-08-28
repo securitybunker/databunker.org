@@ -152,6 +152,47 @@
   url = "https://documenter.getpostman.com/view/11310294/Szmcbz32"
   weight = 40
 
+[[doc]]
+  name = "Databunker Pro"
+  weight = 41
+
+[[doc]]
+  parent = "Databunker Pro"
+  name = "Installation guide"
+  url = "/doc/databunker-pro-installation-guide/"
+  weight = 1
+
+[[doc]]
+  parent = "Databunker Pro"
+  name = "Installation"
+  url = "/doc/databunker-pro-installation-guide/"
+  weight = 4
+
+[[doc]]
+  parent = "Databunker Pro"
+  name = "Master Key"
+  url = "/doc/databunker-pro-master-key/"
+  weight = 5
+
+[[doc]]
+  parent = "Databunker Pro"
+  name = "Wrapping Key"
+  url = "/doc/databunker-pro-wrapping-key/"
+  weight = 6
+
+[[doc]]
+  parent = "Databunker Pro"
+  name = "Shamir Keys"
+  url = "/doc/databunker-pro-shamir-keys/"
+  weight = 7
+
+[[doc]]
+  parent = "Databunker Pro"
+  name = "Multi-tenancy"
+  url = "/doc/databunker-pro-tenant-api/"
+  weight = 8
+
+
 [[successstory]]
   name = "KYC backend"
   url = "/success-story/kyc-backend-for-crypto-startup"
