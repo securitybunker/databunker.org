@@ -1,6 +1,7 @@
 ---
 #title: Getting Started with Databunker
-title: "What is Databunker?"
+#title: "What is Databunker?"
+title: "Databunker: Redefining Database Security"
 linktitle: Getting started
 toc: false
 type: docs
@@ -10,23 +11,36 @@ mymenu: doc
 # Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)
 weight: 1
 ---
-## Product brief
+Here is a simple truth: Conventional database encryption often provides a **false sense of security**.
 
-Databunker is a special secure storage system designed to store and protect **Personally Identifiable Information (PII)**, **Protected Health Information (PHI)**, **Payment Card Industry (PII)**, and **Know Your Customer (KYC)** records. It was built to prevent sensitive data exposure through **SQL injection** and **unfiltered GraphQL queries**, offering superior protection compared to standard database encryption provided by major database or cloud vendors. Additionally, the product is fully compliant with GDPR regulations.
+## The Hidden Risks of Traditional Database Security:
 
-Databunker is a fully open-source project available under the commercially friendly **MIT license**.
+* Conventional encryption often only protects data at the storage or disk level
+* **SQL Injection Vulnerability:** Malicious actors can easily access plain text data through SQL injection
+* **Unfiltered GraphQL Queries:** Attackers can retrieve unencrypted data via incorrectly filtered queries
 
-### The hidden risks of traditional database encryption
+## Introducing Databunker
 
-From security perspective conventional database encryption often provides only a **false sense of security**. Data is usually encrypted solely at the storage or disk level. In the event of **SQL injection** or **incorrectly filtered GraphQL queries**, malicious actors can effortlessly access your data in plain text.
+Databunker is a special secure storage system designed to protect:
+* Personally Identifiable Information (PII)
+* Protected Health Information (PHI)
+* Payment Card Industry (PCI) data
+* Know Your Customer (KYC) records
 
-### Solution with Databunker
-Databunker offers a paradigm shift in customer data protection:
-1. By default, bulk retrieval of user records is disabled, providing an additional layer of defense against potential breaches.
-2. Your backend communicates with Databunker through API calls, akin to NoSQL database practices, rather than relying on traditional SQL queries.
-3. To access user records, partial user information such as an email address coupled with an access token is required. Additionally, users can be looked up by their phone number, login name, or unique user ID (UUID token).
-4. Secure hash-based indexing is utilized for all search indexes by default, further fortifying data protection measures.
-5. Databunker ensures that no information is stored in clear text, enhancing overall security.
+## Key Features:
+* **Open-Source:** Fully available under the commercially friendly MIT license
+* **GDPR Compliant:** Built with privacy regulations in mind
+* **Superior Protection:** Goes beyond standard database encryption offered by major vendors
+
+## How Databunker Revolutionizes Data Security:
+Databunker introduces a new approach to customer data protection:
+1. **Secure Indexing:** Utilizes hash-based indexing for all search indexes
+1. **No Clear Text Storage:** Ensures all information is encrypted, enhancing overall security
+1. **Restricted Bulk Retrieval:** Bulk retrieval is disabled by default, adding an extra layer of defense
+1. **API-Based Communication:** Backend interacts with Databunker through API calls, similar to NoSQL solutions
+1. **Record Token:** Databunker creates a secured version of your data object - an object UUID token that is safe to use in your database
+
+Don't let your sensitive data become the next breach headline
 
 ![Pseudonymized identity](/img/pseudonymized-identity.png)
 
