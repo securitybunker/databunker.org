@@ -37,7 +37,7 @@ weight = 70
 <div class="pline">✔️ Fast deployment & concierge service</div>
 <div class="pline">✔️ Direct access to developers</div>
 <div class="pline">✔️ Support available on call</div>
-<div class="pline">✔️ <b>Start free trial now!</b></div>
+<div class="pline">✔️ <b>Free trial available!</b></div>
 </section>
 <div class="grey yprice" style="padding-bottom:15px;text-align:center;">
 <center class="mt-2 mb-2"><a href="/contact/" class="btn-primary btn-lg btn page-scroll" style='vertical-align:top;border-radius:5px!important;padding: 18px 30px 20px !important;box-shadow:0 4px 6px 0 rgba(0,0,0,0.2);'>Learn more</a>&nbsp;&nbsp;&nbsp;<a href="/api/aws-redirect.php" style='display:inline-block;'><img src="/img/aws-marketplace-btn.svg" style='box-shadow:0 8px 12px 0 rgba(0,0,0,0.2);'/></a></center>
