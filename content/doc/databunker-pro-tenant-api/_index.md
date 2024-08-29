@@ -1,6 +1,6 @@
 ---
-title: Databunker Pro Tenant API Documentation
-linktitle: Databunker Pro Tenant API
+title: Multi-tenancy in Databunker Pro
+linktitle: Multi-tenancy in Databunker Pro
 toc: false
 type: docs
 date: "2024-05-05T00:00:00+01:00"
@@ -17,7 +17,7 @@ Creates a new tenant in the Databunker Pro system.
 ### Endpoint
 
 ```
-POST /v1/tenant
+curl -H 'X-Bunker-Token: ROOT-ACCESS-TOKEN' -X POST /v1/tenant
 ```
 
 ### Request Body
@@ -64,7 +64,7 @@ Renames an existing tenant.
 ### Endpoint
 
 ```
-PUT https://old-tenant.databunker-domain.com/v1/tenant
+curl -H 'X-Bunker-Token: TENANT-ACCESS-TOKEN' -X PUT https://old-tenant.databunker-domain.com/v1/tenant
 ```
 
 ### Request Body
@@ -102,13 +102,16 @@ Creates a new user account under a specific tenant.
 ### Endpoint
 
 ```
-POST https://tenant-name.databunker-domain.com/v1/user
+curl -H 'X-Bunker-Token: TENANT-ACCESS-TOKEN' -X POST https://tenant-name.databunker-domain.com/v1/user
 ```
 
 ### Notes
 
 - Replace `tenant-name` in the URL with the actual name of the tenant.
 - The request body and response format for this endpoint are not provided in the given information. Typically, they would include user details such as name, email, etc., and return a user ID or status.
+
+Other commands:
+For a full list of API requests, check out the <a href="https://documenter.getpostman.com/view/11310294/Szmcbz32">API document</a>.
 
 ## General Notes
 
