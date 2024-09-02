@@ -19,7 +19,7 @@ if ($captcha != 18) {
   exit();
 }
 
-$title = "cloudrevive: ".$name." ".$phone;
+$title = "databunker: ".$name." ".$phone;
 $msg = "New guy\r\n";
 $msg .= "Name: ".$name."\r\n";
 $msg .= "Phone: ".$phone."\r\n";
