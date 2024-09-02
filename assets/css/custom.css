@@ -31,6 +31,9 @@ section#hero a {color:#fff;}
 .btn-lg {/*text-underline-offset:4px;text-decoration:underline;*/padding:20px 30px 25px 30px !important;font-size:1.2rem !important;}
 section#definitions {padding-top:50px;padding-bottom:60px;}
 section#plans {padding-top:30px;padding-bottom:40px;}
+#fullpanel {top:0px;bottom:0px;left:0px;right:0px;position:fixed;z-index:9000;display:block;background:#f7f7f7;overflow:auto;opacity:1;}
+#fullpanel_x {position:absolute;top:5px;right:18px;background:transparent;cursor:pointer;color:#000;font-family:'Helvetica', 'Arial', sans-serif;font-size:2em;font-weight:400;text-align:center;width:30px;height:35px;margin:0 auto;}
+#fullpanel_cont {padding-top:12%;margin:0 auto;max-width:800px;padding-left:10px;padding-right:10px;}
 div#bgwhite {background-color:#fff;margin-top:21px;padding-left:0;padding-right:0;}
 div#bgwhite p {padding-left:25px;padding-right:25px;}
 div#bgwhite ul li {text-align:justify;padding-right:25px;font-size:80%;}
