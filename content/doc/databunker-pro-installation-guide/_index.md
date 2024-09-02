@@ -38,7 +38,7 @@ Note: If you don't use this script, the wrapping key will be automatically gener
 
 ### 2. Deploy Databunker Pro
 
-**Option A: Docker Compose**
+**Option A: Deploy Using Docker Compose**
 
 1. Create a ``docker-compose.yml`` file with the Databunker Pro configuration.
 2. Run the following command:
@@ -47,7 +47,7 @@ Note: If you don't use this script, the wrapping key will be automatically gener
 docker-compose up -d
 ```
 
-**Option B: Kubernetes**
+**Option B: Deploy Using Kubernetes**
 
 1. Create a Kubernetes deployment YAML file for Databunker Pro.
 2. Apply the configuration:

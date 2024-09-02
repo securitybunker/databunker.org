@@ -9,7 +9,6 @@ mymenu: doc
 # Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)
 weight: 30
 ---
-
 ## Method 1: Quick installation
 
 The easiest way to start with Databunker is to deploy it as a standard Docker container with minimal parameters. In this setup, it will utilize an internal built-in **SQLite database** to store encrypted records. This method is suitable for developers and is not recommended for production environments.
@@ -53,8 +52,6 @@ docker run -v ~/data:/databunker/data \
   --rm --name databunker securitybunker/databunker demo
 ```
 
-&nbsp;
-
 ## Method 2: Start Databunker and backend db with docker compose
 
 We prepared a number of scripts and configuration files you can use with Docker Compose. All these files are available in the project's <a href="https://github.com/securitybunker/databunker#readme" target="_blank">github repository</a>.
@@ -85,17 +82,12 @@ docker-compose -f docker-compose-pgsql.yml up -d
 
 Once started, you can access Databunker by opening your browser and navigating to <a href="http://localhost:3000/" target="_blank">http://localhost:3000/</a>.
 
-&nbsp;
-
 ## Method 3: Automatic deployment in AWS cloud
 
 We have built Terraform configuration files and Helm charts to deploy Databunker with all required components in AWS. Detailed instructions can be found here:
 
 * https://github.com/securitybunker/databunker/tree/master/terraform/aws
 * https://github.com/securitybunker/databunker/tree/master/charts/databunker
-
-
-&nbsp;
 
 ## Method 4: Step-by-step production installation
 
@@ -154,7 +146,6 @@ docker run --restart unless-stopped -d -p 3000:3000 \
   -c '/databunker/bin/databunker -db databunkerdb -conf /databunker/conf/databunker.yaml'
   
 ```
-
 
 ## Advanced configuration
 

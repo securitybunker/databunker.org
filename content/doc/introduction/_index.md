@@ -32,7 +32,7 @@ Databunker is a special secure storage system designed to protect:
 * **GDPR Compliant:** Built with privacy regulations in mind
 * **Superior Protection:** Goes beyond standard database encryption offered by major vendors
 
-## How Databunker Revolutionizes Data Security:
+## How Databunker Reinvents Data Security:
 Databunker introduces a new approach to customer data protection:
 1. **Secure Indexing:** Utilizes hash-based indexing for all search indexes
 1. **No Clear Text Storage:** Ensures all information is encrypted, enhancing overall security

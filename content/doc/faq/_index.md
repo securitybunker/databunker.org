@@ -37,10 +37,6 @@ For SQLite, Databunker has a special API call to dump the internal database. You
 curl -s http://localhost:3000/v1/sys/backup -H "X-Bunker-Token: $TOKEN" -o backup.sql
 ```
 
-## Can my DBA tune database performance characteristics?
-
-Yes, almost all Databunker requests use database-level indexes when performing API calls. We welcome your DBA to review the product database schema for potential improvements. If you identify any gaps, please let us know.
-
 ## What is the difference between different tokenization solutions and Databunker?
 
 Most commercial tokenization solutions tokenize specific records, such as customer name or email, without linking them to a comprehensive customer record. In contrast, Databunker tokenizes the entire customer record with all details, offering additional capabilities. This allows the end customer (natural person or data subject) to log into their profile, update personal records, manage consents, or request data deletion. Furthermore, we provide numerous APIs to assist with GDPR compliance.
@@ -78,4 +74,4 @@ Yes. According to GDPR, the end-user must have control over their personal data.
 
 ## Does Databunker is a wrapper for an existing database?
 
-No. Databunker is not a wrapper for an existing database. It is a specialized service used to encrypt and store personal records in a privacy-compliant way. The service provides a REST API to store and update user records in JSON format and a customer-facing web UI to provide visibility into the customer’s personal data.
+No, Databunker is not a wrapper for an existing database. It is a purpose-built application service designed to encrypt and store personal records in a privacy-compliant manner. The service offers a REST API for storing and updating user records in JSON format, along with a customer-facing web UI that provides visibility into the customer’s personal data.

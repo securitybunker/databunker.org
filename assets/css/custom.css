@@ -7,9 +7,10 @@ li p {text-align:unset;}
 .section-heading {margin-bottom:30px;}
 .nav-pills .nav-link {border-radius:0;text-transform:uppercase;font-size:15px;}
 .badge-pill-large {padding:0.4em;border-radius:0.2rem;background-color:#ee3224 !important;font-weight:400;}
-.docs-toc-link {padding:.1rem .4rem;}
+.docs-toc-link {padding:.1rem .4rem;font-size:0.8rem;}
 .docs-article-container {max-width:100%;}
 .btn-primary, .nav-pills .nav-link.active {background-color:#ee3224;border-color:#ee3224;}
+article h2 {margin-top:2rem;margin-bottom:1rem;font-size: 1.5rem;}
 ol, ul {padding-left:25px;}
 ol {margin-top:0;}
 li {margin-left:17px;}
@@ -20,14 +21,14 @@ div#youtube:hover {box-shadow:rgba(0,0,0,.5)0 20px 30px 0;}
 .docs-toc-item.active {margin:0;}
 .docs-toc-item.active:not(:first-child) {margin:0;}
 .docs-toc-item ul.nav li {margin:0;}
+.docs-sidebar .nav>li>a {padding:0.1rem 1rem;}
 section#definitions .nav-link {padding:0.5rem 0.6rem;}
-section#hero, section#top {background:#0179ab;}
+section#hero, section#top {background:#0179ab;color:#fff;}
 section#top {background:#0179ab;padding-bottom:40px;padding-top:35px;}
 section#text {padding-top:50px;padding-bottom:35px;}
 section#quote {padding-top:20px;padding-bottom:10px;}
-section#hero p, section#top p {color:#fff;}
-section#hero h1, section#top h1 {font-size:2.18rem;color:#fff;}
-section#hero a {color:#fff;}
+section#hero h1, section#top h1 {font-size:1.8rem;text-align-last:justify;line-height:2.2rem;color:unset;}
+/*section#hero a {color:#fff;}*/
 .btn-lg {/*text-underline-offset:4px;text-decoration:underline;*/padding:20px 30px 25px 30px !important;font-size:1.2rem !important;}
 section#definitions {padding-top:50px;padding-bottom:60px;}
 section#plans {padding-top:30px;padding-bottom:40px;}

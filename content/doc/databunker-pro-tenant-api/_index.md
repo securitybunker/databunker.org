@@ -110,7 +110,8 @@ curl -H 'X-Bunker-Token: TENANT-ACCESS-TOKEN' -X POST https://tenant-name.databu
 - Replace `tenant-name` in the URL with the actual name of the tenant.
 - The request body and response format for this endpoint are not provided in the given information. Typically, they would include user details such as name, email, etc., and return a user ID or status.
 
-Other commands:
+### Other commands:
+
 For a full list of API requests, check out the <a href="https://documenter.getpostman.com/view/11310294/Szmcbz32">API document</a>.
 
 ## General Notes
