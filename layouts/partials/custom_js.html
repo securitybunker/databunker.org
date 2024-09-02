@@ -1,4 +1,10 @@
 <script>
+function get_str(v) {
+  if (!v) {
+    return "";
+  }
+  return v;
+}
 function log_event(evname) {
   if (!evname) {
     return;
@@ -120,5 +126,44 @@ function show_slides(n) {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
+}
+function fullpanel_show(code="") {
+  var el_cont = document.getElementById('fullpanel_cont');
+  el_cont.innerHTML = code;
+  var el = document.getElementById('fullpanel');
+  el.style.display = "block";
+  var body = document.getElementsByTagName('body')[0];
+  body.style.overflow="hidden";
+}
+function fullpanel_close() {
+  var body = document.getElementsByTagName('body')[0];
+  body.style.overflow='';
+  var el = document.getElementById('fullpanel');
+  el.style.display = "none";
+}
+function request_free_trial() {
+  var load_google = false;
+  if (load_google) {
+    google_auth_load();
+  }
+  log_event('free-trial');
+  var old_name = get_str(window.localStorage.getItem('name'));
+  var old_phone = get_str(window.localStorage.getItem('phone'));
+  //Enter your details to continue:
+  var old_email = get_str(window.localStorage.getItem('email'));
+  var code = '<div id="signup_panel" style="max-width:470px;margin:0 auto;padding:30px;background:#fff;border:1px solid #e6e6e6;">'+
+    '<p>Request Free Trial</p>'+
+    '<p style="font-size:90%;color:#737373;">Enter your details:</p>'+
+    '<div id="status-message" style="display:block;width:100%;"></div>'+
+    '<div class="slow-display" style="">'+
+    '<div id="google-one-tap-container"></div></div>'+
+    '<div id="line_or" style="display:none;" class="mb-2"><div class="line"></div><div style="display:inline-block;text-align:center;width:10%;">OR</div><div class="line"></div><p>Enter your details to continue:</p></div>'+
+    '<form method="POST" action="/api/send.php"><input type="hidden" name="captcha" value="18" />'+
+    '<input type="text" name="name" id="signup_name" class="form-control mt-2" style="margin-bottom:10px" placeholder="Enter your name" value="'+old_name+'" />'+
+    '<input type="email" name="email" id="signup_email" class="form-control mt-3" style="margin-bottom:10px" placeholder="Enter your email address" value="'+old_email+'" required autocomplete="email" />'+
+    '<input type="text" name="phone" id="signup_phone" class="form-control mt-2" style="margin-bottom:10px" placeholder="Enter your Phone/WhatsApp" value="'+old_phone+'" autocomplete="phone" />'+
+    //'<p style=font-size:70%;color:#737373;">You can also send us message on <a href="https://wa.me/972524486622?text=AWS+cost+reduction+question">WhatsApp</a></p>'+
+    '<div class="text-center mt-4"><input type="submit" class="btn-primary btn-lg btn page-scroll" value="Request Free Trial"/></div></form>';
+  fullpanel_show(code);
 }
 </script>
