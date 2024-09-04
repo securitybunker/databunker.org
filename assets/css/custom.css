@@ -11,6 +11,7 @@ li p {text-align:unset;}
 .docs-article-container {max-width:100%;}
 .btn-primary, .nav-pills .nav-link.active {background-color:#ee3224;border-color:#ee3224;}
 article h2 {margin-top:2rem;margin-bottom:1rem;font-size: 1.5rem;}
+section#plans h2 {font-size: 1.8rem;}
 ol, ul {padding-left:25px;}
 ol {margin-top:0;}
 li {margin-left:17px;}
@@ -31,7 +32,7 @@ section#hero h1, section#top h1 {font-size:1.8rem;text-align-last:justify;line-h
 /*section#hero a {color:#fff;}*/
 .btn-lg {/*text-underline-offset:4px;text-decoration:underline;*/padding:20px 30px 25px 30px !important;font-size:1.2rem !important;}
 section#definitions {padding-top:50px;padding-bottom:60px;}
-section#plans {padding-top:30px;padding-bottom:40px;}
+section#plans {padding-top:35px;padding-bottom:40px;}
 #fullpanel {top:0px;bottom:0px;left:0px;right:0px;position:fixed;z-index:9000;display:block;background:#f7f7f7;overflow:auto;opacity:1;}
 #fullpanel_x {position:absolute;top:5px;right:18px;background:transparent;cursor:pointer;color:#000;font-family:'Helvetica', 'Arial', sans-serif;font-size:2em;font-weight:400;text-align:center;width:30px;height:35px;margin:0 auto;}
 #fullpanel_cont {padding-top:12%;margin:0 auto;max-width:800px;padding-left:10px;padding-right:10px;}
@@ -70,7 +71,7 @@ div#bgwhite .tab-pane blockquote  p:first-child {padding-top:0;}
 {
 #sharebtns {display:none;}
 #chat {display:none;}
-section#hero h1 {font-size:1.74rem;color:#fff;text-align-last:justify;}
+section#hero h1, section#top h1 {font-size:1.6rem;color:#fff;text-align-last:justify;text-align-last:unset;}
 section.home-section:first-of-type {padding-top:10px;}
 }
 div.docs p, section.wg-textblock p {margin-bottom:10px;}
@@ -114,7 +115,7 @@ pre code {background-color: #f9f9f9;border:1px solid #eaeded;display:block;width
 .pricecolumn .header {background-color:#111;color:white;font-size:25px;}
 .pricecolumn .grey {/* background-color:#eee;*/font-size:20px;}
 .pricecolumn .blue {background-color:#d4eef9;border:0;font-size:20px;}
-.pricecolumn .pline {padding:20px 20px 0 20px;line-height:130%;font-size:70%;}
+.pricecolumn .pline {padding:10px 20px 10px 20px;line-height:130%;font-size:70%;}
 .pricecolumn .div2 {padding:20px 20px 0 20px;text-align:center;line-height:130%;font-size:70%;}
 .pricecolumn p, .pricecolumn h3 {margin:0;}
 .pricecolumn h3 {font-size:1.06rem;}

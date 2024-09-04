@@ -10,14 +10,14 @@ weight = 70
 #PII/PHI/PCI/KYC Encryption for Your Needs
 #Advanced PII/PHI/PCI/KYC encryption
 +++
-<h1 class="text-center mb-3">PII/PHI/PCI/KYC Encryption for Your Needs</h1>
+<h2 class="text-center mb-3">PII/PHI/PCI/KYC Encryption for Your Needs</h2>
 
 <div class="row justify-content-center mb-4">
 <div class="col-12 col-md-6 mt-3">
 <div class="pricecolumn" style="background:#d4eef9;">
-<div class="grey text-center"><h1 style="text-align:center;">Open Source</h1></div>
+<div class="grey text-center"><h2 style="text-align:center;">Open Source</h2></div>
 <div class="grey"><p style="font-size:80%;text-align:center;">Perfect for small teams with limited resources</p></div>
-<div class="grey mprice"><p style="font-size:300%;text-align:center;margin:0;line-height: 1.1;">$0.0</p></div>
+<div class="grey mprice"><p style="font-size:200%;text-align:center;margin:0;">$0.0</p></div>
 <section class="mb-3">
 <div class="pline">✔️ Supports MySQL and PostgreSQL databases</div>
 <div class="pline">✔️ Commercial-friendly MIT license</div>
@@ -27,13 +27,13 @@ weight = 70
 <div class="pline">&nbsp;</div>
 </section>
 <div class="grey yprice" style="padding-bottom:15px;text-align:center;">
-<center class="mt-2 mb-2"><a href="https://databunker.org/doc/start/" class="btn-outline-primary btn-lg btn page-scroll" style='border-radius:5px!important;padding: 18px 30px 20px !important;box-shadow:0 4px 6px 0 rgba(0,0,0,0.2);'>Getting Started Guide</a></center>
+<center class="mb-2"><a href="https://databunker.org/doc/start/" class="btn-outline-primary btn-lg btn page-scroll mt-2" style='border-radius:5px!important;padding: 18px 30px 20px !important;box-shadow:0 4px 6px 0 rgba(0,0,0,0.2);'>Getting Started Guide</a></center>
 </div></div></div>
 <div class="col-12 col-md-6 mt-3">
 <div class="pricecolumn" style="background:#FCA311;">
-<div class="grey text-center"><h1 style="text-align:center;">Databunker Pro</h1></div>
+<div class="grey text-center"><h2 style="text-align:center;">Databunker Pro</h2></div>
 <div class="grey"><p style="font-size:80%;text-align:center;">Perfect for companies that need a turnkey solution</p></div>
-<div class="grey mprice"><p style="font-size:300%;text-align:center;margin:0;line-height: 1.1;">$0.X/hour</p></div>
+<div class="grey mprice"><p style="font-size:200%;text-align:center;margin:0;">$0.X/hour</p></div>
 <section class="mb-3">
 <div class="pline">✔️ Get optimized service to meet your specific needs</div>
 <div class="pline">✔️ Multi-tenancy & Aurora PgSQL auto scalling</div>
@@ -43,7 +43,7 @@ weight = 70
 <div class="pline">✔️ <b>Free trial available!</b></div>
 </section>
 <div class="grey yprice" style="padding-bottom:15px;text-align:center;">
-<center class="mt-2 mb-2"><a href="javascript:void(0);" onclick="request_free_trial();" class="btn-primary btn-lg btn page-scroll" style='border-radius:5px!important;padding: 18px 30px 20px !important;box-shadow:0 4px 6px 0 rgba(0,0,0,0.2);'>Request Free Trial</a>&nbsp;&nbsp;&nbsp;<a href="/contact/" class="btn-outline-primary btn-lg btn page-scroll" style='vertical-align:top;border-radius:5px!important;padding: 18px 30px 20px !important;box-shadow:0 4px 6px 0 rgba(0,0,0,0.2);border-color:#d4eef9;color:#d4eef9;'>Learn more</a><!-- &nbsp;&nbsp;&nbsp;<a href="/api/aws-redirect.php" style='display:inline-block;'><img src="/img/aws-marketplace-btn.svg" style='box-shadow:0 8px 12px 0 rgba(0,0,0,0.2);'/></a>--></center>
+<center class="mb-2"><a href="javascript:void(0);" onclick="request_free_trial();" class="btn-primary btn-lg btn page-scroll mt-2" style='border-radius:5px!important;padding: 18px 30px 20px !important;box-shadow:0 4px 6px 0 rgba(0,0,0,0.2);'>Request Free Trial</a><!-- &nbsp;&nbsp;&nbsp;<a href="/contact/" class="btn-outline-primary btn-lg btn page-scroll mt-2" style='vertical-align:top;border-radius:5px!important;padding: 18px 30px 20px !important;box-shadow:0 4px 6px 0 rgba(0,0,0,0.2);border-color:#d4eef9;color:#d4eef9;'>Learn more</a>&nbsp;&nbsp;&nbsp;<a href="/api/aws-redirect.php" style='display:inline-block;'><img src="/img/aws-marketplace-btn.svg" style='box-shadow:0 8px 12px 0 rgba(0,0,0,0.2);'/></a>--></center>
 </div></div></div>
 </div>
 
