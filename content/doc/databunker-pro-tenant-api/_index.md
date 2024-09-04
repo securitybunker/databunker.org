@@ -10,6 +10,8 @@ weight: 30
 ---
 Databunker Pro supports multi-tenancy, allowing you to manage multiple tenants within a single instance. This document outlines the API endpoints for creating, managing, and interacting with tenants.
 
+<a href="javascript:void(0);" onclick="request_free_trial();">&gt;&gt; Request free trial</a>
+
 ## Create Tenant
 
 Creates a new tenant in the Databunker Pro system.

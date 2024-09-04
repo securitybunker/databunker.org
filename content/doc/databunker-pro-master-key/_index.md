@@ -10,6 +10,8 @@ weight: 30
 ---
 The Master Key is a critical component of Databunker Pro's security architecture. It serves as the primary encryption key for protecting sensitive data stored within the system.
 
+<a href="javascript:void(0);" onclick="request_free_trial();">&gt;&gt; Request free trial</a>
+
 ## Key Points:
 
 * The Master Key is automatically generated during the initial setup of Databunker Pro.

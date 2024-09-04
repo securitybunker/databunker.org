@@ -10,7 +10,9 @@ mymenu: doc
 weight: 30
 ---
 
-Databunker Pro is a professional version of Databunker, an open-source secure store for sensitive data. This guide will walk you through the installation and setup process.
+**Databunker Pro** is the professional version of Databunker, an open-source secure storage solution for sensitive records. This guide will walk you through the installation and setup process.
+
+<a href="javascript:void(0);" onclick="request_free_trial();">&gt;&gt; Request free trial</a>
 
 ## Deployment Options
 You can deploy Databunker Pro using one of the following methods:

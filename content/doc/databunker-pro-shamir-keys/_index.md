@@ -10,6 +10,8 @@ weight: 30
 ---
 Shamir Keys, based on Shamir's Secret Sharing scheme, provide a robust and secure method for backing up and recovering critical encryption keys in Databunker Pro.
 
+<a href="javascript:void(0);" onclick="request_free_trial();">&gt;&gt; Request free trial</a>
+
 ## What are Shamir Keys?
 
 Shamir Keys are a set of cryptographic key shares created using Shamir's Secret Sharing algorithm. This method allows a secret (in this case, the Wrapping Key) to be divided into multiple parts.

@@ -10,6 +10,8 @@ weight: 30
 ---
 Wrapping Key Rotation is a crucial security practice in Databunker Pro that helps maintain the confidentiality and integrity of the encrypted data over time.
 
+<a href="javascript:void(0);" onclick="request_free_trial();">&gt;&gt; Request free trial</a>
+
 ## What is the Wrapping Key?
 
 The Wrapping Key is a cryptographic key used to encrypt the Master Key in Databunker Pro. It acts as an additional layer of protection for the Master Key
