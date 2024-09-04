@@ -18,6 +18,10 @@ if ($captcha != 18) {
   print("input error");
   exit();
 }
+if (strlen($name) > 20) {
+  print("input error");
+  exit();
+}
 
 $title = "databunker: ".$name." ".$phone;
 $msg = "New guy\r\n";
