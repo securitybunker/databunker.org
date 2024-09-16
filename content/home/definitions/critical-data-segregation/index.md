@@ -1,5 +1,5 @@
 ---
-title: "Critical Data Segregation"
+title: "Data Segregation"
 page_type: "definition"
 active: false
 weight: 20
