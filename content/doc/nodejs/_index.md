@@ -11,14 +11,11 @@ weight: 15
 ---
 
 ## Examples
-1. Node.js example implementing passwordless login using Databunker:
-https://github.com/securitybunker/databunker-nodejs-passwordless-login
+1. Passwordless Login with Databunker: [GitHub Repository](https://github.com/securitybunker/databunker-nodejs-passwordless-login)
 
-2. Node.js example with Passport.js, Magic.Link and Databunker:
-https://github.com/securitybunker/databunker-nodejs-example
+2. Node.js Example with Passport.js, Magic.Link, and Databunker: [GitHub Repository](https://github.com/securitybunker/databunker-nodejs-example)
 
-3. Secure Session Storage for Node.js apps:
-https://databunker.org/use-case/secure-session-storage/#databunker-support-for-nodejs
+3. Secure Session Storage for Node.js Apps: [Detailed Guide](https://databunker.org/use-case/secure-session-storage/#databunker-support-for-nodejs)
 
 ## Node.JS modules
 
