@@ -9,61 +9,139 @@ draft: false
 mymenu: doc
 # Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)
 weight: 5
+#1. **Accountability priciple (Article 5(2)):** By providing this self-service portal, organizations demonstrate their commitment to GDPR principles. All user actions in the portal can be logged, contributing to the demonstration of compliance.
 ---
-## Step 1. Starting Databunker for local testing
-The easiest way to get started with Databunker is to run it as a Docker container:
+After Databunker introduction this quick start guide shows you how to:
+
+1. Start the Databunker container
+1. Create a user record in Databunker
+1. Retrieve a user record from Databunker
+1. Learn how to use Databunker web interface
+1. Learn how to use Node.js with Databunker
+1. Convert an existing project to use Databunker
+
+## Introduction
+
+Databunker is a special secure storage system designed to store and protect:
+* Personally Identifiable Information (PII)
+* Protected Health Information (PHI)
+* Payment Card Industry (PCI) data
+* Know Your Customer (KYC) records
+
+## Key Features:
+* **GDPR Compliant:** Built with strict privacy regulations in mind
+* **Open-Source:** Available under the commercially friendly MIT license
+* **Superior Protection:** Goes beyond standard database encryption offered by major vendors
+
+## Step 1: Starting the Databunker container
+The easiest way to get started with Databunker is by running it as a Docker container. The following command starts databunker container with a ``DEMO`` root access key, which can be used for local testing and development:
 
 ```
 docker run -p 3000:3000 -d --rm --name databunker securitybunker/databunker demo
 ```
 
-This command starts a local container with a `DEMO` root access key. It can be used for local testing and development.
-
 #### Connecting to Databunker
 
-You can interact with Databunker using:
+You can interact with Databunker through:
 
-- [Web Console](https://demo.databunker.org/) listening on port `3000`: [localhost:3000](http://localhost:3000)
-- [REST API](https://documenter.getpostman.com/view/11310294/Szmcbz32) listening on port `3000`: [localhost:3000](http://localhost:3000)
+- [Web Console](https://demo.databunker.org/): Available at [localhost:3000](http://localhost:3000)
+- [REST API](https://documenter.getpostman.com/view/11310294/Szmcbz32): Accessible at [localhost:3000](http://localhost:3000)
 
 #### Additional installation options
-- [View detailed installation guide](/doc/install/)
+For more detailed installation instructions, refer to the [full installation guide](/doc/install/).
 
-## Step 2. Useful Databunker commands
+## Step 2: Creating a User Record
 
-#### Create a user record
+The user record creation API command returns a **user token** in UUID format.
+
+GDPR Relevance:
+* Under **GDPR**, this **user token** is referred to as a **pseudonymized identity** and can be safely stored in your regular database or logs, as long as **no** additional personal information is stored with it.
+* Pseudonymization reduces the risk of directly associating personal data with an identified individual, reinforcing data protection and privacy principles.
+* For example, when receiving a **Right to be forgotten (RTBF) request**, it is sufficient to remove personal data from Databunker only.
+
+Use the following command to create the user record:
 
 ```
-curl -s http://localhost:3000/v1/user -X POST -H "X-Bunker-Token: DEMO" \
+curl -s http://localhost:3000/v1/user \
+  -X POST -H "X-Bunker-Token: DEMO" \
   -H "Content-Type: application/json" \
   -d '{"first":"John","last":"Doe","login":"john","phone":"4444","email":"user@gmail.com"}'
 ```
 
-#### Fetch user records by email
+Output:
+```
+{"status":"ok","token":"eeb04dd7-ecb2-c957-2875-5b98897b21a6"}
+```
+
+## Step 3: Retrieving user record
+
+You can retrieve user records using indexed fields, such as **email address**, **login name**, **user token**, etc.
+
+**Fetch customer records using user token:**
+
+```
+curl -s -H "X-Bunker-Token: DEMO" -X GET http://localhost:3000/v1/user/token/eeb04dd7-ecb2-c957-2875-5b98897b21a6
+```
+
+You can integrate Databunker into the  application's sign-in logic and search for customer records using email or login name:
 
 ```
 curl -s -H "X-Bunker-Token: DEMO" -X GET http://localhost:3000/v1/user/email/user@gmail.com
-```
-
-#### Fetch user records by login
-
-```
 curl -s -H "X-Bunker-Token: DEMO" -X GET http://localhost:3000/v1/user/login/john
 ```
 
 #### Other commands:
 
-For a full list of commands, check out the [API document](https://documenter.getpostman.com/view/11310294/Szmcbz32).
+For a full list of commands, check out the [API documentation](https://documenter.getpostman.com/view/11310294/Szmcbz32).
 
-## Step 3. View Node.js code examples
-1. Node.js example implementing passwordless login using Databunker:
-https://github.com/securitybunker/databunker-nodejs-passwordless-login
+## Step 4: Accessing the Web UI
 
-2. Node.js example with Passport.js, Magic.Link and Databunker:
-https://github.com/securitybunker/databunker-nodejs-example
+Databunker includes a built-in web UI available at <a href="http://localhost:3000/" target="_blank">localhost:3000</a>.
 
-3. Secure Session Storage for Node.js apps:
-https://databunker.org/use-case/secure-session-storage/#databunker-support-for-nodejs
+#### Admin access:
+
+The admin user or Data Protection Officer (DPO) can use this interface to:
+1. Manage user requests, i.e. execute the "forget me" requests
+1. Manage consent forms
+1. View audit events
+
+You can use the ``DEMO`` **root token** token to view the admin panel.
+
+GDPR Relevance:
+* Right to Erasure: The "forget me" feature supports the GDPR right to erasure.
+* Consent Management: Proper consent management is crucial for GDPR compliance.
+* Accountability: The audit log helps demonstrate compliance with GDPR's accountability principle.
+
+
+#### End-User Access:
+
+Databunker provides a dedicated customer portal, allowing end users to access and manage their personal information. This feature is crucial for GDPR compliance, particularly concerning data subject rights.
+
+Key Features:
+1. Secure Login: End users can log in using their email address or phone number. Databunker generates a random password and sends it to the user via email or SMS to verify their identity.
+1. Data View and Modification: Users can view, review, and request modifications to their personal data.
+1. View audit events and request account deletion.
+
+GDPR Relevance:
+1. **Right of Access (Article 15):** Users can directly access their personal data stored in Databunker.This self-service portal streamlines the process of fulfilling access requests.
+1. **Right to Rectification (Article 16):** Users can submit requests for corrections, supporting the right to rectification.
+1. **Transparency principle (Article 12):** By providing clear, direct access to personal data, Databunker enhances transparency in data processing.
+1. **Right to Data Portability (Article 20):** Users can download their data in a machine-readable format.
+1. **Consent Management:** The portal can be used to display current consent status and allow users to modify their consent preferences.
+
+**How to test:**
+
+If you created a sample user with the phone number ``4444``, as shown in the previous example, you can use ``4444`` as both the phone number and password to access the customer portal.
+
+![user panel](https://raw.githubusercontent.com/securitybunker/databunker/master/images/ui-profile-edit-and-save.png)
+
+
+## Step 5: View Node.js code examples
+1. Passwordless Login with Databunker: [GitHub Repository](https://github.com/securitybunker/databunker-nodejs-passwordless-login)
+
+2. Node.js Example with Passport.js, Magic.Link, and Databunker: [GitHub Repository](https://github.com/securitybunker/databunker-nodejs-example)
+
+3. Secure Session Storage for Node.js Apps: [Detailed Guide](https://databunker.org/use-case/secure-session-storage/#databunker-support-for-nodejs)
 
 #### Node.js modules
 
@@ -71,7 +149,7 @@ https://databunker.org/use-case/secure-session-storage/#databunker-support-for-n
 
 2. `@databunker/session-store` from https://github.com/securitybunker/databunker-session-store
 
-## Step 4. Convert existing project to use Databunker
+## Step 6: Convert existing project to use Databunker
 
 If you intend to integrate Databunker with your existing project, you'll need to save customer personal records in Databunker. You can use user token, user email, user login, phone number, or a custom index to look for user details stored in Databunker.
 
@@ -100,5 +178,7 @@ This method will require more changes on your database level and in your applica
 ![Full reorganization](/img/db-complex.png)
 
 ## What's next?
-- [View service online demo](/doc/demo/)
+- [Databunker online demo](/doc/demo/)
 - [Detailed installation guide](/doc/install/)
+- [Benchmark results](/doc/benchmark/)
+- [Source code](https://github.com/securitybunker/databunker/)
