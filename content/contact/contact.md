@@ -33,14 +33,15 @@ post_action = "action='/api/send.php'"
 Whether you're using the open-source version of **Databunker** or looking to upgrade to **Databunker Pro**, our team is here to provide the expert support you need. From seamless implementation to advanced customization, we're committed to helping you succeed.
 
 ## What You Get:
-* Direct access to our developers for quicker issue resolution
-* Tailored guidance and development for your specific business needs
 * Access to **Databunker Pro** with enhanced features and enterprise-level capabilities
+* Tailored guidance and development for your specific business needs
+* Direct access to our developers for quicker issue resolution
 
 
-## How It Works:
+## What’s Next:
 
-* Contact us via hello@databunker.org to discuss your requirements
+* Contact us via hello@databunker.org
+* <a href="https://calendly.com/stremovsky/30min">Book a Call</a> to schedule a meeting
 * We’ll customize a plan to match your project’s requirements and budget
 
 &nbsp;
