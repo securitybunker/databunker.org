@@ -1,7 +1,7 @@
 ---
 #title: Data security with critical data segregation
 #title: "Cybercrime Survival Guide: Implementing Critical Data Segregation to Outsmart Attackers"
-title: Implement Critical Data Segregation to Boost Security and GDPR Compliance
+title: Implement Data Segregation to Boost Security and GDPR Compliance
 weight: 5
 widget: textblock
 ---
@@ -9,8 +9,8 @@ In today's digital landscape, ensuring online privacy and data protection has be
 
 This article explores **critical data segregation** and demonstrates how open-source [Databunker](https://databunker.org/doc/start/) can protect corporate secrets and maintain GDPR compliance.
 
-## What is critical data segregation?
-**Critical data segregation** is the practice of separating sensitive or critical data from other less sensitive data within a system or organization. The goal is to enhance security and minimize the risk of unauthorized access or compromise of the critical information.
+## What is data segregation?
+**Data segregation** is the practice of separating sensitive or critical data from other less sensitive data within a system or organization. The goal is to enhance security and minimize the risk of unauthorized access or compromise of the critical information.
 
 ### Key Aspects of Critical Data Segregation:
 
@@ -37,4 +37,4 @@ Databunker can help you with **access controls (3)**, **encryption (4)**, **audi
 ### Safe Data Handling in Breach Situations:
 In case of a web app breach, customer personal data remains safe within Databunker, isolated from the main database. This isolation prevents unauthorized access to sensitive information, safeguarding user privacy.
 
-<center class="mt-5"><img src="featured.png" /></center>
+<center class="mt-5"><img src="/img/databunker-short-diagram.png" /></center>
