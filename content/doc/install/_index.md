@@ -11,46 +11,31 @@ weight: 30
 ---
 ## Method 1: Quick installation
 
-The easiest way to start with Databunker is to deploy it as a standard Docker container with minimal parameters. In this setup, it will utilize an internal built-in **SQLite database** to store encrypted records. This method is suitable for developers and is not recommended for production environments.
-
-**Advantages:**
-* No need for an external database
-* Simple setup process; just run it and it works
-* You can use `DEMO` as a root token
-* Suitable for local development
-* Requires only one container
+* The easiest way to start using Databunker is to deploy it as a standard Docker container with minimal parameters.
+* In this setup, it uses an internal **SQLite database** to store encrypted records.
+* You can use `DEMO` as a root token when making [API requests](https://documenter.getpostman.com/view/11310294/Szmcbz32)
 
 **Disadvantages:**
 * Utilizes a local SQLite database for storing encrypted records
 * Lack of security; using ``DEMO`` as a root access token
-* All data will be lost when the container is stopped
 * Not recommended for production use
 
-### Start databunker in demo mode
+### Starting databunker in testing mode
 
-Run the following command:
+Run the following command to start Databunker:
 
 ```
-docker run -p 3000:3000 -d --rm --name databunker securitybunker/databunker demo
+DATABUNKER_MASTERKEY=`< /dev/urandom LC_CTYPE=C tr -dc 'a-f0-9' | head -c${1:-48};`
+docker run -p 3000:3000 -d -e DATABUNKER_MASTERKEY=$DATABUNKER_MASTERKEY --name databunker securitybunker/databunker demo
 ```
+
+The first command generates the encryption key for Databunker's internal database. Be sure to save it for future use.
 
 Open your browser and navigate to <a href="http://localhost:3000/" target="_blank">http://localhost:3000/</a> to access the product's user interface.
 
-`Note:` If the Docker container is stopped or terminated, all data will be lost.
-
-### How to prevent data loss
-You need to mount the data directory from your host machine inside the Databunker container and provide the **DATABUNKER_MASTERKEY**, which can be extracted from the Databunker container logs (use ``docker logs dbunker``). This master key value is printed during the service initialization.
-
-Execute the following commands:
-
-```
-mkdir ~/data
-chmod 0777 ~/data
-docker run -v ~/data:/databunker/data \
-  -p 3000:3000 \
-  -e DATABUNKER_MASTERKEY=< ***copy this value from docker log*** > \
-  --rm --name databunker securitybunker/databunker demo
-```
+`Note:`
+* If the **databunker** container stops, you can restart the service by running ``docker start databunker``.
+* For production environments, we recommend using a MySQL or PostgreSQL backend instead.
 
 ## Method 2: Start Databunker and backend db with docker compose
 
@@ -63,7 +48,7 @@ Before starting Docker Compose, you need to generate several secret variables us
 
 For instance, the **DATABUNKER_ROOTTOKEN** variable will be stored in the ``.env/databunker-root.env`` file. This value is used as the root token when making Databunker API requests.
 
-The required secret files will be saved in the ``./env`` directory. Use one of the following scripts from the project's GitHub repository to generate configuration secrets:
+The required secret files will be saved in the ``.env`` directory. Use one of the following scripts from the project's GitHub repository to generate configuration secrets:
 
 * ./generate-mysql-env-files.sh
 * ./generate-mysql-demo-env-files.sh
