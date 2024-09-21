@@ -11,7 +11,7 @@ mymenu: doc
 weight: 5
 #1. **Accountability priciple (Article 5(2)):** By providing this self-service portal, organizations demonstrate their commitment to GDPR principles. All user actions in the portal can be logged, contributing to the demonstration of compliance.
 ---
-After Databunker introduction this quick start guide shows you how to:
+This this quick start guide shows you how to:
 
 1. Start the Databunker container
 1. Create a user record in Databunker
@@ -20,18 +20,8 @@ After Databunker introduction this quick start guide shows you how to:
 1. Learn how to use Node.js with Databunker
 1. Convert an existing project to use Databunker
 
-## Introduction
-
-Databunker is a special secure storage system designed to store and protect:
-* Personally Identifiable Information (PII)
-* Protected Health Information (PHI)
-* Payment Card Industry (PCI) data
-* Know Your Customer (KYC) records
-
-## Key Features:
-* **GDPR Compliant:** Built with strict privacy regulations in mind
-* **Open-Source:** Available under the commercially friendly MIT license
-* **Superior Protection:** Goes beyond standard database encryption offered by major vendors
+## What is Databunker?
+Databunker is a specialized system for secure storage, data tokenization, and consent management, designed to protect PII, PHI, PCI, and KYC records.
 
 ## Step 1: Starting the Databunker container
 The easiest way to get started with Databunker is by running it as a Docker container. The following command starts databunker container with a ``DEMO`` root access key, which can be used for local testing and development:
@@ -100,12 +90,12 @@ Databunker includes a built-in web UI available at <a href="http://localhost:300
 
 #### Admin access:
 
-The admin user or Data Protection Officer (DPO) can use this interface to:
+The **admin user** or **Data Protection Officer (DPO)** can use this web interface to:
 1. Manage user requests, i.e. execute the "forget me" requests
 1. Manage consent forms
 1. View audit events
 
-You can use the ``DEMO`` **root token** token to view the admin panel.
+You can use the ``DEMO`` **root token** to get access to admin panel.
 
 GDPR Relevance:
 * Right to Erasure: The "forget me" feature supports the GDPR right to erasure.
@@ -178,7 +168,7 @@ This method will require more changes on your database level and in your applica
 ![Full reorganization](/img/db-complex.png)
 
 ## What's next?
-- [Databunker online demo](/doc/demo/)
 - [Detailed installation guide](/doc/install/)
+- [Databunker online demo](/doc/demo/)
 - [Benchmark results](/doc/benchmark/)
 - [Source code](https://github.com/securitybunker/databunker/)

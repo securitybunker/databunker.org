@@ -21,7 +21,7 @@ Here is a simple truth: Conventional database encryption often provides a **fals
 
 ## Introducing Databunker
 
-Databunker is a special secure storage system designed to store and protect:
+Databunker is a specialized system for secure storage, data tokenization, and consent management, designed to protect:
 * Personally Identifiable Information (PII)
 * Protected Health Information (PHI)
 * Payment Card Industry (PCI) data
