@@ -20,12 +20,11 @@ weight: 30
 * Lack of security; using ``DEMO`` as a root access token
 * Not recommended for production use
 
-### Starting databunker in testing mode
-
-Run the following command to start Databunker:
+**Run the following commands to start Databunker:**
 
 ```
 DATABUNKER_MASTERKEY=`< /dev/urandom LC_CTYPE=C tr -dc 'a-f0-9' | head -c${1:-48};`
+echo "DATABUNKER_MASTERKEY value is $DATABUNKER_MASTERKEY"
 docker run -p 3000:3000 -d -e DATABUNKER_MASTERKEY=$DATABUNKER_MASTERKEY --name databunker securitybunker/databunker demo
 ```
 
