@@ -5,7 +5,7 @@ toc: false
 type: docs
 date: "2024-05-05T00:00:00+01:00"
 draft: false
-mymenu: doc
+mymenu: pro
 weight: 30
 ---
 Databunker Pro supports multi-tenancy, allowing you to manage multiple tenants within a single instance. This document outlines the API endpoints for creating, managing, and interacting with tenants.
@@ -131,3 +131,10 @@ For a full list of API requests, check out the <a href="https://documenter.getpo
 6. **SSL/TLS**: Always use HTTPS for secure communication with the API endpoints.
 
 For more detailed information on request/response formats, additional endpoints, or error handling, please refer to the complete Databunker Pro API documentation.
+
+## What's next?
+- [Installation guide](/databunker-pro-docs/installation-guide/)
+- [Master Key Architecture](/databunker-pro-docs/master-key/)
+- [Wrapping Key Rotation](/databunker-pro-docs/wrapping-key/)
+- [Shamir Keys](/databunker-pro-docs/shamir-keys/)
+- [Tokenization API](/databunker-pro-docs/tokenization/)

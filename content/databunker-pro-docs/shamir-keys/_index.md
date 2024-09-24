@@ -5,7 +5,7 @@ toc: false
 type: docs
 date: "2024-05-05T00:00:00+01:00"
 draft: false
-mymenu: doc
+mymenu: pro
 weight: 30
 ---
 Shamir Keys, based on Shamir's Secret Sharing scheme, provide a robust and secure method for backing up and recovering critical encryption keys in Databunker Pro.
@@ -41,3 +41,10 @@ Shamir Keys are a set of cryptographic key shares created using Shamir's Secret 
 1. Generate a new Wrapping Key and use it to start the Databunker Pro process.
 
 By implementing Shamir Keys, Databunker Pro provides a secure and resilient method for key backup and recovery, ensuring that critical encryption keys can be restored even in worst-case scenarios, without compromising the overall security of the system.
+
+## What's next?
+- [Installation guide](/databunker-pro-docs/installation-guide/)
+- [Master Key Architecture](/databunker-pro-docs/master-key/)
+- [Wrapping Key Rotation](/databunker-pro-docs/wrapping-key/)
+- [Multi-tenancy](/databunker-pro-docs/tenant-api/)
+- [Tokenization API](/databunker-pro-docs/tokenization/)

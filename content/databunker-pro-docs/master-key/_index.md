@@ -5,7 +5,7 @@ toc: false
 type: docs
 date: "2024-05-05T00:00:00+01:00"
 draft: false
-mymenu: doc
+mymenu: pro
 weight: 30
 ---
 The Master Key is a critical component of Databunker Pro's security architecture. It serves as the primary encryption key for protecting sensitive data stored within the system.
@@ -31,4 +31,9 @@ In Databunker Pro, the Master Key's security is significantly strengthened compa
 By implementing these additional security measures, Databunker Pro ensures that the Master Key remains secure throughout its lifecycle, significantly reducing the risk of unauthorized access to sensitive data.
 
 
-
+## What's next?
+- [Installation guide](/databunker-pro-docs/installation-guide/)
+- [Wrapping Key Rotation](/databunker-pro-docs/wrapping-key/)
+- [Shamir Keys](/databunker-pro-docs/shamir-keys/)
+- [Multi-tenancy](/databunker-pro-docs/tenant-api/)
+- [Tokenization API](/databunker-pro-docs/tokenization/)

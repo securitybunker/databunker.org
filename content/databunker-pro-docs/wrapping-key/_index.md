@@ -5,7 +5,7 @@ toc: false
 type: docs
 date: "2024-05-05T00:00:00+01:00"
 draft: false
-mymenu: doc
+mymenu: pro
 weight: 30
 ---
 Wrapping Key Rotation is a crucial security practice in Databunker Pro that helps maintain the confidentiality and integrity of the encrypted data over time.
@@ -31,3 +31,10 @@ The Wrapping Key is a cryptographic key used to encrypt the Master Key in Databu
 
 ## Recovery:
 In case the current Wrapping Key is lost or compromised, Databunker Pro allows for recovery using Shamir Key Shares. This ensures that the Master Key can be safely re-encrypted with a new Wrapping Key without exposure.
+
+## What's next?
+- [Installation guide](/databunker-pro-docs/installation-guide/)
+- [Master Key Architecture](/databunker-pro-docs/master-key/)
+- [Shamir Keys](/databunker-pro-docs/shamir-keys/)
+- [Multi-tenancy](/databunker-pro-docs/tenant-api/)
+- [Tokenization API](/databunker-pro-docs/tokenization/)

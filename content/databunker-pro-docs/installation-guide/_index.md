@@ -5,11 +5,10 @@ toc: false
 type: docs
 date: "2024-05-05T00:00:00+01:00"
 draft: false
-mymenu: doc
+mymenu: pro
 # Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)
 weight: 30
 ---
-
 **Databunker Pro** is the professional version of Databunker, an open-source secure storage solution for sensitive records. This guide will walk you through the installation and setup process.
 
 <a href="javascript:void(0);" onclick="request_free_trial();">&gt;&gt; Request free trial</a>
@@ -104,3 +103,10 @@ kubectl scale deployment databunker-pro --replicas=3
 Adjust the number of replicas as needed for your use case.
 
 For any additional assistance or questions, please refer to the Databunker Pro documentation or contact the support team.
+
+## What's next?
+- [Master Key Architecture](/databunker-pro-docs/master-key/)
+- [Wrapping Key Rotation](/databunker-pro-docs/wrapping-key/)
+- [Shamir Keys](/databunker-pro-docs/shamir-keys/)
+- [Multi-tenancy](/databunker-pro-docs/tenant-api/)
+- [Tokenization API](/databunker-pro-docs/tokenization/)

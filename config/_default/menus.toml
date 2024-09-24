@@ -159,44 +159,44 @@
 
 [[doc]]
   name = "Databunker Pro"
+  url = "/databunker-pro-docs/installation-guide/"
   weight = 41
 
-[[doc]]
-  parent = "Databunker Pro"
-  name = "Installation guide"
-  url = "/doc/databunker-pro-installation-guide/"
-  weight = 1
-
-[[doc]]
+[[pro]]
   parent = "Databunker Pro"
   name = "Installation"
-  url = "/doc/databunker-pro-installation-guide/"
+  url = "/databunker-pro-docs/installation-guide/"
   weight = 4
 
-[[doc]]
+[[pro]]
   parent = "Databunker Pro"
   name = "Master Key"
-  url = "/doc/databunker-pro-master-key/"
+  url = "/databunker-pro-docs/master-key/"
   weight = 5
 
-[[doc]]
+[[pro]]
   parent = "Databunker Pro"
   name = "Wrapping Key"
-  url = "/doc/databunker-pro-wrapping-key/"
+  url = "/databunker-pro-docs/wrapping-key/"
   weight = 6
 
-[[doc]]
+[[pro]]
   parent = "Databunker Pro"
   name = "Shamir Keys"
-  url = "/doc/databunker-pro-shamir-keys/"
+  url = "/databunker-pro-docs/shamir-keys/"
   weight = 7
 
-[[doc]]
+[[pro]]
   parent = "Databunker Pro"
   name = "Multi-tenancy"
-  url = "/doc/databunker-pro-tenant-api/"
+  url = "/databunker-pro-docs/tenant-api/"
   weight = 8
 
+[[pro]]
+  parent = "Databunker Pro"
+  name = "Tokenization"
+  url = "/databunker-pro-docs/tokenization/"
+  weight = 8
 
 [[successstory]]
   name = "KYC backend"
