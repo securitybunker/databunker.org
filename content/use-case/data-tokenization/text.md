@@ -11,9 +11,10 @@ widget: textblock
 - Personally Identifiable Information (PII)
 - Protected Health Information (PHI)
 - Know Your Customer (KYC) data
-- Payment Card Industry (PCI) data
 
 By tokenizing these different types of data, organizations can significantly enhance their data protection strategies, reduce the risk of data breaches, and simplify compliance with various regulations.
+
+For **credit card tokenization**, check out the Databunker Pro <a href="/databunker-pro-docs/tokenization/">format preseving tokenization</a>.
 
 ## The Importance of Secure Data Storage
 
