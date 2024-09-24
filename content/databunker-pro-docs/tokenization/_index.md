@@ -8,7 +8,7 @@ draft: false
 mymenu: pro
 weight: 30
 ---
-Databunker Pro can serve as a format-preserving tokenization service, meeting strict privacy requirements isuch as **GDPR data minimization**. It is architected to handle millions of records efficiently through data partitioning. The following data types can be tokenized:
+Databunker Pro can serve as a format-preserving tokenization service, meeting strict privacy requirements such as **GDPR data minimization**. It is architected to handle millions of records efficiently through data partitioning. The following data types can be tokenized:
 * Uint64/Unint32 integers
 * Unix timestamp records
 * Credit card numners
