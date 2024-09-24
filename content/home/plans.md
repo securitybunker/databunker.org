@@ -40,7 +40,7 @@ weight = 70
 <div class="pricecolumn" style="background:#d4eef9;">
 <div class="grey text-center mt-2"><h2 style="text-align:center;">Open Source</h2></div>
 <div class="grey"><p style="font-size:80%;text-align:center;">Perfect for small teams with limited resources</p></div>
-<div class="grey mprice"><p style="font-size:200%;text-align:center;margin:0;">$0.0</p></div>
+<div class="grey mprice"><p style="font-size:200%;text-align:center;margin:0;">Price: FREE</p></div>
 <section class="mb-3">
 <!-- <div class="pline">✔️ Instant backend GDPR, HIPAA, ISO 27001, and SOC2 compliance</div> -->
 <div class="pline">✔️ Supports MySQL and PostgreSQL databases</div>
@@ -53,11 +53,11 @@ weight = 70
 <div class="grey yprice" style="padding-bottom:15px;text-align:center;">
 <center class="mb-2"><a href="https://databunker.org/doc/start/" class="btn-outline-primary btn-lg btn page-scroll mt-2" style='border-radius:5px!important;padding: 18px 30px 20px !important;box-shadow:0 4px 6px 0 rgba(0,0,0,0.2);'>Get Started</a></center>
 </div></div></div>
-<div class="col-12 col-md-6 mt-3" style="display:none1;">
+<div class="col-12 col-md-6 mt-3 mobile-hide" style="display:none1;">
 <div class="pricecolumn" style="background:#FCA311;">
 <div class="grey text-center mt-2"><h2 style="text-align:center;">Databunker Pro</h2></div>
 <div class="grey"><p style="font-size:80%;text-align:center;">Perfect for companies that need a turnkey solution</p></div>
-<div class="grey mprice"><p style="font-size:200%;text-align:center;margin:0;">$1/hour</p></div>
+<div class="grey mprice"><p style="font-size:200%;text-align:center;margin:0;">Price: $2.4/hour</p></div>
 <section class="mb-3">
 <div class="pline">✔️ Get optimized service to meet your specific needs</div>
 <div class="pline">✔️ Fast deployment & concierge service</div>
@@ -78,5 +78,5 @@ weight = 70
 <center><a href="javascript:void(0);" onclick="new_meeting()">Book a free call</a> to get tailor made offer for your business.</center>
 -->
 
-<center>Not sure what to pick? <a href="https://calendly.com/stremovsky/30min" onclick="new_meeting()">Book a call</a> to see how our developers can optimize Databunker to your specific needs.</center>
+<center>Not sure what to pick? <a href="/api/meeting.php?a=plans" onclick="new_meeting()">Book a call</a> to see how our developers can optimize Databunker to your specific needs.</center>
 
