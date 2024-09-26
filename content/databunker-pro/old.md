@@ -1,10 +1,11 @@
 ---
 #title: "Get early access to Databunker Pro"
 #title: "Enterprise-Grade Vault for PII/PHI/PCI/KYC records"
-title: "Enterprise Security for PII/PHI/PCI/KYC Records"
+#title: "Enterprise Security for PII/PHI/PCI/KYC Records"
+title: "Databunker Pro"
 weight: 5
 widget: markdown
-active: false
+active: true
 #widget: textblock
 #We are currently seeking 10 pilot customers to try the latest Databunker Pro release.
 #As a pilot customer, you will have direct access to the developers.
@@ -19,20 +20,18 @@ active: false
 #Book a call today to see how our developers can support your project!
 #Book a call today to see how Databunker and our dev team can secure your startup!
 ---
-Databunker Pro is the professional version of Databunker, an open-source vault for customer records developed by our team (https://databunker.org/).
-
-#### Key Features of Databunker Pro vs. the Open-Source Version:
-Databunker Pro includes additional features:
+Databunker Pro extends the capabilities of the open-source version with additional features:
 
 * Enterprise security: multi-tenancy, key rotation, and Shamir’s Secret Sharing
-* Standard tokenization API, capable of processing billions of tokens
-* Secure API for storing credit card records
+* Format-preserving tokenization API: Supports processing billions of tokens
+* Secure API for credit card storage
 * On-premises or cloud version
+* <a href="/databunker-pro-docs/installation-guide/">View documentation</a>
 
-Our developers will be happy to optimize Databunker for your specific needs.
+Our developers will be happy to customize Databunker for your specific needs.
 
 **Book a call today to discover how Databunker can protect your data!**
 
 &nbsp;
 
-<a href="/api/meeting.php?a=databunkerpro" class="btn-primary btn-lg btn page-scroll mt-2" style="vertical-align:top;border-radius:5px!important;padding: 18px 30px 20px !important;box-shadow:0 4px 6px 0 rgba(0,0,0,0.2);border-color:#d4eef9;color:#d4eef9;">Book a call</a>&nbsp;&nbsp;&nbsp; <a href="/api/meeting.php?a=cloud" class="mt-2" style='display:inline-block;'><img src="/img/aws-marketplace-btn.svg" style='box-shadow:0 8px 12px 0 rgba(0,0,0,0.2);'/></a>
+<a href="/api/meeting.php?a=databunkerpro" class="btn-primary btn-lg btn page-scroll mt-2" style="vertical-align:top;border-radius:5px!important;padding: 18px 30px 20px !important;box-shadow:0 4px 6px 0 rgba(0,0,0,0.2);border-color:#d4eef9;color:#d4eef9;">Book a call</a>&nbsp;&nbsp;&nbsp; <a href="javascript:void(0);" onclick="request_free_trial();" class="mt-2" style='display:inline-block;'><img src="/img/aws-marketplace-btn.svg" style='box-shadow:0 8px 12px 0 rgba(0,0,0,0.2);'/></a>
