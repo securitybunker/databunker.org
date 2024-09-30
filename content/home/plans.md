@@ -17,6 +17,9 @@ weight = 70
 #Same as Pro, but without the enterprise features
 #Secure Vault for PII/PHI/PCI/KYC Records
 #<div class="pline">✔️ <b>Free trial available!</b></div>
+#Audit and Log Retention for PII/PHI/PCI/KYC Records
+#PHI Encryption and Tokenization Solution
+#PII Storage and Tokenization Solution
 +++
 <h2 class="text-center mb-3">Secure Vault for PII/PHI/PCI/KYC Records</h2>
 
