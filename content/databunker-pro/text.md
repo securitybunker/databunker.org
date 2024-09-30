@@ -4,6 +4,7 @@ title: "Get early access to Databunker Pro"
 #title: "Enterprise Security for PII/PHI/PCI/KYC Records"
 weight: 5
 widget: markdown
+active: false
 #widget: textblock
 #We are currently seeking 10 pilot customers to try the latest Databunker Pro release.
 #As a pilot customer, you will have direct access to the developers.

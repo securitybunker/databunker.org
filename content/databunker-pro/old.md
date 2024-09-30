@@ -19,18 +19,20 @@ active: true
 #Tokenization API for sensitive records, capable of processing billions of tokens
 #Book a call today to see how our developers can support your project!
 #Book a call today to see how Databunker and our dev team can secure your startup!
+#* Secure API for credit card storage
 ---
 Databunker Pro extends the capabilities of the open-source version with additional features:
 
-* Enterprise security: multi-tenancy, key rotation, and Shamir’s Secret Sharing
-* Format-preserving tokenization API: Supports processing billions of tokens
-* Secure API for credit card storage
+* Enterprise security: <a href="/databunker-pro-docs/tenant-api/" target="_blank">multi-tenancy</a>, <a href="/databunker-pro-docs/wrapping-key/" target="_blank">key rotation</a>, and <a href="/databunker-pro-docs/shamir-keys/" target="_blank">Shamir’s Secret Sharing</a>
+* <a href="/databunker-pro-docs/tokenization/" target="_blank">Format-preserving tokenization API</a>: Supports processing billions of tokens
 * On-premises or cloud version
-* <a href="/databunker-pro-docs/installation-guide/">View documentation</a>
+* <a href="/databunker-pro-docs/installation-guide/" target="_blank">View installation guide</a>
 
 Our developers will be happy to customize Databunker for your specific needs.
 
 **Book a call today to discover how Databunker can protect your data!**
+
+<a href="javascript:void(0);" onclick="request_free_trial();">&gt;&gt; Request trial version</a>
 
 &nbsp;
 
