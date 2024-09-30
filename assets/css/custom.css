@@ -122,6 +122,7 @@ pre code {background-color: #f9f9f9;border:1px solid #eaeded;display:block;width
 .pricecolumn p, .pricecolumn h3 {margin:0;}
 .pricecolumn h3 {font-size:1.06rem;}
 .pricecolumn section {margin:0 auto;}
+.pricecolumn section a {color:#212529;text-decoration:underline;text-underline-offset:3px;}
 .pricecolumn section .pline {text-align:left;}
 .pricecolumn-left div {text-align:left!important;}
 /*.mySlides {border:1px solid rgba(0, 0, 0, 0.1);}*/
