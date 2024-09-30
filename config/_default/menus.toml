@@ -78,6 +78,7 @@
   #url = "/#contact"
   url = "/#plans"
   name = "Get Started"
+  #name = "Quick Start"
   #url = "/doc/start/"
   #name = "Live demo"
   #url = "/doc/demo/"
@@ -159,7 +160,7 @@
 
 [[doc]]
   name = "Databunker Pro"
-  url = "/databunker-pro-docs/installation-guide/"
+  url = "/databunker-pro/"
   weight = 41
 
 [[pro]]
