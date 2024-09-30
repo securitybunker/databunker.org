@@ -30,6 +30,10 @@ email_form = 2
 post_action = "action='/api/send.php'"
 #Explore the benefits of **Databunker Pro** and enhance your data security
 +++
+<style>
+.article-metadata {display:none;}
+</style>
+
 Whether you're using the open-source version of **Databunker** or looking to upgrade to **Databunker Pro**, our team is here to provide the expert support you need. From seamless implementation to advanced customization, we're committed to helping you succeed.
 
 ## What You Get:
