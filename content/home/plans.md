@@ -20,12 +20,13 @@ weight = 70
 #Audit and Log Retention for PII/PHI/PCI/KYC Records
 #PHI Encryption and Tokenization Solution
 #PII Storage and Tokenization Solution
+#Startup Friendly
 +++
 <h2 class="text-center mb-3">Secure Vault for PII/PHI/PCI/KYC Records</h2>
 
 <div class="row justify-content-center mb-4">
 <div class="col-12 col-md-6 mt-3">
-<div class="pricecolumn" style="background:#FCA311;">
+<div class="pricecolumn" style="background:#d4eef9;">
 <div class="grey text-center mt-2"><h2 style="text-align:center;">Open Source</h2></div>
 <div class="grey"><p style="font-size:80%;text-align:center;">Perfect for small teams with limited resources</p></div>
 <div class="grey mprice"><p style="font-size:200%;text-align:center;margin:0;">Price: FREE</p></div>
@@ -39,13 +40,13 @@ weight = 70
 <div class="pline">&nbsp;</div>
 </section>
 <div class="grey yprice" style="padding-bottom:15px;text-align:center;">
-<center class="mb-2"><a href="https://databunker.org/doc/start/" class="btn-outline-primary btn-lg btn page-scroll mt-2" style='border-radius:5px!important;padding: 18px 30px 20px !important;box-shadow:0 4px 6px 0 rgba(0,0,0,0.2);border-color:#d4eef9;color:#d4eef9;'>Getting Started Guide</a></center>
+<center class="mb-2"><a href="https://databunker.org/doc/start/" class="btn-outline-primary btn-lg btn page-scroll mt-2" style='border-radius:5px!important;padding: 18px 30px 20px !important;box-shadow:0 4px 6px 0 rgba(0,0,0,0.2);'>Getting Started Guide</a></center>
 </div></div></div>
 <div class="col-12 col-md-6 mt-3 mobile-hide" style="display:none1;">
-<div class="pricecolumn" style="background:#d4eef9;">
+<div class="pricecolumn" style="background:#FCA311;">
 <div class="grey text-center mt-2"><h2 style="text-align:center;">Databunker Pro</h2></div>
 <div class="grey"><p style="font-size:80%;text-align:center;">Perfect for companies that need a turnkey solution</p></div>
-<div class="grey mprice"><p style="font-size:200%;text-align:center;margin:0;">Price: Startup Friendly</p></div>
+<div class="grey mprice"><p style="font-size:200%;text-align:center;margin:0;">Price: from $2.4/h</p></div>
 <section class="mb-3">
 <div class="pline">✔️ Get optimized service to meet your specific needs</div>
 <div class="pline">✔️ Fast deployment & concierge service</div>
@@ -57,7 +58,7 @@ weight = 70
 <div class="grey yprice" style="padding-bottom:15px;text-align:center;">
 <center class="mb-2">
 <!-- <a href="javascript:void(0);" onclick="request_free_trial();" class="btn-primary btn-lg btn page-scroll mt-2" style='border-radius:5px!important;padding: 18px 30px 20px !important;box-shadow:0 4px 6px 0 rgba(0,0,0,0.2);'>Request Free Trial</a>&nbsp;&nbsp;&nbsp;-->
-<a href="/databunker-pro/" class="btn-outline-primary btn-lg btn page-scroll mt-2" style='vertical-align:top;border-radius:5px!important;padding: 18px 30px 20px !important;box-shadow:0 4px 6px 0 rgba(0,0,0,0.2);'>Learn More</a>&nbsp;&nbsp;&nbsp; <a href="javascript:void(0);" onclick="request_free_trial();" class="mt-2" style='display:none;'><img src="/img/aws-marketplace-btn.svg" "Available in AWS Marketplace" style='box-shadow:0 8px 12px 0 rgba(0,0,0,0.2);'/></a></center>
+<a href="/databunker-pro/" class="btn-outline-primary btn-lg btn page-scroll mt-2" style='vertical-align:top;border-radius:5px!important;padding: 18px 30px 20px !important;box-shadow:0 4px 6px 0 rgba(0,0,0,0.2);border-color:#d4eef9;color:#d4eef9;'>Learn More</a>&nbsp;&nbsp;&nbsp; <a href="javascript:void(0);" onclick="request_free_trial();" class="mt-2" style='display:none;'><img src="/img/aws-marketplace-btn.svg" "Available in AWS Marketplace" style='box-shadow:0 8px 12px 0 rgba(0,0,0,0.2);'/></a></center>
 </div></div></div>
 </div>
 
