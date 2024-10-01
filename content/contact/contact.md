@@ -45,7 +45,7 @@ Whether you're using the open-source version of **Databunker** or looking to upg
 ## What’s Next:
 
 * Contact us via hello@databunker.org
-* <a href="/api/meeting.php">Book a Call</a> to schedule a meeting
+* <a href="/api/meeting.php">Book a call</a> to schedule a meeting
 * We’ll customize a plan to match your project’s requirements and budget
 
 &nbsp;
