@@ -30,7 +30,7 @@ Databunker Pro extends the capabilities of the open-source version with addition
 
 Our developers will be happy to customize Databunker for your specific needs.
 
-<b><a href="/api/meeting.php?a=databunkerpro">&gt;&gt; Book a call</a> today to discover how Databunker can protect your data!</b>
+<a href="/api/meeting.php?a=databunkerpro">&gt;&gt; Book a call</a> today to discover how Databunker can protect your data!
 
 
 &nbsp;
