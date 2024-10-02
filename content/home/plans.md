@@ -29,7 +29,7 @@ weight = 70
 <div class="pricecolumn" style="background:#d4eef9;">
 <div class="grey text-center mt-2"><h2 style="text-align:center;">Open Source</h2></div>
 <div class="grey"><p style="font-size:80%;text-align:center;">Perfect for small teams with limited resources</p></div>
-<div class="grey mprice"><p style="font-size:200%;text-align:center;margin:0;">Price: FREE</p></div>
+<div class="grey mprice"><p style="font-size:200%;text-align:center;margin:0;">FREE of Charge</p></div>
 <section class="mb-3">
 <!-- <div class="pline">✔️ Instant backend GDPR, HIPAA, ISO 27001, and SOC2 compliance</div> -->
 <div class="pline">✔️ Supports MySQL and PostgreSQL databases</div>
@@ -46,7 +46,7 @@ weight = 70
 <div class="pricecolumn" style="background:#FCA311;">
 <div class="grey text-center mt-2"><h2 style="text-align:center;">Databunker Pro</h2></div>
 <div class="grey"><p style="font-size:80%;text-align:center;">Perfect for companies that need a turnkey solution</p></div>
-<div class="grey mprice"><p style="font-size:200%;text-align:center;margin:0;">Price: from $2.4/h</p></div>
+<div class="grey mprice"><p style="font-size:200%;text-align:center;margin:0;">Hourly & Annual Plans</p></div>
 <section class="mb-3">
 <div class="pline">✔️ Get optimized service to meet your specific needs</div>
 <div class="pline">✔️ Fast deployment & concierge service</div>
@@ -68,4 +68,3 @@ weight = 70
 -->
 
 <center>Not sure what to pick? <a href="/api/meeting.php?a=plans" onclick="new_meeting()">Book a call</a> to see how our developers can optimize Databunker to your specific needs.</center>
-
