@@ -26,7 +26,8 @@ Databunker Pro extends the capabilities of the open-source version with addition
 * Enterprise security: <a href="/databunker-pro-docs/tenant-api/" target="_blank">multi-tenancy</a>, <a href="/databunker-pro-docs/wrapping-key/" target="_blank">key rotation</a>, and <a href="/databunker-pro-docs/shamir-keys/" target="_blank">Shamir’s Secret Sharing</a>
 * <a href="/databunker-pro-docs/tokenization/" target="_blank">Format-preserving tokenization API</a>: Supports processing billions of tokens
 * On-premises or cloud version
-* <a href="/databunker-pro-docs/installation-guide/" target="_blank">View installation guide</a>
+* <a href="/databunker-pro-docs/installation-guide/" target="_blank">Advance installation</a>
+* Expert support
 
 Our developers will be happy to customize Databunker for your specific needs.
 
