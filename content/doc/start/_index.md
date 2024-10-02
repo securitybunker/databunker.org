@@ -11,17 +11,11 @@ mymenu: doc
 weight: 5
 #1. **Accountability priciple (Article 5(2)):** By providing this self-service portal, organizations demonstrate their commitment to GDPR principles. All user actions in the portal can be logged, contributing to the demonstration of compliance.
 ---
-This this quick start guide shows you how to:
-
-1. Start the Databunker container
-1. Create a user record in Databunker
-1. Retrieve a user record from Databunker
-1. Learn how to use Databunker web interface
-1. Learn how to use Node.js with Databunker
-1. Convert an existing project to use Databunker
-
 ## What is Databunker?
 Databunker is a specialized system for secure storage, data tokenization, and consent management, designed to protect PII, PHI, PCI, and KYC records.
+
+[>> Why Databunker? What are the risks of traditional database security solutions?](/doc/introduction/)
+
 
 ## Step 1: Starting the Databunker container
 The easiest way to get started with Databunker is by running it as a Docker container. The following command starts databunker container with a ``DEMO`` root access key, which can be used for local testing and development:
@@ -46,7 +40,7 @@ The user record creation API command returns a **user token** in UUID format.
 
 GDPR Relevance:
 * Under **GDPR**, this **user token** is referred to as a **pseudonymized identity** and can be safely stored in your regular database or logs, as long as **no** additional personal information is stored with it.
-* Pseudonymization reduces the risk of directly associating personal data with an identified individual, reinforcing data protection and privacy principles.
+* **Pseudonymization** reduces the risk of directly associating personal data with an identified individual, reinforcing data protection and privacy principles.
 * For example, when receiving a **Right to be forgotten (RTBF) request**, it is sufficient to remove personal data from Databunker only.
 
 Use the following command to create the user record:
@@ -73,7 +67,7 @@ You can retrieve user records using indexed fields, such as **email address**, *
 curl -s -H "X-Bunker-Token: DEMO" -X GET http://localhost:3000/v1/user/token/eeb04dd7-ecb2-c957-2875-5b98897b21a6
 ```
 
-You can integrate Databunker into the  application's sign-in logic and search for customer records using email or login name:
+You can integrate Databunker into the  application's sign-in logic and search for customer records using email address or login name:
 
 ```
 curl -s -H "X-Bunker-Token: DEMO" -X GET http://localhost:3000/v1/user/email/user@gmail.com
@@ -95,21 +89,21 @@ The **admin user** or **Data Protection Officer (DPO)** can use this web interfa
 1. Manage consent forms
 1. View audit events
 
-You can use the ``DEMO`` **root token** to get access to admin panel.
+You can use the ``DEMO`` **root token** to get access to the admin panel.
 
-GDPR Relevance:
-* Right to Erasure: The "forget me" feature supports the GDPR right to erasure.
-* Consent Management: Proper consent management is crucial for GDPR compliance.
-* Accountability: The audit log helps demonstrate compliance with GDPR's accountability principle.
+The admin pannel allows to:
+* Delete user records in compliance with GDPR "forget me" requests.
+* Manage consent permissions. Proper consent management is crucial for GDPR compliance.
+* View audit logs. The audit log helps demonstrate compliance with GDPR's accountability principle.
 
 
 #### End-User Access:
 
-Databunker provides a dedicated customer portal, allowing end users to access and manage their personal information. This feature is crucial for GDPR compliance, particularly concerning data subject rights.
+Databunker provides an optional customer portal, allowing end users to access and manage their personal information. This feature helps with GDPR compliance, particularly concerning data subject rights.
 
 Key Features:
-1. Secure Login: End users can log in using their email address or phone number. Databunker generates a random password and sends it to the user via email or SMS to verify their identity.
-1. Data View and Modification: Users can view, review, and request modifications to their personal data.
+1. Secure login. End users can log in using their email address or phone number. Databunker generates a random password and sends it to the user via email or SMS to verify their identity.
+1. Data view and modifications. Users can view, review, and request modifications to their personal data.
 1. View audit events and request account deletion.
 
 GDPR Relevance:

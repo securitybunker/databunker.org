@@ -11,7 +11,7 @@ mymenu: doc
 # Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)
 weight: 1
 ---
-⚠️ Here is a simple truth: <u>Traditional database encryption often provides a false sense of security</u>.
+⚠️ Here is a simple truth: <u>traditional database encryption often provides a false sense of security</u>.
 
 #### What are the risks of traditional database security solutions?
 
