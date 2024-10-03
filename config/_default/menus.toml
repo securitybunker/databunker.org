@@ -28,11 +28,11 @@
 #  url = "https://documenter.getpostman.com/view/11310294/Szmcbz32"
 #  weight = 30
 
-[[main]]
-  #name = "Databunker Pro"
-  name = "Pro version"
-  url = "/databunker-pro/"
-  weight = 35
+#[[main]]
+#  #name = "Databunker Pro"
+#  name = "Pro version"
+#  url = "/databunker-pro/"
+#  weight = 35
 
 #[[main]]
 #  url = "/#plans"
@@ -77,7 +77,7 @@
   #name = "Cloud Version"
   #url = "/#contact"
   url = "/#plans"
-  name = "Get Started"
+  name = "Get Started Now"
   #name = "Quick Start"
   #url = "/doc/start/"
   #name = "Live demo"
@@ -159,7 +159,7 @@
   weight = 40
 
 [[doc]]
-  name = "Databunker Pro"
+  name = "Pro"
   url = "/databunker-pro/"
   weight = 41
 

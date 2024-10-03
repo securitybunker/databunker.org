@@ -21,15 +21,18 @@ weight = 70
 #PHI Encryption and Tokenization Solution
 #PII Storage and Tokenization Solution
 #Startup Friendly
+#Hourly & Annual Plans
 +++
 <h2 class="text-center mb-3">Secure Vault for PII/PHI/PCI/KYC Records</h2>
+
+<p class="text-center" style="font-size:1.1rem;">Databunker encrypts and protects user records from SQL injections and GraphQL attacks</p>
 
 <div class="row justify-content-center mb-4">
 <div class="col-12 col-md-6 mt-3">
 <div class="pricecolumn" style="background:#d4eef9;">
 <div class="grey text-center mt-2"><h2 style="text-align:center;">Open Source</h2></div>
 <div class="grey"><p style="font-size:80%;text-align:center;">Perfect for small teams with limited resources</p></div>
-<div class="grey mprice"><p style="font-size:200%;text-align:center;margin:0;">FREE of Charge</p></div>
+<div class="grey mprice"><p style="font-size:200%;text-align:center;margin:0;">$0.0/h</p></div>
 <section class="mb-3">
 <!-- <div class="pline">✔️ Instant backend GDPR, HIPAA, ISO 27001, and SOC2 compliance</div> -->
 <div class="pline">✔️ Supports MySQL and PostgreSQL databases</div>
@@ -46,7 +49,7 @@ weight = 70
 <div class="pricecolumn" style="background:#FCA311;">
 <div class="grey text-center mt-2"><h2 style="text-align:center;">Databunker Pro</h2></div>
 <div class="grey"><p style="font-size:80%;text-align:center;">Perfect for companies that need a turnkey solution</p></div>
-<div class="grey mprice"><p style="font-size:200%;text-align:center;margin:0;">Hourly & Annual Plans</p></div>
+<div class="grey mprice"><p style="font-size:200%;text-align:center;margin:0;">Custom</p></div>
 <section class="mb-3">
 <div class="pline">✔️ Get optimized service to meet your specific needs</div>
 <div class="pline">✔️ Fast deployment & concierge service</div>
