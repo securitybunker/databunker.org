@@ -44,7 +44,7 @@ Don't let your sensitive data become the next breach headline
 
 ![Pseudonymized identity](/img/pseudonymized-identity.png)
 
-#### What's next?
+## Next Steps
 - [Getting started guide](/doc/start/)
 - [Full installation guide](/doc/install/)
 - [Databunker online demo](/doc/demo/)

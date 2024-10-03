@@ -11,37 +11,34 @@ mymenu: doc
 weight: 5
 #1. **Accountability priciple (Article 5(2)):** By providing this self-service portal, organizations demonstrate their commitment to GDPR principles. All user actions in the portal can be logged, contributing to the demonstration of compliance.
 ---
-## What is Databunker?
+## Databunker Overview
 Databunker is a specialized system for secure storage, data tokenization, and consent management, designed to protect PII, PHI, PCI, and KYC records.
 
-[>> Why Databunker? What are the risks of traditional database security solutions?](/doc/introduction/)
+[>> Why choose Databunker? What are the risks of traditional database security solutions?](/doc/introduction/)
 
 
 ## Step 1: Starting the Databunker container
-The easiest way to get started with Databunker is by running it as a Docker container. The following command starts databunker container with a ``DEMO`` root access key, which can be used for local testing and development:
+The easiest way to start using Databunker is by running it as a Docker container. Use the following command to launch Databunker with a ``DEMO`` root access key for local testing and development:
 
 ```
 docker run -p 3000:3000 -d --rm --name databunker securitybunker/databunker demo
 ```
 
-#### Connecting to Databunker
-
-You can interact with Databunker through:
+After the container is running, you can interact with Databunker through:
 
 - [Web Console](https://demo.databunker.org/): Available at [localhost:3000](http://localhost:3000)
 - [REST API](https://documenter.getpostman.com/view/11310294/Szmcbz32): Accessible at [localhost:3000](http://localhost:3000)
 
-#### Additional installation options
-For more detailed installation instructions, refer to the [full installation guide](/doc/install/).
+For detailed installation instructions, please refer to the [full installation guide](/doc/install/).
 
 ## Step 2: Creating a User Record
 
-The user record creation API command returns a **user token** in UUID format.
+Databunker's API allows you to create a user record and returns a user token in UUID format.
 
 GDPR Relevance:
-* Under **GDPR**, this **user token** is referred to as a **pseudonymized identity** and can be safely stored in your regular database or logs, as long as **no** additional personal information is stored with it.
-* **Pseudonymization** reduces the risk of directly associating personal data with an identified individual, reinforcing data protection and privacy principles.
-* For example, when receiving a **Right to be forgotten (RTBF) request**, it is sufficient to remove personal data from Databunker only.
+* Under **GDPR**, this **user token** is referred to as a **pseudonymized identity**. This token can be safely stored in your regular database or logs, as long as **no** additional personal information is stored with it.
+* **Pseudonymization** reduces the risk of directly associating personal data with an individual, reinforcing data protection and privacy principles.
+* For example, when receiving a **Right to be forgotten (RTBF) request**, you can delete personal data from Databunker only.
 
 Use the following command to create the user record:
 
@@ -67,16 +64,14 @@ You can retrieve user records using indexed fields, such as **email address**, *
 curl -s -H "X-Bunker-Token: DEMO" -X GET http://localhost:3000/v1/user/token/eeb04dd7-ecb2-c957-2875-5b98897b21a6
 ```
 
-You can integrate Databunker into the  application's sign-in logic and search for customer records using email address or login name:
+You can integrate Databunker into the application's sign-in logic and search for customer records using email address or login name:
 
 ```
 curl -s -H "X-Bunker-Token: DEMO" -X GET http://localhost:3000/v1/user/email/user@gmail.com
 curl -s -H "X-Bunker-Token: DEMO" -X GET http://localhost:3000/v1/user/login/john
 ```
 
-#### Other commands:
-
-For a full list of commands, check out the [API documentation](https://documenter.getpostman.com/view/11310294/Szmcbz32).
+For a full list of available commands, please check the [API documentation](https://documenter.getpostman.com/view/11310294/Szmcbz32).
 
 ## Step 4: Accessing the Web UI
 
@@ -84,22 +79,16 @@ Databunker includes a built-in web UI available at <a href="http://localhost:300
 
 #### Admin access:
 
-The **admin user** or **Data Protection Officer (DPO)** can use this web interface to:
-1. Manage user requests, i.e. execute the "forget me" requests
-1. Manage consent forms
-1. View audit events
+The **admin user** or **Data Protection Officer (DPO)** can use the web interface to:
+1. Delete user records to comply with GDPR RTBF "forget me" requests 
+1. Manage consent permissions, ensuring proper consent management for GDPR compliance
+1. View audit logs, demonstrating compliance with GDPR’s accountability principle
 
 You can use the ``DEMO`` **root token** to get access to the admin panel.
 
-The admin pannel allows to:
-* Delete user records in compliance with GDPR "forget me" requests.
-* Manage consent permissions. Proper consent management is crucial for GDPR compliance.
-* View audit logs. The audit log helps demonstrate compliance with GDPR's accountability principle.
-
-
 #### End-User Access:
 
-Databunker provides an optional customer portal, allowing end users to access and manage their personal information. This feature helps with GDPR compliance, particularly concerning data subject rights.
+Databunker provides an optional customer portal, allowing end users (or data subject in terms of GDPR) to access and manage their personal information. This feature helps with GDPR compliance, particularly concerning data subject rights.
 
 Key Features:
 1. Secure login. End users can log in using their email address or phone number. Databunker generates a random password and sends it to the user via email or SMS to verify their identity.
@@ -161,7 +150,7 @@ This method will require more changes on your database level and in your applica
 
 ![Full reorganization](/img/db-complex.png)
 
-## What's next?
+## Next Steps
 - [Detailed installation guide](/doc/install/)
 - [Databunker online demo](/doc/demo/)
 - [Benchmark results](/doc/benchmark/)

@@ -109,12 +109,12 @@
   weight = 1
 
 [[doc]]
-  name = "Get started"
+  name = "Get started now"
   url = "/doc/start/"
   weight = 2
 
 [[doc]]
-  name = "Online demo"
+  name = "View online demo"
   url = "/doc/demo/"
   weight = 5
 
@@ -139,13 +139,13 @@
   weight = 30
 
 [[doc]]
-  name = "Project FAQ"
-  url = "/doc/faq/"
+  name = "Architecture"
+  url = "/doc/architecture/"
   weight = 35
 
 [[doc]]
-  name = "Architecture"
-  url = "/doc/architecture/"
+  name = "Project FAQ"
+  url = "/doc/faq/"
   weight = 36
 
 [[doc]]
