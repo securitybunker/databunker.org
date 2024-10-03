@@ -32,7 +32,7 @@ weight = 70
 <div class="pricecolumn" style="background:#d4eef9;">
 <div class="grey text-center mt-2"><h2 style="text-align:center;">Open Source</h2></div>
 <div class="grey"><p style="font-size:80%;text-align:center;">Perfect for small teams with limited resources</p></div>
-<div class="grey mprice"><p style="font-size:200%;text-align:center;margin:0;">$0.0/h</p></div>
+<div class="grey mprice"><p style="font-size:200%;text-align:center;margin:0;">$0.0</p></div>
 <section class="mb-3">
 <!-- <div class="pline">✔️ Instant backend GDPR, HIPAA, ISO 27001, and SOC2 compliance</div> -->
 <div class="pline">✔️ Supports MySQL and PostgreSQL databases</div>
