@@ -36,4 +36,4 @@ Our developers will be happy to customize Databunker for your specific needs.
 
 &nbsp;
 
-<a href="javascript:void(0);" onclick="request_free_trial();" class="btn-primary btn-lg btn page-scroll mt-2" style="vertical-align:top;border-radius:5px!important;padding: 18px 30px 20px !important;box-shadow:0 4px 6px 0 rgba(0,0,0,0.2);border-color:#d4eef9;color:#d4eef9;">Request trial access</a>&nbsp;&nbsp;&nbsp; <a href="javascript:void(0);" onclick="request_free_trial();" class="mt-2" style='display:inline-block;'><img src="/img/aws-marketplace-btn.svg" style='box-shadow:0 8px 12px 0 rgba(0,0,0,0.2);'/></a>
+<a href="javascript:void(0);" onclick="request_free_trial();" class="btn-primary btn-lg btn page-scroll mt-2" style="vertical-align:top;border-radius:5px!important;padding: 18px 30px 20px !important;box-shadow:0 4px 6px 0 rgba(0,0,0,0.2);border-color:#d4eef9;color:#d4eef9;">Request Trial Access</a>&nbsp;&nbsp;&nbsp; <a href="javascript:void(0);" onclick="request_free_trial();" class="mt-2" style='display:inline-block;'><img src="/img/aws-marketplace-btn.svg" style='box-shadow:0 8px 12px 0 rgba(0,0,0,0.2);'/></a>

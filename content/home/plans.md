@@ -56,7 +56,7 @@ weight = 70
 <div class="pline">✔️ Enterprise security features</div>
 <div class="pline">✔️ Direct access to developers</div>
 <div class="pline">✔️ Support available on call</div>
-<div class="pline">✔️ View <a href="/databunker-pro/">documentation</a></div>
+<div class="pline">✔️ Free trial available</div>
 </section>
 <div class="grey yprice" style="padding-bottom:15px;text-align:center;">
 <center class="mb-2">
