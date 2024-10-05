@@ -19,6 +19,9 @@ function log_event(evname) {
   };
   xhr10.send();
 }
+function new_meeting(topic="demo-request") {
+  document.location = 'https://databunker.org/api/meeting.php?a=demo';
+}
 function toggleContent() {
     var contentDiv = document.querySelector('.truncate-long-text');
     contentDiv.style.overflow = 'visible';

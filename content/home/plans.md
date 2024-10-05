@@ -23,9 +23,9 @@ weight = 70
 #Startup Friendly
 #Hourly & Annual Plans
 +++
-<h2 class="text-center mb-3">Secure Vault for PII/PHI/PCI/KYC Records</h2>
+<h2 class="text-center mb-3">PII/PHI/PCI/KYC Encryption & Tokenization for Your Needs</h2>
 
-<p class="text-center" style="font-size:1.1rem;">Databunker encrypts and protects user records from SQL injections and GraphQL attacks</p>
+<!-- <p class="text-center" style="font-size:1.1rem;">Databunker encrypts and protects user records from SQL injections and GraphQL attacks</p> -->
 
 <div class="row justify-content-center mb-4">
 <div class="col-12 col-md-6 mt-3">
@@ -43,7 +43,7 @@ weight = 70
 <div class="pline">&nbsp;</div>
 </section>
 <div class="grey yprice" style="padding-bottom:15px;text-align:center;">
-<center class="mb-2"><a href="https://databunker.org/doc/start/" class="btn-outline-primary btn-lg btn page-scroll mt-2" style='border-radius:5px!important;padding: 18px 30px 20px !important;box-shadow:0 4px 6px 0 rgba(0,0,0,0.2);'>Getting Started Guide</a></center>
+<center class="mb-2"><a href="https://databunker.org/doc/start/" class="btn-primary btn-lg btn page-scroll mt-2" style='border-radius:5px!important;padding: 18px 30px 20px !important;box-shadow:0 4px 6px 0 rgba(0,0,0,0.2);'>Getting Started Guide</a></center>
 </div></div></div>
 <div class="col-12 col-md-6 mt-3 mobile-hide" style="display:none1;">
 <div class="pricecolumn" style="background:#FCA311;">
@@ -61,13 +61,7 @@ weight = 70
 <div class="grey yprice" style="padding-bottom:15px;text-align:center;">
 <center class="mb-2">
 <!-- <a href="javascript:void(0);" onclick="request_free_trial();" class="btn-primary btn-lg btn page-scroll mt-2" style='border-radius:5px!important;padding: 18px 30px 20px !important;box-shadow:0 4px 6px 0 rgba(0,0,0,0.2);'>Request Free Trial</a>&nbsp;&nbsp;&nbsp;-->
-<a href="/databunker-pro/" class="btn-outline-primary btn-lg btn page-scroll mt-2" style='vertical-align:top;border-radius:5px!important;padding: 18px 30px 20px !important;box-shadow:0 4px 6px 0 rgba(0,0,0,0.2);border-color:#d4eef9;color:#d4eef9;'>Learn More</a>&nbsp;&nbsp;&nbsp; <a href="javascript:void(0);" onclick="request_free_trial();" class="mt-2" style='display:none;'><img src="/img/aws-marketplace-btn.svg" "Available in AWS Marketplace" style='box-shadow:0 8px 12px 0 rgba(0,0,0,0.2);'/></a></center>
+<a href="/databunker-pro/" class="btn-outline btn-lg btn page-scroll mt-2" style='vertical-align:top;border-radius:5px!important;padding: 18px 30px 20px !important;box-shadow:0 4px 6px 0 rgba(0,0,0,0.2);border-color:#d4eef9;color:#d4eef9;'>Learn More</a>&nbsp;&nbsp;&nbsp; <a href="javascript:void(0);" onclick="request_free_trial();" class="mt-2" style='display:none;'><img src="/img/aws-marketplace-btn.svg" "Available in AWS Marketplace" style='box-shadow:0 8px 12px 0 rgba(0,0,0,0.2);'/></a></center>
 </div></div></div>
 </div>
-
-<!--
-<center>Not sure what to pick? Start with our free website check.</center>
-<center><a href="javascript:void(0);" onclick="new_meeting()">Book a free call</a> to get tailor made offer for your business.</center>
--->
-
-<center>Not sure what to pick? <a href="/api/meeting.php?a=plans" onclick="new_meeting()">Book a call</a> to see how our developers can optimize Databunker to your specific needs.</center>
+<center>Not sure what to pick? <a href="/api/meeting.php?a=plans">Book a call</a> to see how our developers can optimize Databunker to your specific needs.</center>

@@ -75,9 +75,11 @@ hero_media = "databunker-short-diagram.png"
 
 [btn_alt]
   #url = "/doc/demo/"
+  #url = "javascript:new_meeting();"
   #label = "Online Demo"
   #url = "/doc/introduction/"
   #label = "Learn more"
+  #label = 'Book a Call'
 
 #"Click to Reveal the Hidden Gem"
 #"Want to Learn the Secret Sauce? Click Now"
