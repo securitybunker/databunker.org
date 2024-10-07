@@ -68,10 +68,6 @@ Yes. For encryption in motion, make sure to set up HTTPS SSL certificates. To me
 
 All customer records are encrypted with a 32-byte key comprising a System Master key (24 bytes, stored in memory, not on disk) and a customer record key (8 bytes, stored on disk). The System Master key is kept in RAM and is never stored on disk. The enterprise version supports Master key split.
 
-## Is Databunker end-user facing?
-
-Yes. According to GDPR, the end-user must have control over their personal data. The user can change their personal data, give or withdraw consent, and request data deletion (forget-me). All user operations can be self-service (automatically enforced) or require DPO/Admin approval.
-
 ## Does Databunker is a wrapper for an existing database?
 
-No, Databunker is not a wrapper for an existing database. It is a purpose-built application service designed to encrypt and store personal records in a privacy-compliant manner. The service offers a REST API for storing and updating user records in JSON format, along with a customer-facing web UI that provides visibility into the customer’s personal data.
+Databunker is not a wrapper for an existing database. It is a purpose-built application service designed to encrypt and store personal records in a privacy-compliant manner. The service offers a REST API for storing and updating user records in JSON format, along with a customer-facing web UI that provides visibility into the customer’s personal data.
