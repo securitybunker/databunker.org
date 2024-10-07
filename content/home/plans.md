@@ -49,7 +49,7 @@ weight = 70
 <div class="pricecolumn" style="background:#FCA311;">
 <div class="grey text-center mt-2"><h2 style="text-align:center;">Databunker Pro</h2></div>
 <div class="grey"><p style="font-size:80%;text-align:center;">Perfect for companies that need a turnkey solution</p></div>
-<div class="grey mprice"><p style="font-size:200%;text-align:center;margin:0;">Custom</p></div>
+<div class="grey mprice"><p style="font-size:200%;text-align:center;margin:0;">Startup Friendly Pricing</p></div>
 <section class="mb-3">
 <div class="pline">✔️ Get optimized service to meet your specific needs</div>
 <div class="pline">✔️ Multi-tenancy & Aurora PgSQL auto scalling</div>
