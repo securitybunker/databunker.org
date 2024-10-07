@@ -72,16 +72,18 @@ For a full list of available commands, please check the [API documentation](http
 
 ## Step 4: Accessing the Web UI
 
-Databunker includes a built-in web UI available at <a href="http://localhost:3000/" target="_blank">localhost:3000</a>.
+Databunker includes a built-in web UI interface, which we host for you at <a href="https://demo.databunker.org/" target="_blank">demo.databunker.org</a>.
+
+If you deploy Databunker using Docker, this interface is available by default at: <a href="http://localhost:3000/" target="_blank">localhost:3000</a>.
 
 #### Admin access:
 
-The **admin user** or **Data Protection Officer (DPO)** can use the web interface to:
-1. Delete user records to comply with GDPR RTBF "forget me" requests 
-1. Generate personal data reports and view audit events
-1. Manage personal data processing activities
-
 You can use the ``DEMO`` **root token** to get access to the admin panel.
+
+The **admin user** or **Data Protection Officer (DPO)** can use the web interface to:
+1. Delete user records to comply with GDPR RTBF "forget me" requests
+1. Generate personal data reports and review audit events
+1. Manage personal data processing activities
 
 #### End-User Access:
 

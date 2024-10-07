@@ -1,7 +1,8 @@
 ---
 #title: Getting Started with Databunker
 #title: "What is Databunker?"
-title: "Databunker: Redefining Database Security"
+#title: "Databunker: Redefining Database Security"
+title: "Why choose Databunker"
 linktitle: Getting started
 toc: false
 type: docs
