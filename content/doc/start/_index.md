@@ -18,22 +18,19 @@ Databunker is a specialized system for secure storage, data tokenization, and co
 
 
 ## Step 1: Starting the Databunker container
-The easiest way to start using Databunker is by running it as a Docker container. Use the following command to launch Databunker with a ``DEMO`` root access key for local testing and development:
+The easiest way to start using Databunker is by running it as a Docker container. Once the container is running, Databunker opens port 3000 and listens for incoming requests.
+
+Use the following command to launch Databunker with a ``DEMO`` root access key, ideal for local testing and development:
 
 ```
 docker run -p 3000:3000 -d --rm --name databunker securitybunker/databunker demo
 ```
 
-After the container is started, you can interact with Databunker through:
-
-- [Web Console](https://demo.databunker.org/): Available at [localhost:3000](http://localhost:3000)
-- [REST API](https://documenter.getpostman.com/view/11310294/Szmcbz32): Accessible at [localhost:3000](http://localhost:3000)
-
 For detailed installation instructions, please refer to the [full installation guide](/doc/install/).
 
 ## Step 2: Creating a User Record
 
-Databunker's most frequent API request is to store user records. For each new user record, Databunker generates and returns a **user token** in UUID format.
+Databunker's most popular API request is to store user records. For each new user record, Databunker generates and returns a **user token** in UUID format.
 
 GDPR Relevance:
 * Under **GDPR**, this **user token** is referred to as a **pseudonymized identity**. This token can be safely stored in your regular database or logs, as long as **no** additional personal information is stored with it.
@@ -81,14 +78,14 @@ Databunker includes a built-in web UI available at <a href="http://localhost:300
 
 The **admin user** or **Data Protection Officer (DPO)** can use the web interface to:
 1. Delete user records to comply with GDPR RTBF "forget me" requests 
-1. Manage consent permissions, ensuring proper consent management for GDPR compliance
-1. View audit logs, demonstrating compliance with GDPR’s accountability principle
+1. Generate personal data reports and view audit events
+1. Manage personal data processing activities
 
 You can use the ``DEMO`` **root token** to get access to the admin panel.
 
 #### End-User Access:
 
-Databunker provides an optional customer portal, allowing end users (or data subject in terms of GDPR) to access and manage their personal information. This feature helps with GDPR compliance, particularly concerning data subject rights.
+Databunker provides an optional customer portal. It allows end users (or **data subject** in terms of GDPR) to access and manage their personal information. This feature helps with GDPR compliance, particularly concerning data subject rights.
 
 Key Features:
 1. Secure login. End users can log in using their email address or phone number. Databunker generates a random password and sends it to the user via email or SMS to verify their identity.
