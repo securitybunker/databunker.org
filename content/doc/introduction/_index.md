@@ -11,13 +11,13 @@ mymenu: doc
 # Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)
 weight: 1
 ---
-⚠️ Here is a simple truth: <u>traditional database encryption often provides a false sense of security</u>.
+⚠️ Here is a simple truth: <b>traditional database encryption often provides a false sense of security</b>.
 
-#### What are the risks of traditional database security solutions?
+What are the risks of traditional database security solutions?
 
-* Conventional encryption often only protects data **at the storage or disk level**
-* **SQL Injection Vulnerability:** Malicious actors can easily access plain text data through SQL injection
+* **Data encryption is not enough:** Most cloud and security vendors provide only data or disk encryption
 * **Unfiltered GraphQL Queries:** Attackers can retrieve unencrypted data via incorrectly filtered queries
+* **SQL Injection Attacks:** Cybercriminals can easily access plain text data through SQL injection
 
 #### Introducing Databunker
 

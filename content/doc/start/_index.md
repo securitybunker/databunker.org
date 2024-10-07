@@ -24,7 +24,7 @@ The easiest way to start using Databunker is by running it as a Docker container
 docker run -p 3000:3000 -d --rm --name databunker securitybunker/databunker demo
 ```
 
-After the container is running, you can interact with Databunker through:
+After the container is started, you can interact with Databunker through:
 
 - [Web Console](https://demo.databunker.org/): Available at [localhost:3000](http://localhost:3000)
 - [REST API](https://documenter.getpostman.com/view/11310294/Szmcbz32): Accessible at [localhost:3000](http://localhost:3000)
@@ -33,12 +33,12 @@ For detailed installation instructions, please refer to the [full installation g
 
 ## Step 2: Creating a User Record
 
-Databunker's API allows you to create a user record and returns a user token in UUID format.
+Databunker's most frequent API request is to store user records. For each new user record, Databunker generates and returns a **user token** in UUID format.
 
 GDPR Relevance:
 * Under **GDPR**, this **user token** is referred to as a **pseudonymized identity**. This token can be safely stored in your regular database or logs, as long as **no** additional personal information is stored with it.
 * **Pseudonymization** reduces the risk of directly associating personal data with an individual, reinforcing data protection and privacy principles.
-* For example, when receiving a **Right to be forgotten (RTBF) request**, you can delete personal data from Databunker only.
+* For instance, when you receive a **Right to be forgotten (RTBF) request**, you can remove the personal data from Databunker alone.
 
 Use the following command to create the user record:
 
@@ -58,7 +58,7 @@ Output:
 
 You can retrieve user records using indexed fields, such as **email address**, **login name**, **user token**, etc.
 
-**Fetch customer records using user token:**
+For example, fetch customer records using user token:
 
 ```
 curl -s -H "X-Bunker-Token: DEMO" -X GET http://localhost:3000/v1/user/token/eeb04dd7-ecb2-c957-2875-5b98897b21a6
