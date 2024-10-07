@@ -20,7 +20,9 @@ weight = 10  # Order that this section will appear.
 #title = "Open-source KYC "
 #title = "Fort Knox for User PII Data"
 #title = "Secure Vault for User PII Data"
-title = "Secure Vault for Customer Sensitive Records (PII/PHI/KYC/PCI) in inder 10 minutes"
+#title = "Secure Vault for Customer Sensitive Records (PII/PHI/KYC/PCI) in inder 10 minutes"
+title = "Secure Database for Customer Sensitive Records (PII/PHI/KYC/PCI) in inder 10 minutes"
+
 
 # Hero image (optional). Enter filename of an image in the `static/img/` folder.
 #hero_media = "databunker.mp4"
