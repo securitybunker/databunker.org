@@ -41,11 +41,10 @@ Some of the information stored by the application session is considered **Person
 By default, Databunker does not allow to enumerate user records. This API call is disabled by default. This is done on purpose to prevent the attackers from getting all the records at once.
 
 ### Shamir key sharing algorithm 
-**Databunker** service gets the **master key** used to encrypt all records from a **Docker secrets store**. **Databunker Pro** provides an even more secure solution. The master key can be optionally split into 3 pieces when 2 pieces are required for the process to start. We have implemented **Shamir’s key sharing algorithm** for better security.
+**Databunker** service uses a **master key** to encrypt all records. **Databunker Pro** offers an even more secure solution by using a **wrapping key** to encrypt the master key itself. You can use an API to renew and rotate the wrapping keys. A backup copy of the wrapping key is split into several parts using the Shamir key sharing algorithm. These shares can be used to recover the wrapping key if it is lost or compromised.
 
 ### Optional user scheme
 **Databunker** supports user scheme validation and enforcement for user records with some advanced extensions. **Dataunker** can return an error message when trying to create a user object with missing fields defined in the user scheme.
-
 
 ## How we address integrity
 

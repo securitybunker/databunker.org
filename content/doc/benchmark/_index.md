@@ -97,7 +97,7 @@ logger.warning("done")
 ### Test 2. All-in-one test using DigitalOcean droplet (11.04.2021)
 
 
-For the test, we are using one DagitalOcean droplet to run a test scrript, backend database, databunker itself and a front-end application.
+For the test, we are using one DagitalOcean droplet to run a test script, backend database, databunker itself and a front-end application.
 
 This droplet comes with the following configuration: **1 GB RAM** / **1 Intel CPU** / **25 GB NVMe SSD**.
 
