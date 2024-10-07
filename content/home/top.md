@@ -20,7 +20,9 @@ weight = 1  # Order that this section will appear.
 #title = "Open-source KYC "
 #title = "Fort Knox for User PII Data"
 #title = "Secure Vault for User PII Data"
-title = "Secure Vault for Customer PII/PHI/PCI/KYC Records in Under 10 Minutes"
+#title = "Secure Vault for Customer PII/PHI/PCI/KYC Records in Under 10 Minutes"
+title = "Secure Database for Customer PII/PHI/PCI/KYC Records in Under 10 Minutes"
+
 
 # Hero image (optional). Enter filename of an image in the `static/img/` folder.
 #hero_media = "databunker.mp4"
@@ -102,4 +104,4 @@ hero_media = "databunker-short-diagram.png"
 #<p style='font-size:0.8rem;'>⭐⭐⭐⭐⭐ <a href="/success-story/kyc-backend-for-crypto-startup/" style="text-decoration:underline;text-underline-offset:4px;">a perfect kyc backend</a></p>
 #Check out the <a href="/doc/start/" style="text-decoration:underline;text-underline-offset:4px;">Getting Started Guide</a> and start protecting PII records in no time!
 +++
-**Databunker** is a super-fast, open-source vault developed in Go for secure storage of sensitive personal records. Protect user records from SQL and GraphQL injections with a simple API. Streamline GDPR, HIPAA, ISO 27001, and SOC2 compliance.
+**Databunker** is a super-fast, open-source service developed in Go for secure storage of sensitive personal records. Protect user records from SQL and GraphQL injections with a simple API. Streamline GDPR, HIPAA, ISO 27001, and SOC2 compliance.
