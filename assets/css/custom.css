@@ -28,7 +28,7 @@ section#hero, section#top {background:#0179ab;color:#fff;}
 section#top {background:#0179ab;padding-bottom:40px;padding-top:35px;}
 section#text {padding-top:50px;padding-bottom:35px;}
 section#quote {padding-top:20px;padding-bottom:10px;}
-section#hero h1, section#top h1 {font-size:1.7rem;/*text-align-last:justify*/;line-height:2rem;color:unset;}
+section#hero h1, section#top h1 {font-size:1.96rem;/*text-align-last:justify*/;line-height:2.2rem;color:unset;}
 /*section#hero a {color:#fff;}*/
 .btn-lg {/*text-underline-offset:4px;text-decoration:underline;*/padding:20px 30px 25px 30px !important;font-size:1.2rem !important;}
 section#definitions {padding-top:50px;padding-bottom:60px;}

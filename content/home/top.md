@@ -21,7 +21,7 @@ weight = 1  # Order that this section will appear.
 #title = "Fort Knox for User PII Data"
 #title = "Secure Vault for User PII Data"
 #title = "Secure Vault for Customer PII/PHI/PCI/KYC Records in Under 10 Minutes"
-title = "Secure Database for Customer PII/PHI/PCI/KYC Records in Under 10 Minutes"
+title = "Secure Database for PII/PHI/PCI/KYC Records in Under 10 Minutes"
 
 
 # Hero image (optional). Enter filename of an image in the `static/img/` folder.
@@ -62,8 +62,12 @@ hero_media = "databunker-short-diagram.png"
   #url = "/doc/install/"
   #url = "/doc/demo/"
   url = "#plans"
+  label = "Start For Free"
+  #label = "Show Plans 🚀"
   #label = "Get Started Now →"
-  label = "Get Started Now"
+  #label = "Get Started Now"
+  #url = "/doc/start/"
+  #label = "Try For Free"
   #label = "Quick Start"
   #label = "Get Started"
   #label = "Get Started Now 🚀"
