@@ -150,9 +150,14 @@
   weight = 36
 
 [[doc]]
+  name = "DB Migration"
+  url = "/doc/migration/"
+  weight = 36
+
+[[doc]]
   name = "GitHub"
   url= "https://github.com/securitybunker/databunker#readme"
-  weight = 37
+  weight = 38
 
 [[doc]]
   name = "API"
