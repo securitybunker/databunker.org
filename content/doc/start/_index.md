@@ -67,9 +67,9 @@ curl -s -H "X-Bunker-Token: DEMO" -X GET http://localhost:3000/v1/user/email/use
 curl -s -H "X-Bunker-Token: DEMO" -X GET http://localhost:3000/v1/user/login/john
 ```
 
-#### Full lists of API commands
+## Full lists of API requests:
 
-For a full list of available commands, please check the [API documentation](https://documenter.getpostman.com/view/11310294/Szmcbz32).
+For a full list of available requests, please check the [API documentation](https://documenter.getpostman.com/view/11310294/Szmcbz32).
 
 ## Step 4: Accessing the Web UI
 
@@ -122,8 +122,11 @@ If you created a sample user with the phone number ``4444``, as shown in the pre
 
 2. `@databunker/session-store` from https://github.com/securitybunker/databunker-session-store
 
-## Next Steps
-- [Detailed installation guide](/doc/install/)
-- [Databunker online demo](/doc/demo/)
-- [Benchmark results](/doc/benchmark/)
-- [Source code](https://github.com/securitybunker/databunker/)
+<div class="next-steps">
+<p>Next steps</p>
+<ul>
+<li><a href="/doc/install/">Detailed installation guide</a></li>
+<li><a href="/doc/demo/">Databunker online demo</a></li>
+<li><a href="/doc/benchmark/">Benchmark results</a></li>
+<li><a href="https://github.com/securitybunker/databunker/">Source code</a></li>
+</ul></div>

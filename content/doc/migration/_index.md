@@ -34,8 +34,11 @@ This method will require more changes on your database level and in your applica
 
 ![Full reorganization](/img/db-complex.png)
 
-## Next Steps
-- [Detailed installation guide](/doc/install/)
-- [Databunker online demo](/doc/demo/)
-- [Benchmark results](/doc/benchmark/)
-- [Source code](https://github.com/securitybunker/databunker/)
+<div class="next-steps">
+<p>Next steps</p>
+<ul>
+<li><a href="/doc/introduction/">What is Databunker?</a></li>
+<li><a href="/doc/start/">Getting started guide</a></li>
+<li><a href="/doc/install/">Detailed installation guide</a></li>
+<li><a href="/doc/demo/">Databunker online demo</a></li>
+</ul></div>
