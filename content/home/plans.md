@@ -26,6 +26,9 @@ weight = 70
 #Startup Friendly Pricing
 #Enterprise Pricing
 #Free Of Charge
+#Self-managed & always free
+#Cloud & on-premises deployment
+#Not sure what to pick? Book a call to see how our developers can optimize Databunker to your specific needs
 +++
 <h2 class="text-center mb-3">Secure Database for PII/PHI/PCI/KYC Records</h2>
 
@@ -36,7 +39,7 @@ weight = 70
 <div class="pricecolumn" style="background:#d4eef9;">
 <div class="grey text-center mt-2"><h2 style="text-align:center;">Community Edition</h2></div>
 <div class="grey"><p style="font-size:72%;text-align:center;">Perfect for small teams with limited resources</p></div>
-<div class="grey mprice"><p style="font-size:120%;text-align:center;margin:0;">Self-managed & always free</p></div>
+<div class="grey mprice"><p style="font-size:300%;text-align:center;margin:0;">$0.0</p></div>
 <section class="mb-3">
 <!-- <div class="pline">✔️ Instant backend GDPR, HIPAA, ISO 27001, and SOC2 compliance</div> -->
 <div class="pline">✔️ Supports MySQL and PostgreSQL databases</div>
@@ -53,7 +56,7 @@ weight = 70
 <div class="pricecolumn" style="background:#FCA311;">
 <div class="grey text-center mt-2"><h2 style="text-align:center;">Databunker Pro</h2></div>
 <div class="grey"><p style="font-size:72%;text-align:center;">Perfect for companies that need a turnkey solution</p></div>
-<div class="grey mprice"><p style="font-size:120%;text-align:center;margin:0;">Cloud & on-premises deployment</p></div>
+<div class="grey mprice"><p style="font-size:300%;text-align:center;margin:0;">$2.4/hour</p></div>
 <section class="mb-3">
 <div class="pline">✔️ Get optimized service to meet your specific needs</div>
 <div class="pline">✔️ Multi-tenancy & Aurora PgSQL auto scalling</div>
@@ -69,4 +72,4 @@ weight = 70
 <a href="javascript:void(0);" onclick="request_free_trial();" class="btn-outline btn-lg btn page-scroll mt-2" style='vertical-align:top;border-radius:5px!important;padding: 18px 30px 20px !important;box-shadow:0 4px 6px 0 rgba(0,0,0,0.2);border-color:#d4eef9;color:#d4eef9;'>Learn More</a>&nbsp;&nbsp;&nbsp; <a href="javascript:void(0);" onclick="request_free_trial();" class="mt-2" style='vertical-align:top;display:inline-block;'><img src="/img/aws-marketplace-btn.svg" "Available in AWS Marketplace" style='box-shadow:0 8px 12px 0 rgba(0,0,0,0.2);'/></a></center>
 </div></div></div>
 </div>
-<center>Not sure what to pick? <a href="/api/meeting.php?a=plans">Book a call</a> to see how our developers can optimize Databunker to your specific needs.</center>
+<center>Want an even better deal? <a href="/api/meeting.php?a=plans">Book a call now!</a></center>
