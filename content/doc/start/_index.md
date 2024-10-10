@@ -20,7 +20,7 @@ Databunker is a specialized system for secure storage, data tokenization, and co
 ## Step 1: Starting the Databunker container
 The easiest way to start using Databunker is by running it as a Docker container. Once the container is running, Databunker opens port 3000 and listens for incoming requests.
 
-Use the following command to launch Databunker with a ``DEMO`` root access key, ideal for local testing and development:
+To launch Databunker with a ``DEMO`` root access key, ideal for local testing and development, use the following command:
 
 ```
 docker run -p 3000:3000 -d --rm --name databunker securitybunker/databunker demo
@@ -35,9 +35,9 @@ Databunker's most popular API request is to store user records. For each new use
 GDPR Relevance:
 * Under **GDPR**, this **user token** is referred to as a **pseudonymized identity**. This token can be safely stored in your regular database or logs, as long as **no** additional personal information is stored with it.
 * **Pseudonymization** reduces the risk of directly associating personal data with an individual, reinforcing data protection and privacy principles.
-* For instance, when you receive a **Right to be forgotten (RTBF) request**, you can remove the personal data from Databunker alone.
+* For instance, when you receive a **Right to be forgotten (RTBF) request**, you can remove the personal data from Databunker without affecting other systems.
 
-Use the following command to create the user record:
+Use this command to create the user record:
 
 ```
 curl -s http://localhost:3000/v1/user \
@@ -53,53 +53,54 @@ Output:
 
 ## Step 3: Retrieving user record
 
-You can retrieve user records using indexed fields, such as **email address**, **login name**, **user token**, etc.
+You can retrieve user records using indexed fields, such as **email address**, **login name**, **user token**, or **custom index**.
 
-For example, fetch customer records using user token:
-
+To fetch customer records by user token, use this command:
 ```
 curl -s -H "X-Bunker-Token: DEMO" -X GET http://localhost:3000/v1/user/token/eeb04dd7-ecb2-c957-2875-5b98897b21a6
 ```
 
-You can integrate Databunker into the application's sign-in logic and search for customer records using email address or login name:
+You can integrate Databunker into your application's sign-in logic and search for customer records using an email address or login name:
 
 ```
 curl -s -H "X-Bunker-Token: DEMO" -X GET http://localhost:3000/v1/user/email/user@gmail.com
 curl -s -H "X-Bunker-Token: DEMO" -X GET http://localhost:3000/v1/user/login/john
 ```
 
+#### Full lists of API commands
+
 For a full list of available commands, please check the [API documentation](https://documenter.getpostman.com/view/11310294/Szmcbz32).
 
 ## Step 4: Accessing the Web UI
 
-Databunker includes a built-in web UI interface, which we host for you at <a href="https://demo.databunker.org/" target="_blank">demo.databunker.org</a>.
+Databunker includes a built-in web UI. We have pre-installed databunker for you for a quick access. It is available at: <a href="https://demo.databunker.org/" target="_blank">demo.databunker.org</a>.
 
 If you deploy Databunker using Docker, this interface is available by default at: <a href="http://localhost:3000/" target="_blank">localhost:3000</a>.
 
 #### Admin access:
 
-You can use the ``DEMO`` **root token** to get access to the admin panel.
+You can use the ``DEMO`` **root token** to access the admin panel.
 
-The **admin user** or **Data Protection Officer (DPO)** can use the web interface to:
+The **admin** or **Data Protection Officer (DPO)** can use the web interface to:
 1. Delete user records to comply with GDPR RTBF "forget me" requests
-1. Generate personal data reports and review audit events
+1. Generate personal data reports and review audit logs
 1. Manage personal data processing activities
 
 #### End-User Access:
 
-Databunker provides an optional customer portal. It allows end users (or **data subject** in terms of GDPR) to access and manage their personal information. This feature helps with GDPR compliance, particularly concerning data subject rights.
+Databunker provides an optional customer portal. This allows end users (referred to as **data subject** under GDPR) to access and manage their personal data, helping with GDPR compliance.
 
 Key Features:
-1. Secure login. End users can log in using their email address or phone number. Databunker generates a random password and sends it to the user via email or SMS to verify their identity.
-1. Data view and modifications. Users can view, review, and request modifications to their personal data.
-1. View audit events and request account deletion.
+1. Secure login: End users can log in using their email or phone number. Databunker generates a random password and sends it via email or SMS for verification.
+1. Personal data: Users can view, review, and request changes to their personal data.
+1. Audit events: Users can view audit logs and request account deletion.
 
 GDPR Relevance:
-1. **Right of Access (Article 15):** Users can directly access their personal data stored in Databunker.This self-service portal streamlines the process of fulfilling access requests.
-1. **Right to Rectification (Article 16):** Users can submit requests for corrections, supporting the right to rectification.
-1. **Transparency principle (Article 12):** By providing clear, direct access to personal data, Databunker enhances transparency in data processing.
+1. **Right of Access (Article 15):** Users can directly access their personal data stored in Databunker, simplifying access request fulfillment.
+1. **Right to Rectification (Article 16):** Users can request corrections, supporting the right to rectification.
+1. **Transparency principle (Article 12):** By providing clear access to personal data, Databunker enhances transparency in data processing.
 1. **Right to Data Portability (Article 20):** Users can download their data in a machine-readable format.
-1. **Consent Management:** The portal can be used to display current consent status and allow users to modify their consent preferences.
+1. **Consent Management:** The portal allows users to view and modify their consent preferences.
 
 **How to test:**
 
