@@ -68,7 +68,7 @@
 
 [[main]]
   #pre= "<span class='b1adge badge-pill-large badge-d1anger' style='background-color:#197ba9 !important;color:#fff;'>"
-  pre= "<span class='b1adge badge-pill-large badge-d1anger' style='background-color:#FFF!important;color:#fff;color:#34495e;border-radius:0;border:1px solid #ee3224;padding: 0.4em 0.8em;'>"
+  pre= "<span class='b1adge badge-pill-large badge-d1anger' style='background-color:#FFF!important;color:#fff;color:#34495e;border-radius:5px;border:1px solid #ee3224;padding: 0.4em 0.8em;'>"
   post = "</span>"
   #pre= "<b>"
   #post = "</b>"

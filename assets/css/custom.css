@@ -10,6 +10,7 @@ li p {text-align:unset;}
 .docs-toc-link {padding:.1rem .4rem;font-size:0.8rem;}
 .docs-article-container {max-width:100%;}
 .btn-primary, .nav-pills .nav-link.active {background-color:#ee3224;border-color:#ee3224;}
+.btn {border-radius: 5px !important;}
 article h2 {margin-top:2rem;margin-bottom:1rem;font-size: 1.5rem;}
 section#plans h2 {font-size: 1.8rem;}
 ol, ul {padding-left:25px;}
@@ -23,7 +24,7 @@ div#youtube:hover {box-shadow:rgba(0,0,0,.5)0 20px 30px 0;}
 .docs-toc-item.active:not(:first-child) {margin:0;}
 .docs-toc-item ul.nav li {margin:0;}
 .docs-sidebar .nav>li>a {padding:0.1rem 1rem;}
-section#definitions .nav-link {padding:0.5rem 0.6rem;}
+section#definitions .nav-link {padding:0.5rem 0.6rem;border-radius:5px;}
 section#hero, section#top {background:#0179ab;color:#fff;}
 section#top {background:#0179ab;padding-bottom:40px;padding-top:35px;}
 section#text {padding-top:50px;padding-bottom:35px;}
@@ -122,7 +123,7 @@ pre code {background-color: #f9f9f9;border:1px solid #eaeded;display:block;width
 .pricecolumn p, .pricecolumn h3 {margin:0;}
 .pricecolumn h3 {font-size:1.06rem;}
 .pricecolumn section {margin:0 auto;}
-.pricecolumn section a {color:#212529;text-decoration:underline;text-underline-offset:3px;}
+.pricecolumn section aa {color:#212529;text-decoration:underline;text-underline-offset:3px;}
 .pricecolumn section .pline {text-align:left;}
 .pricecolumn-left div {text-align:left!important;}
 /*.mySlides {border:1px solid rgba(0, 0, 0, 0.1);}*/
