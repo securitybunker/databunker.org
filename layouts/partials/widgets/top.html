@@ -32,7 +32,7 @@
       {{ end }}
     <div class="" style="margin-top:2.0rem;">
       <a href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }} class="btn-lg {{if $bg.text_color_light}}btn-light{{else}}btn-primary{{end}} btn page-scroll" style="">{{ if $page.Params.btn.icon }}<i class="{{ $pack }} {{ $pack_prefix }}-{{ $page.Params.btn.icon }} mr-2" aria-hidden="true"></i>{{end}}{{ $page.Params.btn.label | markdownify | emojify | safeHTML }}</a>
-      <audio controls autoplay class="ml-2" style="vertical-align:middle;margin:auto 0;"><source src="/files/databunker.wav"></audio>
+      <audio controls autostart="0" autostart="false" preload="false" class="ml-2" style="vertical-align:middle;margin:auto 0;"><source src="/files/databunker.wav"></audio>
       {{/* Alternative Call-to-action link */}}
       {{ if $page.Params.btn_alt.url }}
         {{ $link := $page.Params.btn_alt.url }}
