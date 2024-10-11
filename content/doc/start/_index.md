@@ -1,5 +1,6 @@
 ---
-title: Getting started with Databunker
+#title: Getting started with Databunker
+title: "Databunker: Quick Start"
 #title: "Databunker: Get Started Now"
 linktitle: Getting started
 toc: false
@@ -73,13 +74,9 @@ For a full list of available requests, please check the [API documentation](http
 
 ## Step 4: Accessing the Web UI
 
-Databunker includes a built-in web UI. We have pre-installed databunker for you for a quick access. It is available at: <a href="https://demo.databunker.org/" target="_blank">demo.databunker.org</a>.
+Databunker includes a built-in web UI. For quick access, we’ve pre-installed Databunker, which you can access at: <a href="https://demo.databunker.org/" target="_blank">demo.databunker.org</a>. Use the ``DEMO`` root token to access the admin panel.
 
-If you deploy Databunker using Docker, this interface is available by default at: <a href="http://localhost:3000/" target="_blank">localhost:3000</a>.
-
-#### Admin access:
-
-You can use the ``DEMO`` **root token** to access the admin panel.
+If you deploy Databunker using Docker, this interface is available by default at: <a href="http://localhost:3000/" target="_blank">localhost:3000</a>. In the demo version, the root token is set to  ``DEMO`` by default.
 
 The **admin** or **Data Protection Officer (DPO)** can use the web interface to:
 1. Delete user records to comply with GDPR RTBF "forget me" requests
@@ -88,25 +85,7 @@ The **admin** or **Data Protection Officer (DPO)** can use the web interface to:
 
 #### End-User Access:
 
-Databunker provides an optional customer portal. This allows end users (referred to as **data subject** under GDPR) to access and manage their personal data, helping with GDPR compliance.
-
-Key Features:
-1. Secure login: End users can log in using their email or phone number. Databunker generates a random password and sends it via email or SMS for verification.
-1. Personal data: Users can view, review, and request changes to their personal data.
-1. Audit events: Users can view audit logs and request account deletion.
-
-GDPR Relevance:
-1. **Right of Access (Article 15):** Users can directly access their personal data stored in Databunker, simplifying access request fulfillment.
-1. **Right to Rectification (Article 16):** Users can request corrections, supporting the right to rectification.
-1. **Transparency principle (Article 12):** By providing clear access to personal data, Databunker enhances transparency in data processing.
-1. **Right to Data Portability (Article 20):** Users can download their data in a machine-readable format.
-1. **Consent Management:** The portal allows users to view and modify their consent preferences.
-
-**How to test:**
-
-If you created a sample user with the phone number ``4444``, as shown in the previous example, you can use ``4444`` as both the phone number and password to access the customer portal.
-
-![user panel](https://raw.githubusercontent.com/securitybunker/databunker/master/images/ui-profile-edit-and-save.png)
+Databunker's optional customer portal lets users securely access, manage, and update their personal data, supporting GDPR compliance. Key features include secure login, data review, and audit log access. If you created a sample user with the phone number ``4444``, as shown in the **Creating a User Record** section, you can use ``4444`` as both the phone number and password to access the customer portal.
 
 
 ## Step 5: View Node.js code examples
