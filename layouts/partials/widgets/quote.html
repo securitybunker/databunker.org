@@ -1,10 +1,8 @@
 {{ $ := .root }}
 {{ $page := .page }}
-<div class="row justify-content-center">
-  <div class="col-md-11">
-    <blockquote class="blockquote">
-	    <p class="ml-2">{{ $page.Title | markdownify | emojify }}</p>
-	    <footer class="blockquote-footer text-right">{{ $page.Params.author }} <a target="_blank" href="{{ $page.Params.link}}"><i class="fab fa-linkedin" aria-hidden="true"></i></a></footer>
-    </blockquote>
-  </div>
-</div>
+<div class="row justify-content-center"><div class="col-md-11">
+<blockquote class="blockquote">
+<p class="ml-2">{{ $page.Title | markdownify | emojify }}</p>
+<footer class="blockquote-footer text-right">{{ $page.Params.author }} <a target="_blank" href="{{ $page.Params.link}}"><i class="fab fa-linkedin" aria-hidden="true"></i></a></footer>
+</blockquote>
+</div></div>
