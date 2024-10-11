@@ -67,6 +67,8 @@ hero_media = "databunker-short-diagram.png"
   #label = "Get Started Now →"
   label = "Get Started Now"
   #url = "/doc/start/"
+  #label = "Download Quick Start Guide"
+  #url = "/doc/start/"
   #label = "Try For Free"
   #label = "Quick Start"
   #label = "Get Started"
@@ -108,4 +110,4 @@ hero_media = "databunker-short-diagram.png"
 #<p style='font-size:0.8rem;'>⭐⭐⭐⭐⭐ <a href="/success-story/kyc-backend-for-crypto-startup/" style="text-decoration:underline;text-underline-offset:4px;">a perfect kyc backend</a></p>
 #Check out the <a href="/doc/start/" style="text-decoration:underline;text-underline-offset:4px;">Getting Started Guide</a> and start protecting PII records in no time!
 +++
-**Databunker** is a super-fast, open-source service developed in Go for secure storage of sensitive personal records. Protect user records from SQL and GraphQL injections with a simple API. Streamline GDPR, HIPAA, ISO 27001, and SOC2 compliance.
+**Databunker** is a lighting-fast, open-source service developed in Go for secure storage of sensitive personal records. Protect user records from SQL and GraphQL injections with a simple API. Streamline GDPR, HIPAA, ISO 27001, and SOC2 compliance.
