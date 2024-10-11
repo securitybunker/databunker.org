@@ -50,7 +50,7 @@ weight = 70
 <div class="pline">&nbsp;</div>
 </section>
 <div class="grey yprice" style="padding-bottom:15px;text-align:center;">
-<center class="mb-2"><a href="https://databunker.org/doc/start/" class="btn-outline-primary btn-lg btn page-scroll mt-2" style='border-radius:5px!important;padding: 18px 30px 20px !important;box-shadow:0 4px 6px 0 rgba(0,0,0,0.2);'>Getting Started Guide</a></center>
+<center class="mb-2"><a href="https://databunker.org/doc/start/" class="btn-outline-primary btn-lg btn page-scroll mt-2" style='border-radius:5px!important;padding: 18px 30px 20px !important;box-shadow:0 4px 6px 0 rgba(0,0,0,0.2);'>Download Quick Start Guide</a></center>
 </div></div></div>
 <div class="col-12 col-md-6 mt-3 mobile-hide" style="display:none1;">
 <div class="pricecolumn" style="background:#FCA311;">
