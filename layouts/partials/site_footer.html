@@ -16,6 +16,43 @@
 <noscript><div><img src="https://mc.yandex.ru/watch/70878271" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
 
+<script>
+let contentLoaded = false;
+async function loadAndAttachContentFromSubpage(subpageUrl) {
+    try {
+        const response = await fetch(subpageUrl);
+        const htmlText = await response.text();
+        const tempDiv = document.createElement('div');
+        tempDiv.innerHTML = htmlText;
+        const contentDiv = tempDiv.querySelector('article');
+        if (contentDiv) {
+	    var box = document.createElement("div");
+            box.style.paddingLeft = '10px';
+            box.style.paddingRight = '10px';
+	    box.appendChild(contentDiv)
+            document.body.appendChild(box);
+        } else {
+            console.error('Content div not found on the subpage');
+        }
+    } catch (error) {
+        console.error('Error loading content from subpage:', error);
+    }
+}
+function handleScroll() {
+    if (!contentLoaded) {
+        // Load and attach content from subpage when user scrolls down for the first time
+        loadAndAttachContentFromSubpage('https://databunker.org/doc/start/'); // Replace with your subpage URL
+        contentLoaded = true; // Set flag to true to prevent loading again
+    }
+}
+// Only trigger on mobile screens (width <= 768px)
+if (window.innerWidth <= 600) {
+  document.addEventListener("scroll", function() {
+    handleScroll();
+  });
+}
+</script>
+
 <footer class="site-footer">
   <div class="container">
   <div class="row justify-content-center">
