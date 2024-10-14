@@ -3,47 +3,146 @@ title: "Accelerated Compliance"
 page_type: "definition"
 active: false
 weight: 4
+#Open-source Databunker can accelerate your compliance:
 ---
-Databunker can accelerate your GDPR, SOC2, HIPAA, and ISO 27001 compliance:
+<div class="feature-card">
+<div class="feature-header">
+<h2 class="feature-title">1. Secure Data Storage</h2>
+<div class="compliance-tags">
+<span class="compliance-tag tag-soc2">SOC2</span>
+<span class="compliance-tag tag-iso">ISO 27001</span>
+<span class="compliance-tag tag-pci">PCI DSS</span>
+<span class="compliance-tag tag-hipaa">HIPAA</span>
+<span class="compliance-tag tag-gdpr">GDPR</span>
+</div>
+</div>
+<p class="description">Databunker acts as an encrypted vault for PII, PHI, PCI, and KYC data, going beyond traditional database encryption.</p>
+<p class="compliance-impact"><strong>Compliance Impact:</strong> Meets stringent data protection requirements across multiple standards.</p>
+</div>
 
-**1. Secure Data Storage:**
-* Benefit: Databunker acts as a powerful encrypted vault specifically designed to protect sensitive records, including Personally Identifiable Information (PII), personal health information (PHI), and other critical data.
-* Compliance Impact: Databunker helps organizations meet the data protection requirements of GDPR, HIPAA, SOC2, and ISO 27001 by safeguarding sensitive data from unauthorized access or data breaches.
+<div class="feature-card">
+<div class="feature-header">
+<h2 class="feature-title">2. Advanced Encryption & Tokenization</h2>
+<div class="compliance-tags">
+<span class="compliance-tag tag-soc2">SOC2</span>
+<span class="compliance-tag tag-iso">ISO 27001</span>
+<span class="compliance-tag tag-pci">PCI DSS</span>
+<span class="compliance-tag tag-hipaa">HIPAA</span>
+<span class="compliance-tag tag-gdpr">GDPR</span>
+</div>
+</div>
+<p class="description">Employs encryption for data at rest and in transit, with no clear text storage and secure indexing.</p>
+<p class="compliance-impact"><strong>Compliance Impact:</strong> Ensures data confidentiality and integrity as mandated by various regulations.</p>
+</div>
 
-**2. Access Controls:**
-* Benefit: Databunker provides robust access control mechanisms that allow organizations to define and enforce permissions for accessing sensitive data.
-* Compliance Impact: Databunker aids compliance with GDPR, SOC2, HIPAA, and ISO 27001 by ensuring that only authorized individuals can access and handle sensitive data, reducing the risk of data exposure.
+<div class="feature-card">
+<div class="feature-header">
+<h2 class="feature-title">3. Robust Access Controls</h2>
+<div class="compliance-tags">
+<span class="compliance-tag tag-soc2">SOC2</span>
+<span class="compliance-tag tag-iso">ISO 27001</span>
+<span class="compliance-tag tag-pci">PCI DSS</span>
+<span class="compliance-tag tag-hipaa">HIPAA</span>
+<span class="compliance-tag tag-gdpr">GDPR</span>
+</div>
+</div>
+<p class="description">Implements strict access control mechanisms and API-based communication, restricting bulk data retrieval.</p>
+<p class="compliance-impact"><strong>Compliance Impact:</strong> Prevents unauthorized access and maintains principle of least privilege.</p>
+</div>
 
-**3. Audit Trails and Logging:**
-* Benefit: Databunker offers audit trails and logging features to track and monitor access to sensitive data, providing a comprehensive record of data access and activities.
-* Compliance Impact: Databunker assists in meeting compliance requirements of GDPR, SOC2, HIPAA, and ISO 27001 by enabling transparency and accountability in data processing and facilitating investigations during security incidents.
+<div class="feature-card">
+<div class="feature-header">
+<h2 class="feature-title">4. Comprehensive Audit Trails</h2>
+<div class="compliance-tags">
+<span class="compliance-tag tag-soc2">SOC2</span>
+<span class="compliance-tag tag-iso">ISO 27001</span>
+<span class="compliance-tag tag-pci">PCI DSS</span>
+<span class="compliance-tag tag-hipaa">HIPAA</span>
+<span class="compliance-tag tag-gdpr">GDPR</span>
+</div>
+</div>
+<p class="description">Provides detailed logging of all data operations and access attempts.</p>
+<p class="compliance-impact"><strong>Compliance Impact:</strong> Enables thorough auditing and supports incident investigations.</p>
+</div>
 
-**4. Data Encryption:**
-* Benefit: Databunker's encryption measures protect data both at rest and in transit, ensuring the confidentiality and integrity of sensitive information.
-* Compliance Impact: Databunker aligns with GDPR, SOC2, HIPAA, and ISO 27001 requirements for encrypting data, mitigating the risk of unauthorized disclosure or tampering.
+<div class="feature-card">
+<div class="feature-header">
+<h2 class="feature-title">5. Pseudonymization & Data Minimization</h2>
+<div class="compliance-tags">
+<span class="compliance-tag tag-hipaa">HIPAA</span>
+<span class="compliance-tag tag-gdpr">GDPR</span>
+</div>
+</div>
+<p class="description">Generates random user tokens and supports data segregation to enhance privacy.</p>
+<p class="compliance-impact"><strong>Compliance Impact:</strong> Enhances data protection and supports privacy-by-design principles.</p>
+</div>
 
-**5. User-Centric Access:**
-* Benefit: Databunker's user interface allows individuals to access, review, and modify their personal data, empowering organizations to fulfill GDPR's individual rights provisions.
-* Compliance Impact: Databunker enables compliance with GDPR's requirements for providing individuals with control over their personal data, enhancing transparency and accountability.
+<div class="feature-card">
+<div class="feature-header">
+<h2 class="feature-title">6. Consent Management</h2>
+<div class="compliance-tags">
+<span class="compliance-tag tag-ccpa">CCPA</span>
+<span class="compliance-tag tag-hipaa">HIPAA</span>
+<span class="compliance-tag tag-gdpr">GDPR</span>
+</div>
+</div>
+<p class="description">Offers a platform for obtaining, storing, and managing user consent in a compliant manner.</p>
+<p class="compliance-impact"><strong>Compliance Impact:</strong> Ensures lawful data processing based on valid consent.</p>
+</div>
 
-**6. Pseudonymization:**
-* Benefit: Databunker employs pseudonymization techniques by generating random user tokens to replace direct user identities, enhancing privacy and complying with GDPR's recommendation for pseudonymizing personal data.
-* Compliance Impact: Pseudonymization reduces the risk of directly associating personal data with an identified individual, reinforcing data protection and privacy principles.
+<div class="feature-card">
+<div class="feature-header">
+<h2 class="feature-title">7. Open-Source Transparency</h2>
+<div class="compliance-tags">
+<span class="compliance-tag tag-soc2">SOC2</span>
+<span class="compliance-tag tag-iso">ISO 27001</span>
+<span class="compliance-tag tag-gdpr">GDPR</span>
+</div>
+</div>
+<p class="description">Benefits from community contributions and scrutiny, ensuring continuous improvements and security fixes.</p>
+<p class="compliance-impact"><strong>Compliance Impact:</strong> Supports transparency and allows for independent security audits.</p>
+</div>
 
-**7. Governance and Open-Source Community:**
-* Benefit: As an open-source solution, Databunker benefits from the contributions and scrutiny of a wide community of developers, researchers, and security experts, leading to continuous improvements and security fixes.
-* Compliance Impact: Databunker's open-source nature fosters transparency and accountability, aligning with various data compliance standards, such as ISO 27001, by promoting peer review and collaborative security measures.
+<div class="feature-card">
+<div class="feature-header">
+<h2 class="feature-title">8. User-Centric Access</h2>
+<div class="compliance-tags">
+<span class="compliance-tag tag-ccpa">CCPA</span>
+<span class="compliance-tag tag-hipaa">HIPAA</span>
+<span class="compliance-tag tag-gdpr">GDPR</span>
+</div>
+</div>
+<p class="description">Provides an optional user interface for individuals to access, review, and modify their personal data.</p>
+<p class="compliance-impact"><strong>Compliance Impact:</strong> Facilitates compliance with individual data rights and access requirements.</p>
+</div>
 
-**8. Compliance Reporting:**
-* Benefit: Databunker can assist in compliance reporting, such as generating reports or facilitating the collection of evidence, streamlining the process of demonstrating compliance with GDPR, SOC2, HIPAA, and ISO 27001 requirements.
-* Compliance Impact: Databunker's reporting capabilities contribute to meeting the documentation and reporting requirements of various compliance standards, supporting organizations in their compliance efforts.
+<div class="feature-card">
+<div class="feature-header">
+<h2 class="feature-title">9. Automated Data Retention</h2>
+<div class="compliance-tags">
+<span class="compliance-tag tag-soc2">SOC2</span>
+<span class="compliance-tag tag-iso">ISO 27001</span>
+<span class="compliance-tag tag-pci">PCI DSS</span>
+<span class="compliance-tag tag-hipaa">HIPAA</span>
+<span class="compliance-tag tag-gdpr">GDPR</span>
+</div>
+</div>
+<p class="description">Enforces data lifecycle management, automatically deleting obsolete data.</p>
+<p class="compliance-impact"><strong>Compliance Impact:</strong> Ensures data is not kept longer than necessary, reducing compliance risks.</p>
+</div>
 
-**9. Data Segregation:**
-* Benefit: Databunker allows organizations to segregate critical data from less sensitive data, enhancing security and minimizing the risk of unauthorized access.
-* Compliance Impact: Data segregation aligns with ISO 27001 and GDPR requirements for data protection and data security, reducing the likelihood of data breaches and unauthorized access.
-
-**10. Simplified Consent Management:**
-* Benefit: Databunker's consent management platform enables organizations to obtain, store, and manage user consent in a compliant manner.
-* Compliance Impact: Databunker assists in fulfilling GDPR's consent requirements, ensuring organizations obtain explicit consent for data processing activities, promoting data privacy and transparency.
-
-![Pseudonymized identity](/img/pseudonymized-identity.png)
+<div class="feature-card">
+<div class="feature-header">
+<h2 class="feature-title">10. Compliance Reporting</h2>
+<div class="compliance-tags">
+<span class="compliance-tag tag-soc2">SOC2</span>
+<span class="compliance-tag tag-iso">ISO 27001</span>
+<span class="compliance-tag tag-pci">PCI DSS</span>
+<span class="compliance-tag tag-ccpa">CCPA</span>
+<span class="compliance-tag tag-hipaa">HIPAA</span>
+<span class="compliance-tag tag-gdpr">GDPR</span>
+</div>
+</div>
+<p class="description">Assists in generating reports and collecting evidence for compliance audits.</p>
+<p class="compliance-impact"><strong>Compliance Impact:</strong> Streamlines compliance demonstrations and simplifies audit processes.</p>
+</div>

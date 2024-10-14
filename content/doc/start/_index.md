@@ -1,6 +1,6 @@
 ---
-#title: Getting started with Databunker
-title: "Databunker: Quick Start"
+title: Getting started with Databunker
+#title: "Databunker: Quick Start"
 #title: "Databunker: Get Started Now"
 linktitle: Getting started
 toc: false

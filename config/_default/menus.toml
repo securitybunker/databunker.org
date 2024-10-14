@@ -110,8 +110,8 @@
   weight = 1
 
 [[doc]]
-  #name = "Get started now"
-  name = "Quick start guide"
+  name = "Get started now"
+  #name = "Quick start guide"
   url = "/doc/start/"
   weight = 2
 
