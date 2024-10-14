@@ -21,8 +21,10 @@ weight = 1  # Order that this section will appear.
 #title = "Fort Knox for User PII Data"
 #title = "Secure Vault for User PII Data"
 #title = "Secure Vault for Customer PII/PHI/PCI/KYC Records in Under 10 Minutes"
-title = "Secure Database for PII/PHI/PCI/KYC Records in Under 10 Minutes"
-subtitle = "Over 810,000 personal records are protected by open-source Databunker, offering secure, compliant storage for PII, PHI, PCI, and KYC data"
+#title = "Secure Database for PII/PHI/PCI/KYC Records in Under 10 Minutes"
+title = "Secure PII Database: Protect Customer Records in Under 10 Minutes"
+#subtitle = "Over 810,000 personal records are protected by open-source Databunker, offering secure, compliant storage for PII, PHI, PCI, and KYC data"
+#subtitle = "Over 810,000 personal records are protected by open-source Databunker, offering secure, compliant storage for sensitive personal records"
 # Hero image (optional). Enter filename of an image in the `static/img/` folder.
 #hero_media = "databunker.mp4"
 #hero_media = "databunker-diagram.png"
