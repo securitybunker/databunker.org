@@ -5,6 +5,8 @@ active: false
 weight: 4
 #Open-source Databunker can accelerate your compliance:
 ---
+<h2 style="padding-left:45px;">Databunker accelerates your compliance:</h2>
+
 <div class="feature-card">
 <div class="feature-header">
 <h2 class="feature-title">1. Secure Data Storage</h2>
