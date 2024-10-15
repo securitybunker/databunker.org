@@ -92,7 +92,7 @@ weight: 4
 
 <div class="feature-card">
 <div class="feature-header">
-<h2 class="feature-title">7. Open-Source Transparency</h2>
+<h2 class="feature-title">7. Open-Source Codebase</h2>
 <div class="compliance-tags">
 <span class="compliance-tag tag-soc2">SOC2</span>
 <span class="compliance-tag tag-iso">ISO 27001</span>
