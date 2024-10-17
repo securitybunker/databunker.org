@@ -16,49 +16,14 @@
 <noscript><div><img src="https://mc.yandex.ru/watch/70878271" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
 
-<script>
-let contentLoaded = false;
-async function loadAndAttachContentFromSubpage(subpageUrl) {
-    try {
-        const response = await fetch(subpageUrl);
-        const htmlText = await response.text();
-        const tempDiv = document.createElement('div');
-        tempDiv.innerHTML = htmlText;
-        const contentDiv = tempDiv.querySelector('article');
-        if (contentDiv) {
-	    var box = document.createElement("div");
-            box.style.paddingLeft = '10px';
-            box.style.paddingRight = '10px';
-	    box.appendChild(contentDiv)
-            document.body.appendChild(box);
-        } else {
-            console.error('Content div not found on the subpage');
-        }
-    } catch (error) {
-        console.error('Error loading content from subpage:', error);
-    }
-}
-function handleScroll() {
-    if (!contentLoaded) {
-        // Load and attach content from subpage when user scrolls down for the first time
-        loadAndAttachContentFromSubpage('https://databunker.org/doc/start/'); // Replace with your subpage URL
-        contentLoaded = true; // Set flag to true to prevent loading again
-    }
-}
-// Only trigger on mobile screens (width <= 768px)
-if (window.innerWidth <= 600) {
-  document.addEventListener("scroll", function() {
-    handleScroll();
-  });
-}
-</script>
-
 <footer class="site-footer">
   <div class="container">
   <div class="row justify-content-center">
-  <div class="col-md-12 text-center">
+  <div class="col-md-12" id="footer-content">
+    <center>
     <h2 class="mb-3">Have a question?</h2>
     <p class="mb-4" style="font-size:0.8rem;">✉&nbsp;hello@databunker.org&nbsp;&nbsp;<a href="/api/meeting.php?a=demo">Request a demo</a></p>
+    </center>
     </div>
   </div>
   </div>
@@ -100,6 +65,48 @@ if (popup === 3) {
   }, 30000);
 }
 */
+</script>
+<script>
+let contentLoaded = false;
+async function loadAndAttachContentFromSubpage(subpageUrl) {
+    try {
+        const response = await fetch(subpageUrl);
+        const htmlText = await response.text();
+        const tempDiv = document.createElement('div');
+        tempDiv.innerHTML = htmlText;
+	const article = tempDiv.querySelector('article');
+        const contentDiv = document.querySelector('div#footer-content');
+        if (contentDiv) {
+        /*
+            var box = document.createElement("div");
+            box.style.paddingLeft = '10px';
+            box.style.paddingRight = '10px';
+            box.appendChild(contentDiv)
+            contentDiv.innerHTML = '';
+            document.body.appendChild(box);
+        */
+            contentDiv.innerHTML = '';
+            contentDiv.appendChild(article);
+        } else {
+            console.error('Content div not found on the subpage');
+        }
+    } catch (error) {
+        console.error('Error loading content from subpage:', error);
+    }
+}
+function handleScroll() {
+    if (!contentLoaded) {
+        // Load and attach content from subpage when user scrolls down for the first time
+        loadAndAttachContentFromSubpage('https://databunker.org/doc/start/'); // Replace with your subpage URL
+        contentLoaded = true; // Set flag to true to prevent loading again
+    }
+}
+// Only trigger on mobile screens (width <= 768px)
+        if (document.location.pathname.startsWith("/use-cases") || document.location.pathname == "/") {
+  document.addEventListener("scroll", function() {
+    handleScroll();
+  });
+}
 </script>
 <!-- <script id="bettergdpr_js" src="https://databunker.privacybunker.cloud/site/better-gdpr.js?bettergdprtenant=databunker" type="text/javascript"></script> -->
 </footer>
