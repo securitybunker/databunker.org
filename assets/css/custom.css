@@ -39,7 +39,8 @@ section#plans {padding-top:35px;padding-bottom:40px;}
 #fullpanel_x {position:absolute;top:5px;right:18px;background:transparent;cursor:pointer;color:#000;font-family:'Helvetica', 'Arial', sans-serif;font-size:2em;font-weight:400;text-align:center;width:30px;height:35px;margin:0 auto;}
 #fullpanel_cont {padding-top:12%;margin:0 auto;max-width:800px;padding-left:10px;padding-right:10px;}
 div#bgwhite {background-color:#fff;margin-top:21px;padding-left:0;padding-right:0;}
-div#bgwhite p {padding-left:25px;padding-right:25px;}
+div#bgwhite p, div#bgwhite h2 {padding-left:25px;padding-right:25px;}
+div#bgwhite h2:first-of-type {margin-top:5px;}
 div#bgwhite ul li {text-align:justify;padding-right:25px;font-size:80%;}
 div#bgwhite .tab-pane p:first-child {padding-top:20px;}
 div#bgwhite .tab-pane p {margin-bottom:0.5rem;}
@@ -143,7 +144,7 @@ pre code {background-color: #f9f9f9;border:1px solid #eaeded;display:block;width
     grid-template-columns: 1fr;
 }
 }
-.compliance-tag {display: inline-block;padding: 3px 8px;margin: 0 5px 5px 0;border-radius: 4px;font-size: 0.8em;font-weight: bold;}
+.compliance-tag {display: inline-block;padding: 3px 6px;margin: 0 5px 5px 0;border-radius: 4px;font-size: 0.8em;font-weight: bold;}
 .feature-card .description {font-size: 0.85em;}
 .compliance-impact {font-size: 0.78em;color: #666;}
 .tag-gdpr { background-color: #e3f2fd; color: #1565c0; }
@@ -151,9 +152,9 @@ pre code {background-color: #f9f9f9;border:1px solid #eaeded;display:block;width
 .tag-soc2 { background-color: #fff3e0; color: #e65100; }
 .tag-iso { background-color: #f3e5f5; color: #6a1b9a; }
 .tag-pci { background-color: #ffebee; color: #c62828; }
-.tag-ccpa { background-color: #e0f2f1; color: #00695c; }
-.feature-title {font-size: 1.05em;font-weight: bold;margin: 0;}
+.tag-cpra { background-color: #e0f2f1; color: #00695c; }
 .feature-card {background-color: #fff;border-radius: 8px;padding: 20px;box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);transition: box-shadow 0.3s ease;margin:0 25px 25px 25px;}
+.feature-card h3 {margin:0;font-size: 1.05em;font-weight: bold;}
 .feature-header {display: flex;align-items: center;margin-bottom: 15px;justify-content:space-between;}
 .feature-card p{padding:0!important;}
 
