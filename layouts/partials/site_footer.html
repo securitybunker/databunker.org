@@ -101,8 +101,7 @@ function handleScroll() {
         contentLoaded = true; // Set flag to true to prevent loading again
     }
 }
-// Only trigger on mobile screens (width <= 768px)
-        if (document.location.pathname.startsWith("/use-cases") || document.location.pathname == "/") {
+if (document.location.pathname.startsWith("/use-case") || document.location.pathname == "/") {
   document.addEventListener("scroll", function() {
     handleScroll();
   });
