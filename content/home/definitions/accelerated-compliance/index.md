@@ -4,12 +4,13 @@ page_type: "definition"
 active: false
 weight: 4
 #Open-source Databunker can accelerate your compliance:
+#Databunker accelerates your compliance:
 ---
-<h2 style="padding-left:45px;">Databunker accelerates your compliance:</h2>
+Deploying Databunker in your organization simplifies compliance by addressing most security RFCs and certification questionnaires.
 
 <div class="feature-card">
 <div class="feature-header">
-<h2 class="feature-title">1. Secure Data Storage</h2>
+<h3>1. Secure Data Storage</h3>
 <div class="compliance-tags">
 <span class="compliance-tag tag-soc2">SOC2</span>
 <span class="compliance-tag tag-iso">ISO 27001</span>
@@ -24,7 +25,7 @@ weight: 4
 
 <div class="feature-card">
 <div class="feature-header">
-<h2 class="feature-title">2. Advanced Encryption & Tokenization</h2>
+<h3>2. Advanced Encryption & Tokenization</h3>
 <div class="compliance-tags">
 <span class="compliance-tag tag-soc2">SOC2</span>
 <span class="compliance-tag tag-iso">ISO 27001</span>
@@ -39,7 +40,7 @@ weight: 4
 
 <div class="feature-card">
 <div class="feature-header">
-<h2 class="feature-title">3. Robust Access Controls</h2>
+<h3>3. Robust Access Controls</h3>
 <div class="compliance-tags">
 <span class="compliance-tag tag-soc2">SOC2</span>
 <span class="compliance-tag tag-iso">ISO 27001</span>
@@ -54,7 +55,7 @@ weight: 4
 
 <div class="feature-card">
 <div class="feature-header">
-<h2 class="feature-title">4. Comprehensive Audit Trails</h2>
+<h3>4. Comprehensive Audit Trails</h3>
 <div class="compliance-tags">
 <span class="compliance-tag tag-soc2">SOC2</span>
 <span class="compliance-tag tag-iso">ISO 27001</span>
@@ -69,7 +70,7 @@ weight: 4
 
 <div class="feature-card">
 <div class="feature-header">
-<h2 class="feature-title">5. Pseudonymization & Data Minimization</h2>
+<h3>5. Pseudonymization & Data Minimization</h3>
 <div class="compliance-tags">
 <span class="compliance-tag tag-hipaa">HIPAA</span>
 <span class="compliance-tag tag-gdpr">GDPR</span>
@@ -81,9 +82,9 @@ weight: 4
 
 <div class="feature-card">
 <div class="feature-header">
-<h2 class="feature-title">6. Consent Management</h2>
+<h3>6. Consent Management</h3>
 <div class="compliance-tags">
-<span class="compliance-tag tag-ccpa">CCPA</span>
+<span class="compliance-tag tag-cpra">CPRA</span>
 <span class="compliance-tag tag-hipaa">HIPAA</span>
 <span class="compliance-tag tag-gdpr">GDPR</span>
 </div>
@@ -94,7 +95,7 @@ weight: 4
 
 <div class="feature-card">
 <div class="feature-header">
-<h2 class="feature-title">7. Open-Source Codebase</h2>
+<h3>7. Open-Source Codebase</h3>
 <div class="compliance-tags">
 <span class="compliance-tag tag-soc2">SOC2</span>
 <span class="compliance-tag tag-iso">ISO 27001</span>
@@ -107,9 +108,9 @@ weight: 4
 
 <div class="feature-card">
 <div class="feature-header">
-<h2 class="feature-title">8. User-Centric Access</h2>
+<h3>8. User-Centric Access</h3>
 <div class="compliance-tags">
-<span class="compliance-tag tag-ccpa">CCPA</span>
+<span class="compliance-tag tag-cpra">CPRA</span>
 <span class="compliance-tag tag-hipaa">HIPAA</span>
 <span class="compliance-tag tag-gdpr">GDPR</span>
 </div>
@@ -120,7 +121,7 @@ weight: 4
 
 <div class="feature-card">
 <div class="feature-header">
-<h2 class="feature-title">9. Automated Data Retention</h2>
+<h3>9. Automated Data Retention</h3>
 <div class="compliance-tags">
 <span class="compliance-tag tag-soc2">SOC2</span>
 <span class="compliance-tag tag-iso">ISO 27001</span>
@@ -135,12 +136,12 @@ weight: 4
 
 <div class="feature-card">
 <div class="feature-header">
-<h2 class="feature-title">10. Compliance Reporting</h2>
+<h3>10. Compliance Reporting</h3>
 <div class="compliance-tags">
 <span class="compliance-tag tag-soc2">SOC2</span>
 <span class="compliance-tag tag-iso">ISO 27001</span>
 <span class="compliance-tag tag-pci">PCI DSS</span>
-<span class="compliance-tag tag-ccpa">CCPA</span>
+<span class="compliance-tag tag-cpra">CPRA</span>
 <span class="compliance-tag tag-hipaa">HIPAA</span>
 <span class="compliance-tag tag-gdpr">GDPR</span>
 </div>
