@@ -4,7 +4,8 @@ headless = true
 active = true
 weight = 70
 #title = "Secure Database for PII/PHI/PCI/KYC Records"
-title = "Secure PII Database"
+#title = "Secure PII Database"
+title = "PII/PHI/PCI/KYC Encryption for Your Needs"
 #Open-Source Security for Your Needs
 #Supports multi-tenancy & Aurora RDS
 #Perfect for companies that want a turnkey solution
