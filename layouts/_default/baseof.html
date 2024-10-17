@@ -16,7 +16,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   {{ partial "site_js.html" . }}
 
   {{ if eq .Type "use-case" }}
-    <div class="container">
+    <div class="container" id="footer-container">
       <div class="row justify-content-center">
         <div class="col-lg-8">
           {{ partial "site_footer.html" . }}
@@ -25,7 +25,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   {{ else }}
     {{ if ne .Type "docs" }}
-    <div class="container">
+    <div class="container" id="footer-container">
       {{ partial "site_footer.html" . }}
     </div>
     {{ end }}

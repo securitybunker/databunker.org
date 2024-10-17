@@ -61,7 +61,6 @@ blockquote {font-size:0.9rem!important;background: url(/img/blockquote.png) no-r
 blockquote p {font-style:italic;font-size:0.86rem;}
 blockquote footer {margin: 1rem 0 0;padding:0!important;}
 footer h2 {    font-size: 2.5rem;}
-footer p{text-align: center;}
 div#bgwhite .tab-pane blockquote  p:first-child {padding-top:0;}
 #sharebtns {top:100px;position:fixed;right:-200px;z-index:10000; -webkit-animation:linear;animation-delay:3s;-webkit-animation-name:buttons;-webkit-animation-duration:3s;animation-fill-mode:forwards;}
 @-webkit-keyframes buttons {
