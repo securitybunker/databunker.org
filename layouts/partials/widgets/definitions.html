@@ -51,23 +51,6 @@ div.tab-pane img {clip-path: inset(1% 1% 1% 1%); margin:auto;}
 <div class="row">
   <div class="col-12">
     <div class="row">
-      <div class="col-12 col-md-4">
-        <div class="nav flex-column nav-pills desktop-menu" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-	  <h2 style="font-size:2.1rem;cursor: pointer;" data-toggle="tab" href="#intro">{{ with $st.Title }}{{ . | markdownify | emojify }}{{ end }}</h2>
-          {{ if $st.Params.subtitle }}
-          <p style="font-size:1.35rem;cursor: pointer;" data-toggle="tab" href="#intro">{{ $st.Params.subtitle }}</p>
-          {{ end }}
-          {{ range $i, $post := $query }}
-	    {{ if eq $i 20 }}
-	    <a class="nav-link active" data-toggle="tab" href="#{{ .Title | urlize }}" role="tab" aria-selected="true">0{{ add $i 1 }}&nbsp;&nbsp;&nbsp;{{ .Title }}</a>
-	    {{ else if eq $i 9 }}
-	      <a class="nav-link" data-toggle="tab" href="#{{ .Title | urlize }}" role="tab" aria-selected="true">{{ add $i 1 }}&nbsp;&nbsp;&nbsp;{{ .Title }}</a>
-	    {{ else }}
-	      <a class="nav-link" data-toggle="tab" href="#{{ .Title | urlize }}" role="tab" aria-selected="true">0{{ add $i 1 }}&nbsp;&nbsp;&nbsp;{{ .Title }}</a>
-	    {{ end }}
-          {{end}}
-	</div>
-      </div>
       <div id="bgwhite" class="col-12 col-md-8">
         <div id="my-tab-content" class="tab-content" role="tablist">
             <div class="tab-pane fade active show" role="tabpanel" id="intro">
@@ -95,6 +78,24 @@ div.tab-pane img {clip-path: inset(1% 1% 1% 1%); margin:auto;}
 	      </div></div>
         {{end}}
 	</div>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <div class="nav flex-column nav-pills desktop-menu" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+          <h2 style="font-size:2.1rem;cursor: pointer;margin-top:0.8rem;" data-toggle="tab" href="#intro">{{ with $st.Title }}{{ . | markdownify | emojify }}{{ end }}</h2>
+          {{ if $st.Params.subtitle }}
+          <p style="font-size:1.35rem;cursor: pointer;" data-toggle="tab" href="#intro">{{ $st.Params.subtitle }}</p>
+          {{ end }}
+          {{ range $i, $post := $query }}
+            {{ if eq $i 20 }}
+            <a class="nav-link active" data-toggle="tab" href="#{{ .Title | urlize }}" role="tab" aria-selected="true">0{{ add $i 1 }}&nbsp;&nbsp;&nbsp;{{ .Title }}</a>
+            {{ else if eq $i 9 }}
+              <a class="nav-link" data-toggle="tab" href="#{{ .Title | urlize }}" role="tab" aria-selected="true">{{ add $i 1 }}&nbsp;&nbsp;&nbsp;{{ .Title }}</a>
+            {{ else }}
+              <a class="nav-link" data-toggle="tab" href="#{{ .Title | urlize }}" role="tab" aria-selected="true">0{{ add $i 1 }}&nbsp;&nbsp;&nbsp;{{ .Title }}</a>
+            {{ end }}
+          {{end}}
+        </div>
       </div>
 
     </div>
