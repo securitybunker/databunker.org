@@ -41,7 +41,8 @@ section#plans {padding-top:35px;padding-bottom:40px;}
 div#bgwhite {background-color:#fff;margin-top:21px;padding-left:0;padding-right:0;}
 div#bgwhite p, div#bgwhite h2 {padding-left:25px;padding-right:25px;}
 div#bgwhite h2:first-of-type {margin-top:5px;}
-div#bgwhite ul li {text-align:justify;padding-right:25px;font-size:80%;}
+div#bgwhite ul li {text-align:justify;padding-right:25px;}
+div#bgwhite li p {font-size:1rem;}
 div#bgwhite .tab-pane p:first-child {padding-top:20px;}
 div#bgwhite .tab-pane p {margin-bottom:0.5rem;}
 #definitions h1 {margin-top:0;margin-bottom:20px;}
@@ -60,7 +61,8 @@ div#bgwhite .tab-pane p {margin-bottom:0.5rem;}
 blockquote {font-size:0.9rem!important;background: url(/img/blockquote.png) no-repeat 0 12px;padding: 10px 20px 10px 50px;border:0;}
 blockquote p {font-style:italic;font-size:0.86rem;}
 blockquote footer {margin: 1rem 0 0;padding:0!important;}
-footer h2 {    font-size: 2.5rem;}
+footer h1 {font-size: 2.45rem;}
+footer h2 {font-size: 1.8rem;}
 div#bgwhite .tab-pane blockquote  p:first-child {padding-top:0;}
 #sharebtns {top:100px;position:fixed;right:-200px;z-index:10000; -webkit-animation:linear;animation-delay:3s;-webkit-animation-name:buttons;-webkit-animation-duration:3s;animation-fill-mode:forwards;}
 @-webkit-keyframes buttons {

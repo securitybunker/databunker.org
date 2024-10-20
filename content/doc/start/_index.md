@@ -1,5 +1,6 @@
 ---
-title: Getting started with Databunker
+#title: Getting started with Databunker
+title: "Databunker: Getting started guide (5 minutes)"
 #title: "Databunker: Quick Start"
 #title: "Databunker: Get Started Now"
 linktitle: Getting started
@@ -11,12 +12,10 @@ mymenu: doc
 # Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)
 weight: 5
 #1. **Accountability priciple (Article 5(2)):** By providing this self-service portal, organizations demonstrate their commitment to GDPR principles. All user actions in the portal can be logged, contributing to the demonstration of compliance.
+### Databunker Overview
+#Databunker is a specialized system for secure storage, data tokenization, and consent management, designed to protect PII, PHI, PCI, and KYC records.
+#[>> Why choose Databunker? What are the risks of traditional database security solutions?](/doc/introduction/)
 ---
-## Databunker Overview
-Databunker is a specialized system for secure storage, data tokenization, and consent management, designed to protect PII, PHI, PCI, and KYC records.
-
-[>> Why choose Databunker? What are the risks of traditional database security solutions?](/doc/introduction/)
-
 
 ## Step 1: Starting the Databunker container
 The easiest way to start using Databunker is by running it as a Docker container. Once the container is running, Databunker opens port 3000 and listens for incoming requests.
