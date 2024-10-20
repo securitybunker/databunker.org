@@ -28,6 +28,21 @@ Databunker is a specialized system for secure storage, data tokenization, and co
 * Payment Card Industry (PCI) data
 * Know Your Customer (KYC) records
 
+## Accelerated compliance without custom coding
+Deploying Databunker in your organization simplifies compliance by addressing most security RFPs and certification questionnaires (e.g., SOC2, ISO 27001, PCI DSS, HIPAA, GDPR, CPRA).
+
+Databunker includes built-in features such as data minimization, a consent management platform, an easy-to-use API, audit, and tokenization, reducing the need for custom development.
+
+## Eliminate SQL injections & GraphQL attacks
+Databunker’s architecture solves data security challenge for your organization without the need for additional costly solutions.
+
+Acting as an encrypted vault for PII, PHI, PCI, and KYC data, Databunker provides stronger protection than traditional database encryption methods.
+
+## Commercial-friendly licencing & easy integration
+Databunker offers a developer-friendly API that simplifies secure data storage and access with minimal effort.
+
+The community edition uses the MIT license, allowing free commercial use.
+
 #### Key Features:
 * **Open-Source:** Fully available under the commercially friendly MIT license
 * **GDPR Compliant:** Built with privacy regulations in mind
