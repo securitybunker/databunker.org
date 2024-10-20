@@ -41,7 +41,7 @@ curl -s http://localhost:3000/v1/sys/backup -H "X-Bunker-Token: $TOKEN" -o backu
 
 Most commercial tokenization solutions tokenize specific records, such as customer names or emails, without linking them to the entire customer profile. In contrast, Databunker tokenizes the entire customer record, including all details, and offers additional capabilities. This approach simplifies compliance with strict privacy and security requirements, such as audit, data minimization, pseudonymization, data segregation, and more. Databunker can be configured to allow end users (data subjects) to log into their customer portal, view all personal data stored in Databunker, update personal information, manage consents, or request data deletion. Additionally, we offer numerous APIs to support GDPR compliance.
 
-In addtion to open-source Databunker, we offer Databunker Pro. It provides a standard <a href="/databunker-pro-docs/tokenization/">format-preserving tokanization</a> able to process millions of records.
+In addtion to open-source Databunker, we offer Databunker Pro. It provides a standard <a href="/databunker-pro-docs/tokenization/">format-preserving tokenization</a> able to process millions of records.
 
 ## What is considered PII or what information is recommended to store in Databunker?
 

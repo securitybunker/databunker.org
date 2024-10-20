@@ -16,5 +16,5 @@ In traditional tokenization services, each individual value is tokenized separat
 
 Databunker, however, takes a unique approach to tokenization. Rather than tokenizing individual values, it processes the entire user object as a JSON structure and generates a random user token in UUID format. This token is then sent back to the calling party, which can store it in the regular database or logs as a user identity. Using Databunker's API, developers can easily retrieve or update user details using this token.
 
-**Databunker Pro** provides a standard <a href="/databunker-pro-docs/tokenization/">format-preserving tokanization</a> able to process millions of records.
+**Databunker Pro** provides a standard <a href="/databunker-pro-docs/tokenization/">format-preserving tokenization</a> able to process millions of records.
 
