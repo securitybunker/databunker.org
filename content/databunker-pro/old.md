@@ -21,7 +21,7 @@ active: true
 #Book a call today to see how Databunker and our dev team can secure your startup!
 #* Secure API for credit card storage
 ---
-Databunker Pro extends the capabilities of the open-source version with additional features:
+Databunker Pro extends the capabilities of the <a href="/doc/introduction/" target="_blank">open-source version</a> with additional features:
 
 * Enterprise security: <a href="/databunker-pro-docs/tenant-api/" target="_blank">multi-tenancy</a>, <a href="/databunker-pro-docs/wrapping-key/" target="_blank">key rotation</a>, and <a href="/databunker-pro-docs/shamir-keys/" target="_blank">Shamir’s Secret Sharing</a>
 * <a href="/databunker-pro-docs/tokenization/" target="_blank">Format-preserving tokenization API</a>: Supports processing billions of tokens
