@@ -8,26 +8,126 @@ draft: false
 mymenu: pro
 weight: 30
 ---
-Databunker Pro can serve as a format-preserving tokenization service, meeting strict privacy requirements such as **GDPR data minimization**. It is architected to handle millions of records efficiently through data partitioning. The following data types can be tokenized:
-* Uint64/Unint32 integers
-* Unix timestamp records
-* Credit card numners
-* Text strings
 
-When an API request is made to tokenize a record, Databunker generates two random tokens: one in UUID format and another as a format-preserving token.
+## What Problems Does It Solve?
 
-For example, when tokenizing a **credit card**, Databunker Pro generates a random token in credit card format that passes the Luhn credit card check.
+1. **Data Privacy & Compliance**
+- ✅ Meets GDPR data minimization requirements
+- ✅ Protects sensitive data while maintaining format
+- ✅ Ensures regulatory compliance without sacrificing functionality
+- ✅ Reduces scope of PCI DSS compliance
 
-If tokenizing a **text** value, only a UUID-format token is generated.
+2. **Enterprise Scalability**
+- ✅ Handles millions of records through data partitioning
+- ✅ Provides high-performance tokenization operations
+- ✅ Supports multiple data formats and types
+- ✅ Enables efficient data processing at scale
 
-#### Additional Tokenization Features (Supporting GDPR Data Minimization Requirements):
+3. **Format Compatibility**
+- ✅ Preserves data format for legacy system compatibility
+- ✅ Maintains data validation rules (e.g., Luhn algorithm for credit cards)
+- ✅ Enables analytics while protecting actual data
+- ✅ Supports seamless integration with existing workflows
 
-* **Unique record support:** When the same value is tokenized, the same token value will be generated. This is optional, and you can enable it by specifying the **unique** boolean value when calling the tokenization API.
-* **Optional record expiration:** You can specify how long a tokenized record should be retained. If the record is unused during this period, it will be automatically removed. Once the record is retrieved, the expiration period is extended.
+## 🔄 Supported Data Types
 
-For more information, please contact us.
+| Data Type | Format Preservation | Token Format |
+|-----------|-------------------|--------------|
+| Credit Card Numbers | ✅ (with Luhn check) | Format-preserving + UUID |
+| Uint64/Uint32 integers | ✅ | Format-preserving + UUID |
+| Unix timestamp records | ✅ | Format-preserving + UUID |
+| Text strings | ❌ | UUID only |
 
-<a href="javascript:void(0);" onclick="request_free_trial();">&gt;&gt; Request free trial</a>
+## 🛠️ Key Features
+
+### Dual Token Generation
+```
+// Example response for credit card tokenization
+{
+  "uuid": "550e8400-e29b-41d4-a716-446655440000",
+  "token": "4532015112830366"  // Format-preserving token
+}
+```
+
+### Smart Record Management
+- **Unique Record Support**
+```
+// Same input generates same token when enabled
+{
+    "value": "4532015112830366",
+    "unique": true
+}
+```
+
+- **Automatic Expiration**
+```
+// Set expiration for tokenized records
+{
+    "value": "4532015112830366",
+    "expiration": "30d"  // 30 days
+}
+```
+## 💡 Advanced Capabilities
+
+1. **Intelligent Token Generation**
+- UUID format tokens for universal compatibility
+- Format-preserving tokens for legacy system support
+- Luhn algorithm validation for credit card tokens
+
+2. **Record Lifecycle Management**
+- Optional unique token generation
+- Configurable record expiration
+- Automatic cleanup of expired records
+- Expiration extension on record access
+
+3. **Enterprise Features**
+- High-performance architecture
+- Data partitioning for scalability
+- Multiple token format support
+- Flexible API integration
+
+## 📊 Use Cases
+
+1. **Financial Services**
+- Credit card number tokenization
+- Account number protection
+- Transaction ID management
+
+2. **Healthcare**
+- Patient ID tokenization
+- Record number protection
+- Temporal data management
+
+3. **Enterprise Applications**
+- User ID tokenization
+- Timestamp tokenization
+- Reference number protection
+
+## 🚀 Getting Started
+
+```
+# Example API call for tokenization
+curl -X POST https://databunker.pro/api/v1/tokenize \
+  -H "Authorization: Bearer YOUR_TOKEN" \
+  -d '{
+    "value": "4532015112830366",
+    "unique": true,
+    "expiration": "30d"
+  }'
+```
+
+## 📈 Benefits
+
+- **Compliance**: Built-in GDPR data minimization
+- **Security**: Protected sensitive data storage
+- **Compatibility**: Format preservation for legacy systems
+- **Scalability**: Enterprise-grade performance
+- **Flexibility**: Multiple token format support
+
+---
+
+🔍 <a href="javascript:void(0);" onclick="request_free_trial();">Request free trial</a> | 📧 [Contact Sales](https://databunker.org/contact/)
+
 
 ## What's next?
 - [Installation guide](/databunker-pro-docs/installation-guide/)
