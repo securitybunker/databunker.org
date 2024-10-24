@@ -5,7 +5,7 @@
 
 [[main]]
   name = "Home"
-  url = "#hero"
+  url = "/#hero"
   weight = 10
 
 [[main]]
@@ -21,7 +21,7 @@
 [[main]]
   name = "Docs"
   #url = "/doc/introduction/"
-  url = "/databunker-pro/"
+  url = "/databunker-pro-docs/introduction/"
   weight = 25
 
 #[[main]]
@@ -174,12 +174,12 @@
 
 [[doc]]
   name = "Databunker Pro"
-  url = "/databunker-pro/"
+  url = "/databunker-pro-docs/introduction/"
   weight = 41
 
 [[pro]]
   name = "Databunker Pro"
-  url = "/databunker-pro/"
+  url = "/databunker-pro-docs/introduction/"
   weight = 1
 
 [[pro]]
