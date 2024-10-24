@@ -20,8 +20,14 @@
 
 [[main]]
   name = "Docs"
-  url = "/doc/introduction/"
+  #url = "/doc/introduction/"
+  url = "/databunker-pro/"
   weight = 25
+
+#[[main]]
+#  name = "Plans"
+#  url = "/plans/"
+#  weight = 25
 
 #[[main]]
 #  name = "API"
@@ -76,9 +82,10 @@
   #url= "/databunker-pro/"
   #name = "Cloud Version"
   #url = "/#contact"
-  url = "/#plans"
-  name = "Get Started Now"
-  #name = "Start For Free"
+  #url = "/#plans"
+  url = "javascript:request_free_trial();"
+  #name = "Get Started Now"
+  name = "Start For Free"
   #name = "Quick Start"
   #url = "/doc/start/"
   #name = "Live demo"
@@ -166,45 +173,55 @@
   weight = 40
 
 [[doc]]
-  name = "Pro"
+  name = "Databunker Pro"
   url = "/databunker-pro/"
   weight = 41
 
 [[pro]]
-  parent = "Databunker Pro"
+  name = "Databunker Pro"
+  url = "/databunker-pro/"
+  weight = 1
+
+[[pro]]
+  #parent = "Databunker Pro"
   name = "Installation"
   url = "/databunker-pro-docs/installation-guide/"
   weight = 4
 
 [[pro]]
-  parent = "Databunker Pro"
+  #parent = "Databunker Pro"
   name = "Master Key"
   url = "/databunker-pro-docs/master-key/"
   weight = 5
 
 [[pro]]
-  parent = "Databunker Pro"
+  #parent = "Databunker Pro"
   name = "Wrapping Key"
   url = "/databunker-pro-docs/wrapping-key/"
   weight = 6
 
 [[pro]]
-  parent = "Databunker Pro"
+  #parent = "Databunker Pro"
   name = "Shamir Keys"
   url = "/databunker-pro-docs/shamir-keys/"
   weight = 7
 
 [[pro]]
-  parent = "Databunker Pro"
+  #parent = "Databunker Pro"
   name = "Multi-tenancy"
   url = "/databunker-pro-docs/tenant-api/"
   weight = 8
 
 [[pro]]
-  parent = "Databunker Pro"
+  #parent = "Databunker Pro"
   name = "Tokenization"
   url = "/databunker-pro-docs/tokenization/"
-  weight = 8
+  weight = 9
+
+[[pro]]
+  name = "Open Source"
+  url = "/doc/introduction/"
+  weight = 20
 
 [[successstory]]
   name = "KYC backend"
