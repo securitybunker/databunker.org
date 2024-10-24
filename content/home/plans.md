@@ -1,7 +1,7 @@
 +++
 widget = "plans"
 headless = true
-active = true
+active = false
 weight = 70
 #title = "Secure Database for PII/PHI/PCI/KYC Records"
 #title = "Secure PII Database"
